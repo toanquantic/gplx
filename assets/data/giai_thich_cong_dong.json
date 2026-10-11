@@ -1,0 +1,2410 @@
+{
+ "_nguon": {
+  "repo": "https://github.com/thichuong/On_THI_GPLX_B",
+  "ban_quyen": "Copyright (c) 2024-2026 Thi Thanh Chuong",
+  "giay_phep": "MIT hoặc Apache-2.0 (bắt buộc ghi công tác giả và dẫn link repo gốc)",
+  "luu_y": "Lời giải thích do cộng đồng viết, chưa được kiểm duyệt; đã bỏ nhãn [CÂU ĐIỂM LIỆT] vì repo gốc dùng danh sách điểm liệt cũ."
+ },
+ "giai_thich": [
+  {
+   "id": 1,
+   "giai_thich": "Theo Luật Trật tự, an toàn giao thông đường bộ, 'Phần đường xe chạy' là phần của đường bộ được sử dụng cho phương tiện giao thông đường bộ đi lại. Phần lề đường chỉ dùng để dừng, đỗ xe hoặc cho người đi bộ khi cần thiết, không phải phần đường xe chạy."
+  },
+  {
+   "id": 2,
+   "giai_thich": "'Làn đường' là một phần của phần đường xe chạy được chia theo chiều dọc của đường, có đủ chiều rộng cho xe chạy an toàn. Điểm mấu chốt bắt buộc phải có là 'có đủ chiều rộng cho xe chạy an toàn'."
+  },
+  {
+   "id": 3,
+   "giai_thich": "'Khổ giới hạn của đường bộ' là khoảng trống có kích thước giới hạn về cả CHIỀU RỘNG và CHIỀU CAO của đường bộ để các phương tiện (bao gồm cả hàng hoá xếp trên xe) lưu thông qua an toàn theo quy chuẩn kỹ thuật."
+  },
+  {
+   "id": 4,
+   "giai_thich": "'Dải phân cách' là bộ phận của đường để phân chia phần đường xe chạy thành hai chiều riêng biệt hoặc để phân chia phần đường dành cho xe cơ giới và xe thô sơ hoặc các loại xe khác nhau trên cùng một chiều đường."
+  },
+  {
+   "id": 5,
+   "giai_thich": "Theo quy chuẩn báo hiệu đường bộ, 'Vạch kẻ đường' là một dạng báo hiệu để chỉ sự phân chia làn đường, vị trí hoặc hướng đi, vị trí dừng lại của phương tiện tham gia giao thông."
+  },
+  {
+   "id": 6,
+   "giai_thich": "'Người điều khiển phương tiện tham gia giao thông đường bộ' bao gồm người điều khiển xe cơ giới, người điều khiển xe thô sơ và người điều khiển xe máy chuyên dùng."
+  },
+  {
+   "id": 7,
+   "giai_thich": "'Người lái xe' được định nghĩa trong luật là người trực tiếp điều khiển xe cơ giới (như xe ô tô, xe mô tô, xe máy...)."
+  },
+  {
+   "id": 8,
+   "giai_thich": "Xe cơ giới gồm: xe ô tô, rơ moóc được kéo bởi ô tô, sơ mi rơ moóc kéo bởi ô tô đầu kéo, xe chở người/hàng bốn bánh có gắn động cơ, xe mô tô, xe gắn máy và các xe tương tự. Chú ý: xe đạp, xe đạp điện, xe lăn và xe máy chuyên dùng không thuộc nhóm xe cơ giới."
+  },
+  {
+   "id": 9,
+   "giai_thich": "Xe thô sơ bao gồm: xe đạp (kể cả xe đạp máy, xe đạp điện), xe xích lô, xe lăn dùng cho người khuyết tật, xe do súc vật kéo và các loại xe tương tự."
+  },
+  {
+   "id": 10,
+   "giai_thich": "Phương tiện giao thông đường bộ gồm 2 nhóm chính: Phương tiện giao thông cơ giới đường bộ và Phương tiện giao thông thô sơ đường bộ, xe máy chuyên dùng cùng các loại xe tương tự."
+  },
+  {
+   "id": 11,
+   "giai_thich": "'Người tham gia giao thông đường bộ' là khái niệm rộng nhất, bao gồm người điều khiển, người sử dụng phương tiện; người dẫn dắt súc vật; người đi bộ trên đường bộ."
+  },
+  {
+   "id": 12,
+   "giai_thich": "'Người điều khiển phương tiện giao thông' gồm cả người lái xe cơ giới, xe thô sơ, xe máy chuyên dùng và người dẫn dắt súc vật khi tham gia giao thông."
+  },
+  {
+   "id": 13,
+   "giai_thich": "'Người điều khiển giao thông đường bộ' là Cảnh sát giao thông (CSGT) và người được giao nhiệm vụ hướng dẫn giao thông tại nơi thi công, nơi ùn tắc, bến phà, tại cầu đường bộ đi chung với đường sắt."
+  },
+  {
+   "id": 14,
+   "giai_thich": "'Dừng xe' là trạng thái đứng yên TẠM THỜI của phương tiện trong một khoảng thời gian cần thiết đủ để cho người lên, xuống xe, xếp dỡ hàng hóa hoặc thực hiện công việc khác (người lái xe không được rời vị trí lái)."
+  },
+  {
+   "id": 15,
+   "giai_thich": "'Đỗ xe' là trạng thái đứng yên KHÔNG GIỚI HẠN THỜI GIAN của phương tiện giao thông đường bộ (người lái xe có thể rời khỏi phương tiện sau khi đã thực hiện các biện pháp an toàn)."
+  },
+  {
+   "id": 16,
+   "giai_thich": "'Đường cao tốc' là cấp kỹ thuật đường bộ đặc biệt: chỉ dành cho một số loại xe cơ giới/chuyên dùng đạt chuẩn tốc độ; có dải phân cách giữa phân chia 2 chiều; hoàn toàn không giao cắt cùng mức; chỉ ra/vào tại các điểm quy định và có trang thiết bị bảo đảm giao thông an toàn liên tục."
+  },
+  {
+   "id": 17,
+   "giai_thich": "Theo Luật mới, thiết bị an toàn cho trẻ em được định nghĩa là thiết bị bảo đảm an toàn cho trẻ ở tư thế NGỒI hoặc NẰM trên xe ô tô, thiết kế để hạn chế sự di chuyển của cơ thể trẻ, giảm nguy cơ chấn thương khi va chạm hoặc phanh gấp. Trẻ em tuyệt đối không được ở tư thế đứng trên xe."
+  },
+  {
+   "id": 18,
+   "giai_thich": "Theo chức năng phục vụ, đường bộ được phân loại đầy đủ gồm: đường chính, đường nhánh, đường gom, đường bên, đường dành cho giao thông công cộng, đường nội bộ, đường dành riêng cho người đi bộ, xe đạp và các đường khác."
+  },
+  {
+   "id": 19,
+   "giai_thich": "Hành vi rải vật sắc nhọn (đinh, chông), đổ dầu nhớt hoặc các chất gây trơn trượt trên đường bộ là hành vi phá hoại đặc biệt nguy hiểm, trực tiếp đe dọa tính mạng người tham gia giao thông nên bị nghiêm cấm triệt để và có thể bị truy cứu trách nhiệm hình sự."
+  },
+  {
+   "id": 20,
+   "giai_thich": "Nghiêm cấm đưa phương tiện không có chứng nhận đăng kiểm an toàn kỹ thuật & bảo vệ môi trường, hoặc xe đã hết niên hạn sử dụng tham gia giao thông vì nguy cơ hỏng hóc kỹ thuật (mất phanh, gãy trục...) gây tai nạn thảm khốc."
+  },
+  {
+   "id": 21,
+   "giai_thich": "Hoạt động tổ chức đua xe chỉ được phép thực hiện khi có sự chấp thuận và cấp phép chính thức từ cơ quan nhà nước có thẩm quyền trên các cung đường, trường đua được bảo vệ an toàn."
+  },
+  {
+   "id": 22,
+   "giai_thich": "Đua xe trái phép là hành vi gây nguy hiểm đặc biệt cho xã hội; tùy theo tính chất và mức độ vi phạm sẽ bị xử phạt vi phạm hành chính nặng hoặc bị truy cứu trách nhiệm hình sự (khởi tố tù giam)."
+  },
+  {
+   "id": 23,
+   "giai_thich": "Sử dụng ma túy khi điều khiển phương tiện làm tê liệt hệ thần kinh, mất hoàn toàn nhận thức và phản xạ lái xe. Người vi phạm sẽ bị phạt tiền ở khung kịch khung và bị tước quyền sử dụng Giấy phép lái xe."
+  },
+  {
+   "id": 24,
+   "giai_thich": "Luật quy định cấm tuyệt đối hành vi điều khiển phương tiện tham gia giao thông đường bộ mà trong máu hoặc hơi thở có nồng độ cồn ('Đã uống rượu bia - Không lái xe'). Không có mức dung sai nồng độ cồn tối thiểu."
+  },
+  {
+   "id": 25,
+   "giai_thich": "Người lái ô tô vi phạm nồng độ cồn sẽ bị áp dụng đồng thời cả hai hình thức: Bị phạt tiền nặng và bị tước giấy phép lái xe theo Nghị định xử phạt của Chính phủ."
+  },
+  {
+   "id": 26,
+   "giai_thich": "Theo Luật Phòng chống tác hại của rượu, bia, cấm tuyệt đối NGƯỜI ĐIỀU KHIỂN phương tiện giao thông (gồm cả ô tô, mô tô, xe gắn máy, xe đạp) sử dụng rượu bia khi tham gia giao thông. Người ngồi sau xe hoặc hành khách không trực tiếp điều khiển thì không thuộc nhóm bị cấm này."
+  },
+  {
+   "id": 27,
+   "giai_thich": "Chủ phương tiện tuyệt đối không được giao xe cho người chưa đủ tuổi, người không có GPLX, hoặc người có GPLX nhưng đã bị trừ hết 12 điểm. Nếu giao xe mà người đó gây tai nạn nghiêm trọng, chủ xe có thể bị xử lý hình sự về tội 'Giao cho người không đủ điều kiện điều khiển phương tiện'."
+  },
+  {
+   "id": 28,
+   "giai_thich": "Nghiêm cấm mọi hành vi lạng lách, đánh võng, rú ga liên tục cũng như hành vi xúc phạm, đe dọa, cản trở hoặc chống người thi hành công vụ kiểm soát trật tự an toàn giao thông."
+  },
+  {
+   "id": 29,
+   "giai_thich": "Nghiêm cấm cải tạo xe trái phép, cố ý can thiệp tua đồng hồ công-tơ-mét (quãng đường đã chạy) hoặc tẩy xóa, đục sửa, đóng lại số khung, số động cơ trái quy định của pháp luật."
+  },
+  {
+   "id": 30,
+   "giai_thich": "Bị nghiêm cấm: tự ý lắp đặt còi/đèn ưu tiên, đèn led pha siêu sáng gây mất an toàn giao thông; cản trở giao thông hoặc ném gạch đá, vật lạ vào phương tiện đang lưu thông trên đường."
+  },
+  {
+   "id": 31,
+   "giai_thich": "Biển số xe do cơ quan công an có thẩm quyền cấp và quản lý. Mọi hành vi tự ý sản xuất, mua bán, sử dụng biển số giả hoặc sửa đổi chữ số đều là hành vi vi phạm pháp luật và bị nghiêm cấm."
+  },
+  {
+   "id": 32,
+   "giai_thich": "Khi điều khiển phương tiện, hành vi lạng lách, đánh võng, rú ga bóp còi liên tục gây hoảng loạn cho người đi đường, nguy cơ cao dẫn đến tai nạn nên bị pháp luật nghiêm cấm."
+  },
+  {
+   "id": 33,
+   "giai_thich": "Hệ thống báo hiệu đường bộ Việt Nam gồm 5 nhóm chính: 1. Biển báo cấm; 2. Biển báo nguy hiểm và cảnh báo; 3. Biển hiệu lệnh; 4. Biển chỉ dẫn; 5. Biển phụ, biển viết bằng chữ."
+  },
+  {
+   "id": 34,
+   "giai_thich": "Khi đến nơi có vạch kẻ đường cho người đi bộ qua đường hoặc khi thấy người đi bộ, người khuyết tật dùng xe lăn đang qua đường, người lái xe phải quan sát, giảm tốc độ hoặc dừng lại để nhường đường an toàn."
+  },
+  {
+   "id": 35,
+   "giai_thich": "Người lái xe mô tô, ô tô bắt buộc phải quan sát, giảm tốc độ hoặc dừng lại nhường đường khi: gặp người đi bộ qua đường; gặp xe buýt đang dừng đón trả khách; hoặc tại nơi giao nhau không có báo hiệu đi theo vòng xuyến."
+  },
+  {
+   "id": 36,
+   "giai_thich": "Hiệu lệnh CSGT giang hai tay hoặc một tay sang ngang: Người tham gia giao thông ở phía trước và phía sau người chỉ huy phải DỪNG LẠI; người tham gia giao thông ở phía bên phải và bên trái được ĐI TẤT CẢ CÁC HƯỚNG."
+  },
+  {
+   "id": 37,
+   "giai_thich": "Hiệu lệnh CSGT giơ tay thẳng đứng: Người tham gia giao thông ở TẤT CẢ CÁC HƯỚNG đều phải dừng lại (trừ các xe đã ở trong khu vực giao nhau thì được tiếp tục đi)."
+  },
+  {
+   "id": 38,
+   "giai_thich": "Thứ tự ưu tiên hiệu lực của báo hiệu giao thông: 1. Hiệu lệnh của người điều khiển giao thông (CSGT) là cao nhất; 2. Tín hiệu đèn; 3. Biển báo hiệu; 4. Vạch kẻ đường. Do đó phải chấp hành hiệu lệnh của CSGT trước."
+  },
+  {
+   "id": 39,
+   "giai_thich": "Khi tại một khu vực đồng thời có biển báo cố định và biển báo tạm thời (như khu vực công trường, sửa chữa đường) mà ý nghĩa khác nhau, người tham gia giao thông phải chấp hành theo hiệu lệnh của BIỂN BÁO HIỆU TẠM THỜI."
+  },
+  {
+   "id": 40,
+   "giai_thich": "Khi gặp tín hiệu đèn vàng: Người lái xe phải dừng lại trước vạch dừng. Trường hợp đã đi quá vạch dừng hoặc đã quá gần vạch dừng mà dừng lại sẽ gây nguy hiểm thì được phép tiếp tục đi tiếp."
+  },
+  {
+   "id": 41,
+   "giai_thich": "Người lái xe khi tham gia giao thông trên đường bộ phải chấp hành nghiêm túc quy định về tốc độ, luôn làm chủ tốc độ và TUYỆT ĐỐI KHÔNG ĐƯỢC VƯỢT QUÁ tốc độ tối đa cho phép trên tuyến đường đó."
+  },
+  {
+   "id": 42,
+   "giai_thich": "Luật Trật tự, ATGT đường bộ quy định: Khi chở trẻ em dưới 10 tuổi và chiều cao dưới 1,35 mét trên xe ô tô con, KHÔNG ĐƯỢC cho trẻ ngồi cùng hàng ghế với người lái xe (trừ loại xe chỉ có một hàng ghế); đồng thời phải sử dụng thiết bị an toàn phù hợp."
+  },
+  {
+   "id": 43,
+   "giai_thich": "Quy tắc cơ bản khi tham gia giao thông: Phương tiện di chuyển với tốc độ THẤP HƠN phải đi về phía bên PHẢI theo chiều đi của mình để không cản trở các xe di chuyển nhanh hơn."
+  },
+  {
+   "id": 44,
+   "giai_thich": "Trên đường một chiều có nhiều làn phân cách bằng vạch kẻ, làn đường bên trái ngoài cùng thường dành cho xe cơ giới di chuyển nhanh; các phương tiện thô sơ và xe di chuyển chậm phải đi trên các làn phía bên phải."
+  },
+  {
+   "id": 45,
+   "giai_thich": "Khi xe sau xin vượt, nếu đủ điều kiện an toàn, người lái xe phía trước phải giảm tốc độ, bật đèn xi-nhan rẽ phải và đi sát về lề bên phải để nhường đường. Tuyệt đối không được tăng tốc hay gây cản trở xe sau vượt."
+  },
+  {
+   "id": 46,
+   "giai_thich": "Khái niệm 'Vượt xe': Là tình huống giao thông trên đường mà mỗi chiều đường chỉ có một làn xe cơ giới, xe phía sau muốn đi lên trước phải mượn phần đường hoặc làn đường bên trái của xe trước để vượt qua."
+  },
+  {
+   "id": 47,
+   "giai_thich": "Cầu hẹp một làn xe và khúc cua khuất tầm nhìn là những vị trí tiềm ẩn nguy cơ đối đầu trực diện với xe ngược chiều vô cùng nguy hiểm. Pháp luật NGHIÊM CẤM vượt xe trong mọi trường hợp tại các vị trí này."
+  },
+  {
+   "id": 48,
+   "giai_thich": "Khi muốn vượt xe, người lái xe mô tô phải có tín hiệu báo hiệu nhấp nháy bằng đèn chiếu sáng phía trước hoặc bằng còi. Tuyệt đối không rú ga, nẹt pô hay bấm còi dồn dập gây hoảng loạn."
+  },
+  {
+   "id": 49,
+   "giai_thich": "Trong khu đông dân cư và khu vực bệnh viện, chỉ được phép sử dụng còi trong khung giờ ban ngày từ 05 giờ sáng đến 22 giờ đêm nhằm bảo đảm sự yên tĩnh và nghỉ ngơi của người dân."
+  },
+  {
+   "id": 50,
+   "giai_thich": "Tín hiệu còi chỉ được dùng để báo hiệu khi có nguy cơ mất an toàn hoặc báo hiệu xin vượt xe. Từ 22h đêm đến 5h sáng hôm sau trong đô thị, phải dùng đèn pha/cos nhấp nháy thay cho còi."
+  },
+  {
+   "id": 51,
+   "giai_thich": "Khi lưu thông trong khu đông dân cư có đèn đường vào ban đêm, người lái xe CHỈ ĐƯỢC BẬT ĐÈN CHIẾU GẦN (đèn cốt). Cấm bật đèn chiếu xa (đèn pha) vì sẽ làm lóa mắt các phương tiện đi ngược chiều và phía trước."
+  },
+  {
+   "id": 52,
+   "giai_thich": "Dùng tay cầm và sử dụng điện thoại, thiết bị điện tử khi đang lái xe làm phân tâm thị giác, giảm 80% khả năng phản xạ xử lý tình huống khẩn cấp, là nguyên nhân hàng đầu gây tai nạn nên bị nghiêm cấm triệt để."
+  },
+  {
+   "id": 53,
+   "giai_thich": "Không được vượt xe khác khi: đi trên cầu hẹp một làn xe, nơi đường giao nhau, đường bộ giao cắt đường sắt, khi tầm nhìn bị che khuất, hoặc khi có xe ưu tiên đang phát tín hiệu làm nhiệm vụ."
+  },
+  {
+   "id": 54,
+   "giai_thich": "Nghiêm cấm quay đầu xe tại các vị trí: phần đường người đi bộ, trên cầu, đầu cầu, gầm cầu vượt, ngầm, đường sắt giao nhau, đường dốc, đường hẹp, đường cong khuất tầm nhìn, trong hầm và trên đường cao tốc."
+  },
+  {
+   "id": 55,
+   "giai_thich": "Người lái xe không được phép quay đầu xe ở phần đường người đi bộ qua đường, trên cầu, đầu cầu, trên đường cao tốc, nơi giao cắt với đường sắt, đoạn đường cong hay đường dốc vì nguy cơ xung đột luồng xe cực lớn."
+  },
+  {
+   "id": 56,
+   "giai_thich": "Trước khi chuyển hướng, người lái xe phải thực hiện đầy đủ: 1. Quan sát an toàn gương chiếu hậu; 2. Giảm tốc độ và bật xi-nhan báo rẽ; 3. Chuyển dần sang làn đường thích hợp khi bảo đảm không gây trở ngại."
+  },
+  {
+   "id": 57,
+   "giai_thich": "Quy tắc an toàn khi chuyển làn: Người lái xe phải bật đèn tín hiệu báo rẽ (xi-nhan) TRƯỚC KHI thay đổi làn đường một khoảng cách an toàn để các xe phía sau kịp thời nhận biết và chủ động nhường đường."
+  },
+  {
+   "id": 58,
+   "giai_thich": "Cấm lùi xe ở: đường một chiều, khu vực cấm dừng đỗ, phần đường người đi bộ, nơi giao nhau, nơi giao cắt đường sắt, nơi khuất tầm nhìn, trong hầm đường bộ và đặc biệt trên đường cao tốc."
+  },
+  {
+   "id": 59,
+   "giai_thich": "Cấm dừng xe, đỗ xe trên miệng cống thoát nước, miệng hầm đường dây điện thoại, điện cao thế, trụ nước cứu hỏa và trong phạm vi hành lang an toàn đường sắt để phục vụ thoát nạn và cứu hỏa."
+  },
+  {
+   "id": 60,
+   "giai_thich": "Khi dừng xe, đỗ xe trên đường phố sát lề đường/vỉa hè bên phải, khoảng cách từ bánh xe gần nhất đến mép lề đường, hè phố không được vượt quá 0,25 mét để bảo đảm không chiếm dụng lòng đường và cản trở lưu thông."
+  },
+  {
+   "id": 61,
+   "giai_thich": "Khi dừng, đỗ xe trên đường phố hẹp, người lái xe phải đỗ cách xe ô tô đang đỗ ngược chiều tối thiểu 20 mét để bảo đảm có đủ khoảng trống cho các phương tiện khác lưu thông qua lại an toàn, tránh gây ùn tắc giao thông."
+  },
+  {
+   "id": 62,
+   "giai_thich": "Nghiêm cấm dừng đỗ song song với xe khác đang đỗ, đỗ ở đoạn đường cong, gần đầu dốc khuất tầm nhìn hoặc bên trái đường một chiều vì sẽ bịt kín làn đường và tiềm ẩn nguy cơ tai nạn đặc biệt nghiêm trọng."
+  },
+  {
+   "id": 63,
+   "giai_thich": "Xe mô tô, xe gắn máy KHÔNG ĐƯỢC PHÉP kéo hoặc đẩy các phương tiện khác, vật khác khi tham gia giao thông. Hành vi này làm mất khả năng giữ thăng bằng và mất lái hoàn toàn."
+  },
+  {
+   "id": 64,
+   "giai_thich": "Cấm người điều khiển mô tô buông cả hai tay; cấm đứng, nằm trên xe lái xe; cấm dùng chân chống hoặc vật khác quẹt xuống đường tạo tia lửa điện khi xe đang chạy."
+  },
+  {
+   "id": 65,
+   "giai_thich": "Người điều khiển mô tô hai bánh, ba bánh, xe gắn máy không được buông cả 2 tay, không được kéo đẩy xe khác, không được quệt chân chống xuống đường khi đang chạy."
+  },
+  {
+   "id": 66,
+   "giai_thich": "Người được chở trên xe mô tô, xe gắn máy không được mang vác vật cồng kềnh, không được bám, kéo hoặc đẩy các phương tiện khác vì dễ gây mất thăng bằng ngã đổ xe."
+  },
+  {
+   "id": 67,
+   "giai_thich": "Người được chở trên xe mô tô, xe gắn máy tuyệt đối KHÔNG ĐƯỢC PHÉP bám, kéo hoặc đẩy các phương tiện khác dưới bất kỳ hình thức nào."
+  },
+  {
+   "id": 68,
+   "giai_thich": "Người lái xe và người ngồi trên xe mô tô hai bánh, ba bánh, xe gắn máy bắt buộc phải đội mũ bảo hiểm đạt chuẩn chất lượng quốc gia và cài quai đúng quy cách để bảo vệ phần đầu khi có va chạm."
+  },
+  {
+   "id": 69,
+   "giai_thich": "Xe mô tô 2 bánh, xe gắn máy chỉ được chở tối đa 2 người trong 4 trường hợp đặc biệt: 1. Chở người bệnh đi cấp cứu; 2. Áp giải người vi phạm pháp luật; 3. Trẻ em dưới 12 tuổi; 4. Người già yếu hoặc người khuyết tật."
+  },
+  {
+   "id": 70,
+   "giai_thich": "Người lái xe mô tô bị nghiêm cấm: đi xe dàn hàng ngang; buông 2 tay; kéo đẩy xe khác; chở người đứng trên xe, giá đèo hàng hoặc ngồi trên tay lái; nằm trên xe lái xe; quẹt chân chống xuống đường."
+  },
+  {
+   "id": 71,
+   "giai_thich": "Nghiêm cấm lái xe mô tô dàn hàng ngang, đi vào vỉa hè dành cho người đi bộ, sử dụng ô (dù), sử dụng thiết bị âm thanh như tai nghe nhạc (chỉ trừ thiết bị trợ thính y tế)."
+  },
+  {
+   "id": 72,
+   "giai_thich": "Người điều khiển xe mô tô không được thực hiện hành vi: đi xe dàn hàng ngang và đi xe vào phần đường dành cho người đi bộ."
+  },
+  {
+   "id": 73,
+   "giai_thich": "Người ngồi trên xe mô tô, xe gắn máy khi trời mưa KHÔNG ĐƯỢC PHÉP sử dụng ô (dù) vì sức gió cản của ô sẽ làm lật đổ xe, gây nguy hiểm cho bản thân và người xung quanh."
+  },
+  {
+   "id": 74,
+   "giai_thich": "Người ngồi trên mô tô KHÔNG ĐƯỢC PHÉP kéo theo người đang đi xe đạp vì rất dễ làm xe đạp mất lái, ngã cuốn vào gầm xe khác."
+  },
+  {
+   "id": 75,
+   "giai_thich": "Pháp luật quy định xử phạt vi phạm hành chính đối với CẢ NGƯỜI ĐIỀU KHIỂN VÀ NGƯỜI ĐƯỢC CHỞ trên xe mô tô, xe gắn máy nếu người được chở không đội mũ bảo hiểm hoặc cài quai không đúng quy cách."
+  },
+  {
+   "id": 76,
+   "giai_thich": "Người lái mô tô an toàn phải: Đội mũ bảo hiểm đạt chuẩn, cài quai đúng quy cách; tuyệt đối không dùng ô, điện thoại di động hay tai nghe nhạc khi đang lái xe."
+  },
+  {
+   "id": 77,
+   "giai_thich": "Quy tắc an toàn khi qua phà: Xe cơ giới, xe máy chuyên dùng phải xuống phà trước để ổn định trọng tâm phà; xe thô sơ và người đi bộ xuống sau cùng."
+  },
+  {
+   "id": 78,
+   "giai_thich": "Trên đường có nhiều làn cùng chiều: Xe phải đi trong MỘT LÀN ĐƯỜNG và chỉ được chuyển làn ở nơi cho phép; mỗi lần chuyển làn CHỈ ĐƯỢC CHUYỂN SANG MỘT LÀN LIỀN KỀ; phải bật tín hiệu báo trước và quan sát an toàn."
+  },
+  {
+   "id": 79,
+   "giai_thich": "Trên đường một chiều có phân làn: Xe thô sơ phải đi trên làn bên PHẢI TRONG CÙNG; xe cơ giới, xe máy chuyên dùng đi trên các làn đường bên TRÁI."
+  },
+  {
+   "id": 80,
+   "giai_thich": "Từ 22 giờ hôm trước đến 05 giờ sáng hôm sau trong đô thị và khu đông dân cư, người lái xe muốn xin vượt CHỈ ĐƯỢC BÁO HIỆU BẰNG ĐÈN (nháy pha/cos), cấm bấm còi làm ảnh hưởng giấc ngủ của người dân."
+  },
+  {
+   "id": 81,
+   "giai_thich": "Khi có xe sau xin vượt, nếu đủ an toàn, người lái xe phía trước phải giảm tốc độ, bật xi-nhan rẽ phải báo hiệu đồng ý và đi sát lề phải cho đến khi xe sau vượt qua hoàn toàn."
+  },
+  {
+   "id": 82,
+   "giai_thich": "Khi xe sau xin vượt nhưng thấy phía trước KHÔNG ĐỦ ĐIỀU KIỆN AN TOÀN (có chướng ngại vật, xe ngược chiều...), người lái xe phải BẬT TÍN HIỆU RẼ TRÁI để báo cho xe sau biết là CHƯA ĐƯỢC VƯỢT."
+  },
+  {
+   "id": 83,
+   "giai_thich": "Khi chuyển hướng (rẽ), người lái xe phải quan sát kỹ, nhường đường cho người đi bộ, xe thô sơ và các xe đi ngược chiều, chỉ chuyển hướng khi hoàn toàn không gây trở ngại cho người khác."
+  },
+  {
+   "id": 84,
+   "giai_thich": "Quy trình chuyển hướng: Phải quan sát an toàn, giảm tốc độ, bật xi-nhan báo rẽ liên tục, chuyển dần sang làn đường gần nhất với hướng rẽ, bảo đảm an toàn tuyệt đối mới được thực hiện chuyển hướng."
+  },
+  {
+   "id": 85,
+   "giai_thich": "Khi lùi xe, người lái xe phải quan sát kỹ hai bên gương và phía sau xe, bật đèn lùi/tín hiệu cảnh báo lùi và chỉ lùi khi chắc chắn không có chướng ngại vật hoặc phương tiện phía sau."
+  },
+  {
+   "id": 86,
+   "giai_thich": "Ở nơi có tầm nhìn bị che khuất (như góc cua hẹp, ngã ba khuất...), người lái xe KHÔNG ĐƯỢC LÙI XE vì không thể quan sát được dòng phương tiện tiếp cận phía sau."
+  },
+  {
+   "id": 87,
+   "giai_thich": "Khi tránh xe đi ngược chiều trên đường hai chiều hẹp, người lái xe phải GIẢM TỐC ĐỘ và cho xe đi sát về bên PHẢI theo chiều đi của mình. Tuyệt đối không được lấn làn hay tăng tốc."
+  },
+  {
+   "id": 88,
+   "giai_thich": "Quy tắc nhường đường khi tránh xe ngược chiều: 1. Xe gần chỗ tránh hơn phải vào vị trí tránh nhường đường; 2. Xe xuống dốc phải nhường đường cho xe đang lên dốc; 3. Xe có chướng ngại vật phía trước phải nhường cho xe không có vật cản."
+  },
+  {
+   "id": 89,
+   "giai_thich": "Khi hai xe gặp nhau trên dốc hẹp, xe ĐANG XUỐNG DỐC phải dừng lại nhường đường cho xe ĐANG LÊN DỐC (vì xe lên dốc cần đà và khó khởi hành lại hơn)."
+  },
+  {
+   "id": 90,
+   "giai_thich": "Khi lái xe trên đường cong có tầm nhìn bị hạn chế (khuất cua), người lái xe bắt buộc phải QUAN SÁT VÀ GIẢM TỐC ĐỘ, đi đúng làn đường của mình. Nghiêm cấm lấn làn hoặc vượt xe tại góc cua."
+  },
+  {
+   "id": 91,
+   "giai_thich": "Tại nơi giao nhau, xe đi từ đường nhánh, đường không ưu tiên bắt buộc phải NHƯỜNG ĐƯỜNG cho xe đi trên đường chính, đường ưu tiên TỪ BẤT KỲ HƯỚNG NÀO TỚI."
+  },
+  {
+   "id": 92,
+   "giai_thich": "Mẹo nhớ quy tắc vòng xuyến: 'CÓ vòng xuyến nhường BÊN TRÁI; KHÔNG vòng xuyến nhường BÊN PHẢI'. Tại nơi giao nhau có báo hiệu vòng xuyến, phải nhường đường cho xe đến từ bên trái."
+  },
+  {
+   "id": 93,
+   "giai_thich": "Mẹo nhớ quy tắc giao nhau: 'KHÔNG vòng xuyến nhường BÊN PHẢI'. Tại ngã tư không có biển báo vòng xuyến, người lái xe bắt buộc phải nhường đường cho xe đi đến từ bên phải."
+  },
+  {
+   "id": 94,
+   "giai_thich": "Người lái xe phải giảm tốc độ, đi sát lề phải hoặc dừng lại nhường đường cho các xe ưu tiên đang phát tín hiệu: xe chữa cháy, quân sự, công an, kiểm sát làm nhiệm vụ, đoàn xe có CSGT dẫn đường, xe cứu thương, xe hộ đê, cứu hộ khẩn cấp và đoàn xe tang."
+  },
+  {
+   "id": 95,
+   "giai_thich": "Xe ưu tiên khi đi làm nhiệm vụ khẩn cấp (có tín hiệu còi, đèn ưu tiên): không bị hạn chế tốc độ, được phép vượt đèn đỏ, được đi vào đường ngược chiều và được đi ngược chiều trên làn khẩn cấp của cao tốc."
+  },
+  {
+   "id": 96,
+   "giai_thich": "Khi nghe thấy tín hiệu còi, đèn ưu tiên, mọi phương tiện tham gia giao thông phải lập tức GIẢM TỐC ĐỘ, đi sát lề đường bên PHẢI hoặc dừng lại để nhường đường, tuyệt đối không cản trở xe ưu tiên."
+  },
+  {
+   "id": 97,
+   "giai_thich": "Nếu xe Cảnh sát giao thông chạy phía trước KHÔNG PHÁT TÍN HIỆU ƯU TIÊN (không bật còi, đèn nhấp nháy làm nhiệm vụ), người lái xe ĐƯỢC PHÉP VƯỢT khi bảo đảm an toàn và tuân thủ tốc độ quy định."
+  },
+  {
+   "id": 98,
+   "giai_thich": "Khi xe cứu thương đang phát tín hiệu còi, đèn ưu tiên làm nhiệm vụ cấp cứu, người lái xe TUYỆT ĐỐI KHÔNG ĐƯỢC VƯỢT trong bất kỳ hoàn cảnh nào."
+  },
+  {
+   "id": 99,
+   "giai_thich": "Tại đường ngang không có rào chắn, chuông đèn: Người lái xe phải dừng lại bên phải đường trước vạch dừng, quan sát kỹ hai phía đường ray, khi chắc chắn không có tàu hỏa tới mới được lái xe qua."
+  },
+  {
+   "id": 100,
+   "giai_thich": "Tại nơi giao nhau với đường sắt, khi có chuông kêu, đèn đỏ nhấp nháy hoặc cần chắn đang hạ xuống, người tham gia giao thông phải DỪNG LẠI VỀ BÊN PHẢI đường của mình, phía trước vạch dừng xe."
+  },
+  {
+   "id": 101,
+   "giai_thich": "Khi xe bị chết máy, tai nạn nằm trên đường ray mà không thể di chuyển ra ngoài phạm vi an toàn, người lái xe và mọi người có mặt phải NGAY LẬP TỨC báo hiệu để dừng tàu (chạy về hai phía tối thiểu 500m phát tín hiệu) và thực hiện các biện pháp an toàn khẩn cấp."
+  },
+  {
+   "id": 102,
+   "giai_thich": "Phải dừng lại bên phải trước vạch dừng khi: có hiệu lệnh nhân viên gác chắn, đèn đỏ nhấp nháy/chuông kêu, hoặc rào chắn đường sắt đang dịch chuyển/đã đóng kín."
+  },
+  {
+   "id": 103,
+   "giai_thich": "Quy tắc lái xe trong hầm đường bộ: Bắt buộc bật đèn chiếu gần (cốt); xe thô sơ phải có đèn hoặc vật phát sáng; CẤM dừng, đỗ, quay đầu hoặc lùi xe trong hầm. Nếu gặp sự cố phải đưa vào vị trí dừng khẩn cấp và đặt cảnh báo an toàn."
+  },
+  {
+   "id": 104,
+   "giai_thich": "Khi kéo xe ô tô bị hỏng mà hệ thống phanh (hãm) của xe được kéo không còn hiệu lực, bắt buộc phải sử dụng THANH NỐI CỨNG để xe trước có thể hãm hộ xe sau, cấm dùng dây cáp mềm vì xe sau sẽ đâm vào xe trước khi phanh."
+  },
+  {
+   "id": 105,
+   "giai_thich": "Xe kéo rơ moóc, ô tô đầu kéo phải kéo rơ moóc phù hợp thiết kế và tải trọng cho phép; chốt kết nối phải chắc chắn, có xích an toàn theo quy định."
+  },
+  {
+   "id": 106,
+   "giai_thich": "Quy tắc kéo xe: Xe được kéo phải có người ngồi lái và hệ thống lái hoạt động bình thường; nếu mất phanh phải nối bằng thanh nối cứng; phía trước xe kéo và sau xe được kéo phải gắn biển báo hiệu và bật đèn vàng cảnh báo."
+  },
+  {
+   "id": 107,
+   "giai_thich": "Người lái xe phải quan sát, giảm tốc độ hoặc dừng lại khi: gặp biển báo nguy hiểm/chướng ngại vật, chuyển hướng, cầu cống hẹp, ngầm, đường dốc, có vật nuôi trên đường, hoặc tại trạm xe buýt đang có hành khách lên xuống."
+  },
+  {
+   "id": 108,
+   "giai_thich": "Trên đường có một làn xe cơ giới mỗi chiều, không được vượt xe khi: có chướng ngại vật phía trước, hoặc xe chạy phía trước đã có tín hiệu chuẩn bị vượt xe khác."
+  },
+  {
+   "id": 109,
+   "giai_thich": "Được phép vượt bên phải trong 3 trường hợp: 1. Khi xe phía trước có tín hiệu rẽ trái hoặc đang rẽ trái; 2. Khi xe điện đang chạy giữa đường; 3. Khi xe chuyên dùng đang thi công trên đường không thể vượt bên trái."
+  },
+  {
+   "id": 110,
+   "giai_thich": "Khi có xe sau xin vượt, nếu đủ điều kiện an toàn, người lái xe phải giảm tốc độ, bật đèn xi-nhan rẽ phải báo hiệu đồng ý và đi sát mép đường bên phải cho đến khi xe sau vượt qua."
+  },
+  {
+   "id": 111,
+   "giai_thich": "Các phương tiện KHÔNG ĐƯỢC đi vào đường cao tốc: Người đi bộ, xe thô sơ, xe mô tô, xe gắn máy, xe 4 bánh chở người/hàng có gắn động cơ, và xe máy chuyên dùng có tốc độ thiết kế NHỎ HƠN tốc độ tối thiểu của đường cao tốc."
+  },
+  {
+   "id": 112,
+   "giai_thich": "Theo Luật Trật tự, ATGT đường bộ mới: Xe ưu tiên đi làm nhiệm vụ khẩn cấp nếu đi ngược chiều trên đường cao tốc thì CHỈ ĐƯỢC ĐI NGƯỢC CHIỀU TRÊN LÀN DỪNG XE KHẨN CẤP để bảo đảm an toàn cho các làn xe đang chạy tốc độ cao."
+  },
+  {
+   "id": 113,
+   "giai_thich": "Trên đường cao tốc, nghiêm cấm người lái xe: Dừng đỗ xe trên làn đường xe chạy (trừ xe hỏng bất khả kháng), lùi xe, hoặc quay đầu xe."
+  },
+  {
+   "id": 114,
+   "giai_thich": "Khi gặp sự cố trên cao tốc: Phải bật đèn khẩn cấp, cố gắng đưa xe vào làn dừng khẩn cấp; nếu xe không lăn bánh được, phải bật đèn cảnh báo nguy hiểm và ĐẶT BIỂN/ĐÈN CẢNH BÁO PHÍA SAU XE TỐI THIỂU 150 MÉT, đồng thời gọi điện cứu hộ."
+  },
+  {
+   "id": 115,
+   "giai_thich": "Khi lái xe trên đường cao tốc mà lỡ đi quá lối rẽ, tuyệt đối KHÔNG ĐƯỢC lùi xe hay quay đầu chạy ngược chiều (nguy cơ va chạm liên hoàn thảm khốc), mà bắt buộc phải TIẾP TỤC ĐI THẲNG đến nút giao/lối ra tiếp theo."
+  },
+  {
+   "id": 116,
+   "giai_thich": "Khi xảy ra ùn tắc trên đường cao tốc, người lái xe TUYỆT ĐỐI KHÔNG ĐƯỢC chạy vào làn dừng khẩn cấp để vượt lên, vì làn này dành riêng cho các phương tiện cứu nạn, cứu thương, công an tiếp cận hiện trường."
+  },
+  {
+   "id": 117,
+   "giai_thich": "Quy tắc nhập làn cao tốc: Bật xi-nhan xin vào, quan sát nhường đường cho xe đang chạy trên cao tốc; nếu có làn tăng tốc thì phải tăng tốc độ tương đương dòng xe trước khi chuyển làn an toàn."
+  },
+  {
+   "id": 118,
+   "giai_thich": "Theo Luật mới: Người đủ 18 tuổi trở lên được cấp GPLX hạng C1 (lái xe ô tô tải có khối lượng từ trên 3.500 kg đến 7.500 kg; kéo rơ moóc đến 750 kg)."
+  },
+  {
+   "id": 119,
+   "giai_thich": "Độ tuổi cấp GPLX: Người đủ 18 tuổi trở lên được cấp GPLX hạng A1 (mô tô đến 125 cm3) và hạng B (ô tô chở người đến 8 chỗ, ô tô tải đến 3.500 kg). Người từ 16 đến dưới 18 tuổi chỉ được lái xe gắn máy dưới 50 cm3."
+  },
+  {
+   "id": 120,
+   "giai_thich": "Độ tuổi lái xe khách lớn: Người đủ 27 tuổi trở lên mới được cấp GPLX hạng D (lái xe chở người trên 29 chỗ, xe khách giường nằm)."
+  },
+  {
+   "id": 121,
+   "giai_thich": "Theo Luật Trật tự, an toàn giao thông đường bộ 2024: Độ tuổi tối đa của người lái xe ô tô chở người trên 29 chỗ, xe khách giường nằm là đủ 57 tuổi đối với nam và đủ 55 tuổi đối với nữ."
+  },
+  {
+   "id": 122,
+   "giai_thich": "Độ tuổi lái xe ô tô chở người từ trên 16 chỗ đến 29 chỗ (hạng D2) là đủ 24 tuổi trở lên."
+  },
+  {
+   "id": 123,
+   "giai_thich": "Người đủ từ 16 tuổi đến dưới 18 tuổi CHỈ ĐƯỢC PHÉP điều khiển xe gắn máy (có dung tích xi-lanh dưới 50 cm3 hoặc xe máy điện có công suất động cơ điện không quá 4 kW). Chưa được cấp bằng lái ô tô hoặc mô tô."
+  },
+  {
+   "id": 124,
+   "giai_thich": "Người có GPLX hạng A1 KHÔNG ĐƯỢC PHÉP điều khiển xe mô tô ba bánh (xe ba bánh dành riêng cho thương binh, người khuyết tật yêu cầu giấy phép lái xe chuyên biệt)."
+  },
+  {
+   "id": 125,
+   "giai_thich": "Theo Luật mới áp dụng từ 01/01/2025: Giấy phép lái xe hạng A1 cấp cho người lái xe mô tô hai bánh có dung tích xi-lanh ĐẾN 125 cm3 hoặc công suất động cơ điện đến 11 kW."
+  },
+  {
+   "id": 126,
+   "giai_thich": "Giấy phép lái xe hạng A cấp cho người điều khiển xe mô tô hai bánh có dung tích xi-lanh TRÊN 125 cm3 (hoặc xe điện trên 11 kW) và được phép điều khiển toàn bộ các loại xe quy định cho hạng A1."
+  },
+  {
+   "id": 127,
+   "giai_thich": "Hạng B (theo luật mới): Được lái ô tô chở người đến 8 chỗ (không kể ghế lái), ô tô tải và ô tô chuyên dùng có khối lượng toàn bộ theo thiết kế đến 3.500 kg; kéo rơ moóc đến 750 kg."
+  },
+  {
+   "id": 128,
+   "giai_thich": "Hạng C1: Được cấp cho người lái xe ô tô tải và ô tô chuyên dùng có khối lượng toàn bộ từ TRÊN 3.500 kg ĐẾN 7.500 kg; kéo rơ moóc đến 750 kg."
+  },
+  {
+   "id": 129,
+   "giai_thich": "Hạng C: Được lái ô tô tải và ô tô chuyên dùng có khối lượng toàn bộ TRÊN 7.500 kg và toàn bộ các loại xe quy định cho hạng C1; kéo rơ moóc đến 750 kg."
+  },
+  {
+   "id": 130,
+   "giai_thich": "Hạng D1: Được lái ô tô chở người từ TRÊN 8 CHỖ ĐẾN 16 CHỖ (không kể ghế lái); kéo rơ moóc đến 750 kg."
+  },
+  {
+   "id": 131,
+   "giai_thich": "Hạng D2: Được lái ô tô chở người từ TRÊN 16 CHỖ ĐẾN 29 CHỖ (kể cả xe buýt); và toàn bộ xe quy định cho hạng D1; kéo rơ moóc đến 750 kg."
+  },
+  {
+   "id": 132,
+   "giai_thich": "Hạng D: Được lái xe chở khách TRÊN 29 CHỖ, xe giường nằm và toàn bộ các loại xe quy định cho các hạng B, C1, C, D1, D2."
+  },
+  {
+   "id": 133,
+   "giai_thich": "Hạng BE: Cấp cho người đã có GPLX hạng B để kéo thêm rơ moóc có khối lượng toàn bộ TRÊN 750 kg."
+  },
+  {
+   "id": 134,
+   "giai_thich": "Hạng CE: Cấp cho người đã có GPLX hạng C để kéo thêm rơ moóc có khối lượng toàn bộ TRÊN 750 kg, hoặc lái xe ô tô đầu kéo kéo sơ mi rơ moóc."
+  },
+  {
+   "id": 135,
+   "giai_thich": "Hạng DE: Cấp cho người đã có GPLX hạng D để kéo thêm rơ moóc có khối lượng toàn bộ TRÊN 750 kg, hoặc điều khiển ô tô chở khách nối toa."
+  },
+  {
+   "id": 136,
+   "giai_thich": "Người tập lái ô tô khi tham gia giao thông bắt buộc phải thực hành trên xe tập lái có gắn biển 'TẬP LÁI', chạy trên các tuyến đường được phê duyệt tập lái và có giáo viên dạy lái ngồi bên cạnh bảo trợ tay lái."
+  },
+  {
+   "id": 137,
+   "giai_thich": "Người lái xe khi tham gia giao thông phải đủ độ tuổi, có đủ sức khỏe và sở hữu Giấy phép lái xe hợp lệ (đang còn điểm và còn hạn sử dụng) phù hợp với loại xe đang điều khiển."
+  },
+  {
+   "id": 138,
+   "giai_thich": "Khi lái xe, người lái phải mang theo: Đăng ký xe (hoặc bản sao kèm biên bản ngân hàng thế chấp), GPLX, Chứng nhận đăng kiểm và Bảo hiểm TNDS bắt buộc. Trường hợp các giấy tờ đã tích hợp trên VNeID thì việc xuất trình qua VNeID có giá trị tương đương."
+  },
+  {
+   "id": 139,
+   "giai_thich": "GPLX bị thu hồi khi: Không đủ điều kiện sức khỏe theo kết luận y tế; GPLX được cấp sai quy định; hoặc quá thời hạn tạm giữ/hết thời hiệu xử phạt mà người vi phạm không đến nhận không có lý do chính đáng."
+  },
+  {
+   "id": 140,
+   "giai_thich": "Quy định trừ điểm bằng lái: Người có GPLX chưa bị trừ hết 12 điểm sẽ được TỰ ĐỘNG PHỤC HỒI ĐỦ 12 ĐIỂM nếu trong thời hạn 12 tháng kể từ ngày bị trừ điểm gần nhất không bị trừ thêm điểm nào."
+  },
+  {
+   "id": 141,
+   "giai_thich": "Nếu bị trừ hết 12 điểm: Sau thời hạn ÍT NHẤT 06 THÁNG kể từ ngày bị trừ hết điểm, người lái xe phải tham gia kiểm tra lại kiến thức pháp luật về TTATGT đường bộ, khi đạt yêu cầu mới được phục hồi đủ 12 điểm."
+  },
+  {
+   "id": 142,
+   "giai_thich": "Chủ xe đứng tên trên Giấy chứng nhận đăng ký xe khi mua bán, chuyển nhượng mà chưa làm thủ tục thu hồi đăng ký, biển số thì vẫn phải TIẾP TỤC CHỊU MỌI TRÁCH NHIỆM pháp lý của chủ xe."
+  },
+  {
+   "id": 143,
+   "giai_thich": "Xe bắt buộc phải lắp thiết bị giám sát hành trình (hộp đen): Toàn bộ xe ô tô kinh doanh vận tải (chở khách từ 8 chỗ trở lên, xe đầu kéo, xe tải chở hàng...) và xe cứu thương để kiểm soát lộ trình và an toàn giao thông."
+  },
+  {
+   "id": 144,
+   "giai_thich": "Xe máy chuyên dùng, xe gắn máy (kể cả xe máy điện) khi tham gia giao thông trên đường bộ chỉ được chạy với tốc độ tối đa cho phép là 40 km/h."
+  },
+  {
+   "id": 145,
+   "giai_thich": "Trong khu đông dân cư trên đường đôi (hoặc đường một chiều có từ 2 làn xe cơ giới trở lên): Tốc độ tối đa của ô tô con, xe mô tô, ô tô chở người đến 28 chỗ là 60 km/h."
+  },
+  {
+   "id": 146,
+   "giai_thich": "Trong khu đông dân cư trên đường hai chiều (hoặc đường một chiều có 1 làn xe cơ giới): Tốc độ tối đa của ô tô con, xe mô tô, ô tô chở người đến 28 chỗ là 50 km/h."
+  },
+  {
+   "id": 147,
+   "giai_thich": "Trong khu đông dân cư trên đường 2 chiều (hoặc 1 chiều 1 làn xe cơ giới): Ô tô tải, xe khách trên 28 chỗ được chạy tốc độ tối đa là 50 km/h (riêng xe gắn máy luôn chỉ được chạy tối đa 40 km/h)."
+  },
+  {
+   "id": 148,
+   "giai_thich": "Trong khu đông dân cư trên đường đôi (hoặc 1 chiều có từ 2 làn cơ giới): Ô tô tải, ô tô khách trên 28 chỗ được chạy tốc độ tối đa là 60 km/h."
+  },
+  {
+   "id": 149,
+   "giai_thich": "Ngoài khu đông dân cư trên đường đôi có dải phân cách giữa: Tốc độ tối đa 90 km/h áp dụng cho xe ô tô chở người đến 28 chỗ (trừ buýt) và ô tô tải có trọng tải đến 3,5 tấn."
+  },
+  {
+   "id": 150,
+   "giai_thich": "Ngoài khu đông dân cư trên đường đôi có dải phân cách giữa: Tốc độ tối đa 80 km/h áp dụng cho xe ô tô chở người trên 28 chỗ và ô tô tải có trọng tải trên 3,5 tấn."
+  },
+  {
+   "id": 151,
+   "giai_thich": "Ngoài khu đông dân cư trên đường đôi có dải phân cách giữa: Tốc độ tối đa 70 km/h áp dụng cho xe buýt, xe đầu kéo kéo sơ mi rơ moóc, xe mô tô và ô tô chuyên dùng."
+  },
+  {
+   "id": 152,
+   "giai_thich": "Ngoài khu đông dân cư trên đường đôi có dải phân cách giữa: Tốc độ tối đa 60 km/h áp dụng cho các loại xe kéo rơ moóc, kéo xe khác, ô tô trộn vữa, ô tô xi téc."
+  },
+  {
+   "id": 153,
+   "giai_thich": "Ngoài khu đông dân cư trên đường hai chiều (không có dải phân cách giữa): Tốc độ tối đa 80 km/h áp dụng cho xe ô tô chở người đến 28 chỗ và ô tô tải trọng tải đến 3,5 tấn."
+  },
+  {
+   "id": 154,
+   "giai_thich": "Ngoài khu đông dân cư trên đường hai chiều: Tốc độ tối đa 70 km/h áp dụng cho ô tô chở người trên 28 chỗ và ô tô tải có trọng tải trên 3,5 tấn."
+  },
+  {
+   "id": 155,
+   "giai_thich": "Ngoài khu đông dân cư trên đường hai chiều: Tốc độ tối đa 60 km/h áp dụng cho xe buýt, xe đầu kéo kéo sơ mi rơ moóc, ô tô chuyên dùng và xe mô tô."
+  },
+  {
+   "id": 156,
+   "giai_thich": "Ngoài khu đông dân cư trên đường hai chiều: Tốc độ tối đa 50 km/h áp dụng cho ô tô kéo rơ moóc, kéo xe khác, ô tô trộn bê tông, ô tô xi téc."
+  },
+  {
+   "id": 157,
+   "giai_thich": "Xe chở hàng bốn bánh có gắn động cơ tham gia giao thông trong phạm vi và thời gian cho phép được chạy với tốc độ tối đa cho phép là 50 km/h."
+  },
+  {
+   "id": 158,
+   "giai_thich": "Khoảng cách an toàn tối thiểu: Khi xe chạy với tốc độ từ trên 80 km/h đến 100 km/h trên đường khô ráo, khoảng cách an toàn tối thiểu với xe liền trước là 70 mét."
+  },
+  {
+   "id": 159,
+   "giai_thich": "Khoảng cách an toàn tối thiểu: Khi xe chạy với tốc độ từ trên 100 km/h đến 120 km/h trên đường khô ráo, khoảng cách an toàn tối thiểu với xe liền trước là 100 mét."
+  },
+  {
+   "id": 160,
+   "giai_thich": "Khoảng cách an toàn tối thiểu: Khi xe chạy với tốc độ từ trên 60 km/h đến 80 km/h trên đường khô ráo, khoảng cách an toàn tối thiểu với xe liền trước là 55 mét."
+  },
+  {
+   "id": 161,
+   "giai_thich": "Khoảng cách an toàn tối thiểu: Khi xe chạy với tốc độ 60 km/h trên đường khô ráo, khoảng cách an toàn tối thiểu với xe liền trước là 35 mét."
+  },
+  {
+   "id": 162,
+   "giai_thich": "Khi điều khiển xe chạy với tốc độ dưới 60 km/h, người lái xe phải chủ động giữ khoảng cách an toàn phù hợp với mật độ giao thông và diễn biến thực tế trên đường."
+  },
+  {
+   "id": 163,
+   "giai_thich": "Khi gặp biển báo nguy hiểm và cảnh báo, người lái xe bắt buộc phải giảm tốc độ dưới mức tối đa cho phép, chú ý quan sát để sẵn sàng xử lý các tình huống bất ngờ."
+  },
+  {
+   "id": 164,
+   "giai_thich": "Xe đưa đón trẻ em mầm non, học sinh được ưu tiên tổ chức phân luồng, điều tiết giao thông và bố trí điểm dừng, đỗ thuận tiện, an toàn tại khu vực cổng trường học và các điểm đón trả."
+  },
+  {
+   "id": 165,
+   "giai_thich": "Người lái xe phải giảm tốc độ hoặc dừng lại nhường đường: tại vạch cho người đi bộ qua đường; nơi đường sắt giao nhau; đường đèo dốc hiểm trở; khu vực gần trường học, bệnh viện, chợ đông người."
+  },
+  {
+   "id": 166,
+   "giai_thich": "Tại những đoạn đường không có biển báo hạn chế tốc độ hoặc khoảng cách an toàn, người lái xe vẫn bắt buộc phải chấp hành các quy định chung của luật về giới hạn tốc độ và khoảng cách an toàn tối thiểu."
+  },
+  {
+   "id": 167,
+   "giai_thich": "Khi gặp xe buýt đang dừng đón trả khách, người điều khiển xe phía sau phải quan sát cẩn thận, giảm tốc độ và chú ý người đi bộ có thể bất ngờ bước ra từ đầu xe buýt."
+  },
+  {
+   "id": 168,
+   "giai_thich": "Quy định vận tải khách: Bắt buộc đón trả khách đúng nơi quy định; hướng dẫn khách dùng trang thiết bị an toàn (thắt dây an toàn); cấm chở người trên nóc hoặc để khách đu bám bên ngoài."
+  },
+  {
+   "id": 169,
+   "giai_thich": "Trong hoạt động vận tải đường bộ, nghiêm cấm vận chuyển hàng hóa cấm lưu hành, vận chuyển động vật hoang dã trái phép hoặc chở hóa chất nguy hiểm không tuân thủ quy định an toàn."
+  },
+  {
+   "id": 170,
+   "giai_thich": "Trong vận tải hành khách, nghiêm cấm các hành vi: Đe dọa, xúc phạm, chèn ép, tranh giành hành khách; sang nhượng/chuyển tải hành khách giữa đường nhằm trốn tránh bị xử phạt quá tải."
+  },
+  {
+   "id": 171,
+   "giai_thich": "Quy định an toàn lao động: Thời gian lái xe LIÊN TỤC của người lái xe ô tô kinh doanh vận tải KHÔNG ĐƯỢC QUÁ 4 GIỜ để phòng ngừa ngủ gật và mất tập trung."
+  },
+  {
+   "id": 172,
+   "giai_thich": "Tổng thời gian làm việc của người lái xe ô tô kinh doanh vận tải trong một ngày KHÔNG ĐƯỢC QUÁ 10 GIỜ nhằm bảo đảm sức khỏe và khả năng phản xạ an toàn."
+  },
+  {
+   "id": 173,
+   "giai_thich": "Trước khi xuất bến, lái xe và nhân viên phục vụ phải kiểm tra kỹ các điều kiện an toàn kỹ thuật của xe, đồng thời hướng dẫn hành khách thắt dây an toàn và cách thoát hiểm khẩn cấp."
+  },
+  {
+   "id": 174,
+   "giai_thich": "Xe chở học sinh mầm non, tiểu học bắt buộc phải có thiết bị ghi hình và thiết bị cảnh báo/chống bỏ quên trẻ em trên xe; có niên hạn không quá 20 năm; có dây đai an toàn phù hợp lứa tuổi."
+  },
+  {
+   "id": 175,
+   "giai_thich": "Vận chuyển động vật sống phải có đầy đủ giấy tờ kiểm dịch, xe có kết cấu chuồng/thùng chuyên dùng bảo đảm an toàn và không gây ô nhiễm môi trường trên đường."
+  },
+  {
+   "id": 176,
+   "giai_thich": "Vận chuyển hàng hóa nguy hiểm (chất độc, chất dễ cháy nổ...) bắt buộc phải có Giấy phép vận chuyển do cơ quan có thẩm quyền cấp và phải bố trí người áp tải chuyên trách khi cần thiết."
+  },
+  {
+   "id": 177,
+   "giai_thich": "Xe ô tô tay lái nghịch (bên phải) của người nước ngoài vào Việt Nam du lịch phải chấp hành nghiêm luật pháp Việt Nam, chạy đúng lộ trình cấp phép và phải có xe hướng dẫn/hỗ trợ đi cùng đoàn."
+  },
+  {
+   "id": 178,
+   "giai_thich": "Vận chuyển hành khách, hàng hóa bằng mô tô, xe gắn máy phải bảo đảm an toàn kỹ thuật của phương tiện, mang đủ giấy tờ, xếp hàng không vượt quá chiều rộng/chiều cao quy định."
+  },
+  {
+   "id": 179,
+   "giai_thich": "Vận chuyển hàng siêu trường, siêu trọng phải chạy đúng tốc độ ghi trong Giấy phép lưu hành, gắn cờ/đèn báo kích thước hàng và phải bố trí xe dẫn đường hỗ trợ khi cần thiết."
+  },
+  {
+   "id": 180,
+   "giai_thich": "Xe cứu hộ giao thông đường bộ phải có dấu hiệu nhận diện đặc trưng, gắn thiết bị giám sát hành trình, camera hành trình và tuân thủ đúng tải trọng kéo/chở cho phép."
+  },
+  {
+   "id": 181,
+   "giai_thich": "Người lái xe kinh doanh vận tải rèn luyện tốt đạo đức nghề nghiệp sẽ được khách hàng, xã hội tôn trọng, đồng nghiệp tin cậy, đóng góp tích cực cho doanh nghiệp và cộng đồng."
+  },
+  {
+   "id": 182,
+   "giai_thich": "Khi gặp người khuyết tật sử dụng xe lăn hoặc người đi bộ qua đường, người lái xe văn minh phải chủ động giảm tốc độ, dừng lại nhường đường an toàn tuyệt đối."
+  },
+  {
+   "id": 183,
+   "giai_thich": "Nâng cao đạo đức nghề nghiệp đòi hỏi người lái xe phải: giữ gìn, bảo dưỡng xe tốt, tiết kiệm nhiên liệu; chấp hành nghiêm luật giao thông, lịch sự với khách hàng và hỗ trợ đồng nghiệp."
+  },
+  {
+   "id": 184,
+   "giai_thich": "Người lái xe khách có đạo đức nghề nghiệp phải có thái độ văn minh, nhã nhặn, tôn trọng hành khách; đặc biệt ưu tiên giúp đỡ người già, người khuyết tật, phụ nữ mang thai và trẻ nhỏ."
+  },
+  {
+   "id": 185,
+   "giai_thich": "Văn hóa giao thông gồm 2 yếu tố cốt lõi: 1. Hiểu biết và tự giác chấp hành pháp luật về giao thông; 2. Ý thức trách nhiệm, sự tôn trọng, nhường nhịn và ứng xử văn minh với mọi người cùng tham gia giao thông."
+  },
+  {
+   "id": 186,
+   "giai_thich": "Lái xe qua vũng nước có người đi xe máy hoặc người đi bộ bên cạnh: Người lái xe có văn hóa phải GIẢM TỐC ĐỘ, đi chậm để tránh làm bắn nước bẩn tung tóe lên người khác."
+  },
+  {
+   "id": 187,
+   "giai_thich": "Hành vi vượt đèn đỏ, đi sai làn, phóng nhanh vượt ẩu, đi vào đường cấm không chỉ thể hiện sự thiếu văn hóa giao thông nghiêm trọng mà còn là hành vi vi phạm pháp luật bị xử phạt nghiêm khắc."
+  },
+  {
+   "id": 188,
+   "giai_thich": "Máu chảy ngoài phun thành tia và đập theo nhịp tim là dấu hiệu tổn thương ĐỘNG MẠCH. Trường hợp này nguy hiểm đến tính mạng trong tích tắc, bắt buộc phải THỰC HIỆN CẦM MÁU KHÔNG TRỰC TIẾP (chặn động mạch hoặc đặt garo phía trên vết thương)."
+  },
+  {
+   "id": 189,
+   "giai_thich": "Người có văn hóa giao thông luôn tôn trọng cộng đồng, tuân thủ nghiêm ngặt luật lệ và sẵn sàng nhường nhịn, giúp đỡ người khác trên đường."
+  },
+  {
+   "id": 190,
+   "giai_thich": "Người lái xe có văn hóa phải chấp hành đầy đủ hệ thống báo hiệu giao thông, đi đúng tốc độ và luôn chủ động nhường đường cho người yếu thế (người già, trẻ em, người đi bộ, người tàn tật)."
+  },
+  {
+   "id": 191,
+   "giai_thich": "Văn hóa giao thông của người đi xe mô tô: Đi đúng làn đường bên phải; luôn đội mũ bảo hiểm đạt chuẩn kỹ thuật quốc gia và cài quai đúng cách khi tham gia giao thông."
+  },
+  {
+   "id": 192,
+   "giai_thich": "Người lái xe văn minh thực hiện nghiêm khẩu hiệu: 'Đã uống rượu bia - Không lái xe', đi đúng làn đường, dừng đỗ xe đúng vị trí quy định, không gây cản trở giao thông."
+  },
+  {
+   "id": 193,
+   "giai_thich": "Sử dụng còi văn minh: Chỉ bấm còi khi thực sự cần thiết báo hiệu nguy hiểm; cấm bấm còi dồn dập, liên tục hoặc dùng còi độ âm lượng lớn gây giật mình hoảng loạn cho người đi đường."
+  },
+  {
+   "id": 194,
+   "giai_thich": "Trách nhiệm của người gây hoặc liên quan đến tai nạn: Dừng ngay xe, giữ nguyên hiện trường, hỗ trợ cấp cứu người bị nạn, báo ngay công an/y tế và cung cấp đầy đủ thông tin xác thực."
+  },
+  {
+   "id": 195,
+   "giai_thich": "Người có mặt tại hiện trường tai nạn có trách nhiệm: Cứu chữa, sơ cứu kịp thời người bị nạn, báo tin ngay cho công an hoặc cơ sở y tế gần nhất, và tham gia bảo vệ hiện trường, tài sản của nạn nhân."
+  },
+  {
+   "id": 196,
+   "giai_thich": "Sơ cứu ban đầu khi nạn nhân ngừng thở: Đặt nạn nhân nằm ngửa trên nền phẳng, khai thông đường thở (lấy dị vật, móc đờm dãi) và lập tức thực hiện ép tim ngoài lồng ngực kết hợp hô hấp nhân tạo."
+  },
+  {
+   "id": 197,
+   "giai_thich": "Hành vi gây tai nạn rồi bỏ trốn để trốn tránh trách nhiệm, hoặc thấy người gặp nạn mà bỏ mặc không cứu giúp là hành vi vi phạm đạo đức nghiêm trọng và BỊ PHÁP LUẬT NGHIÊM CẤM (có thể bị xử lý hình sự phạt tù)."
+  },
+  {
+   "id": 198,
+   "giai_thich": "Thấy người đi bộ đang sang đường trên vạch kẻ đường: Người lái xe phải giảm tốc độ và nhường đường cho người đi bộ đi qua an toàn trước."
+  },
+  {
+   "id": 199,
+   "giai_thich": "Khi gặp vụ tai nạn giao thông trên đường, người lái xe có trách nhiệm dừng xe an toàn, kiểm tra tình trạng người bị nạn, hỗ trợ cứu giúp và gọi ngay cho cơ quan chức năng (115, 114, 113)."
+  },
+  {
+   "id": 200,
+   "giai_thich": "Khi đường phố ùn tắc: Người lái xe có văn hóa phải kiên nhẫn đi đúng làn bên phải, chấp hành hướng dẫn của CSGT hoặc đèn tín hiệu; tuyệt đối không leo vỉa hè hay lấn sang làn ngược chiều làm tắc nghẽn thêm."
+  },
+  {
+   "id": 201,
+   "giai_thich": "Hành vi thiếu văn hóa khi kẹt xe: Bấm còi inh ỏi, leo lên vỉa hè dành cho người đi bộ, lấn làn đường ngược chiều gây xung đột kẹt cứng giao thông."
+  },
+  {
+   "id": 202,
+   "giai_thich": "Biện pháp phòng ngừa cháy nổ ô tô, xe máy: Không đấu nối thêm thiết bị điện sai chuẩn; bảo dưỡng định kỳ; không để bật lửa, bình xịt, sạc dự phòng dưới trời nắng; kiểm tra rò rỉ nhiên liệu và sạc xe điện an toàn."
+  },
+  {
+   "id": 203,
+   "giai_thich": "Chữa cháy phương tiện: Nhanh chóng tắt khóa điện, hô hoán trợ giúp và gọi 114. Sử dụng bình chữa cháy chuyên dụng bột/khí CO2, cát hoặc chăn vải ướt phủ trùm lên đám cháy xăng dầu (không dội nước vào đám cháy xăng tràn)."
+  },
+  {
+   "id": 204,
+   "giai_thich": "Khi phát hiện khói, lửa bốc lên từ xe: Phải bình tĩnh tấp xe sát lề đường, tránh xa nơi đông người và chất dễ cháy, tắt ngay khóa điện rồi dùng bình cứu hỏa dập lửa."
+  },
+  {
+   "id": 205,
+   "giai_thich": "Xử lý sơ cứu nạn nhân bị bỏng: Đưa nạn nhân ra khỏi nguồn nhiệt, dội hoặc ngâm vùng bỏng vào nước sạch mát (không dùng đá lạnh hay nước quá lạnh), đắp gạc sạch, bù nước và nhanh chóng chuyển đến cơ sở y tế."
+  },
+  {
+   "id": 206,
+   "giai_thich": "Khi xe tay ga xuống dốc dài: Giữ tay ga ở mức độ phù hợp để duy trì độ bám côn, kết hợp nhịp nhàng cả phanh trước và phanh sau. Tuyệt đối không tắt máy thả trôi vì sẽ mất hoàn toàn lực hãm động cơ và mất trợ lực lái."
+  },
+  {
+   "id": 207,
+   "giai_thich": "Khởi hành xe ô tô số tự động (AT): Bắt buộc phải ĐẠP HẾT HÀNH TRÌNH BÀN ĐẠP PHANH CHÂN, sau đó mới gạt cần số sang D hoặc R, hạ phanh tay, quan sát kỹ rồi từ từ nhấc chân phanh cho xe lăn bánh để tránh xe chồm lên đột ngột."
+  },
+  {
+   "id": 208,
+   "giai_thich": "Thao tác nhả phanh tay cơ khí: Dùng tay phải bóp khóa hãm (nút bấm ở đầu cần phanh) và đẩy cần phanh về phía trước hết hành trình. Nếu bị kẹt cứng, hơi kéo nhẹ cần phanh ra sau đồng thời bóp khóa hãm rồi hạ xuống."
+  },
+  {
+   "id": 209,
+   "giai_thich": "Khởi hành ô tô số sàn (MT) trên đường bằng: Đạp côn hết hành trình -> vào số 1 -> hạ hết phanh tay -> tăng ga nhẹ -> nhả côn từ từ đến 1/2 hành trình cho xe bắt côn bắt đầu chuyển động, sau đó tiếp tục nhả đều côn và đệm thêm ga."
+  },
+  {
+   "id": 210,
+   "giai_thich": "Kỹ thuật quay đầu xe an toàn: Quay đầu với tốc độ chậm; bật xi-nhan báo trước; nếu quay đầu ở nơi nguy hiểm (vực sâu, sườn dốc hẹp) thì nguyên tắc vàng là 'TIẾN ĐẦU VỀ PHÍA NGUY HIỂM, LÙI ĐUÔI VỀ PHÍA AN TOÀN' để người lái luôn quan sát trực diện được mép nguy hiểm."
+  },
+  {
+   "id": 211,
+   "giai_thich": "Tư thế ngồi lái xe chuẩn: Chỉnh ghế ngồi thoải mái để chân đạp hết tầm phanh, lưng thẳng tựa sát đệm ghế. Hai tay cầm vô lăng ở vị trí chuẩn '9 giờ 15 phút' hoặc '10 giờ 10 phút' (tay trái 9-10h, tay phải 2-4h)."
+  },
+  {
+   "id": 212,
+   "giai_thich": "Lái xe lên dốc cao: Chủ động về số thấp từ chân dốc để xe đủ mô-men xoắn leo dốc; gần lên đến đỉnh dốc phải đi chậm, bám sát bên phải và bấm còi/nháy đèn báo hiệu cho xe ngược chiều ở góc khuất đỉnh dốc."
+  },
+  {
+   "id": 213,
+   "giai_thich": "Kỹ thuật đổ đèo, xuống dốc dài: Bắt buộc phải VỀ SỐ THẤP để sử dụng lực ghì hãm của động cơ (phanh động cơ), kết hợp rà phanh chân ngắt quãng. Tuyệt đối KHÔNG ĐƯỢC về số 0 (N) hay tắt máy vì sẽ làm phanh chân bị quá nhiệt dẫn đến cháy phanh, mất phanh hoàn toàn."
+  },
+  {
+   "id": 214,
+   "giai_thich": "Muốn dừng xe khi đang xuống dốc: Bật xi-nhan phải, tấp sát lề phải; đạp phanh sớm và sâu hơn đường bằng; về số 1; khi xe dừng hẳn thì về N, kéo phanh tay và có thể chèn bánh xe nếu dốc cao."
+  },
+  {
+   "id": 215,
+   "giai_thich": "Kỹ thuật vào cua (đường vòng): Giảm tốc độ TRƯỚC KHI VÀO CUA, về số thấp phù hợp, giữ đều ga trong cua và quay vô lăng theo bán kính vòng cua. Tránh phanh gấp hoặc đạp mạnh ga giữa khúc cua vì dễ làm xe văng đuôi trượt bánh."
+  },
+  {
+   "id": 216,
+   "giai_thich": "Thao tác rẽ phải an toàn: Bật xi-nhan phải trước một khoảng cách an toàn, giảm tốc độ, quan sát kỹ gương chiếu hậu và điểm mù bên phải, sau đó từ từ ôm cua rẽ phải sát mép đường bên phải."
+  },
+  {
+   "id": 217,
+   "giai_thich": "Thao tác rẽ trái an toàn: Bật xi-nhan trái từ xa, giảm tốc độ, quan sát các phương tiện ngược chiều và phía sau, chuyển dần sang làn sát tim đường rồi từ từ rẽ trái khi an toàn."
+  },
+  {
+   "id": 218,
+   "giai_thich": "Vượt qua rãnh lớn cắt ngang đường: Vào số 1, cho 2 bánh trước từ từ tụt xuống rãnh, tăng nhẹ ga cho bánh trước bò lên rãnh; tiếp tục để 2 bánh sau từ từ xuống rãnh rồi tăng đều ga cho xe vượt qua rãnh êm ái."
+  },
+  {
+   "id": 219,
+   "giai_thich": "Lái xe qua đường sắt: Nếu chuông reo/rào hạ thì dừng trước vạch an toàn, kéo phanh tay nếu dốc. Nếu không có tàu thì về số thấp, giữ đều ga, KHÔNG ĐƯỢC CHUYỂN SỐ giữa đường ray để tránh bị kẹt số hoặc chết máy trên đường ray."
+  },
+  {
+   "id": 220,
+   "giai_thich": "Lái xe tải tự đổ (xe ben): Đi đường xấu phải đi chậm để tránh lệch thùng ben; khi đổ hàng phải chọn nền đất cứng phẳng, kéo hết phanh đỗ rồi mới nâng ben; đổ xong phải hạ hết thùng ben trước khi lăn bánh."
+  },
+  {
+   "id": 221,
+   "giai_thich": "Thao tác tăng số (xe số sàn): Tuyệt đối KHÔNG NHÌN XUỐNG BUỒNG LÁI (mắt luôn nhìn đường); tăng số theo thứ tự từ thấp đến cao (1 -> 2 -> 3 -> 4...) phối hợp tay chân nhịp nhàng."
+  },
+  {
+   "id": 222,
+   "giai_thich": "Thao tác giảm số: Mắt luôn nhìn bao quát đường phía trước, không nhìn xuống cần số; giảm số theo thứ tự từ cao về thấp, vù ga đồng tốc phù hợp để xe không bị giật khựng."
+  },
+  {
+   "id": 223,
+   "giai_thich": "Để giảm tốc độ an toàn khi xuống dốc dài: Người lái xe phải VỀ SỐ THẤP thích hợp, nhả bàn đạp ga và kết hợp phanh chân có mức độ để kiểm soát tốc độ xe."
+  },
+  {
+   "id": 224,
+   "giai_thich": "Lái xe qua đường ngập nước: Quan sát mực nước (không ngập quá tâm bánh xe/cổ hút gió), VỀ SỐ THẤP (số 1 hoặc số L), GIỮ ĐỀU GA ở mức vừa phải để nước không tràn vào ống xả, không dừng xe hoặc chuyển số giữa vùng ngập."
+  },
+  {
+   "id": 225,
+   "giai_thich": "Gặp xe ngược chiều ban đêm: Bắt buộc CHUYỂN TỪ PHA SANG CỐT (đèn chiếu gần); mắt nhìn chếch sang lề đường bên phải xe mình để tránh bị ánh sáng đèn đối diện gây lóa mù mắt tạm thời."
+  },
+  {
+   "id": 226,
+   "giai_thich": "Lái xe trên đường trơn ướt, bùn lầy: Giữ thẳng lái theo vệt bánh xe trước, đi số thấp, giữ đều ga; TUYỆT ĐỐI KHÔNG ĐÁNH LÁI NGOẶT VÀ KHÔNG PHANH GẤP vì xe sẽ bị bó cứng bánh mất lái trượt xoay vòng."
+  },
+  {
+   "id": 227,
+   "giai_thich": "Biểu tượng chữ (P) hoặc dấu chấm than (!) màu đỏ trong vòng tròn: Báo hiệu hệ thống PHANH ĐỖ (phanh tay) đang hoạt động hoặc hệ thống phanh gặp sự cố thiếu dầu phanh."
+  },
+  {
+   "id": 228,
+   "giai_thich": "Biểu tượng bình dầu có giọt dầu nhỏ màu đỏ: Cảnh báo ÁP SUẤT DẦU BÔI TRƠN Ở MỨC THẤP hoặc thiếu dầu nhớt động cơ. Phải lập tức tấp xe vào lề tắt máy kiểm tra, nếu cố chạy sẽ bị bó kẹt lột dên phá hỏng động cơ."
+  },
+  {
+   "id": 229,
+   "giai_thich": "Biểu tượng hình chiếc ô tô mở toang cửa: Cảnh báo CỬA XE ĐÓNG CHƯA CHẶT hoặc có cửa xe chưa đóng, gây nguy cơ rơi hành khách ra ngoài khi xe chạy."
+  },
+  {
+   "id": 230,
+   "giai_thich": "Biểu tượng người ngồi thắt dây chéo màu đỏ: Báo hiệu người lái xe hoặc hành khách ngồi hàng ghế trước CHƯA CÀI DÂY ĐAI AN TOÀN."
+  },
+  {
+   "id": 231,
+   "giai_thich": "Biểu tượng cây bơm xăng màu vàng: Báo hiệu xe SẮP HẾT NHIÊN LIỆU, người lái cần chủ động tìm trạm cấp nhiên liệu gần nhất."
+  },
+  {
+   "id": 232,
+   "giai_thich": "Xăng sinh học (như E5, E10) và khí sinh học (CNG, LPG) khi đốt cháy sinh ra ít khí độc hại (CO, HC, muội than) hơn rất nhiều so với xăng khoáng và dầu diesel thông thường, giúp bảo vệ môi trường."
+  },
+  {
+   "id": 233,
+   "giai_thich": "Biện pháp tiết kiệm nhiên liệu tối ưu: Thường xuyên bảo dưỡng xe định kỳ; kiểm tra áp suất lốp đúng chuẩn (lốp non gây hao 5-10% xăng); lái xe đều ga, giữ khoảng cách và tốc độ ổn định."
+  },
+  {
+   "id": 234,
+   "giai_thich": "Mở cửa xe an toàn: Quan sát kỹ gương chiếu hậu và ngoái đầu nhìn phía sau; mở hé cửa 10-15 cm để người phía sau thấy; khi thấy thật an toàn mới mở rộng cửa vừa đủ để bước xuống xe."
+  },
+  {
+   "id": 235,
+   "giai_thich": "Qua đường sắt không rào chắn: Dừng xe cách đường ray tối thiểu 5m, quan sát 2 phía; nếu không có tàu thì về số thấp, giữ đều ga vượt dứt khoát qua đường sắt."
+  },
+  {
+   "id": 236,
+   "giai_thich": "Quy tắc an toàn qua đường sắt không người gác: Dừng lại trước vạch dừng, hạ cửa kính, tắt thiết bị âm thanh để lắng nghe tiếng còi tàu và quan sát 2 phía đường ray. Hành động này là hoàn toàn CHÍNH XÁC."
+  },
+  {
+   "id": 237,
+   "giai_thich": "Lái xe số tự động trên đường trơn, lầy lội: Chủ động gạt cần số về các cấp số thấp (L, D1, D2 hoặc chế độ M/S gán số 1, 2) kết hợp phanh chân để tăng lực kéo và ghì xe an toàn."
+  },
+  {
+   "id": 238,
+   "giai_thich": "Khi động cơ đang nổ máy mà muốn chỉnh ghế ngồi: Cần số bắt buộc phải để ở vị trí N (số mo) hoặc P (đỗ) và kéo phanh tay, tránh trường hợp chân vô tình đạp trúng chân ga làm xe vọt đi gây tai nạn."
+  },
+  {
+   "id": 239,
+   "giai_thich": "Nguyên tắc sống còn khi lái xe số tự động: 'CHỈ SỬ DỤNG CHÂN PHẢI' để luân phiên điều khiển bàn đạp ga và bàn đạp phanh; chân trái luôn đặt cố định trên bàn để chân bên trái, cấm dùng chân trái đạp phanh."
+  },
+  {
+   "id": 240,
+   "giai_thich": "Lái xe trong sương mù hoặc mưa to: Giảm tốc độ, giữ khoảng cách gấp đôi bình thường với xe trước, bật đèn sương mù và đèn chiếu gần (đèn cốt). Tuyệt đối không bật đèn pha vì ánh sáng pha sẽ phản xạ vào hạt sương gây lóa mắt."
+  },
+  {
+   "id": 241,
+   "giai_thich": "Bị đèn pha xe ngược chiều làm chói mắt: Giảm tốc độ, giữ chặt tay lái, hướng ánh nhìn chếch xuống lề đường bên phải xe mình để lấy vạch mép đường làm căn cứ định hướng."
+  },
+  {
+   "id": 242,
+   "giai_thich": "Kỹ năng phanh xe mô tô hiệu quả nhất: Giảm hết tay ga, sử dụng ĐỒNG THỜI CẢ PHANH TRƯỚC VÀ PHANH SAU với lực phanh nhấp nhả nhịp nhàng để xe không bị trượt lết bánh hoặc lộn đầu."
+  },
+  {
+   "id": 243,
+   "giai_thich": "Lái xe qua đoạn đường gồ ghề nhiều ổ gà: Giảm tốc độ, về số thấp, giữ đều chân ga để giảm chấn và bảo vệ hệ thống treo gầm xe."
+  },
+  {
+   "id": 244,
+   "giai_thich": "Gặp mưa to sương mù dày đặc che khuất hoàn toàn tầm nhìn: Bật đèn chiếu gần và đèn khẩn cấp, tìm vị trí an toàn ngoài lề đường dừng xe lại chờ thời tiết cải thiện."
+  },
+  {
+   "id": 245,
+   "giai_thich": "Lái xe dưới trời mưa: Giảm tốc độ, không phanh gấp, không ngoặt vô lăng đột ngột vì mặt đường mưa rất trơn trượt (hiện tượng trượt nước Hydroplaning); bật gạt mưa và đèn chiếu gần."
+  },
+  {
+   "id": 246,
+   "giai_thich": "Lùi xe an toàn: Bật xi-nhan/đèn cảnh báo, quan sát bao quát gương chiếu hậu 2 bên và phía sau xe, lùi xe với tốc độ thật chậm để làm chủ tình huống."
+  },
+  {
+   "id": 247,
+   "giai_thich": "Lái xe trong khu dân cư đông đúc: Luôn làm chủ tốc độ an toàn, nhường đường cho người đi bộ, giữ cự ly an toàn với xe trước và chỉ chuyển làn ở nơi có vạch đứt cho phép."
+  },
+  {
+   "id": 248,
+   "giai_thich": "Nhập làn cao tốc: Bật xi-nhan xin vào làn, cho xe chạy trên làn tăng tốc để đạt vận tốc tương đương với dòng xe đang chạy trên cao tốc, quan sát gương chiếu hậu thấy an toàn mới chuyển làn nhập vào đường chính."
+  },
+  {
+   "id": 249,
+   "giai_thich": "Ra khỏi cao tốc: Quan sát biển báo lối ra từ xa, bật xi-nhan phải, chuyển dần vào làn giảm tốc độ, rà phanh giảm dần tốc độ theo biển chỉ dẫn trước khi rẽ ra khỏi cao tốc."
+  },
+  {
+   "id": 250,
+   "giai_thich": "Làn dừng xe khẩn cấp trên cao tốc CHỈ ĐƯỢC DÙNG khi: xe gặp sự cố kỹ thuật hỏng hóc, tai nạn hoặc trường hợp bất khả kháng về y tế. Cấm dừng đỗ để đi vệ sinh, nghỉ ngơi, chụp ảnh."
+  },
+  {
+   "id": 251,
+   "giai_thich": "Vượt xe container/xe kéo rơ moóc: Tránh rơi vào điểm mù lớn của xe tải rơ moóc; bật xi-nhan và nháy đèn xin vượt; chỉ vượt khi có đủ khoảng trống an toàn; vượt dứt khoát không chạy song song quá lâu."
+  },
+  {
+   "id": 252,
+   "giai_thich": "Xuống dốc dài xe số tự động: Nhả chân ga, gạt cần số về số thấp (vị trí L, D1, D2 hoặc chế độ tay M-) để tận dụng lực hãm của động cơ, phối hợp rà phanh chân ngắt quãng."
+  },
+  {
+   "id": 253,
+   "giai_thich": "Từ đường nhánh ra đường chính: Bắt buộc phải quan sát kỹ, giảm tốc độ và NHƯỜNG ĐƯỜNG cho mọi phương tiện đang lưu thông trên đường chính từ bất kỳ hướng nào tới."
+  },
+  {
+   "id": 254,
+   "giai_thich": "Muốn dùng điện thoại khi lái xe: Người lái xe phải giảm tốc độ, tìm nơi dừng xe/đỗ xe hợp pháp và an toàn theo quy định, dừng hẳn xe lại rồi mới sử dụng điện thoại."
+  },
+  {
+   "id": 255,
+   "giai_thich": "Thói quen nguy hiểm chết người khi lái xe tay ga: CHỈ BÓP PHANH TRƯỚC (tay phanh bên phải). Do phanh đĩa trước ăn rất gắt, khi chỉ bóp phanh trước bánh trước sẽ bị khóa cứng gây trượt đổ xe hoặc lộn nhào qua đầu xe."
+  },
+  {
+   "id": 256,
+   "giai_thich": "Mở cửa xe an toàn: Quan sát gương chiếu hậu và ngoái đầu nhìn sau; mở hé cửa thăm dò; khi chắc chắn an toàn mới mở rộng cửa vừa đủ để xuống xe."
+  },
+  {
+   "id": 257,
+   "giai_thich": "Quay đầu xe mô tô: Bật xi-nhan trước khi quay, giảm tốc độ, chỉ quay đầu tại nơi quy định, quan sát toàn diện và nhường đường cho xe từ bên phải và xe đi thẳng đối diện."
+  },
+  {
+   "id": 258,
+   "giai_thich": "Tay ga trên xe mô tô hai bánh có 2 tác dụng chính: 1. Để điều khiển xe chạy tiến về phía trước; 2. Để điều tiết lượng hòa khí vào động cơ, qua đó kiểm soát công suất và tốc độ xe. (Xe mô tô không có số lùi)."
+  },
+  {
+   "id": 259,
+   "giai_thich": "Tác dụng của gương chiếu hậu mô tô: Dùng để quan sát an toàn phía sau ở cả bên trái và bên phải trước khi chuyển hướng hoặc chuyển làn."
+  },
+  {
+   "id": 260,
+   "giai_thich": "Nguyên tắc điều khiển tay ga xe mô tô an toàn: 'TĂNG GA TỪ TỪ - GIẢM GA THẬT NHANH' để kiểm soát tốc độ êm ái và xử lý phanh khẩn cấp kịp thời khi gặp chướng ngại vật."
+  },
+  {
+   "id": 261,
+   "giai_thich": "Đi xe mô tô trên đường hẹp mấp mô, trơn trượt: Đi chậm, nhìn xa 5-10m phía trước để chọn lối đi, không bóp cứng phanh trước, giữ trọng tâm cơ thể cân bằng thẳng hàng với thân xe."
+  },
+  {
+   "id": 262,
+   "giai_thich": "Lái xe ô tô điện đổ đèo, xuống dốc dài: Nhả bàn đạp ga để hệ thống phanh tái sinh (Regenerative Braking) hoạt động ghì xe lại và nạp lại điện cho pin, kết hợp rà phanh chân khi cần thiết."
+  },
+  {
+   "id": 263,
+   "giai_thich": "Lái xe điện qua vùng ngập nước: Xác định mức độ ngập an toàn của xe, đi đều chân ga tốc độ chậm không tạo sóng nước tràn vào cổ hút gió làm mát pin, giữ khoảng cách với người đi bộ."
+  },
+  {
+   "id": 264,
+   "giai_thich": "Kiểm tra mức dầu bôi trơn: Đỗ xe nơi bằng phẳng, tắt máy; rút que thăm dầu ra, dùng giẻ sạch lau khô que, cắm hết cỡ que vào lại các-te rồi rút ra xem vệt dầu. Mức dầu chuẩn phải nằm giữa hai vạch Min (tối thiểu) và Max (tối đa)."
+  },
+  {
+   "id": 265,
+   "giai_thich": "Tiêu chuẩn an toàn kỹ thuật ô tô: Đầy đủ kính an toàn không rạn nứt; phanh và lái hoạt động chuẩn xác; vô lăng bên trái; đủ hệ thống đèn (chiếu sáng, xi-nhan, đèn phanh, soi biển số); ống xả có giảm thanh và giảm khói."
+  },
+  {
+   "id": 266,
+   "giai_thich": "Bộ phận giảm thanh (ống pô): BẮT BUỘC phải có và hoạt động tốt trên cả mô tô và ô tô nhằm giảm thiểu ô nhiễm tiếng ồn ra môi trường xung quanh."
+  },
+  {
+   "id": 267,
+   "giai_thich": "Hệ thống đèn bắt buộc: Đèn chiếu sáng xa/gần, đèn soi biển số, đèn phanh (báo hãm), và đèn xi-nhan báo rẽ. Dàn đèn nóc xe tự chế lắp thêm bị nghiêm cấm vì gây chói mắt nguy hiểm."
+  },
+  {
+   "id": 268,
+   "giai_thich": "Kính chắn gió ô tô bắt buộc phải là loại KÍNH AN TOÀN nhiều lớp (Laminated Glass): khi vỡ không tạo mảnh nhọn sắc gây sát thương, hình ảnh quan sát qua kính phải thật, không bị biến dạng méo mó."
+  },
+  {
+   "id": 269,
+   "giai_thich": "Quy chuẩn bánh xe, lốp xe: Bánh lắp chắc chắn đúng quy cách; lốp đủ số lượng, đủ áp suất tiêu chuẩn, không nứt rách/phồng rộp; lốp trên cùng một trục phải cùng kích cỡ, cùng kiểu hoa lốp."
+  },
+  {
+   "id": 270,
+   "giai_thich": "Hệ thống lái ô tô: Bảo đảm xe chuyển hướng chính xác, nhẹ nhàng, ổn định ở mọi vận tốc; các cơ cấu lái không va chạm vào gầm; lực đánh lái sang trái và sang phải phải đều nhau."
+  },
+  {
+   "id": 271,
+   "giai_thich": "Mục đích bảo dưỡng ô tô thường xuyên: Giúp xe luôn vận hành ổn định, giảm hao mòn cơ khí, kéo dài tuổi thọ phương tiện và kịp thời phát hiện nguy cơ hư hỏng để khắc phục sớm."
+  },
+  {
+   "id": 272,
+   "giai_thich": "Động cơ diesel hoạt động theo nguyên lý nén nổ (không dùng bugi đánh lửa). Vì vậy nguyên nhân động cơ diesel không nổ là: Hết nhiên liệu, tắc lọc dầu, tắc lọc gió, hoặc nhiên liệu bị lẫn bọt khí (e gió)/tạp chất. (Các đáp án có chữ 'không có tia lửa điện' là sai vì máy dầu không có bugi đánh lửa)."
+  },
+  {
+   "id": 273,
+   "giai_thich": "Quy chuẩn ống xả ô tô: Không đặt ở vị trí gần ống dẫn nhiên liệu gây nguy cơ cháy nổ; miệng thoát khí thải không được hướng về phía trước hoặc hướng chếch sang bên phải phía người đi bộ trên vỉa hè."
+  },
+  {
+   "id": 274,
+   "giai_thich": "Dây đai an toàn: Phải đủ số lượng cho các vị trí ghế; dây không rách đứt; chốt cài trơn tru không tự bung; cơ cấu hãm quán tính phải khóa chặt dây lại ngay lập tức khi giật dây đột ngột."
+  },
+  {
+   "id": 275,
+   "giai_thich": "Định nghĩa động cơ 4 kỳ: Là loại động cơ nhiệt mà để hoàn thành một chu trình công tác (Hút - Nén - Nổ - Xả), pít-tông phải thực hiện 4 HÀNH TRÌNH (tương ứng trục khuỷu quay 2 vòng), trong đó chỉ có 1 kỳ sinh công (kỳ nổ)."
+  },
+  {
+   "id": 276,
+   "giai_thich": "Công dụng hệ thống bôi trơn: Cung cấp dầu nhớt sạch dưới áp suất đến các bề mặt ma sát chuyển động để: giảm ma sát, giảm mài mòn, làm mát chi tiết, làm kín buồng đốt, làm sạch muội than và chống gỉ sét kim loại."
+  },
+  {
+   "id": 277,
+   "giai_thich": "Niên hạn sử dụng của xe ô tô tải chở hàng: Không quá 25 NĂM (tính bắt đầu từ năm sản xuất)."
+  },
+  {
+   "id": 278,
+   "giai_thich": "Niên hạn sử dụng của xe ô tô chở người trên 8 chỗ ngồi (xe khách kinh doanh vận tải): Không quá 20 NĂM (tính bắt đầu từ năm sản xuất)."
+  },
+  {
+   "id": 279,
+   "giai_thich": "Công dụng của động cơ xe ô tô: Biến đổi NHIỆT NĂNG (từ việc đốt cháy hòa khí nhiên liệu trong xi-lanh) thành CƠ NĂNG làm quay trục khuỷu, truyền lực đến các bánh xe chủ động giúp xe chuyển động."
+  },
+  {
+   "id": 280,
+   "giai_thich": "Công dụng hệ thống truyền lực (drivetrain): Dùng để truyền mô-men quay từ trục khuỷu động cơ qua ly hợp, hộp số, trục các-đăng và bộ vi sai tới các bánh xe chủ động của ô tô."
+  },
+  {
+   "id": 281,
+   "giai_thich": "Công dụng ly hợp (bộ côn): Dùng để truyền hoặc ngắt truyền động mô-men xoắn từ động cơ đến hộp số một cách êm dịu khi người lái khởi hành hoặc chuyển đổi cấp số."
+  },
+  {
+   "id": 282,
+   "giai_thich": "Công dụng hộp số: Truyền và thay đổi mô-men quay/tốc độ từ động cơ đến bánh xe chủ động; ngắt truyền động lâu dài (về số 0/mo); và cho phép ô tô chuyển động lùi (số R)."
+  },
+  {
+   "id": 283,
+   "giai_thich": "Công dụng hệ thống lái: Dùng để THAY ĐỔI HƯỚNG CHUYỂN ĐỘNG hoặc giữ cho xe chuyển động ổn định theo một hướng xác định theo sự điều khiển của người lái."
+  },
+  {
+   "id": 284,
+   "giai_thich": "Công dụng hệ thống phanh (thắng): Dùng để giảm tốc độ, dừng hẳn chuyển động của xe ô tô và GIỮ CHO XE ĐỨNG YÊN trên đường bằng cũng như trên đường dốc (phanh tay/phanh đỗ)."
+  },
+  {
+   "id": 285,
+   "giai_thich": "Đèn phanh (đèn hậu màu đỏ): Có 2 tác dụng: 1. Cảnh báo xe sau biết xe đang giảm tốc/phanh để chủ động giữ cự ly tránh đâm va; 2. Định vị nhận diện kích thước xe trong đêm tối hoặc thời tiết xấu."
+  },
+  {
+   "id": 286,
+   "giai_thich": "Biểu tượng nhiệt kế ngâm trong sóng nước: Báo hiệu NHIỆT ĐỘ NƯỚC LÀM MÁT ĐỘNG CƠ QUÁ CAO (quá nhiệt). Cần tấp xe vào lề an toàn, để máy nổ không tải cho nguội bớt trước khi kiểm tra két nước."
+  },
+  {
+   "id": 287,
+   "giai_thich": "Biểu tượng khối động cơ (Check Engine) màu vàng: Cảnh báo HỆ THỐNG ĐỘNG CƠ HOẶC CẢM BIẾN KHÍ THẢI ĐANG BỊ LỖI, cần đưa xe đến xưởng kiểm tra bằng máy quét lỗi chuyên dụng."
+  },
+  {
+   "id": 288,
+   "giai_thich": "Biểu tượng mặt cắt lốp xe có dấu chấm than (!) ở giữa: Cảnh báo ÁP SUẤT LỐP KHÔNG ĐỦ (lốp bị non hơi hoặc thủng lốp), người lái cần kiểm tra và bơm bổ sung áp suất theo tiêu chuẩn."
+  },
+  {
+   "id": 289,
+   "giai_thich": "Biểu tượng vòng tròn chữ ABS ở giữa: Báo hiệu HỆ THỐNG PHANH CHỐNG BÓ CỨNG (ABS) GẶP SỰ CỐ BỊ LỖI. Lúc này xe vẫn có phanh cơ khí thông thường nhưng tính năng chống trượt bánh khi phanh gấp không hoạt động."
+  },
+  {
+   "id": 290,
+   "giai_thich": "Khởi động xe ô tô số tự động có nút bấm Start/Stop: BẮT BUỘC PHẢI ĐẠP HẾT HÀNH TRÌNH BÀN ĐẠP PHANH CHÂN thì nút khởi động mới cho phép đề nổ máy (cơ chế an toàn chống vọt xe ngoài ý muốn)."
+  },
+  {
+   "id": 291,
+   "giai_thich": "Công dụng bình ắc quy: Dùng để TÍCH TRỮ ĐIỆN NĂNG (dạng hóa năng) và cung cấp nguồn điện cho củ đề khởi động xe, đèn, còi và các thiết bị điện tử khi động cơ chưa hoạt động."
+  },
+  {
+   "id": 292,
+   "giai_thich": "Công dụng máy phát điện (Alternator): Khi động cơ đã nổ máy, máy phát biến cơ năng thành điện năng để CUNG CẤP CHO TOÀN BỘ PHỤ TẢI ĐIỆN trên xe hoạt động và đồng thời nạp điện bổ sung vào ắc quy."
+  },
+  {
+   "id": 293,
+   "giai_thich": "Tác dụng của dây đai an toàn (Seatbelt): Giữ chặt cơ thể người lái và hành khách dính vào lưng ghế, ngăn không cho cơ thể bị quăng quật hoặc văng ra khỏi kính chắn gió khi xe phanh gấp hoặc va chạm mạnh."
+  },
+  {
+   "id": 294,
+   "giai_thich": "Tác dụng của túi khí (Airbag): Bung ra trong vài phần nghìn giây khi có va chạm mạnh để GIẢM KHẢ NĂNG VA ĐẬP của vùng đầu, ngực với vô lăng/taplo, đồng thời hấp thụ phân tán lực va đập tác động lên cơ thể."
+  },
+  {
+   "id": 295,
+   "giai_thich": "Biểu tượng vô lăng lái kèm dấu chấm than (!): Cảnh báo HỆ THỐNG TRỢ LỰC LÁI GẶP SỰ CỐ KỸ THUẬT (lái sẽ bị nặng hoặc mất trợ lực điện/dầu)."
+  },
+  {
+   "id": 296,
+   "giai_thich": "Hình ảnh con đội/kích chữ A (kích cơ khí hoặc kích thủy lực): Thiết bị chuyên dùng để KÍCH (NÂNG) XE Ô TÔ lên khỏi mặt đất khi cần thay bánh xe dự phòng."
+  },
+  {
+   "id": 297,
+   "giai_thich": "Hình ảnh chiếc búa nhọn màu đỏ: Búa thoát hiểm chuyên dùng để PHÁ VỠ CỬA KÍNH Ô TÔ trong các tình huống khẩn cấp (tai nạn, xe chìm xuống nước, cháy nổ kẹt cửa)."
+  },
+  {
+   "id": 298,
+   "giai_thich": "Hình ảnh bình chữa cháy mini dạng bột/CO2 xách tay: Dùng để DẬP TẮT CÁC ĐÁM CHÁY HỎA HOẠN ban đầu phát sinh trên xe cơ giới."
+  },
+  {
+   "id": 299,
+   "giai_thich": "Nút bấm tam giác kép màu đỏ: Nút bật ĐÈN CẢNH BÁO NGUY HIỂM / KHẨN CẤP (Hazard Light). Bấm nút này 4 đèn xi-nhan sẽ nhấp nháy đồng thời để cảnh báo xe gặp sự cố trên đường."
+  },
+  {
+   "id": 300,
+   "giai_thich": "Biểu tượng chữ ECO màu xanh lá cây: Báo hiệu CHẾ ĐỘ LÁI TIẾT KIỆM NHIÊN LIỆU (Eco Mode) đang được kích hoạt nhằm tối ưu hóa phản ứng chân ga và bước số."
+  },
+  {
+   "id": 301,
+   "giai_thich": "Biển 1 (P.103a 'Cấm xe ô tô'): Cấm xe ô tô là gồm tất cả xe 4 bánh, 3 bánh đi vào (trừ xe mô tô hai bánh, xe gắn máy và các loại xe ưu tiên theo quy định). Biển 2 cấm xe tải, Biển 3 cấm xe khách."
+  },
+  {
+   "id": 302,
+   "giai_thich": "Biển 1 (P.103a 'Cấm xe ô tô'): Cấm xe ô tô là gồm tất cả xe 4 bánh, 3 bánh (bao gồm cả xe tải). Biển 2 (P.107) cấm xe khách và xe tải, trực tiếp cấm ô tô tải. Biển 3 (P.120) chỉ cấm ô tô kéo rơ moóc, không cấm ô tô tải thông thường. Do đó Biển 1 và Biển 2 cấm xe ô tô tải."
+  },
+  {
+   "id": 303,
+   "giai_thich": "Biển 1 cấm xe mô tô hai bánh. Biển 2 (P.106a 'Cấm xe ô tô tải'): Cấm xe tải thì gồm cả xe đầu kéo, máy kéo, do đó Biển 2 cấm máy kéo. Biển 3 (P.108) trực tiếp cấm máy kéo. Do đó Biển 2 và Biển 3 cấm máy kéo."
+  },
+  {
+   "id": 304,
+   "giai_thich": "Biển 1 (P.104) cấm mô tô 2 bánh và 3 bánh. Biển 2 (P.103a 'Cấm xe ô tô'): Cấm xe ô tô là gồm tất cả xe 4 bánh, 3 bánh nên cấm cả mô tô 3 bánh. Biển 3 cấm xe tải không cấm mô tô 3 bánh. Vì vậy Biển 1 và Biển 2 cấm xe mô tô ba bánh chở hàng."
+  },
+  {
+   "id": 305,
+   "giai_thich": "Xe gắn máy (dung tích xi-lanh dưới 50 cm3 hoặc xe máy điện) KHÔNG PHẢI là xe mô tô hai bánh và cũng không phải ô tô. Biển 1 cấm mô tô hai bánh, Biển 2 cấm ô tô con -> cả hai biển đều KHÔNG CẤM xe gắn máy, xe gắn máy được đi vào cả 2 biển."
+  },
+  {
+   "id": 306,
+   "giai_thich": "Biển 1 có hình vẽ chiếc mô tô hai bánh là biển 'Cấm xe mô tô hai bánh đi vào' (Biển P.104). Biển 2 cấm ô tô, Biển 3 cấm xe tải."
+  },
+  {
+   "id": 307,
+   "giai_thich": "Biển 1 cấm mô tô 2 bánh. Biển 2 (cấm ô tô) và Biển 3 (cấm xe tải) không có tác dụng cấm xe mô tô hai bánh. Do đó khi gặp Biển 2 và Biển 3 xe mô tô hai bánh được đi vào."
+  },
+  {
+   "id": 308,
+   "giai_thich": "Biển 1 hết cấm vượt (cho phép vượt). Biển 2 cấm ô tô con vượt (cấm mọi ô tô vượt). Biển 3 cấm ô tô tải vượt (không cấm xe con). Do đó xe ô tô con được phép vượt khi gặp Biển 1 và Biển 3."
+  },
+  {
+   "id": 309,
+   "giai_thich": "Biển 2 (P.125) có vẽ hình hai chiếc ô tô con cạnh nhau (xe màu đỏ bên trái) là biển 'Cấm vượt' chung cho tất cả các loại ô tô, do đó không cho phép ô tô con vượt."
+  },
+  {
+   "id": 310,
+   "giai_thich": "Biển 1 là biển 'Hết cấm vượt'. Biển 2 (P.125 'Cấm vượt'): Cấm xe ô tô vượt là gồm tất cả xe 4 bánh, 3 bánh vượt nhau (bao gồm cả ô tô tải). Biển 3 (P.126) trực tiếp cấm xe ô tô tải vượt. Do đó Biển 2 và Biển 3 cấm xe ô tô tải vượt."
+  },
+  {
+   "id": 311,
+   "giai_thich": "Cả hai biển đều cấm xe tải vượt: Biển 1 cấm mọi ô tô vượt (cấm cả xe tải); Biển 2 là biển cấm riêng ô tô tải vượt."
+  },
+  {
+   "id": 312,
+   "giai_thich": "Biển 1 (P.125 'Cấm vượt') cấm tất cả xe ô tô 4 bánh, 3 bánh vượt nhau nên cấm ô tô con vượt. Biển 2 (P.126) chỉ áp dụng cấm riêng xe ô tô tải vượt, không cấm ô tô con. Do đó xe ô tô con hoàn toàn ĐƯỢC PHÉP VƯỢT khi gặp Biển 2."
+  },
+  {
+   "id": 313,
+   "giai_thich": "Biển 1 là biển cấm rẽ trái (theo quy chuẩn mới, cấm rẽ trái KHÔNG cấm quay đầu). Biển 2 là biển hình chữ U gạch chéo đỏ, trực tiếp CẤM QUAY ĐẦU XE."
+  },
+  {
+   "id": 314,
+   "giai_thich": "Biển 1 (P.123a) là biển 'Cấm rẽ trái' (mũi tên rẽ trái bị gạch chéo đỏ). Biển 2 là biển cấm quay đầu xe (không cấm rẽ trái)."
+  },
+  {
+   "id": 315,
+   "giai_thich": "Biển 1 cấm rẽ trái. Biển 2 chỉ cấm quay đầu xe mà KHÔNG CẤM RẼ TRÁI (theo Quy chuẩn QCVN 41:2019 và mới nhất, biển cấm quay đầu không cấm rẽ trái). Do đó gặp Biển 2 xe được rẽ trái."
+  },
+  {
+   "id": 316,
+   "giai_thich": "Biển 1 cấm ô tô rẽ trái. Biển 2 cấm ô tô rẽ trái VÀ cấm ô tô quay đầu. Cả hai biển này đều cấm xe ô tô rẽ trái."
+  },
+  {
+   "id": 317,
+   "giai_thich": "Biển 1 cấm tất cả phương tiện rẽ phải. Biển 2 cấm rẽ phải và cấm quay đầu. Biển 3 chỉ cấm riêng ô tô rẽ phải. Đề bài hỏi 'phương tiện' chung, do đó Biển 1 và Biển 2 cấm các phương tiện rẽ phải."
+  },
+  {
+   "id": 318,
+   "giai_thich": "Biển 1 cấm rẽ trái. Biển 2 cấm rẽ trái và cấm quay đầu. Biển 3 chỉ cấm riêng ô tô con rẽ trái. Do đó Biển 1 và Biển 2 cấm chung các phương tiện rẽ trái."
+  },
+  {
+   "id": 319,
+   "giai_thich": "Biển 1 vẽ hình ô tô con và mũi tên chữ U gạch chéo: biển này CHỈ CẤM RIÊNG XE Ô TÔ QUAY ĐẦU (xe máy, mô tô vẫn được quay đầu). Biển 2 cấm ô tô quay đầu và rẽ trái. Biển 3 cấm ô tô rẽ phải."
+  },
+  {
+   "id": 320,
+   "giai_thich": "Biển 2 kết hợp mũi tên rẽ trái và mũi tên quay đầu chữ U có gạch chéo đỏ: Biển này cấm xe ô tô đồng thời cả hai hành vi: RẼ TRÁI VÀ QUAY ĐẦU."
+  },
+  {
+   "id": 321,
+   "giai_thich": "Biển 1 cấm ô tô con chung (cấm cả taxi). Biển 2 có thêm chữ 'TAXI' bên dưới chiếc ô tô: Biển này chỉ cấm riêng xe taxi mà không cấm các loại phương tiện ô tô khác."
+  },
+  {
+   "id": 322,
+   "giai_thich": "Biển 1 cấm rẽ trái. Biển 2 là biển 'Khu vực quay đầu xe' (nền xanh, có mũi tên quay đầu): biển này chỉ dẫn khu vực được quay đầu và xe ĐƯỢC PHÉP RẼ TRÁI."
+  },
+  {
+   "id": 323,
+   "giai_thich": "Biển 1 cấm rẽ trái nhưng theo luật mới KHÔNG cấm quay đầu. Biển 2 là biển chỉ dẫn khu vực quay đầu xe đương nhiên được quay đầu. Do đó cả hai biển xe đều không bị cấm quay đầu."
+  },
+  {
+   "id": 324,
+   "giai_thich": "Biển 1 cấm rẽ trái (nhưng ĐƯỢC PHÉP quay đầu). Biển 2 cấm quay đầu xe (nhưng được phép rẽ trái). Đề bài hỏi 'được phép quay đầu nhưng không được rẽ trái' -> Chọn Biển 1."
+  },
+  {
+   "id": 325,
+   "giai_thich": "Biển 1 là biển 'Đường cấm' (vòng tròn đỏ nền trắng). Biển 2 là biển 'Cấm đi ngược chiều' (vòng tròn đỏ, có vạch ngang màu trắng ở giữa). Biển 3 là biển cấm đỗ xe."
+  },
+  {
+   "id": 326,
+   "giai_thich": "Biển 1 (Đường cấm) cấm tất cả phương tiện cơ giới và thô sơ đi vào (trừ xe ưu tiên). Biển 2 (Cấm đi ngược chiều) cấm các phương tiện đi vào theo chiều đặt biển. Cả hai biển này các phương tiện đều không được phép đi vào."
+  },
+  {
+   "id": 327,
+   "giai_thich": "Biển 1 cấm đỗ xe mọi ngày (cả chẵn và lẻ). Biển 3 có 2 vạch trắng đứng gạch chéo là biển 'Cấm đỗ xe ngày chẵn'. Do đó vào ngày chẵn, người lái xe không được đỗ xe ở cả Biển 1 và Biển 3."
+  },
+  {
+   "id": 328,
+   "giai_thich": "Biển 1 cấm đỗ xe tất cả các ngày. Biển 2 có 1 vạch trắng đứng gạch chéo là biển 'Cấm đỗ xe ngày lẻ'. Do đó vào ngày lẻ, không được đỗ xe khi gặp Biển 1 và Biển 2."
+  },
+  {
+   "id": 329,
+   "giai_thich": "Biển 2 có hình bát giác nền đỏ chữ trắng 'STOP' (DỪNG LẠI). Đây là biển báo duy nhất mà TẤT CẢ CÁC XE, KỂ CẢ XE ƯU TIÊN THEO LUẬT ĐỊNH (cứu hỏa, cứu thương, công an...) ĐỀU PHẢI DỪNG LẠI quan sát an toàn mới được đi tiếp."
+  },
+  {
+   "id": 330,
+   "giai_thich": "Biển 1 (P.101 'Đường cấm') cấm tất cả phương tiện cơ giới và thô sơ đi lại trên đoạn đường đó, trừ các loại xe ưu tiên theo luật định (như cứu thương, cứu hỏa, công an...)."
+  },
+  {
+   "id": 331,
+   "giai_thich": "Biển 1 là biển P.110a 'Cấm xe đạp'. Biển 2 cấm xe đạp thồ, Biển 3 cấm xe mô tô. Do đó Biển 1 cấm người đi xe đạp."
+  },
+  {
+   "id": 332,
+   "giai_thich": "Biển 1 cấm xe lam. Biển 2 cấm xích lô máy (có gắn động cơ). Biển 3 cấm xích lô đạp. Gặp Biển 1 và Biển 2 thì xe xích lô đạp vẫn được phép đi vào bình thường."
+  },
+  {
+   "id": 333,
+   "giai_thich": "Biển 1 cấm xe lam, Biển 2 cấm xích lô máy. Biển 3 chỉ cấm xích lô đạp (xe thô sơ) nên xe lam và xe xích lô máy ĐƯỢC PHÉP ĐI VÀO khi gặp Biển 3."
+  },
+  {
+   "id": 334,
+   "giai_thich": "Biển vẽ hình người dắt gia súc (ngựa, bò) kéo xe: Báo hiệu đường cấm súc vật vận tải hàng hóa hoặc hành khách dù là kéo xe hay chở trên lưng đi qua."
+  },
+  {
+   "id": 335,
+   "giai_thich": "Biển tròn viền đỏ, nền đen có chữ trắng '70' và phụ đề biểu tượng mặt trăng/giờ đêm: Báo hiệu tốc độ tối đa cho phép về ban đêm đối với các phương tiện là 70 km/h."
+  },
+  {
+   "id": 336,
+   "giai_thich": "Các biển hạn chế tải trọng, khổ giới hạn chiều cao: Xe ưu tiên nếu có tải trọng hoặc chiều cao vượt quá chỉ số ghi trên biển TUYỆT ĐỐI KHÔNG ĐƯỢC PHÉP ĐI QUA để tránh gây sập cầu hoặc sập hầm đường bộ."
+  },
+  {
+   "id": 337,
+   "giai_thich": "Biển 1 có hai mũi tên đối đầu theo chiều dọc kẹp số '3,5m' ở giữa: Báo hiệu HẠN CHẾ CHIỀU CAO của xe và hàng hóa (tối đa 3,5 mét). Biển 2 hạn chế tải trọng trục (7 tấn), Biển 3 hạn chế tải trọng toàn bộ xe (10 tấn)."
+  },
+  {
+   "id": 338,
+   "giai_thich": "Biển số 2 vẽ hình một trục bánh xe và số '7T': Báo hiệu hạn chế tải trọng trên trục xe, cho phép các xe có tải trọng phân bổ trên trục xe từ 7 tấn trở xuống được phép đi qua."
+  },
+  {
+   "id": 339,
+   "giai_thich": "Biển số 3 vẽ hình xe ô tô tải có chữ '10T': Báo hiệu cấm các loại xe (cả xe cơ giới và xe kéo) có tổng tải trọng toàn bộ (khối lượng bản thân xe cộng hàng hóa) vượt quá 10 tấn đi qua."
+  },
+  {
+   "id": 340,
+   "giai_thich": "Biển 1 (P.120) cấm tất cả các loại xe cơ giới kéo theo rơ moóc (bao gồm cả máy kéo kéo rơ moóc). Biển 2 (P.108) cấm tất cả các loại máy kéo đi vào (dù có kéo hay không kéo rơ moóc). Do đó CẢ HAI BIỂN đều cấm máy kéo kéo theo rơ moóc."
+  },
+  {
+   "id": 341,
+   "giai_thich": "Biển số 1 (P.120 'Cấm ô tô kéo rơ moóc') chỉ có hiệu lực cấm các phương tiện có kéo theo rơ moóc, hoàn toàn KHÔNG CẤM ô tô tải thông thường không kéo moóc. Vì vậy xe ô tô tải ĐƯỢC PHÉP ĐI VÀO."
+  },
+  {
+   "id": 342,
+   "giai_thich": "Biển 1 cấm ô tô kéo moóc, Biển 2 cấm máy kéo kéo moóc. Hai biển này chỉ có hiệu lực với xe có kéo theo rơ moóc, hoàn toàn KHÔNG CÓ HIỆU LỰC đối với xe ô tô tải không kéo moóc."
+  },
+  {
+   "id": 343,
+   "giai_thich": "Biển 1 chỉ cấm xe kéo theo rơ moóc. Biển 2 (P.108) trực tiếp cấm máy kéo. Biển 3 (P.106a 'Cấm xe ô tô tải'): Cấm xe tải thì gồm cả xe đầu kéo, máy kéo, do đó Biển 3 cũng cấm máy kéo. Do đó Biển 2 và Biển 3 cấm máy kéo."
+  },
+  {
+   "id": 344,
+   "giai_thich": "Biển cấm ô tô và cấm mô tô (gắn biển phụ mũi tên 2 hướng rẽ trái và phải): Biển này cấm tất cả các loại xe cơ giới từ 2 bánh, 3 bánh đến 4 bánh rẽ sang trái hoặc rẽ sang phải. Mô tô 3 bánh chở hàng không được phép rẽ."
+  },
+  {
+   "id": 345,
+   "giai_thich": "Biển có hình ô tô bên trái và mô tô 2 bánh bên phải: Biển P.105 cấm tất cả các loại xe cơ giới và mô tô đi vào (bao gồm cả xe mô tô hai bánh và ba bánh chở hàng)."
+  },
+  {
+   "id": 346,
+   "giai_thich": "Biển P.105 (cấm xe cơ giới và xe mô tô) kết hợp biển phụ mũi tên rẽ hai hướng: Có ý nghĩa cấm các loại xe cơ giới và xe mô tô (trừ xe ưu tiên) đi về hướng bên trái và bên phải."
+  },
+  {
+   "id": 347,
+   "giai_thich": "Biển cấm bóp còi có biển phụ ghi '500m' có hai mũi tên dọc hai bên: Báo hiệu CHIỀU DÀI ĐOẠN ĐƯỜNG 500m từ vị trí đặt biển bắt đầu áp dụng lệnh cấm bấm còi."
+  },
+  {
+   "id": 348,
+   "giai_thich": "Gặp biển cấm bấm còi có biển phụ chiều dài 500m: Trong phạm vi 500 mét tính từ biển báo, người lái xe tuyệt đối KHÔNG ĐƯỢC PHÉP BẤM CÒI."
+  },
+  {
+   "id": 349,
+   "giai_thich": "Biển 1 cấm ô tô (không cấm mô tô). Biển 2 cấm mô tô 2 bánh. Biển 3 cấm xe tải (không cấm mô tô). Do đó xe mô tô hai bánh được đi vào khi gặp Biển 1 và Biển 3."
+  },
+  {
+   "id": 350,
+   "giai_thich": "Biển 2 có hình chiếc mô tô hai bánh là biển P.104 'Cấm xe mô tô', do đó xe mô tô hai bánh không được phép đi vào Biển 2."
+  },
+  {
+   "id": 351,
+   "giai_thich": "Biển phụ đặt dưới biển tròn cấm (P.101 'Đường cấm'): Biển phụ vẽ hình loại xe nào thì biển cấm sẽ CÓ HIỆU LỰC CẤM RIÊNG ĐỐI VỚI LOẠI XE ĐÓ đi vào."
+  },
+  {
+   "id": 352,
+   "giai_thich": "Biển báo cự ly tối thiểu giữa 2 xe (chữ 8m) có biển phụ ghi '500m' và CÓ 2 MŨI TÊN DỌC HAI BÊN (Biển 1): Báo hiệu 'Chiều dài đoạn đường' phải giữ cự ly tối thiểu giữa hai xe."
+  },
+  {
+   "id": 353,
+   "giai_thich": "Biển 2 chỉ ghi '200m' (KHÔNG CÓ hai mũi tên dọc): Báo hiệu khoảng cách thực tế từ nơi đặt biển đến vị trí bắt đầu áp dụng cự ly tối thiểu giữa hai xe."
+  },
+  {
+   "id": 354,
+   "giai_thich": "Biển cấm dừng và đỗ xe (hai vạch chéo đỏ) có biển phụ mũi tên chỉ sang phải: Có ý nghĩa CẤM DỪNG VÀ ĐỖ XE THEO HƯỚNG BÊN PHẢI từ sau vị trí cắm biển."
+  },
+  {
+   "id": 355,
+   "giai_thich": "Gặp biển cấm dừng đỗ có biển phụ mũi tên chỉ sang phải: Người lái xe KHÔNG ĐƯỢC PHÉP dừng xe hay đỗ xe theo hướng bên phải của biển."
+  },
+  {
+   "id": 356,
+   "giai_thich": "Biển vẽ hình xe tải kéo sơ mi rơ moóc có ghi '14m': Cấm các phương tiện và đoàn xe có tổng chiều dài (cả hàng hóa) vượt quá 14 mét đi qua. Xe có chiều dài lớn hơn 14m KHÔNG ĐƯỢC PHÉP ĐI VÀO."
+  },
+  {
+   "id": 357,
+   "giai_thich": "Quy định an toàn xếp dỡ hàng: Hàng chở trên xe ô tô tải vượt quá phía trước và sau thùng xe quá 10% chiều dài toàn bộ xe là VI PHẠM QUY TẮC XẾP HÀNG AN TOÀN, do đó không được phép lưu thông."
+  },
+  {
+   "id": 358,
+   "giai_thich": "Biển vẽ hình chiếc xe khách nhìn ngang: Là biển P.107a 'Cấm xe ô tô khách' đi vào (không cấm xe buýt chạy tuyến cố định)."
+  },
+  {
+   "id": 359,
+   "giai_thich": "Biển có hai mũi tên nằm ngang hướng vào nhau kẹp số '2,3m' ở giữa: Báo hiệu HẠN CHẾ CHIỀU NGANG (chiều rộng) của xe và hàng hóa (tối đa 2,3 mét)."
+  },
+  {
+   "id": 360,
+   "giai_thich": "Biển 1 có nền đen, chữ trắng và biểu tượng ban đêm: Là biển báo 'Tốc độ tối đa cho phép về ban đêm'."
+  },
+  {
+   "id": 361,
+   "giai_thich": "Biển 1 (DP.134) là biển 'Hết hạn chế tốc độ tối đa' (vòng tròn viền xanh có các vạch gạch chéo qua số giới hạn). Biển 2 là biển hết mọi lệnh cấm."
+  },
+  {
+   "id": 362,
+   "giai_thich": "Biển 1 là biển chỉ dẫn tốc độ tối thiểu (nền xanh). Biển 2 (P.127) tròn viền đỏ chữ đen là biển báo cấm: 'Hạn chế tốc độ tối đa cho phép', bắt buộc các xe không được vượt quá số ghi trên biển."
+  },
+  {
+   "id": 363,
+   "giai_thich": "Biển 1 báo hiệu hết đường ưu tiên. Biển 2 có hình cầu vượt/cao tốc với vạch đỏ gạch chéo là biển 'Kết thúc đường cao tốc'. Biển 3 hết đường dành cho ô tô."
+  },
+  {
+   "id": 364,
+   "giai_thich": "Biển P.127 hình tròn viền đỏ có số '50': Báo hiệu 'Tốc độ tối đa cho phép' của các phương tiện là 50 km/h."
+  },
+  {
+   "id": 365,
+   "giai_thich": "Biển 2 có hình phân tách các làn đường kèm biển báo tốc độ trên từng làn: Chỉ dẫn bắt đầu vào đường cao tốc có phân làn theo từng dải tốc độ khác nhau."
+  },
+  {
+   "id": 366,
+   "giai_thich": "Biển R.306 hình tròn nền xanh chữ trắng '60': Báo hiệu 'Tốc độ tối thiểu cho phép' là 60 km/h, các phương tiện không được chạy chậm hơn tốc độ này trong điều kiện bình thường."
+  },
+  {
+   "id": 367,
+   "giai_thich": "Biển 1 (W.224) hình tam giác viền đỏ là biển báo nguy hiểm: 'Đường người đi bộ cắt ngang', người lái xe phải giảm tốc độ và nhường đường cho người đi bộ qua đường. Biển 2 cấm người đi bộ; Biển 3 đường dành cho người đi bộ."
+  },
+  {
+   "id": 368,
+   "giai_thich": "Biển 3 (R.305) hình tròn nền xanh vẽ người đi bộ: Là biển hiệu lệnh 'Đường dành cho người đi bộ', các loại phương tiện cơ giới và thô sơ KHÔNG ĐƯỢC PHÉP đi vào."
+  },
+  {
+   "id": 369,
+   "giai_thich": "Biển 1 (R.304) hình tròn nền xanh vẽ chiếc xe đạp: Là biển hiệu lệnh 'Đường dành cho xe thô sơ' (xe đạp, xe lăn...) và người đi bộ."
+  },
+  {
+   "id": 370,
+   "giai_thich": "Cả ba biển đều là biển báo nguy hiểm cảnh báo sắp đến chỗ giao nhau: Biển 1 giao với đường sắt có rào chắn; Biển 2 giao với đường ưu tiên; Biển 3 giao nhau có đèn tín hiệu. Vì vậy cả 3 biển đều báo sắp đến chỗ giao nhau nguy hiểm."
+  },
+  {
+   "id": 371,
+   "giai_thich": "Biển 1 (W.210) vẽ hình hàng rào: Báo hiệu 'Giao nhau với đường sắt có rào chắn'. Biển 2 giao nhau đường sắt không rào chắn; Biển 3 giao nhau với tàu điện."
+  },
+  {
+   "id": 372,
+   "giai_thich": "Biển 3 (W.209) vẽ cột đèn tín hiệu 3 màu: Báo hiệu 'Giao nhau có tín hiệu đèn' giao thông."
+  },
+  {
+   "id": 373,
+   "giai_thich": "Biển 1 vẽ hàng rào (giao nhau đường sắt có rào chắn). Biển 3 vẽ đầu tàu hỏa (giao nhau đường sắt không rào chắn). Cả hai biển 1 và 3 đều báo hiệu nguy hiểm giao nhau với đường sắt."
+  },
+  {
+   "id": 374,
+   "giai_thich": "Biển 2 vẽ đầu máy xe lửa và Biển 3 là biển chữ X cắt ngang: Cả hai biển này đều báo hiệu 'Giao nhau với đường sắt KHÔNG CÓ RÀO CHẮN'. (Biển 1 có rào chắn)."
+  },
+  {
+   "id": 375,
+   "giai_thich": "Biển 1 (W.211a) vẽ đầu tàu hỏa: Báo hiệu sắp đến nơi giao nhau giữa đường bộ và đường sắt không có rào chắn. Biển 2 giao nhau đường ưu tiên; Biển 3 giao nhau có đèn tín hiệu."
+  },
+  {
+   "id": 376,
+   "giai_thich": "Biển 2 vẽ hình vòm hầm tròn khoét sâu: Báo hiệu sắp đến 'Cửa chui' để người lái xe chú ý chiều cao giới hạn. Biển 1 là cầu vồng; Biển 3 là đường hầm."
+  },
+  {
+   "id": 377,
+   "giai_thich": "Hai biển chữ X (Biển 242a một đường ray và 242b từ hai đường ray trở lên): Đặt tại nơi ĐƯỜNG SẮT GIAO VUÔNG GÓC VỚI ĐƯỜNG BỘ không có rào chắn."
+  },
+  {
+   "id": 378,
+   "giai_thich": "Biển 1 và Biển 2 (ký hiệu chữ X đơn và chữ X kép): Báo hiệu nơi đường sắt giao vuông góc với đường bộ (Biển 1: một đường ray; Biển 2: từ 2 đường ray trở lên)."
+  },
+  {
+   "id": 379,
+   "giai_thich": "Các biển có các vạch đỏ nghiêng chéo đặt cách nhau: Báo trước sắp đến vị trí ĐƯỜNG SẮT GIAO KHÔNG VUÔNG GÓC với đường bộ, không có rào chắn và không có người gác."
+  },
+  {
+   "id": 380,
+   "giai_thich": "Biển 1 là đường giao nhau cùng cấp; Biển 2 giao nhau với đường không ưu tiên; Biển 3 hình thoi có vạch đen gạch chéo là biển I.402 'Hết đoạn đường ưu tiên'."
+  },
+  {
+   "id": 381,
+   "giai_thich": "Biển 1 (W.207a - tam giác mũi tên lớn cắt nhánh nhỏ) và Biển 3 (I.401 - hình thoi vàng) đều báo hiệu xe ĐƯỢC QUYỀN ƯU TIÊN QUA NƠI GIAO NHAU. (Biển 2 tam giác ngược phải nhường đường)."
+  },
+  {
+   "id": 382,
+   "giai_thich": "Biển 1 (W.207a) có trục đường chính thẳng đứng to cắt ngang nhánh nhỏ hai bên: Báo hiệu 'Giao nhau với đường không ưu tiên'."
+  },
+  {
+   "id": 383,
+   "giai_thich": "Biển 2 (W.208) hình tam giác ngược đỉnh chúc xuống: Báo hiệu 'Giao nhau với đường ưu tiên', người lái xe đi trên đường này bắt buộc phải giảm tốc độ và nhường đường cho xe trên đường ưu tiên."
+  },
+  {
+   "id": 384,
+   "giai_thich": "Biển 1 báo hiệu đường bị thu hẹp cả hai bên. Biển 2 báo hiệu đường bị thu hẹp về phía bên trái. Biển 3 là chỗ ngoặt nguy hiểm."
+  },
+  {
+   "id": 385,
+   "giai_thich": "Gặp Biển 2 (đường hẹp bên trái) và Biển 3 (đường hẹp bên phải): Người lái xe phải giảm tốc độ, xe đi ở phía làn đường bị hẹp phải chủ động dừng lại nhường đường cho xe đi ngược chiều."
+  },
+  {
+   "id": 386,
+   "giai_thich": "Biển 3 (W.208) hình tam giác ngược đỉnh chúc xuống: Là biển 'Giao nhau với đường ưu tiên'."
+  },
+  {
+   "id": 387,
+   "giai_thich": "Biển 1 (W.205a) có hình dấu cộng (+) các nét đậm bằng nhau: Báo hiệu 'Đường giao nhau của các tuyến đường cùng cấp' (ngã tư đồng cấp)."
+  },
+  {
+   "id": 388,
+   "giai_thich": "Biển 2 (W.207c) vẽ đường chính to và có đường nhánh không ưu tiên rẽ ra bên phải: Báo hiệu 'Giao nhau với đường không ưu tiên'."
+  },
+  {
+   "id": 389,
+   "giai_thich": "Biển 1 (W.204) tam giác vàng có 2 mũi tên đỏ-đen thẳng đứng: Báo hiệu 'Đường hai chiều'. Biển 2 bắt đầu đường đôi; Biển 3 giao nhau đường 2 chiều."
+  },
+  {
+   "id": 390,
+   "giai_thich": "Biển 2 (P.132) hình tròn viền đỏ mũi tên đỏ bên chiều đi: Báo hiệu 'Phải giảm tốc độ, nhường đường cho xe cơ giới đi ngược chiều qua đường hẹp'."
+  },
+  {
+   "id": 391,
+   "giai_thich": "Biển 3 (I.406) hình vuông nền xanh, mũi tên trắng to đi thẳng: Là biển chỉ dẫn 'Được ưu tiên qua đường hẹp'."
+  },
+  {
+   "id": 392,
+   "giai_thich": "Biển 2 (W.212) tam giác vàng có biểu tượng dải phân cách (cái ly) ở PHÍA TRÊN đỉnh hai mũi tên: Báo hiệu 'Bắt đầu đường đôi'."
+  },
+  {
+   "id": 393,
+   "giai_thich": "Biển 3 (W.212) là biển báo hiệu 'Đường đôi' (dải phân cách nằm ở phía trên chia hai luồng xe)."
+  },
+  {
+   "id": 394,
+   "giai_thich": "Biển 3 (W.213) có biểu tượng dải phân cách nằm ở PHÍA DƯỚI đáy hai mũi tên: Báo hiệu 'Kết thúc đường đôi' (chuyển sang đường hai chiều không có dải phân cách giữa)."
+  },
+  {
+   "id": 395,
+   "giai_thich": "Biển 1 (W.204) có 2 mũi tên nằm ngang hai đầu: Báo hiệu 'Giao nhau với đường hai chiều'."
+  },
+  {
+   "id": 396,
+   "giai_thich": "Biển 2 (W.204) tam giác vàng có hai mũi tên thẳng đứng ngược chiều: Báo hiệu 'Đường hai chiều'."
+  },
+  {
+   "id": 397,
+   "giai_thich": "Biển 2 có hai mũi tên nằm ngang đối xứng: Báo hiệu sắp đến nơi 'Giao nhau với đường hai chiều'."
+  },
+  {
+   "id": 398,
+   "giai_thich": "Biển 2 (vòng tránh sang hai bên) và Biển 3 (vòng tránh sang bên trái): Báo hiệu 'Chú ý chướng ngại vật' phía trước trên đường chạy."
+  },
+  {
+   "id": 399,
+   "giai_thich": "Biển 2 có hình ô tô lao lên dốc đệm cát lánh nạn màu đỏ: Là biển chỉ dẫn 'Vị trí và khoảng cách có làn đường cứu nạn (làn thoát xe khẩn cấp)' khi xe bị mất phanh đổ đèo."
+  },
+  {
+   "id": 400,
+   "giai_thich": "Biển 2 (W.240) hình cửa hầm tối có ánh sáng phía xa: Báo hiệu sắp vào 'Đường hầm'. (Biển 1 là cầu vồng; Biển 3 là cửa chui)."
+  },
+  {
+   "id": 401,
+   "giai_thich": "Biển 2 (W.214) vẽ hình hai thành cầu hẹp thắt lại ở giữa: Báo hiệu 'Cầu hẹp'. Biển 1 cầu tạm; Biển 3 cầu quay."
+  },
+  {
+   "id": 402,
+   "giai_thich": "Biển 3 vẽ nhịp cầu đang quay tách đôi cho tàu thuyền qua: Báo hiệu 'Cầu quay - cầu cất'."
+  },
+  {
+   "id": 403,
+   "giai_thich": "Biển 1 vẽ chiếc ô tô đang rơi chúi đầu thẳng xuống mép vực nước: Báo hiệu 'Kè, vực sâu phía trước'."
+  },
+  {
+   "id": 404,
+   "giai_thich": "Biển 3 vẽ xe đang lao xuống vực nước nằm ở PHÍA BÊN TRÁI của đường: Báo hiệu 'Kè, vực sâu bên đường phía bên trái'."
+  },
+  {
+   "id": 405,
+   "giai_thich": "Biển 2 vẽ xe đang rơi xuống vực nước nằm ở PHÍA BÊN PHẢI: Báo hiệu 'Kè, vực sâu bên đường phía bên phải'."
+  },
+  {
+   "id": 406,
+   "giai_thich": "Biển 2 (W.222a) vẽ chiếc xe bị trượt lết để lại hai vệt bánh ngoằn ngoèo: Báo hiệu 'Đường trơn', lái xe cần đi số thấp và không phanh gấp."
+  },
+  {
+   "id": 407,
+   "giai_thich": "Biển 2 vẽ xe ô tô bị sụt bánh nghiêng bên mép lề đường: Báo hiệu 'Lề đường nguy hiểm' (lề đất yếu hoặc sạt lở)."
+  },
+  {
+   "id": 408,
+   "giai_thich": "Biển 1 (W.227) vẽ hình công nhân đang cầm xẻng xúc đất: Báo hiệu 'Đoạn đường đang tiến hành thi công sửa chữa'."
+  },
+  {
+   "id": 409,
+   "giai_thich": "Biển 2 có hình 2 ô tô đâm vào nhau và dấu chấm than: Cảnh báo nguy hiểm 'Đoạn đường thường xảy ra tai nạn'."
+  },
+  {
+   "id": 410,
+   "giai_thich": "Biển 2 vẽ hình nhiều xe ô tô nối đuôi san sát nhau: Báo hiệu 'Đoạn đường hay xảy ra ùn tắc giao thông'."
+  },
+  {
+   "id": 411,
+   "giai_thich": "Biển 2 (W.225) vẽ hai em nhỏ đang dắt tay nhau: Cảnh báo 'Đoạn đường thường có trẻ em đi ngang qua' (gần trường học, khu vui chơi), lái xe phải đi chậm và đề phòng trẻ chạy bất ngờ."
+  },
+  {
+   "id": 412,
+   "giai_thich": "Biển 2 (I.423a) hình vuông nền xanh vẽ người đi bộ trên vạch: Chỉ dẫn 'Vị trí bắt đầu đoạn đường dành cho người đi bộ sang đường'."
+  },
+  {
+   "id": 413,
+   "giai_thich": "Biển 2 (W.225) hình tam giác viền đỏ vẽ hai trẻ em: Báo hiệu gần đến đoạn đường thường có trẻ em đi ngang qua."
+  },
+  {
+   "id": 414,
+   "giai_thich": "Biển 1 (W.231) vẽ hình chiếc túi vải đón gió: Cảnh báo 'Gió ngang thổi mạnh', người lái xe cần giảm tốc độ để tránh bị gió bạt lật xe."
+  },
+  {
+   "id": 415,
+   "giai_thich": "Mẹo nhớ dốc: Đọc từ trái sang phải như đọc chữ viết: Biển 1 có vạch dốc tụt xuống (số 10%) là 'Dốc xuống nguy hiểm'."
+  },
+  {
+   "id": 416,
+   "giai_thich": "Mẹo nhớ dốc: Đọc từ trái sang phải: Biển 2 có vạch dốc ngửa lên (số 9%) là 'Dốc lên nguy hiểm'."
+  },
+  {
+   "id": 417,
+   "giai_thich": "Biển W.201a vẽ xe tải nghiêng bên phải trên khúc cua ngoặt sang trái: Báo hiệu 'Chỗ ngoặt nguy hiểm có nguy cơ lật xe bên phải khi đường cong vòng sang trái' do lực ly tâm."
+  },
+  {
+   "id": 418,
+   "giai_thich": "Biển W.215b vẽ chiếc ô tô đỗ trên phà nổi trên mặt nước: Báo hiệu 'Sắp đến bến phà'."
+  },
+  {
+   "id": 419,
+   "giai_thich": "Biển 1 (W.221a) có HAI gợn sóng lồi lõm: Báo hiệu 'Đoạn đường có ổ gà, lồi lõm'."
+  },
+  {
+   "id": 420,
+   "giai_thich": "Biển 2 (W.221b) có MỘT ụ nổi gồ lên ở giữa mặt đường: Báo hiệu 'Đoạn đường có gờ giảm tốc phía trước' để cưỡng bức giảm tốc độ."
+  },
+  {
+   "id": 421,
+   "giai_thich": "Biển W.228b vẽ chiếc xe ô tô bị nghiêng lún trên nền đường lún gợn sóng: Cảnh báo 'Đoạn nền đường yếu, đoạn đường đang theo dõi lún' có thể gây lật xe nếu chạy tốc độ cao."
+  },
+  {
+   "id": 422,
+   "giai_thich": "Biển W.228a vẽ đất đá lở từ sườn núi xuống đường: Báo trước gần tới đoạn đường có hiện tượng 'Đất đá từ ta-luy dương sụt lở bất ngờ' gây nguy hiểm."
+  },
+  {
+   "id": 423,
+   "giai_thich": "Biển W.229 vẽ các viên sỏi đá bắn lên từ lốp xe: Cảnh báo 'Nơi có kết cấu mặt đường rời rạc, sỏi đá văng lên' khi xe chạy qua, người lái xe cần giảm tốc độ và giữ khoảng cách xa xe trước."
+  },
+  {
+   "id": 424,
+   "giai_thich": "Biển W.230 vẽ hình con bò: Cảnh báo đoạn đường thường có gia súc thả rông trên đường, người lái xe phải đi chậm, quan sát và dừng lại nhường đường, không bấm còi inh ỏi làm gia súc hoảng loạn lao vào xe."
+  },
+  {
+   "id": 425,
+   "giai_thich": "Biển W.233 vẽ tia sét chéo ngang: Báo hiệu 'Khu vực có đường dây điện cao thế cắt ngang phía trên tuyến đường' để các xe chở hàng cao chú ý an toàn phóng điện."
+  },
+  {
+   "id": 426,
+   "giai_thich": "Biển 2 (vừa vẽ hình loại xe trên từng làn vừa ghi số tốc độ tối đa cho phép): Báo hiệu các phương tiện phải đi đúng làn đường quy định và tuân thủ tốc độ tối đa cho phép trên làn đó."
+  },
+  {
+   "id": 427,
+   "giai_thich": "Cả hai biển đều ghi rõ các con số tốc độ (như 60, 50, 40...) tương ứng trên từng làn đường: Báo hiệu các phương tiện phải tuân thủ tốc độ tối đa cho phép trên từng làn đường."
+  },
+  {
+   "id": 428,
+   "giai_thich": "Biển 1 (R.403a) hình chữ nhật nền xanh vẽ hình ô tô con: Là biển chỉ dẫn 'Đường dành cho xe ô tô'. Biển 2 là biển hết đường dành cho ô tô."
+  },
+  {
+   "id": 429,
+   "giai_thich": "Biển 2 (R.404a) vẽ hình ô tô có vạch chéo đỏ gạch ngang: Báo hiệu 'Hết đoạn đường dành cho xe ô tô'."
+  },
+  {
+   "id": 430,
+   "giai_thich": "Biển 1 (R.403b) vẽ hình ô tô và mô tô cạnh nhau: Chỉ dẫn đường dành cho ô tô và mô tô, các loại phương tiện khác KHÔNG ĐƯỢC PHÉP ĐI VÀO."
+  },
+  {
+   "id": 431,
+   "giai_thich": "Biển R.411 hình chữ nhật nền xanh có các mũi tên phân theo từng làn: Báo hiệu cho người lái xe biết 'Số lượng làn đường trên mặt đường và hướng đi bắt buộc phải theo trên mỗi làn'."
+  },
+  {
+   "id": 432,
+   "giai_thich": "Biển 1 chỉ được đi thẳng. Biển 2 chỉ được đi thẳng hoặc rẽ phải. Không có biển nào cho phép rẽ sang hướng khác (hướng trái/quay đầu). Do đó chọn: 'Không biển nào'."
+  },
+  {
+   "id": 433,
+   "giai_thich": "Biển 1 (R.301a) hình tròn nền xanh mũi tên trắng hướng thẳng đứng lên: Là biển hiệu lệnh 'Hướng đi thẳng phải theo'. (Biển 2 hình vuông nền xanh là biển chỉ dẫn đường một chiều)."
+  },
+  {
+   "id": 434,
+   "giai_thich": "Biển 2 (I.407a) hình chữ nhật/vuông nền xanh mũi tên trắng hướng lên: Là biển chỉ dẫn 'Đường một chiều'. (Biển 1 là biển hiệu lệnh hướng đi thẳng phải theo)."
+  },
+  {
+   "id": 435,
+   "giai_thich": "Biển 1 (DP.134) vòng tròn viền xanh có vạch đen chéo ngang số 50: Là biển 'Hết hạn chế tốc độ tối đa cho phép'. (Biển 2 hết mọi lệnh cấm; Biển 3 hết tốc độ tối thiểu)."
+  },
+  {
+   "id": 436,
+   "giai_thich": "Hiệu lực của biển hạn chế tốc độ tối đa sẽ hết tác dụng khi gặp: Biển 1 (Hết hạn chế tốc độ tối đa) HOẶC gặp Biển 2 (Hết mọi lệnh cấm). Do đó chọn Biển 1 và Biển 2."
+  },
+  {
+   "id": 437,
+   "giai_thich": "Biển 3 (DP.135) hình tròn nền xanh có số 60 màu trắng và vạch chéo đỏ: Là biển báo 'Hết tốc độ tối thiểu'."
+  },
+  {
+   "id": 438,
+   "giai_thich": "Biển 2 là biển 'Hết mọi lệnh cấm' (hết cấm vượt). Biển 3 là biển 'Hết cấm vượt' (hai ô tô màu xám gạch chéo). Cả Biển 2 và Biển 3 đều báo hiệu hết cấm vượt."
+  },
+  {
+   "id": 439,
+   "giai_thich": "Biển 2 (DP.135) hình tròn viền xanh có 5 vạch đen nghiêng song song: Là biển báo 'Hết mọi lệnh cấm'."
+  },
+  {
+   "id": 440,
+   "giai_thich": "Biển 3 (R.301h) hình tròn nền xanh vẽ mũi tên rẽ trái kết hợp quay đầu: Cho phép người lái xe ĐƯỢC PHÉP QUAY ĐẦU XE ĐI THEO HƯỚNG NGƯỢC LẠI khi đặt biển trước nơi giao nhau."
+  },
+  {
+   "id": 441,
+   "giai_thich": "Biển 1 (R.301d) chỉ cho phép xe đi thẳng hoặc rẽ trái, hoàn toàn KHÔNG CHO PHÉP RẼ PHẢI. Biển 2 chỉ được rẽ phải; Biển 3 được đi thẳng hoặc rẽ phải."
+  },
+  {
+   "id": 442,
+   "giai_thich": "Biển 1 chỉ được rẽ trái. Biển 2 chỉ được rẽ sang trái hoặc phải. Cả Biển 1 và Biển 2 ĐỀU KHÔNG CHO PHÉP XE ĐI THẲNG, người lái bắt buộc phải rẽ sang hướng khác."
+  },
+  {
+   "id": 443,
+   "giai_thich": "Biển 1 là biển chỉ dẫn vị trí quay đầu xe. Biển 2 là biển chỉ dẫn khu vực quay đầu xe. Cả hai biển này đều cho phép người lái xe được quay đầu xe."
+  },
+  {
+   "id": 444,
+   "giai_thich": "Biển 3 có chữ 'AH112' (Asian Highway): Là biển chỉ dẫn mã hiệu và tên đường trên các tuyến đường đối ngoại (đường xuyên Á)."
+  },
+  {
+   "id": 445,
+   "giai_thich": "Biển số 1 có chữ ZONE, biểu tượng đỗ xe (P) theo giờ và vạch gạch chéo: Chỉ dẫn 'Hết hiệu lực cấm đỗ xe theo giờ trong khu vực'."
+  },
+  {
+   "id": 446,
+   "giai_thich": "Biển số 3 có chữ ZONE và số 50 viền đỏ: Là biển chỉ dẫn 'Hạn chế tốc độ tối đa trong khu vực' (Zone 50)."
+  },
+  {
+   "id": 447,
+   "giai_thich": "Biển 2 (I.414b) có mũi tên thẳng đứng chỉ luồng xe và vẽ hình xe khách ở làn đối diện: Báo hiệu 'Đường phía trước có làn đường dành cho ô tô khách'."
+  },
+  {
+   "id": 448,
+   "giai_thich": "Biển 3 (I.414c) có mũi tên nằm ngang vẽ hình xe khách: Báo hiệu 'Rẽ ra đường có làn đường dành cho ô tô khách'."
+  },
+  {
+   "id": 449,
+   "giai_thich": "Biển 1 chỉ dẫn rẽ phải vào đường cụt; Biển 2 chỉ dẫn rẽ trái vào đường cụt. Cả Biển 1 và Biển 2 đều đặt trước ngã ba để chỉ dẫn rẽ vào đường cụt. (Biển 3 là đường cụt phía trước)."
+  },
+  {
+   "id": 450,
+   "giai_thich": "Biển 1 vẽ người đi bộ ĐI LÊN các bậc cầu thang: Chỉ dẫn cho người đi bộ 'Sử dụng cầu vượt qua đường'."
+  },
+  {
+   "id": 451,
+   "giai_thich": "Biển 2 vẽ người đi bộ ĐI XUỐNG các bậc thang ngầm: Chỉ dẫn cho người đi bộ 'Sử dụng hầm chui qua đường'."
+  },
+  {
+   "id": 452,
+   "giai_thich": "Biển 2 (I.408a) có chữ P kèm biểu tượng xe lăn của người khuyết tật: Là biển báo 'Nơi đỗ xe dành cho người khuyết tật'."
+  },
+  {
+   "id": 453,
+   "giai_thich": "Biển phụ vẽ nửa thân xe ô tô nằm trên vỉa hè: Chỉ dẫn người lái xe được phép đỗ xe từ 1/2 THÂN XE TRỞ LÊN TRÊN HÈ PHỐ."
+  },
+  {
+   "id": 454,
+   "giai_thich": "Biển I.434a 'Trạm Cảnh sát giao thông': Người lái xe phải GIẢM TỐC ĐỘ đến mức an toàn và không được vượt khi đi qua khu vực trạm CSGT."
+  },
+  {
+   "id": 455,
+   "giai_thich": "Biển R.303 hình tròn nền xanh vẽ mũi tên vòng quanh đảo tròn: Là biển hiệu lệnh BẮT BUỘC người lái xe phải chạy vòng theo đảo an toàn tại vòng xuyến."
+  },
+  {
+   "id": 456,
+   "giai_thich": "Biển 2 có dòng chữ ghi ranh giới giữa hai tỉnh/thành phố (địa phận): Chỉ dẫn địa giới hành chính giữa các tỉnh, thành phố."
+  },
+  {
+   "id": 457,
+   "giai_thich": "Biển 1 và Biển 3 có hình vẽ các nhánh rẽ lập thể kết nối qua cầu vượt: Báo hiệu 'Cầu vượt liên thông' cho phép xe chuyển hướng sang các tuyến đường giao nhau. (Biển 2 là cầu vượt cắt qua)."
+  },
+  {
+   "id": 458,
+   "giai_thich": "Biển số 1 vẽ sơ đồ các hướng đi thẳng và rẽ qua các nhánh cầu vượt: Có ý nghĩa báo hiệu 'Cầu vượt liên thông'."
+  },
+  {
+   "id": 459,
+   "giai_thich": "Biển 1 và Biển 2 có hình cầu thẳng bắc ngang qua đường: Báo hiệu 'Tuyến đường cầu vượt cắt qua' (không có nhánh rẽ liên thông kết nối)."
+  },
+  {
+   "id": 460,
+   "giai_thich": "Biển vẽ hình xe lao lên dốc cứu nạn kèm khoảng cách '300m': Chỉ dẫn khoảng cách đến làn đường cứu nạn (làn thoát xe khẩn cấp)."
+  },
+  {
+   "id": 461,
+   "giai_thich": "Trên biển có hình các vạch phân làn nét đứt kèm hướng đi: Cho phép người lái xe ĐƯỢC PHÉP CHUYỂN SANG LÀN ĐƯỜNG KHÁC khi bảo đảm an toàn."
+  },
+  {
+   "id": 462,
+   "giai_thich": "Biển R.403a 'Đường dành cho xe ô tô': Áp dụng chung cho tất cả các loại xe ô tô (ô tô con, ô tô khách, ô tô tải). Do đó xe tải và xe khách hoàn toàn ĐƯỢC PHÉP ĐI VÀO."
+  },
+  {
+   "id": 463,
+   "giai_thich": "Biển chỉ dẫn vẽ riêng hình ô tô con và mô tô: Đoạn đường này CHỈ DÀNH RIÊNG cho xe con và xe máy, do đó xe tải và xe khách KHÔNG ĐƯỢC PHÉP ĐI VÀO."
+  },
+  {
+   "id": 464,
+   "giai_thich": "Biển 2 có biểu tượng đường cao tốc kèm vạch chéo đỏ: Báo hiệu 'Kết thúc đường cao tốc'."
+  },
+  {
+   "id": 465,
+   "giai_thich": "Biển vẽ sơ đồ đường gom nhập vào đường chính có ghi chữ '250m': Chỉ dẫn vị trí nhập làn xe cách 250 mét."
+  },
+  {
+   "id": 466,
+   "giai_thich": "Biển 1 và Biển 2 (nhập làn từ bên phải hoặc từ bên trái): Cả hai biển này đều là biển chỉ dẫn 'Nhập làn xe'."
+  },
+  {
+   "id": 467,
+   "giai_thich": "Biển chỉ dẫn cao tốc màu xanh lá cây: Báo hiệu bắt đầu đường cao tốc, tên/ký hiệu tuyến cao tốc, cùng với tốc độ tối đa (120 km/h) và tốc độ tối thiểu (60 km/h) được phép chạy."
+  },
+  {
+   "id": 468,
+   "giai_thich": "Ý nghĩa 4 biểu tượng từ trái qua phải: 1. Cây xăng (xăng dầu); 2. Dao nĩa (ăn uống); 3. Chữ i (thông tin chỉ dẫn); 4. Cờ lê (sửa chữa xe)."
+  },
+  {
+   "id": 469,
+   "giai_thich": "Biển vẽ hình cân tải trọng xe kèm khoảng cách '750m': Chỉ dẫn khoảng cách đến trạm kiểm tra tải trọng xe cách 750 mét."
+  },
+  {
+   "id": 470,
+   "giai_thich": "Biển 1 có mũi tên màu vàng uốn lượn chếch sang bên trái: Chỉ dẫn người lái xe đi theo HƯỚNG BÊN TRÁI để tránh chướng ngại vật."
+  },
+  {
+   "id": 471,
+   "giai_thich": "Biển 3 có mũi tên chỉ vòng sang bên phải: Chỉ dẫn người lái xe đi theo HƯỚNG BÊN PHẢI để tránh chướng ngại vật."
+  },
+  {
+   "id": 472,
+   "giai_thich": "Biển 2 có hai mũi tên tỏa sang cả bên trái và bên phải: Chỉ dẫn người lái xe ĐI ĐƯỢC CẢ HAI HƯỚNG (trái hoặc phải) để tránh chướng ngại vật."
+  },
+  {
+   "id": 473,
+   "giai_thich": "Biển 1 và Biển 3 có các vạch sơn vàng đen so le nghiêng (biển cảnh báo khúc cua gấp): Báo hiệu người lái xe phải chú ý đổi hướng đi khi sắp vào đường cong nguy hiểm."
+  },
+  {
+   "id": 474,
+   "giai_thich": "Biển 2 có hai nhánh mũi tên mở sang hai bên: Chỉ dẫn người lái xe có thể đi được cả hai hướng quanh chướng ngại vật."
+  },
+  {
+   "id": 475,
+   "giai_thich": "Biển hình mũi tên chữ V xếp liên tiếp: Là biển chỉ dẫn hướng rẽ, nhắc nhở người lái xe chuẩn bị đổi hướng khi sắp vào đường cong nguy hiểm có bán kính cong nhỏ."
+  },
+  {
+   "id": 476,
+   "giai_thich": "Vạch số 3 trên mặt đường kết hợp mũi tên thẳng đứng và mũi tên rẽ phải: Cho phép các xe đi trên làn này 'Chỉ được đi thẳng và rẽ phải'."
+  },
+  {
+   "id": 477,
+   "giai_thich": "Quy chuẩn màu vạch kẻ đường: VẠCH MÀU TRẮNG dùng để phân chia các làn xe chạy CÙNG CHIỀU nhau. Do đó Vạch 1 và Vạch 2 (đều màu trắng) là vạch phân chia các làn xe cùng chiều."
+  },
+  {
+   "id": 478,
+   "giai_thich": "Vạch 2 là VẠCH VÀNG NÉT LIỀN (vạch tim đường): Dùng để phân chia hai chiều xe chạy ngược chiều nhau, các phương tiện TUYỆT ĐỐI KHÔNG ĐƯỢC LẤN LÀN VÀ KHÔNG ĐƯỢC ĐÈ VẠCH."
+  },
+  {
+   "id": 479,
+   "giai_thich": "Quy chuẩn màu vạch: VẠCH MÀU VÀNG là vạch tim đường phân chia hai chiều xe chạy ngược chiều nhau (cả vạch đứt nét 1 và vạch đôi liền nét 3). Do đó chọn Vạch 1 và Vạch 3."
+  },
+  {
+   "id": 480,
+   "giai_thich": "Các vạch sơn màu vàng: Có tác dụng 'Phân chia hai chiều xe chạy ngược chiều nhau' (vạch tim đường)."
+  },
+  {
+   "id": 481,
+   "giai_thich": "Các vạch sơn màu trắng: Có tác dụng 'Phân chia các làn xe chạy cùng chiều nhau'."
+  },
+  {
+   "id": 482,
+   "giai_thich": "Quy tắc nét vẽ vạch đường: VẠCH NÉT ĐỨT thì ĐƯỢC PHÉP ĐÈ VẠCH (chuyển làn); vạch nét liền cấm đè vạch. Trong hình, Vạch 1 và Vạch 3 là vạch nét đứt nên các xe được phép đè vạch."
+  },
+  {
+   "id": 483,
+   "giai_thich": "Vạch các đường ngang song song cắt ngang làn đường với khoảng cách tăng dần (Vạch 7.4): Dùng để 'Xác định khoảng cách an toàn giữa các phương tiện' khi lưu thông trên cao tốc."
+  },
+  {
+   "id": 484,
+   "giai_thich": "Vạch hình quả trám (hình thoi) màu trắng kẻ trên mặt đường (Vạch 7.6): Báo hiệu 'Sắp đến chỗ có bố trí vạch kẻ đường dành cho người đi bộ qua đường', người lái cần chủ động giảm tốc độ."
+  },
+  {
+   "id": 485,
+   "giai_thich": "Vạch sơn màu vàng hình chữ M (đường dích dắc) trên mặt đường: Báo hiệu 'Vị trí dừng đón trả khách của các phương tiện giao thông vận tải công cộng' (trạm dừng xe buýt), các xe khác không được dừng đỗ gây cản trở."
+  },
+  {
+   "id": 486,
+   "giai_thich": "Xét theo đèn tín hiệu và mũi tên chỉ hướng làn đường:\n- Xe khách ở làn rẽ trái có đèn đỏ cấm đi, nhưng mũi tên lại chỉ đi thẳng -> Sai phạm (vượt đèn đỏ và sai làn).\n- Xe tải ở làn đi thẳng có đèn đỏ, nhưng mũi tên lại rẽ trái -> Sai phạm (vượt đèn đỏ và sai làn).\n- Xe con ở làn ngoài cùng bên phải có đèn xanh rẽ phải, xe rẽ phải đúng hướng -> Đúng quy tắc.\n- Phía đối diện: Xe mô tô ở làn rẽ trái gặp đèn đỏ nhưng mũi tên rẽ trái vượt qua -> Sai phạm.\nDo đó chỉ có duy nhất XE CON chấp hành đúng quy tắc giao thông."
+  },
+  {
+   "id": 487,
+   "giai_thich": "Phân tích theo biển báo và hướng đi:\n1. Xe tải và xe mô tô nằm trên trục đường có cắm biển W.207 'Giao nhau với đường không ưu tiên' (đang ở trên đường ưu tiên). Giữa hai xe, xe tải đi thẳng được đi trước (thứ 1), xe mô tô rẽ trái đi sau (thứ 2).\n2. Xe khách và xe con nằm trên đường nhánh có cắm biển W.208 'Giao nhau với đường ưu tiên' (đường không ưu tiên). Giữa hai xe, xe khách đi thẳng đi trước (thứ 3), xe con rẽ trái đi cuối cùng (thứ 4).\nThứ tự đúng: Xe tải -> Xe mô tô -> Xe khách -> Xe con."
+  },
+  {
+   "id": 488,
+   "giai_thich": "Áp dụng thứ tự ưu tiên sa hình:\n1. Xe ưu tiên: Xe công an đi làm nhiệm vụ khẩn cấp được quyền đi đầu tiên (bước 'Nhì ưu').\n2. Biển báo: Xe con nằm trên trục đường có cắm biển W.207 'Giao nhau với đường không ưu tiên' (đường ưu tiên) và đi thẳng nên được đi thứ 2.\n3. Xe tải và xe khách đều gặp biển W.208 'Giao nhau với đường ưu tiên' (đường nhánh). Xe tải đi thẳng đi thứ 3, xe khách rẽ trái đi cuối cùng (thứ 4).\nThứ tự đúng: Xe công an -> Xe con -> Xe tải -> Xe khách."
+  },
+  {
+   "id": 489,
+   "giai_thich": "Áp dụng quy tắc sa hình:\n1. Xe ưu tiên: Xe công an đi làm nhiệm vụ khẩn cấp được quyền đi trước tiên.\n2. Hướng đường ưu tiên: Trước mặt xe công an có biển hình thoi I.401 'Bắt đầu đường ưu tiên' kèm biển phụ S.506b thể hiện hướng đường ưu tiên rẽ trái sang phía xe tải. Do đó xe tải nằm trên đường ưu tiên nên được đi thứ 2.\n3. Xe khách và xe con ở đường không ưu tiên (gặp biển tam giác ngược W.208): Xe khách đi thẳng đi thứ 3, xe con rẽ trái đi sau cùng.\nThứ tự đúng: Xe công an -> Xe tải -> Xe khách -> Xe con."
+  },
+  {
+   "id": 490,
+   "giai_thich": "Ngã tư đồng cấp (không có biển báo, không có xe ưu tiên):\nÁp dụng quy tắc 'Bên phải không vướng':\n- Hướng bên phải của xe mô tô hoàn toàn trống (không có xe) nên xe mô tô được quyền đi đầu tiên.\n- Sau khi mô tô đã đi qua, hướng bên phải của xe con trở nên trống nên xe con đi thứ 2.\n- Cuối cùng bên phải xe tải trống nên xe tải rẽ trái đi sau cùng.\nThứ tự đúng: Xe mô tô -> Xe con -> Xe tải."
+  },
+  {
+   "id": 491,
+   "giai_thich": "Quy tắc nhường đường tại nơi giao nhau chạy theo vòng xuyến:\n- Tại ngã tư có cắm biển hiệu lệnh R.303 'Nơi giao nhau chạy theo vòng xuyến'.\n- Luật Giao thông đường bộ quy định: Khi có biển báo hiệu đi theo vòng xuyến, người lái xe phải nhường đường cho phương tiện đi từ bên trái tới.\n- Xe tải đã vào bên trong vòng xuyến (đang lưu thông từ bên trái của xe con). Xe con chuẩn bị nhập vào vòng xuyến bắt buộc PHẢI NHƯỜNG ĐƯỜNG cho xe tải."
+  },
+  {
+   "id": 492,
+   "giai_thich": "Xét biển báo hiệu đường bộ:\n- Phía trước xe mô tô có cắm biển hiệu lệnh R.122 'STOP' (Dừng lại). Khi gặp biển STOP, tất cả các phương tiện đều bắt buộc phải dừng lại và chỉ được tiếp tục đi khi thấy an toàn, nhường đường cho các xe trên đường cắt ngang.\n- Xe con không gặp biển cấm/dừng lại nên XE CON ĐƯỢC QUYỀN ĐI TRƯỚC."
+  },
+  {
+   "id": 493,
+   "giai_thich": "Áp dụng quy tắc vàng sa hình 'Nhất chớm - Nhì ưu':\n1. 'Nhất chớm': Xe con (A) đã vượt qua vạch dừng của người đi bộ, chớm vào trong tâm giao lộ trước khi xe cứu thương tới. Theo luật, xe đã vào trong giao lộ được quyền thoát khỏi giao lộ trước tiên.\n2. 'Nhì ưu': Tiếp theo là xe cứu thương (xe ưu tiên theo luật định) đi thứ 2.\n3. Cuối cùng là xe con (B) đi sau cùng.\nThứ tự đúng: Xe con (A) -> Xe cứu thương -> Xe con (B)."
+  },
+  {
+   "id": 494,
+   "giai_thich": "Thứ tự các loại xe ưu tiên theo Luật Giao thông đường bộ:\nQuy tắc ghi nhớ: 'HỎA - SỰ - CÔNG - THƯƠNG' (Xe chữa cháy > Xe quân sự > Xe công an > Xe cứu thương).\n- Xe chữa cháy đi làm nhiệm vụ có quyền ưu tiên cao hơn xe cứu thương đang làm nhiệm vụ.\n- Do đó xe chữa cháy đi đầu tiên, tiếp theo là xe cứu thương, xe con đi cuối cùng.\nThứ tự đúng: Xe chữa cháy -> Xe cứu thương -> Xe con."
+  },
+  {
+   "id": 495,
+   "giai_thich": "Quyền ưu tiên của các phương tiện tham gia giao thông:\nXe cứu thương đang phát tín hiệu đi làm nhiệm vụ cấp cứu là xe ưu tiên theo quy định của Luật Giao thông đường bộ. Các phương tiện giao thông thông thường (xe mô tô) phải chủ động giảm tốc độ, nhường đường cho xe ưu tiên đi trước."
+  },
+  {
+   "id": 496,
+   "giai_thich": "Phân tích quyền ưu tiên theo biển báo và hướng đi tại nơi giao nhau:\n1. Xét quyền ưu tiên theo biển báo:\n- Trục đường của xe con có cắm biển W.207 'Giao nhau với đường không ưu tiên' (biển tam giác đỉnh hướng lên trên), biểu thị xe con đang đi trên ĐƯỜNG ƯU TIÊN -> Xe con được quyền đi trước.\n- Trục đường của xe tải và xe khách có cắm biển W.208 'Giao nhau với đường ưu tiên' (biển tam giác ngược đỉnh chúc xuống), biểu thị cả hai xe đều đang ở trên ĐƯỜNG KHÔNG ƯU TIÊN.\n2. Xét hướng di chuyển và xung đột dòng xe:\n- Xe tải rẽ phải ôm cua vào làn bên phải, hoàn toàn không giao cắt hay vướng hướng đi của xe con, do đó trên thực tế xe con và xe tải có thể di chuyển cùng lúc.\n- Xe khách rẽ trái cắt ngang giao lộ, vừa phải nhường đường cho xe trên đường ưu tiên (xe con), vừa phải nhường cho xe rẽ phải (xe tải).\nDo đó XE KHÁCH là xe phải nhường đường đi cuối cùng qua nơi giao nhau."
+  },
+  {
+   "id": 497,
+   "giai_thich": "Phân tích biển báo và quy tắc nhường đường tại nơi giao nhau:\n- Về biển báo: Cả xe con và xe tải đều gặp biển tam giác ngược W.208 'Giao nhau với đường ưu tiên' kèm biển phụ S.506b thể hiện hướng đường ưu tiên. Do đó, cả hai xe đều đang ở trên đường nhánh không ưu tiên (cùng cấp).\n- Về hướng đi: Theo hướng mũi tên, cả xe tải và xe con đều đi thẳng qua nơi giao nhau.\n- Quy tắc nhường đường (Bên phải trống): Tại nơi giao nhau cùng cấp, xe nào có phía bên phải không vướng thì được quyền đi trước (nhường đường cho xe đến từ bên phải). Xe tải có phía bên phải trống nên được quyền đi trước; xe con có xe tải ở phía bên phải tới nên phải nhường đường.\nDo đó XE CON PHẢI NHƯỜNG ĐƯỜNG là đúng quy tắc giao thông."
+  },
+  {
+   "id": 498,
+   "giai_thich": "Thứ tự xe ưu tiên theo Luật Giao thông đường bộ:\nQuy tắc ưu tiên: 'HỎA - SỰ - CÔNG - THƯƠNG'.\nXe chữa cháy đi làm nhiệm vụ chữa cháy có mức độ khẩn cấp và quyền ưu tiên cao hơn xe công an đi làm nhiệm vụ khẩn cấp. Do đó XE CHỮA CHÁY ĐƯỢC QUYỀN ĐI TRƯỚC."
+  },
+  {
+   "id": 499,
+   "giai_thich": "Quan sát tín hiệu đèn giao thông:\n- Làn đường của xe con và xe khách có tín hiệu ĐÈN XANH nên được phép đi (xe con rẽ phải, xe khách đi thẳng).\n- Làn đường của xe mô tô có tín hiệu ĐÈN ĐỎ nên bắt buộc phải dừng lại trước vạch dừng.\nDo đó: Xe con và xe khách được phép đi."
+  },
+  {
+   "id": 500,
+   "giai_thich": "Theo tín hiệu đèn, xe nào ở làn có đèn màu xanh thì được phép đi:\n- Xe con và xe tải: Ở các làn có đèn tín hiệu màu xanh -> Được phép đi.\n- Xe khách và xe mô tô: Ở các làn có đèn tín hiệu màu đỏ -> Phải dừng lại.\nDo đó: Xe con và xe tải đi là đúng quy tắc giao thông."
+  },
+  {
+   "id": 501,
+   "giai_thich": "Thứ tự ưu tiên giữa các xe ưu tiên theo Luật:\nQuy tắc ưu tiên: 'Hỏa - Sự - Công - Thương'.\nXe quân sự đi làm nhiệm vụ khẩn cấp có quyền ưu tiên cao hơn xe công an đi làm nhiệm vụ khẩn cấp. Do đó XE QUÂN SỰ ĐƯỢC QUYỀN ĐI TRƯỚC."
+  },
+  {
+   "id": 502,
+   "giai_thich": "Quan sát hệ thống đèn tín hiệu giao thông:\n- Đèn tín hiệu chính hình tròn đang bật ĐÈN ĐỎ, cấm các phương tiện đi thẳng (hướng 3) hoặc rẽ trái (hướng 4), rẽ nhánh (hướng 2).\n- Bên cạnh đèn chính có gắn một ĐÈN PHỤ HÌNH MŨI TÊN MÀU XANH chỉ sang phải (hướng 1).\nDo đó xe tải chỉ được phép đi theo HƯỚNG 1 (rẽ phải theo đèn phụ màu xanh)."
+  },
+  {
+   "id": 503,
+   "giai_thich": "Xét vi phạm về đèn tín hiệu và chỉ dẫn hướng đi trên làn đường:\n- Xe khách: Ở làn rẽ trái nhưng mũi tên lại đi thẳng -> Vi phạm hướng đi của làn đường.\n- Xe tải: Ở làn đi thẳng gặp đèn đỏ nhưng mũi tên lại vượt đèn đỏ rẽ trái -> Vi phạm hiệu lệnh đèn tín hiệu và sai làn.\n- Xe con: Ở làn rẽ phải có đèn xanh rẽ phải đúng -> Chấp hành đúng.\n- Xe mô tô: Ở làn rẽ phải gặp đèn xanh rẽ phải nhưng mũi tên lại rẽ trái sang làn đối diện -> Vi phạm hướng đi của làn đường.\nVậy những xe vi phạm quy tắc giao thông gồm: Xe khách, xe tải, xe mô tô."
+  },
+  {
+   "id": 504,
+   "giai_thich": "Tại nơi đường giao nhau cùng cấp không có biển báo và không có xe ưu tiên, áp dụng quy tắc ưu tiên theo thứ tự: Bên phải trống -> Rẽ phải -> Đi thẳng -> Rẽ trái -> Quay đầu:\n- Xe mô tô: Bên phải trống (không có xe) và rẽ phải -> Đi đầu tiên (thứ 1).\n- Sau khi xe mô tô đi, bên phải xe tải trống -> Xe tải đi thẳng (thứ 2).\n- Sau khi xe tải đi, bên phải xe khách trống -> Xe khách rẽ trái (thứ 3).\n- Xe con quay đầu đi sau cùng (thứ 4).\nThứ tự đúng: Xe mô tô -> Xe tải -> Xe khách -> Xe con."
+  },
+  {
+   "id": 505,
+   "giai_thich": "Phân tích biển báo cấm và biển phụ:\n- Biển chính là biển P.130 'Cấm dừng xe và đỗ xe'.\n- Bên dưới có gắn biển phụ S.505a vẽ hình xe ô tô tải. Biển phụ này quy định hiệu lực của biển cấm dừng đỗ CHỈ ÁP DỤNG RIÊNG ĐỐI VỚI XE TẢI.\n- Xe con và xe mô tô không thuộc đối tượng áp dụng của biển phụ nên được phép đỗ bình thường.\nDo đó chỉ có duy nhất XE TẢI ĐỖ VI PHẠM."
+  },
+  {
+   "id": 506,
+   "giai_thich": "Phân tích biển báo ưu tiên tại nơi giao nhau:\n- Trước mặt xe con (B) có cắm biển W.207 'Giao nhau với đường không ưu tiên' (đỉnh tam giác hướng lên trên), báo hiệu xe con (B) đang lưu thông trên đường ưu tiên.\n- Trước mặt xe con (A) và xe tải đều cắm biển W.208 'Giao nhau với đường ưu tiên' (tam giác ngược đỉnh chúc xuống), báo hiệu đang ở đường không ưu tiên.\nDo đó xe con (B) nằm trên đường ưu tiên ĐƯỢC QUYỀN ĐI TRƯỚC."
+  },
+  {
+   "id": 507,
+   "giai_thich": "Phân biệt giữa xe gắn máy và xe mô tô theo Quy chuẩn báo hiệu đường bộ:\n- Biển 2 là biển P.105 'Cấm xe mô tô'. Biển này CHỈ CẤM XE MÔ TÔ (dung tích xi lanh từ 50 cm3 trở lên), KHÔNG CẤM XE GẮN MÁY (dưới 50 cm3).\n- Biển 3 là biển P.103a 'Cấm xe ô tô', không có tác dụng cấm xe 2 bánh.\n- Do người điều khiển đang lái XE GẮN MÁY (dung tích dưới 50 cm3), phương tiện này không bị cấm bởi bất kỳ biển báo nào trong hình.\nDo đó xe gắn máy được phép đi CẢ BA HƯỚNG."
+  },
+  {
+   "id": 508,
+   "giai_thich": "Phân tích biển báo cấm và phạm vi tác dụng:\n- Biển P.130 'Cấm dừng xe và đỗ xe' có đặt kèm biển phụ S.508b vẽ mũi tên hai đầu (chỉ cả hướng lên và hướng xuống).\n- Biển phụ này biểu thị biển cấm có hiệu lực ở CẢ PHÍA TRƯỚC VÀ PHÍA SAU vị trí cắm biển.\n- Xe tải đỗ ở phía trước biển, xe mô tô đỗ ở phía sau biển; cả hai xe đều nằm trong phạm vi hiệu lực cấm.\nDo đó CẢ HAI XE ĐỀU ĐỖ VI PHẠM."
+  },
+  {
+   "id": 509,
+   "giai_thich": "Phân tích hành vi đỗ xe vi phạm theo Luật Giao thông đường bộ:\n- Xe tải: Đỗ ngược chiều lưu thông của làn đường bên trái -> Vi phạm nghiêm trọng quy định dừng, đỗ xe.\n- Xe con và xe mô tô: Đỗ đè lên phần đường kẻ vạch dành cho người đi bộ qua đường (vạch ngựa vằn) -> Vi phạm quy định dừng, đỗ xe tại nơi đường giao nhau và vạch đi bộ.\nDo đó CẢ BA XE ĐỀU ĐỖ VI PHẠM."
+  },
+  {
+   "id": 510,
+   "giai_thich": "Quy định về việc kéo xe theo Luật Giao thông đường bộ:\n- Đoạn đường có cắm biển P.120 'Cấm xe ô tô kéo rơ-moóc hoặc kéo phương tiện khác'.\n- Ngoài ra, Luật cũng quy định xe ô tô khi tham gia giao thông không được phép kéo theo xe mô tô, xe gắn máy không đảm bảo an toàn kỹ thuật.\nDo đó việc xe tải kéo xe mô tô ba bánh như hình là KHÔNG ĐÚNG quy tắc giao thông."
+  },
+  {
+   "id": 511,
+   "giai_thich": "Xét biển báo hiệu tại vòng xuyến:\n- Xe ô tô con đang di chuyển quanh đảo vòng xuyến có 5 hướng đi ra.\n- Quan sát tại lối vào hướng 1 có cắm biển báo cấm P.103a 'Cấm xe ô tô' (biển tròn viền đỏ vẽ hình ô tô con ở giữa).\n- Các hướng 2, 3, 4, 5 không có biển cấm đối với ô tô.\nDo đó CHỈ HƯỚNG 1 LÀ XE KHÔNG ĐƯỢC PHÉP ĐI."
+  },
+  {
+   "id": 512,
+   "giai_thich": "Phân tích biển báo cấm rẽ tại ngã ba/ngã tư:\n- Phía trước ngã tư có đặt biển P.123a 'Cấm rẽ trái' (biển tròn viền đỏ có mũi tên rẽ trái bị gạch chéo đỏ).\n- Hướng 3 chính là hướng rẽ trái nên xe ô tô không được phép đi vào hướng 3.\n- Theo Quy chuẩn 41:2019, biển cấm rẽ trái không cấm quay đầu xe, do đó hướng 2 (quay đầu), hướng 1 (rẽ phải), hướng 4 (đi thẳng) đều được đi.\nDo đó hướng xe không được phép đi là HƯỚNG 3."
+  },
+  {
+   "id": 513,
+   "giai_thich": "Phân tích biển báo cấm vượt và vạch kẻ đường:\n- Biển báo trên đường là biển P.126 'Cấm xe ô tô tải vượt' (vẽ ô tô tải màu đỏ vượt ô tô con màu đen). Biển này CHỈ CẤM RIÊNG XE TẢI VƯỢT, hoàn toàn KHÔNG CẤM xe con hay xe khách vượt.\n- Vạch tim đường là vạch nét đứt màu vàng, cho phép các phương tiện đè vạch để vượt khi phía trước an toàn.\nDo đó CẢ HAI XE (xe con và xe khách) ĐỀU VƯỢT ĐÚNG quy tắc giao thông."
+  },
+  {
+   "id": 514,
+   "giai_thich": "Xét hiệu lệnh của biển báo giao thông:\n- Trước ngã tư đặt biển hiệu lệnh R.301e 'Các hướng đi phải theo' (hình tròn nền xanh vẽ hai mũi tên: đi thẳng và rẽ trái).\n- Biển này bắt buộc người lái xe chỉ được đi thẳng (hướng 2) hoặc rẽ trái (hướng 3), không được rẽ phải sang hướng 1.\nDo đó những hướng xe được phép đi là HƯỚNG 2 VÀ HƯỚNG 3."
+  },
+  {
+   "id": 515,
+   "giai_thich": "Quy định về việc kéo rơ-moóc và phương tiện khác:\n- Trong hình, xe ô tô tải đang kéo một rơ-moóc thùng hàng, đồng thời rơ-moóc này lại tiếp tục kéo thêm một xe ô tô đầu kéo khác phía sau.\n- Luật Giao thông đường bộ quy định nghiêm cấm: Ô tô không được kéo theo một xe khác khi xe này đang kéo một phương tiện khác; không được kéo nhiều xe/rơ-moóc cùng lúc trái quy định.\nDo đó xe kéo nhau như hình là VI PHẠM quy tắc giao thông."
+  },
+  {
+   "id": 516,
+   "giai_thich": "Phân tích biển báo qua cầu hẹp/đoạn đường hẹp:\n- Phía trước xe khách có đặt biển P.132 'Nhường đường cho xe cơ giới đi ngược chiều qua đường hẹp' (biển tròn viền đỏ, mũi tên màu đỏ chỉ chiều xe khách).\n- Phía đối diện xe tải có đặt biển chỉ dẫn I.406 'Được ưu tiên qua đường hẹp' (biển vuông màu xanh, mũi tên màu trắng chỉ chiều xe tải).\nDo đó xe khách gặp biển P.132 bắt buộc PHẢI NHƯỜNG ĐƯỜNG cho xe tải đi qua cầu trước."
+  },
+  {
+   "id": 517,
+   "giai_thich": "Quy tắc hướng đi ưu tiên tại nơi đường giao nhau có đèn tín hiệu:\n- Cả xe con và xe mô tô đều đang gặp ĐÈN XANH nên đều được phép di chuyển vào giao lộ.\n- Xe mô tô RẼ PHẢI; xe ô tô con RẼ TRÁI.\n- Áp dụng quy tắc hướng rẽ ưu tiên ('Phải > Thẳng > Trái'): Xe rẽ phải luôn được quyền đi trước xe rẽ trái.\nDo đó XE MÔ TÔ ĐƯỢC QUYỀN ĐI TRƯỚC."
+  },
+  {
+   "id": 518,
+   "giai_thich": "Quy định an toàn khi điều khiển xe đầu kéo sơ mi rơ-moóc:\n- Hình ảnh thể hiện một tổ hợp xe đầu kéo kéo sơ mi rơ-moóc (xe container) nhưng phía đuôi sơ mi rơ-moóc lại gắn nối kéo thêm một chiếc xe tải thùng phía sau.\n- Luật Giao thông đường bộ quy định: Xe đầu kéo kéo sơ mi rơ-moóc tuyệt đối không được phép kéo thêm xe khác hoặc kéo thêm rơ-moóc khác.\nDo đó trường hợp này là KHÔNG ĐÚNG quy định."
+  },
+  {
+   "id": 519,
+   "giai_thich": "Phân tích biển hiệu lệnh kết hợp biển phụ và biển cấm:\n- Biển tròn xanh bên phải là biển hiệu lệnh R.301e (chỉ được rẽ phải) có gắn kèm biển phụ S.505a vẽ hình xe tải. Hiệu lệnh này CHỈ ÁP DỤNG ĐỐI VỚI XE TẢI, xe ô tô con không bị ràng buộc.\n- Hướng 2 có cắm biển P.103a 'Cấm xe ô tô' (cấm xe con đi thẳng vào hướng 2).\n- Hướng 1 (rẽ phải), hướng 3 (rẽ trái), hướng 4 (quay đầu) không có biển cấm xe con.\nDo đó xe ô tô con ĐƯỢC PHÉP ĐI HƯỚNG 1, 3 VÀ 4."
+  },
+  {
+   "id": 520,
+   "giai_thich": "Tại nơi đường giao nhau cùng cấp không có biển báo và không có xe ưu tiên, áp dụng quy tắc ưu tiên theo thứ tự: Bên phải trống -> Rẽ phải -> Đi thẳng -> Rẽ trái -> Quay đầu:\n- Xe mô tô và xe đạp: Bên phải trống (không có xe) và cùng rẽ phải -> Đi đầu tiên (thứ 1).\n- Sau khi xe mô tô và xe đạp đi, bên phải xe con (A) trống -> Xe con (A) đi thẳng (thứ 2).\n- Sau khi xe con (A) đi, bên phải xe con (B) trống -> Xe con (B) rẽ trái đi sau cùng (thứ 3).\nThứ tự đúng: Xe mô tô + xe đạp -> Xe con (A) -> Xe con (B)."
+  },
+  {
+   "id": 521,
+   "giai_thich": "Xét biển hiệu lệnh và biển phụ chỉ hướng:\n- Bên phải có đặt biển hiệu lệnh R.301 'Hướng đi phải theo' (chỉ rẽ phải) kèm biển phụ S.505a hình ô tô tải bên dưới. Nghĩa là hiệu lệnh bắt buộc rẽ phải chỉ áp dụng riêng cho xe tải.\n- Ngoài ra, hướng 2 có cắm biển P.106a cấm xe tải đi thẳng.\nDo đó xe tải CHỈ ĐƯỢC PHÉP ĐI THEO HƯỚNG 1 (rẽ phải)."
+  },
+  {
+   "id": 522,
+   "giai_thich": "Phân tích biển báo cấm theo hướng mũi tên:\n- Trước ngã ba có cắm biển P.106a 'Cấm ô tô tải' kết hợp biển phụ S.504 chỉ mũi tên rẽ phải (hướng 1), nghĩa là cấm xe tải rẽ phải vào hướng 1.\n- Hướng 2 (đi thẳng) và hướng 3 (rẽ trái) hoàn toàn không có biển cấm đối với xe tải.\nDo đó xe tải ĐƯỢC PHÉP ĐI HƯỚNG 2 VÀ HƯỚNG 3."
+  },
+  {
+   "id": 523,
+   "giai_thich": "Phân tích biển báo cấm tại đầu dải phân cách:\n- Tại đầu dải phân cách giữa có cắm biển P.103a 'Cấm xe ô tô' (hình tròn viền đỏ vẽ ô tô con). Cấm xe ô tô là gồm tất cả xe 4 bánh, 3 bánh (bao gồm cả xe tải, xe khách) đi vào phần đường phía sau biển (hướng 2, 3, 4).\n- Hướng 1 (rẽ phải trước biển) và hướng 5 (quay đầu xe trước biển) đều nằm ở phía trước biển cấm nên không thuộc phạm vi tác dụng của biển.\nDo đó xe ô tô tải ĐƯỢC PHÉP ĐI HƯỚNG 1 VÀ HƯỚNG 5."
+  },
+  {
+   "id": 524,
+   "giai_thich": "Phân tích biển báo cấm xe tải tại ngã tư:\n- Tại lối vào hướng 2 có cắm biển P.106a 'Cấm xe ô tô tải' (vẽ hình xe tải trong vòng tròn viền đỏ), do đó xe tải bị cấm đi thẳng vào hướng 2.\n- Các hướng 1 (rẽ phải), hướng 3 (rẽ trái), hướng 4 (quay đầu) không có biển cấm xe tải.\nDo đó xe ô tô tải được đi các hướng TRỪ HƯỚNG 2."
+  },
+  {
+   "id": 525,
+   "giai_thich": "Phân tích biển báo đường ưu tiên và hướng ưu tiên:\n- Phía trước xe mô tô có cắm biển hình thoi I.401 'Bắt đầu đường ưu tiên' kèm biển phụ S.506b chỉ hướng đường ưu tiên rẽ trái (nét đậm sang nhánh bên kia).\n- Phía trước xe con có cắm biển tam giác ngược W.208 'Giao nhau với đường ưu tiên' (đang trên đường không ưu tiên).\nDo đó xe mô tô nằm trên đường ưu tiên ĐƯỢC QUYỀN ĐI TRƯỚC xe con."
+  },
+  {
+   "id": 526,
+   "giai_thich": "Xét hiệu lực của biển báo hiệu lệnh:\n- Phía trước ngã tư có cắm biển hiệu lệnh R.301a 'Các phương tiện chỉ được đi thẳng'.\n- Xe ô tô con không chấp hành hiệu lệnh đi thẳng mà lại thực hiện quay đầu xe tại ngã tư.\nDo đó xe ô tô con VI PHẠM quy tắc giao thông."
+  },
+  {
+   "id": 527,
+   "giai_thich": "Phân tích vạch kẻ đường và hành vi các xe:\n- Vạch tim đường phân chia hai chiều xe chạy là VẠCH ĐƠN NÉT LIỀN MÀU VÀNG (vạch 1.2), cấm phương tiện đè vạch hoặc lấn làn.\n- Xe ô tô con thực hiện quay đầu xe đè qua vạch liền màu vàng -> Vi phạm quy tắc giao thông.\n- Xe mô tô đánh lái tránh chướng ngại vật công trường có cọc tiêu rào chắn trên đường -> Phù hợp tình huống thực tế.\nDo đó chỉ có XE CON VI PHẠM quy tắc giao thông."
+  },
+  {
+   "id": 528,
+   "giai_thich": "Hiệu lệnh của người điều khiển giao thông (Cảnh sát giao thông):\n- Luật Giao thông đường bộ quy định: Khi người điều khiển giao thông giơ tay thẳng đứng, tất cả người tham gia giao thông ở mọi hướng đều phải dừng lại trước ngã tư.\n- Ngoại lệ: Những phương tiện đã chớm ở trong khu vực ngã tư thì được phép tiếp tục di chuyển để giải phóng giao lộ (như xe tải màu xanh trong hình).\nĐáp án đúng: Tất cả các xe phải dừng lại trước ngã tư, trừ những xe đã ở trong ngã tư được phép tiếp tục đi."
+  },
+  {
+   "id": 529,
+   "giai_thich": "Hiệu lệnh CSGT giang hai tay sang ngang:\n- Luật Giao thông đường bộ quy định: Khi người điều khiển giao thông giang hai tay hoặc một tay sang ngang thì người tham gia giao thông ở phía trước và phía sau phải dừng lại; người tham gia giao thông ở phía bên phải và bên trái được đi tất cả các hướng.\n- Trong hình: Xe mô tô và xe tải nằm ở phía bên tay phải và bên tay trái của CSGT nên ĐƯỢC PHÉP ĐI; xe con ở phía trước mặt CSGT phải dừng lại.\nĐáp án đúng: Xe mô tô, xe tải."
+  },
+  {
+   "id": 530,
+   "giai_thich": "Quy định về các trường hợp được phép vượt xe về bên phải:\n- Luật Giao thông đường bộ quy định: Phương tiện được phép vượt về bên phải khi 'Xe phía trước có tín hiệu rẽ trái hoặc đang rẽ trái'.\n- Trong hình: Xe tải phía trước đang bật tín hiệu rẽ trái và đã mở lái sang làn rẽ trái, chừa lại khoảng trống bên phải. Xe con đi thẳng vượt qua bên phải xe tải là ĐÚNG quy tắc giao thông."
+  },
+  {
+   "id": 531,
+   "giai_thich": "Phân tích vạch kẻ đường kép phân chia hai chiều xe chạy:\n- Vạch tim đường là VẠCH KÉP MÀU VÀNG (vạch 1.4) gồm một vạch nét liền và một vạch nét đứt chạy song song:\n  + Phía xe con: Vạch tim đường là VẠCH NÉT ĐỨT, cho phép xe con đè vạch lấn sang làn đối diện để vượt xe tải khi an toàn -> Xe con vượt ĐÚNG.\n  + Phía xe tải (container): Vạch tim đường là VẠCH NÉT LIỀN, tuyệt đối cấm đè vạch hoặc lấn làn -> Xe tải lấn làn vượt xe khách là SAI.\nDo đó chỉ có duy nhất XE CON VƯỢT ĐÚNG."
+  },
+  {
+   "id": 532,
+   "giai_thich": "Phân tích biển báo cấm và quyền của xe ưu tiên:\n- Xe tải: Phía trước có cắm biển P.123a 'Cấm rẽ trái' (cấm quay đầu xe/rẽ trái), nhưng xe tải lại quay đầu xe -> Xe tải VI PHẠM.\n- Xe chữa cháy: Đang đi làm nhiệm vụ khẩn cấp có tín hiệu còi, đèn ưu tiên, được quyền đi vào đường có biển P.102 'Cấm đi ngược chiều' theo Luật Giao thông đường bộ.\nDo đó xe vi phạm quy tắc giao thông là XE TẢI."
+  },
+  {
+   "id": 533,
+   "giai_thich": "Phân tích biển báo và quy tắc nhường đường tại nơi giao nhau:\n- Biển báo: Nơi giao nhau có cắm biển W.205 'Giao nhau giữa các đường cùng cấp' (tam giác viền đỏ nền vàng hình chữ T), do đó các tuyến đường có quyền ưu tiên ngang nhau.\n- Quy tắc hướng đi ưu tiên: Xe rẽ phải -> Xe đi thẳng -> Xe rẽ trái:\n  + Xe tải rẽ phải: Hướng rẽ phải được ưu tiên đi đầu tiên (không xung đột cắt ngang luồng xe khác).\n  + Xe khách và Xe con cùng lưu thông đối diện nhau trên cùng một con đường: Xe con rẽ trái (chuyển hướng) bắt buộc phải nhường đường cho xe khách đi thẳng. Do đó xe khách đi thứ 2.\n  + Xe con rẽ trái: Nhường cho xe khách đi thẳng xong mới được rẽ, nên đi sau cùng (thứ 3).\nThứ tự đúng: Xe tải -> Xe khách -> Xe con."
+  },
+  {
+   "id": 534,
+   "giai_thich": "Phân tích biển báo và quy tắc hướng đi ưu tiên (Rẽ phải -> Đi thẳng -> Rẽ trái):\n- Biển báo: Nơi giao nhau có cắm biển W.205 'Giao nhau giữa các đường cùng cấp', do đó các tuyến đường có quyền ưu tiên ngang nhau.\n- Xét hướng đi của các xe:\n  + Cả xe khách và xe tải đều rẽ phải: Hướng rẽ phải được ưu tiên đi trước. Quỹ đạo rẽ phải của hai xe không giao cắt xung đột nhau nên xe khách và xe tải được ĐI ĐỒNG THỜI (thứ 1).\n  + Xe con rẽ trái: Thuộc hướng ưu tiên sau cùng nên phải nhường đường và đi sau cùng (thứ 2).\nThứ tự đúng: Xe khách và xe tải, xe con."
+  },
+  {
+   "id": 535,
+   "giai_thich": "Phân tích biển cấm tại các hướng đi của xe tải:\n- Ngay tại lối vào hướng 4 (hướng đi thẳng) có cắm biển P.102 'Cấm đi ngược chiều' (biển tròn đỏ có vạch ngang màu trắng), do đó xe tải bị cấm đi vào hướng 4.\n- Các hướng còn lại: Hướng 1 (rẽ phải), Hướng 2 (rẽ trái), Hướng 3 (quay đầu xe) không có biển cấm đối với xe tải.\nDo đó xe tải được phép đi các hướng TRỪ HƯỚNG 4."
+  },
+  {
+   "id": 536,
+   "giai_thich": "Phân tích thứ tự ưu tiên sa hình tại nơi giao nhau:\n1. Xe ưu tiên: Xe công an đi làm nhiệm vụ khẩn cấp có quyền ưu tiên cao nhất nên được ĐI ĐẦU TIÊN (thứ 1).\n2. Xe trên đường ưu tiên: Cả xe tải và xe con đều nằm trên đường ưu tiên (gặp biển W.207 'Giao nhau với đường không ưu tiên') và cùng rẽ trái. Áp dụng quy tắc 'Bên phải không vướng': do xe công an đã đi nên bên phải xe con lúc này đã trống -> Xe con ĐƯỢC ĐI THỨ 2; tiếp đến là Xe tải rẽ trái ĐI THỨ 3.\n3. Xe trên đường không ưu tiên: Xe khách nằm trên đường không ưu tiên (gặp biển tam giác ngược W.208) nên phải nhường đường và ĐI SAU CÙNG (thứ 4).\nThứ tự đúng: Xe công an -> Xe con -> Xe tải -> Xe khách."
+  },
+  {
+   "id": 537,
+   "giai_thich": "Phân tích biển báo cấm theo từng hướng đi:\n- Trước ngã tư có cắm biển P.123a 'Cấm rẽ trái' (biển tròn viền đỏ mũi tên rẽ trái gạch chéo), do đó xe tải bị CẤM RẼ VÀO HƯỚNG 2. Biển cấm rẽ trái không cấm quay đầu xe nên hướng 3 vẫn được đi.\n- Hướng 4 (đi thẳng) có cắm biển P.108 'Cấm máy kéo'. Biển này chỉ áp dụng cấm máy kéo, hoàn toàn không cấm xe ô tô tải nên xe tải vẫn được đi vào hướng 4.\n- Hướng 1 (rẽ phải) không có biển cấm.\nDo đó xe tải được phép đi các HƯỚNG 1, 3 VÀ 4."
+  },
+  {
+   "id": 538,
+   "giai_thich": "Quan sát đèn tín hiệu và hướng mũi tên của từng phương tiện:\n- Xe khách: Ở làn rẽ trái có đèn đỏ cấm rẽ trái -> Đang dừng lại trước vạch dừng -> Đúng.\n- Xe tải: Ở làn đi thẳng có đèn xanh đi thẳng -> Đi thẳng -> Đúng.\n- Xe con: Ở làn rẽ phải có đèn xanh rẽ phải -> Rẽ phải -> Đúng.\n- Phía đối diện: Xe tải rẽ trái theo đèn xanh rẽ trái; xe con và mô tô dừng đèn đỏ -> Tất cả đều đúng.\nDo đó: TẤT CẢ CÁC LOẠI XE TRÊN đều chấp hành đúng quy tắc giao thông."
+  },
+  {
+   "id": 539,
+   "giai_thich": "Phân tích biển báo đối với xe mô tô:\n- Hướng 1 (rẽ phải): Không có biển cấm -> Được đi.\n- Hướng 2 (đi thẳng): Có cắm biển P.105 'Cấm xe mô tô' -> Cấm mô tô đi vào.\n- Hướng 3 (rẽ trái): Có cắm biển P.103a 'Cấm xe ô tô'. Biển cấm ô tô không có hiệu lực cấm xe mô tô hai bánh -> Mô tô được phép đi.\nDo đó xe mô tô được phép đi HƯỚNG 1 VÀ HƯỚNG 3."
+  },
+  {
+   "id": 540,
+   "giai_thich": "Áp dụng thứ tự ưu tiên xe ưu tiên và đường cùng cấp:\n1. Trong hình có hai xe ưu tiên: Xe quân sự và Xe công an. Theo Luật Giao thông: 'Hỏa - Sự - Công - Thương', xe quân sự có quyền ưu tiên cao hơn xe công an, do đó xe quân sự đi trước (thứ 1), tiếp theo là xe công an (thứ 2).\n2. Xe con và xe mô tô: Cả hai xe đều đi thẳng (không xung đột hướng đi) nên cùng đi một lúc (thứ 3).\nThứ tự đúng: Xe quân sự -> Xe công an -> Xe con + xe mô tô."
+  },
+  {
+   "id": 541,
+   "giai_thich": "Quy tắc nhường đường khi tránh nhau trên đường dốc hẹp:\n- Phía trước bên phải xe B có cắm biển báo W.220 'Dốc lên nguy hiểm' (vạch dốc hướng lên khi nhìn từ trái sang phải), nghĩa là xe B đang đi lên dốc.\n- Xe A đi theo chiều ngược lại nên xe A đang đi xuống dốc.\n- Quy tắc giao thông đường bộ quy định: Khi tránh nhau trên đường dốc hẹp, xe đang xuống dốc phải nhường đường cho xe đang lên dốc.\nDo đó XE A PHẢI NHƯỜNG ĐƯỜNG cho xe B."
+  },
+  {
+   "id": 542,
+   "giai_thich": "Quy định cấm quay đầu xe tại nơi có vạch người đi bộ:\n- Luật Giao thông đường bộ nghiêm cấm: Người lái xe không được phép quay đầu xe ở phần đường dành cho người đi bộ qua đường (vạch ngựa vằn).\n- Trong hình, xe ô tô con quay đầu xe đè trực tiếp lên vạch kẻ đường dành cho người đi bộ qua đường.\nDo đó hành vi quay đầu của xe con là VI PHẠM quy tắc giao thông."
+  },
+  {
+   "id": 543,
+   "giai_thich": "Đối chiếu biển báo làn đường trên giá long môn với vị trí thực tế của từng xe:\n- Làn 1 (ngoài cùng bên trái): Biển chỉ dẫn làn dành cho xe ô tô -> Xe khách (A) đi đúng.\n- Làn 2: Biển chỉ dẫn làn dành cho xe ô tô -> Xe tải (B) đi đúng; Xe mô tô (C) đi vào làn ô tô là SAI LÀN.\n- Làn 3: Biển chỉ dẫn làn dành cho xe mô tô -> Xe ô tô con (E) đi vào làn mô tô là SAI LÀN.\n- Làn 4: Biển chỉ dẫn làn dành cho xe mô tô -> Xe mô tô (D) đi đúng.\nVậy hai xe vi phạm quy tắc giao thông là: Xe con (E), xe mô tô (C)."
+  },
+  {
+   "id": 544,
+   "giai_thich": "Quy tắc sa hình 'Nhất chớm':\n- Xe ô tô con màu đỏ phía trước đã vượt qua vạch dừng của người đi bộ, đi sâu vào tâm giao lộ và đang chuyển hướng rẽ trái ('nhất chớm').\n- Luật quy định xe đã vào trong nơi giao nhau trước được quyền ưu tiên thoát khỏi giao lộ trước các phương tiện đến sau.\n- Xe của bạn đi thẳng nhưng đến sau nên bắt buộc PHẢI NHƯỜNG XE CON RẼ TRÁI TRƯỚC rồi mới tiếp tục đi."
+  },
+  {
+   "id": 545,
+   "giai_thich": "Phân tích biển báo cấm tại ngã ba/ngã tư từ góc nhìn người lái:\n- Lối vào hướng 3 có cắm biển P.102 'Cấm đi ngược chiều' -> Cấm đi vào hướng 3.\n- Lối vào hướng 4 có cắm biển P.123b 'Cấm rẽ phải' -> Cấm rẽ vào hướng 4.\n- Hướng 1 (rẽ trái) và hướng 2 (đi thẳng) không có biển cấm.\nDo đó người lái xe ĐƯỢC PHÉP ĐI THEO HƯỚNG 1 VÀ HƯỚNG 2."
+  },
+  {
+   "id": 546,
+   "giai_thich": "Quy tắc chuyển làn đường an toàn:\n- Luật Giao thông đường bộ quy định: Phương tiện khi chuyển làn đường phải có tín hiệu báo trước, quan sát bảo đảm an toàn và phải nhường đường cho phương tiện đang chạy trên làn đường định chuyển sang.\n- Xe con (B) đang bật đèn tín hiệu xin chuyển làn sang làn bên phải (làn xe con A đang chạy).\n- Xe con (A) đang đi thẳng trên làn đường thông suốt của mình.\nDo đó XE CON (B) PHẢI NHƯỜNG ĐƯỜNG cho xe con (A)."
+  },
+  {
+   "id": 547,
+   "giai_thich": "Quy tắc nhường đường tại nơi giao nhau có đèn tín hiệu:\n- Dù xe của bạn đang có đèn xanh nhưng bạn đang chuẩn bị rẽ trái qua giao lộ.\n- Xe tải đã cán vạch, đi vào ngã rẽ (đã chớm vào nơi giao nhau trước) nên theo nguyên tắc 'Nhất chớm', xe tải được quyền ưu tiên đi tiếp để thoát khỏi giao lộ.\n- Xe buýt đi thẳng từ hướng đối diện, được quyền ưu tiên đi trước xe rẽ trái theo quy tắc hướng đi (Đi thẳng > Rẽ trái).\nDo đó, dù đang là đèn xanh thì bạn vẫn phải NHƯỜNG ĐƯỜNG CHO CẢ XE BUÝT VÀ XE TẢI."
+  },
+  {
+   "id": 548,
+   "giai_thich": "Đối chiếu biển phân làn trên giá long môn với vị trí thực tế của từng xe:\n- Làn 1 (bên trái): Làn dành cho ô tô con -> Xe con (A) đi đúng.\n- Làn 2: Làn dùng chung cho ô tô và mô tô -> Xe con (B) và xe mô tô (C) đi đúng.\n- Làn 3: Làn dành cho xe mô tô -> Xe con (E) đi vào làn mô tô là SAI LÀN.\n- Làn 4 (bên phải): Làn dành cho xe ô tô con -> Xe mô tô (D) đi vào làn ô tô là SAI LÀN.\nVậy những xe vi phạm quy tắc giao thông là: Xe con (E), xe mô tô (D)."
+  },
+  {
+   "id": 549,
+   "giai_thich": "Phân tích biển báo ưu tiên tại nơi giao nhau:\n- Phía trước xe của bạn có cắm biển tam giác ngược W.208 'Giao nhau với đường ưu tiên' (báo hiệu bạn đang đi từ đường nhánh, không ưu tiên ra đường chính).\n- Xe tải đang chạy thẳng trên trục đường chính (đường ưu tiên cắt ngang).\nDo đó XE TẢI ĐƯỢC QUYỀN ĐI TRƯỚC xe của bạn."
+  },
+  {
+   "id": 550,
+   "giai_thich": "Quy tắc quay đầu xe tại nơi đường giao nhau:\n- Trước ngã tư có cắm biển P.123a 'Cấm rẽ trái'. Theo Quy chuẩn 41:2019, biển cấm rẽ trái KHÔNG CẤM quay đầu xe.\n- Hướng B: Điểm quay đầu đè trực tiếp lên vạch kẻ đường dành cho người đi bộ qua đường (Luật nghiêm cấm quay đầu xe tại đây).\n- Hướng A: Xe tiến qua vạch người đi bộ vào trong ngã tư an toàn rồi mới vòng đầu xe -> Đúng luật.\nDo đó người lái xe CHỈ ĐƯỢC QUAY ĐẦU THEO HƯỚNG A."
+  },
+  {
+   "id": 551,
+   "giai_thich": "Phân tích biển báo ưu tiên và hướng di chuyển của các xe:\n- Xe của bạn: Phía trước có cắm biển W.207a 'Giao nhau với đường không ưu tiên' (đang đi trên đường ưu tiên) và xe đi thẳng nên được quyền đi trước.\n- Xe con: Ở đường không ưu tiên nhưng rẽ phải, hướng rẽ không giao cắt hay xung đột với xe của bạn nên có thể đi cùng lúc với xe của bạn.\n- Xe tải: Ở đường không ưu tiên và rẽ trái (cắt qua luồng ưu tiên) nên phải nhường đường và đi sau cùng.\nThứ tự đúng: Xe của bạn và xe con, xe tải."
+  },
+  {
+   "id": 552,
+   "giai_thich": "Quy tắc vượt xe an toàn theo Luật Giao thông đường bộ:\nKhi muốn vượt xe phía trước (xe tải), người lái xe phải:\n1. Quan sát an toàn phía trước, phía sau qua gương chiếu hậu.\n2. Bật tín hiệu báo hiệu xin vượt bằng đèn hoặc còi.\n3. Khi đủ điều kiện an toàn (không có chướng ngại vật, không có xe ngược chiều) mới tăng tốc cho xe chạy vượt qua dứt khoát.\nĐáp án đúng: Bật tín hiệu báo hiệu bằng đèn hoặc còi, khi đủ điều kiện an toàn, tăng tốc cho xe chạy vượt qua."
+  },
+  {
+   "id": 553,
+   "giai_thich": "Quan sát hệ thống đèn tín hiệu giao thông:\n- Làn xe khách và xe mô tô đang có tín hiệu ĐÈN XANH -> Được phép đi.\n- Làn xe tải và xe con đang có tín hiệu ĐÈN ĐỎ -> Bắt buộc phải dừng lại trước vạch dừng.\nĐáp án đúng: Xe con, xe tải."
+  },
+  {
+   "id": 554,
+   "giai_thich": "Quan sát vị trí xe chạy so với các vạch kẻ đường:\n- Xe con (B) và Xe tải (D) vi phạm vì chạy cán/đè lên vạch kẻ đường (xe B chạy đè vạch đôi màu vàng ở tim đường, xe D chạy đè vạch liền màu trắng).\n- Các xe còn lại gồm Xe con (A), Xe con (C), Xe con (E) và Xe buýt (G) đều đi đúng trong phần làn đường quy định, không đè vạch.\nDo đó các xe chấp hành đúng quy tắc giao thông là: Xe con (A), xe con (C), xe con (E), xe buýt (G)."
+  },
+  {
+   "id": 555,
+   "giai_thich": "Quy định cấm vượt xe theo Luật Giao thông đường bộ:\n- Tại nơi đường giao nhau và trên đường có phần đường (làn) dành cho người đi bộ cắt qua thì nghiêm cấm vượt xe.\n- Ngoài ra, tại đây còn có vạch tim đường nét liền màu vàng cấm lấn làn, đè vạch.\nDo đó người lái xe CẤM VƯỢT xe tải trong trường hợp này."
+  },
+  {
+   "id": 556,
+   "giai_thich": "Quy định cấm vượt xe theo Luật Giao thông đường bộ:\n- Tại nơi đường giao nhau (có cắm biển W.208 giao nhau với đường ưu tiên) và trên đường có làn dành cho người đi bộ cắt qua thì nghiêm cấm vượt xe.\n- Vượt xe tại nơi đường giao nhau và vạch đi bộ tiềm ẩn nguy cơ cao xảy ra va chạm và tai nạn giao thông.\nDo đó bạn KHÔNG ĐƯỢC VƯỢT xe mô tô phía trước."
+  },
+  {
+   "id": 557,
+   "giai_thich": "Phân tích quy định về dừng xe và ý nghĩa biển báo:\n- Biển báo trên đường là biển P.131a 'Cấm đỗ xe' (chỉ cấm đỗ xe, không cấm dừng xe). Vì vậy, người lái xe hoàn toàn ĐƯỢC PHÉP DỪNG XE tại vị trí B và C ở lề đường bên phải theo chiều đi.\n- Vị trí A nằm ở lề đường bên trái: Theo quy tắc giao thông đường bộ, người điều khiển phương tiện phải dừng xe sát mép đường bên phải theo chiều đi của mình. Dừng xe ở vị trí A là dừng ngược chiều lưu thông, vi phạm quy tắc giao thông.\nDo đó, người lái xe dừng đúng quy tắc giao thông tại: Vị trí B và C."
+  },
+  {
+   "id": 558,
+   "giai_thich": "Phân tích phạm vi hiệu lực của biển cấm có biển phụ mũi tên hai đầu:\n- Biển P.130 'Cấm dừng xe và đỗ xe' có gắn kèm biển phụ S.508b vẽ mũi tên hai đầu (chỉ cả phía trước và phía sau).\n- Biển này có hiệu lực cấm dừng xe và đỗ xe ở CẢ PHÍA TRƯỚC VÀ PHÍA SAU vị trí cắm biển.\n- Vị trí A (sau biển) và vị trí B (trước biển) đều nằm trong phạm vi cấm.\nDo đó bạn KHÔNG ĐƯỢC DỪNG ở cả vị trí A và B."
+  },
+  {
+   "id": 559,
+   "giai_thich": "Xét hiệu lệnh của biển báo giao thông:\n- Phía trước ngã tư có cắm biển hiệu lệnh R.301a 'Các phương tiện chỉ được đi thẳng'.\n- Quan sát đèn tín hiệu của hai phương tiện:\n  + Xe con bật đèn xi-nhan bên trái chuẩn bị rẽ trái.\n  + Xe mô tô bật đèn xi-nhan bên phải chuẩn bị rẽ phải.\nCả hai xe đều không tuân thủ hiệu lệnh chỉ được đi thẳng của biển báo R.301a.\nDo đó CẢ HAI XE ĐỀU VI PHẠM quy tắc giao thông."
+  },
+  {
+   "id": 560,
+   "giai_thich": "Xét đèn tín hiệu và chỉ dẫn hướng đi trên làn đường:\n- Xe khách ở làn trong cùng rẽ trái gặp đèn đỏ đang dừng lại -> Chấp hành đúng.\n- Xe con ở làn ngoài cùng rẽ phải có đèn xanh rẽ phải -> Rẽ phải đúng.\n- Xe tải ở làn giữa là làn đi thẳng có đèn xanh đi thẳng, nhưng xe lại rẽ trái đè sang làn khác -> Vi phạm hướng đi của làn đường.\nDo đó chỉ có duy nhất XE TẢI VI PHẠM."
+  },
+  {
+   "id": 561,
+   "giai_thich": "Xét hiệu lệnh đèn tín hiệu và mũi tên chỉ hướng làn đường:\n- Xe khách ở làn rẽ trái nhưng mũi tên lại đi thẳng -> Vi phạm hướng đi của làn đường.\n- Xe tải ở làn đi thẳng nhưng mũi tên lại rẽ trái -> Vi phạm hướng đi của làn đường.\n- Xe con rẽ phải đúng làn đèn xanh; xe mô tô chấp hành đúng.\nDo đó các xe vi phạm là: Xe khách, xe tải."
+  },
+  {
+   "id": 562,
+   "giai_thich": "Kiểm tra vi phạm theo tín hiệu đèn và hướng mũi tên:\n- Xe tải ở làn đi thẳng gặp đèn đỏ nhưng lại vượt đèn đỏ rẽ trái -> Vi phạm.\n- Xe khách ở làn rẽ trái gặp đèn xanh rẽ trái nhưng lại đi thẳng -> Vi phạm hướng làn.\n- Xe mô tô ở làn rẽ phải gặp đèn đỏ nhưng lại vượt đèn đỏ rẽ phải/trái -> Vi phạm.\n- Xe con đi đúng làn đèn xanh rẽ phải -> Chấp hành đúng.\nVậy các xe vi phạm quy tắc giao thông gồm: Xe tải, xe khách, xe mô tô."
+  },
+  {
+   "id": 563,
+   "giai_thich": "Xét vi phạm hướng đi theo vạch chỉ hướng trên mặt đường:\n- Xe khách ở làn rẽ trái nhưng lại đi thẳng -> Vi phạm chỉ dẫn làn đường.\n- Xe tải ở làn đi thẳng nhưng lại rẽ trái -> Vi phạm chỉ dẫn làn đường.\n- Xe con ở làn rẽ phải, đi đúng theo hướng mũi tên rẽ phải -> Đúng.\nDo đó những xe vi phạm quy tắc giao thông là: Xe khách, xe tải."
+  },
+  {
+   "id": 564,
+   "giai_thich": "Kỹ năng xử lý an toàn khi gặp xe bị sự cố phía trước:\nKhi phát hiện xe tải phía trước bị hỏng đột xuất dừng đỗ trên làn đường của mình:\n1. Quan sát cẩn thận tình hình giao thông phía trước và phía sau qua gương chiếu hậu.\n2. Khi thấy đủ điều kiện an toàn (không có xe ngược chiều tới gần, không có xe phía sau vượt lên), bật tín hiệu xin vượt bằng đèn xi-nhan hoặc còi.\n3. Sau đó mới cho xe lách sang trái vượt qua xe hỏng an toàn.\nĐáp án đúng: Quan sát phía trước, phía sau, khi đủ điều kiện an toàn, bật tín hiệu bằng đèn hoặc còi rồi cho xe chạy vượt qua."
+  },
+  {
+   "id": 565,
+   "giai_thich": "Kiểm tra xe nào chấp hành đúng quy tắc giao thông:\n- Phía bên phải: Xe con ở làn rẽ phải gặp đèn đỏ nhưng rẽ phải là sai; Xe tải ở làn đi thẳng rẽ trái là sai.\n- Xe khách: Ở làn đi thẳng có đèn xanh đi thẳng -> Chấp hành đúng.\n- Xe mô tô: Ở làn rẽ phải có đèn xanh rẽ phải -> Chấp hành đúng.\nDo đó những xe chấp hành đúng quy tắc giao thông là: Xe khách, xe mô tô."
+  },
+  {
+   "id": 566,
+   "giai_thich": "Quan sát vị trí các xe chạy so với vạch kẻ đường trên hình:\n- Xe con (B) và Xe tải (D) vi phạm vì chạy đè lên vạch kẻ đường: Xe con (B) chạy đè lên vạch tim đường đôi màu vàng; Xe tải (D) chạy đè lên vạch liền màu trắng phân làn (vạch giới hạn làn đường dành cho xe buýt).\n- Các xe còn lại gồm Xe con (A), Xe con (C), Xe con (E) và Xe buýt (G) đều đi đúng trong làn đường quy định, không đè vạch.\nDo đó, những xe vi phạm quy tắc giao thông là: Xe tải ( D), xe con (B)."
+  },
+  {
+   "id": 567,
+   "giai_thich": "Phân tích quyền ưu tiên tại ngã ba theo biển báo và quy tắc giao thông:\n1. Xe mô tô: Nằm trên đường ưu tiên (theo biển phụ S.506b thể hiện hướng đường ưu tiên bẻ sang nhánh mô tô) nên được quyền đi đầu tiên.\n2. Xe con và Xe của bạn: Sau khi mô tô đi, cả hai xe đều ở trên đường không ưu tiên (trước mặt xe bạn có biển tam giác ngược W.208 'Giao nhau với đường ưu tiên'). Xét quy tắc nhường đường, xe con có hướng bên phải trống (không vướng xe) nên được đi trước xe của bạn.\n3. Xe của bạn: Nằm ở đường không ưu tiên và hướng bên phải vướng xe con nên phải đi sau cùng.\nThứ tự đúng: Xe mô tô -> Xe con -> Xe của bạn."
+  },
+  {
+   "id": 568,
+   "giai_thich": "Áp dụng quy tắc ngã ba đồng cấp (không có biển báo, không có xe ưu tiên):\n1. Xe con (màu xanh tím): Rẽ phải và phía bên phải không vướng xe nào -> Được quyền đi đầu tiên.\n2. Xe của bạn và Xe mô tô: Cùng đi trên một trục đường đối diện nhau. Dù xe mô tô có bên phải không vướng, nhưng xe mô tô rẽ trái nên không được phép cắt mặt xe cùng đường đang đi thẳng (xe của bạn). Theo quy tắc ưu tiên hướng đi (Đi thẳng > Rẽ trái), xe của bạn được đi thứ 2.\n3. Xe mô tô: Rẽ trái cắt mặt xe đi thẳng cùng đường nên phải nhường đường và đi sau cùng.\nThứ tự đúng: Xe con -> Xe của bạn -> Xe mô tô."
+  },
+  {
+   "id": 569,
+   "giai_thich": "Quan sát tín hiệu đèn giao thông từ vị trí lái xe:\n- Xe ô tô con màu xanh phía trước đang đi thẳng tới ngã tư có cột tín hiệu ĐÈN ĐỎ -> Bắt buộc xe con phải dừng lại trước vạch dừng.\n- Xe của bạn đang ở nhánh rẽ phải có làn rẽ riêng không bị khống chế bởi đèn đỏ đi thẳng, mũi tên chỉ dẫn rẽ phải.\nDo đó xe phải dừng lại trong trường hợp này là: XE CON."
+  },
+  {
+   "id": 570,
+   "giai_thich": "Phân tích vạch sơn chỉ hướng trên mặt đường làn xe bạn đang chạy:\n- Tại giao lộ, làn đường xe bạn đang đứng có kẻ vạch sơn màu trắng kết hợp hình mũi tên: ĐI THẲNG VÀ RẼ TRÁI.\n- Đèn tín hiệu giao thông đang bật màu xanh.\nDo đó xe của bạn được phép đi theo hướng: ĐI THẲNG, RẼ TRÁI."
+  },
+  {
+   "id": 571,
+   "giai_thich": "Xử lý tình huống theo vạch kẻ đường và đèn tín hiệu:\n- Xe của bạn đang dừng ở làn đường có mũi tên chỉ hướng đi thẳng hoặc rẽ trái.\n- Cột đèn tín hiệu chính đang bật ĐÈN ĐỎ (chỉ có đèn phụ mũi tên màu xanh rẽ phải là sáng cho làn rẽ phải).\n- Vì bạn đang ở làn đi thẳng/rẽ trái nên không được rẽ phải và không được vượt đèn đỏ.\nCách xử lý đúng: Dừng lại trước vạch dừng và đi thẳng hoặc rẽ trái khi đèn xanh."
+  },
+  {
+   "id": 572,
+   "giai_thich": "Kỹ năng nhường đường khi rẽ phải tại nơi giao nhau:\n- Xe của bạn chuẩn bị rẽ phải vào đường cắt ngang.\n- Trên đường cắt ngang, xe tải và người đi xe đạp đang đi thẳng trên làn đường thông suốt.\n- Khi chuyển hướng rẽ phải, bạn bắt buộc phải nhường đường cho các phương tiện đang đi thẳng trên trục đường chính.\nCách xử lý đúng: Giảm tốc độ, rẽ phải sau xe tải và xe đạp."
+  },
+  {
+   "id": 573,
+   "giai_thich": "Kỹ năng nhường đường cho người đi bộ và phương tiện chuyển hướng:\n- Phía trước đầu xe có người đi bộ đang qua đường trên vạch kẻ đường dành cho người đi bộ.\n- Xe con màu xanh phía trước đã nhập vào ngã rẽ trước.\n- Người lái xe phải luôn chấp hành quy tắc an toàn: Nhường đường cho người đi bộ qua đường trước, sau đó rẽ theo sau xe con màu xanh.\nCách xử lý đúng: Giảm tốc độ, để người đi bộ qua đường và rẽ phải sau xe con màu xanh."
+  },
+  {
+   "id": 574,
+   "giai_thich": "Phân tích biển báo giao thông và quy tắc nhường đường:\n- Phía trước xe của bạn có cắm biển hiệu lệnh R.122 'STOP' (Dừng lại). Khi gặp biển này, người điều khiển phương tiện bắt buộc phải dừng lại trước vạch dừng xe, chú ý quan sát và nhường đường cho các xe trên đường giao nhau.\n- Do đó, bạn phải dừng lại nhường cho xe đạp và xe khách đi qua trước khi an toàn mới được tiếp tục di chuyển.\nCách xử lý đúng: Nhường đường cho xe đạp và xe khách."
+  },
+  {
+   "id": 575,
+   "giai_thich": "Phân tích biển báo ưu tiên và hướng đi:\n- Phía trước xe của bạn có cắm biển W.207 'Giao nhau với đường không ưu tiên' (bạn đang trên đường ưu tiên).\n- Xe con phía trước đi thẳng trên cùng trục đường ưu tiên.\n- Xe tải từ đường nhánh bên trái có cắm biển tam giác ngược W.208 'Giao nhau với đường ưu tiên' và đang rẽ trái.\nDo đó phương tiện ở đường nhánh là XE TẢI PHẢI NHƯỜNG ĐƯỜNG."
+  },
+  {
+   "id": 576,
+   "giai_thich": "Quy tắc tránh nhau nơi có chướng ngại vật:\n- Luật Giao thông đường bộ quy định: 'Nơi đường hẹp hoặc có chướng ngại vật, xe có chướng ngại vật phía trước phải nhường đường cho xe không có chướng ngại vật đi trước'.\n- Phía trước làn đường của xe bạn có xe ô tô đang đỗ (là chướng ngại vật), trong khi xe đi ngược chiều đang lưu thông trên làn đường thông suốt không có vật cản.\nDo đó XE CỦA BẠN PHẢI NHƯỜNG ĐƯỜNG cho xe đi ngược chiều đi qua trước."
+  },
+  {
+   "id": 577,
+   "giai_thich": "Quy định bảo đảm an toàn với đoàn người có tổ chức:\n- Luật Giao thông đường bộ nghiêm cấm: Xe cơ giới không được vượt các đoàn xe tang, đoàn người đi bộ hoặc đoàn người đi xe đạp có tổ chức diễu hành.\n- Việc cố tình lấn làn vượt qua đoàn người đông đúc tiềm ẩn nguy cơ tai nạn giao thông rất lớn.\nDo đó bạn xử lý: Không được vượt những người đi xe đạp."
+  },
+  {
+   "id": 578,
+   "giai_thich": "Kỹ năng xử lý tình huống linh hoạt khi phía trước có chướng ngại vật:\nKhi phát hiện xe phía trước đang lùi vào nơi đỗ và xe con đang lách sang làn trái để vượt qua:\n- Ý 1: Nếu quan sát gương chiếu hậu phía sau an toàn (không có xe xin vượt), bạn bật tín hiệu chuyển sang làn đường bên trái để tiếp tục di chuyển.\n- Ý 2: Nếu phía sau có xe đang xin vượt thì phải chủ động giảm tốc độ, giữ làn đường và dừng lại khi cần thiết để bảo đảm an toàn.\nĐáp án đúng: Ý 1 và ý 2."
+  },
+  {
+   "id": 579,
+   "giai_thich": "Kỹ năng phòng ngừa nguy hiểm khi xe khác lùi ra khỏi nơi đỗ:\n- Xe ô tô phía trước đang lùi từ trong nhà/nơi đỗ ra đường thường có tầm nhìn bị hạn chế và phần đuôi xe chiếm dụng lòng đường.\n- Người lái xe đến gần phải chủ động phán đoán nguy hiểm, giảm tốc độ và dừng lại nhường đường nếu cần thiết để tránh va chạm.\nĐáp án đúng: Giảm tốc độ, dừng lại nhường đường."
+  },
+  {
+   "id": 580,
+   "giai_thich": "Xử lý khẩn cấp khi xe ngược chiều lấn làn vượt ẩu:\n- Xe màu xanh đi ngược chiều đang lấn hẳn sang làn đường của bạn để vượt xe tải/xe vàng.\n- Tình huống đối đầu trực diện cực kỳ nguy hiểm trong tích tắc.\n- Biện pháp duy nhất an toàn: Lập tức phanh xe giảm tốc độ và chủ động đánh lái nép sát lề đường bên phải để nhường đường và tránh va chạm trực diện.\nĐáp án đúng: Phanh xe giảm tốc độ và đi sát lề đường bên phải."
+  },
+  {
+   "id": 581,
+   "giai_thich": "Kỹ năng ứng xử khi xe tải phía trước xin chuyển làn:\n- Xe tải phía trước đã bật đèn xi-nhan xin chuyển làn đường sang bên phải/trái.\n- Do xe tải có kích thước lớn và điểm mù rộng, việc bấm còi cố vượt hoặc đánh lái lấn làn vượt gấp là rất nguy hiểm.\n- Cách xử lý an toàn chuẩn mực: Phanh xe giảm tốc độ, giữ khoảng cách an toàn chờ xe tải phía trước chuyển làn hoàn tất rồi mới tiếp tục hành trình.\nĐáp án đúng: Phanh xe giảm tốc độ chờ xe tải phía trước chuyển làn đường."
+  },
+  {
+   "id": 582,
+   "giai_thich": "Kỹ năng điều khiển xe qua ngã tư khi đèn xanh:\n- Dù đèn tín hiệu đang xanh và phía trước giao lộ tương đối thông thoáng, người lái xe vẫn phải tuân thủ nguyên tắc an toàn cơ bản:\n- Không được chủ quan tăng tốc độ phóng nhanh qua ngã tư; cần chủ động giảm tốc độ, quan sát xung quanh đề phòng các phương tiện vượt ẩu từ đường nhánh rồi mới đi thẳng qua.\nĐáp án đúng: Giảm tốc độ và đi thẳng qua ngã tư."
+  },
+  {
+   "id": 583,
+   "giai_thich": "Áp dụng quy tắc qua nơi đường giao nhau đồng cấp:\n- Tại ngã tư cùng cấp (không có biển báo, không có xe ưu tiên), áp dụng quy tắc xe có bên phải không vướng (bên phải trống) được đi trước:\n  1. Người đi xe đạp: Phía bên phải hoàn toàn trống (không vướng xe) và rẽ phải nên được quyền đi đầu tiên.\n  2. Xe mô tô: Sau khi xe đạp đi qua, hướng bên phải của xe mô tô không còn vướng xe nên được đi tiếp theo (thứ 2).\n  3. Xe của bạn: Hướng bên phải vướng xe mô tô và đang rẽ trái (bật đèn xi-nhan trái) nên phải nhường đường đi sau cùng (thứ 3).\nThứ tự đúng: Xe đạp -> Xe mô tô -> Xe của bạn."
+  },
+  {
+   "id": 584,
+   "giai_thich": "Phân tích biển báo ưu tiên và quy tắc nhường đường tại nơi giao nhau:\n1. Xe của bạn: Trước mặt có cắm biển hình thoi I.401 'Bắt đầu đường ưu tiên' kèm biển phụ S.506b thể hiện hướng đường ưu tiên rẽ trái. Xe của bạn bật xi-nhan rẽ trái đi theo đúng hướng đường ưu tiên nên ĐƯỢC ĐI ĐẦU TIÊN (thứ 1).\n2. Xe con và Xe tải: Cả hai xe đều ở trên đường không ưu tiên. Xe con đi thẳng và có phía bên phải hoàn toàn trống nên được quyền đi trước xe tải (thứ 2).\n3. Xe tải: Rẽ trái và phía bên phải vướng xe con nên phải nhường đường đi sau cùng (thứ 3).\nThứ tự đúng: Xe của bạn -> Xe con -> Xe tải."
+  },
+  {
+   "id": 585,
+   "giai_thich": "Phân tích biển báo ưu tiên tại nơi giao nhau:\n- Phía trước xe của bạn có cắm biển tam giác ngược W.208 'Giao nhau với đường ưu tiên' kèm biển phụ S.506b chỉ hướng ưu tiên cong sang nhánh bên trái. Bạn đang ở trên đường nhánh không ưu tiên.\n- Xe con màu xanh đang lưu thông trên trục đường chính ưu tiên.\nDo đó XE CỦA BẠN PHẢI NHƯỜNG ĐƯỜNG cho xe con đi trước."
+  },
+  {
+   "id": 586,
+   "giai_thich": "Phân tích biển báo qua đoạn đường hẹp chui qua hầm:\n- Xe của bạn đang tiến đến hầm chui đường bộ qua cầu hẹp.\n- Bên phải xe của bạn có cắm biển P.132 'Nhường đường cho xe cơ giới đi ngược chiều qua đường hẹp' (biển tròn viền đỏ, mũi tên màu đỏ bên phải chỉ chiều xe của bạn).\n- Xe ô tô con màu đỏ ở chiều ngược lại có biển ưu tiên qua đường hẹp I.406.\nDo đó XE CỦA BẠN PHẢI NHƯỜNG ĐƯỜNG cho xe con đi qua hầm trước."
+  },
+  {
+   "id": 587,
+   "giai_thich": "Kỹ năng nhường đường cho người đi bộ qua đường:\n- Luật Giao thông đường bộ quy định: Tại nơi có vạch kẻ đường dành cho người đi bộ, người lái xe phải quan sát, giảm tốc độ và nhường đường cho người đi bộ đang qua đường.\n- Trong hình, người đi bộ đang bước trên vạch qua đường ngay trước mũi xe của bạn.\nCách xử lý đúng: Giảm tốc độ, để người đi bộ sang đường trước, sau đó cho xe đi qua vạch người đi bộ sang đường."
+  },
+  {
+   "id": 588,
+   "giai_thich": "Phân tích biển báo đường ưu tiên:\n- Phía trước xe của bạn có cắm biển W.207 'Giao nhau với đường không ưu tiên' (đỉnh tam giác hướng lên trên), báo hiệu xe bạn đang lưu thông trên đường ưu tiên.\n- Xe con màu vàng đi từ đường nhánh ra (gặp biển tam giác ngược W.208) phải nhường đường cho xe trên đường ưu tiên.\nDo đó XE CỦA BẠN ĐƯỢC ĐI TRƯỚC xe con."
+  },
+  {
+   "id": 589,
+   "giai_thich": "Áp dụng quy tắc 'Bên phải không vướng' tại ngã tư đồng cấp:\n- Nơi giao nhau không có biển báo, không có xe ưu tiên, các phương tiện cùng cấp.\n- Hướng đi của các xe: Xe tải đi thẳng, xe con đi thẳng, xe của bạn rẽ trái (đèn xi-nhan trái bật sáng).\n- Xét quyền ưu tiên bên phải:\n  1. Phía bên phải của Xe tải (nhánh đường bên trái xe bạn) hoàn toàn trống -> Xe tải đi đầu tiên.\n  2. Sau khi xe tải đi qua, phía bên phải của Xe con không còn vướng -> Xe con đi thứ 2.\n  3. Sau khi xe con đi qua, bên phải xe của bạn thông thoáng. Đồng thời xe của bạn rẽ trái nên đi sau cùng.\nThứ tự đúng: Xe tải -> Xe con -> Xe của bạn."
+  },
+  {
+   "id": 590,
+   "giai_thich": "Kỹ năng lái xe an toàn khi vào đoạn đường cong:\n- Xe đang chạy trong đoạn đường cong cua, tầm nhìn hẹp (bị che khuất) và có vạch tim đường nét liền cấm lấn làn.\n- Quan sát gương chiếu hậu thấy phía sau đang có xe bám theo.\n- Tại đoạn đường cong tầm nhìn bị hạn chế, người lái xe tuyệt đối không được tăng tốc hay lấn sang làn đường bên trái để tránh nguy hiểm đối đầu với xe đi ngược chiều.\nCách xử lý đúng: Giảm tốc độ cho xe đi sát phần đường bên phải."
+  },
+  {
+   "id": 591,
+   "giai_thich": "Quy tắc hướng đi ưu tiên tại nơi có đèn tín hiệu giao thông:\n- Cả xe tải và xe của bạn đều đang gặp tín hiệu ĐÈN XANH nên đều được phép di chuyển.\n- Xe tải đi thẳng qua ngã tư.\n- Xe của bạn rẽ trái (đèn xi-nhan trái bật sáng).\n- Theo quy tắc hướng đi: Xe đi thẳng có quyền ưu tiên cao hơn xe rẽ trái.\nDo đó XE TẢI ĐƯỢC ĐI TRƯỚC xe của bạn."
+  },
+  {
+   "id": 592,
+   "giai_thich": "Quy tắc khoảng cách dừng đỗ an toàn trước đường sắt:\n- Luật Giao thông đường bộ quy định: Khi qua nơi đường bộ giao nhau với đường sắt không có rào chắn, người lái xe phải dừng xe cách đường ray gần nhất TỐI THIỂU 5 MÉT.\n- Xe con dừng cách đường ray 6 mét (6m > 5m) -> Đảm bảo khoảng cách an toàn, DỪNG ĐÚNG.\n- Xe mô tô dừng cách đường ray 3 mét (3m < 5m) -> Vi phạm khoảng cách an toàn tối thiểu, DỪNG SAI.\nDo đó chỉ có duy nhất XE CON DỪNG ĐÚNG."
+  },
+  {
+   "id": 593,
+   "giai_thich": "Áp dụng quy tắc 'Bên phải không vướng' tại ngã ba đồng cấp:\n- Ngã ba cùng cấp không có biển báo hiệu, áp dụng thứ tự ưu tiên:\n  1. Hướng bên phải của xe bạn hoàn toàn trống (không có đường, không có xe) -> Xe của bạn đi thẳng ĐƯỢC ĐI ĐẦU TIÊN.\n  2. Sau khi xe của bạn đã đi qua, hướng bên phải của xe tải trở nên thông thoáng -> Xe tải rẽ phải đi thứ 2.\n  3. Xe đạp rẽ trái đi sau cùng (thứ 3).\nThứ tự đúng: Xe của bạn -> Xe tải -> Xe đạp."
+  },
+  {
+   "id": 594,
+   "giai_thich": "Quy tắc mở cua an toàn khi rẽ trái tại ngã ba:\n- Luật Giao thông đường bộ quy định: Khi rẽ trái, người lái xe phải cho xe chạy chậm và mở cua rộng tại tâm đường, không được cắt xéo góc cua lấn sang phần đường xe ngược chiều.\n- Hướng 1: Xe chạy đúng phần đường bên phải, đến điểm giao cắt rồi mới rẽ trái an toàn.\n- Hướng 2: Cắt xéo góc cua, chạy thẳng vào làn đường của xe đi ngược chiều cực kỳ nguy hiểm.\nDo đó để điều khiển xe rẽ trái, bạn chọn: HƯỚNG 1."
+  },
+  {
+   "id": 595,
+   "giai_thich": "Kỹ năng ứng phó khi bị xe ngược chiều rọi đèn pha chói mắt:\n- Khi lái xe ban đêm bị đèn pha (chiếu xa) của xe ngược chiều chiếu thẳng vào mắt gây lóa tầm nhìn:\n- Tuyệt đối không bật đèn pha trả đũa hay tăng tốc vượt xe cùng chiều vì không quan sát được chướng ngại vật.\n- Biện pháp đúng: Giữ nguyên đèn chiếu gần (cốt), giảm tốc độ xe chạy và đi an toàn phía sau xe cùng chiều phía trước.\nĐáp án đúng: Giữ nguyên đèn chiếu gần, giảm tốc độ, đi sau xe phía trước."
+  },
+  {
+   "id": 596,
+   "giai_thich": "Quy tắc an toàn tại nơi đường sắt giao nhau khi rào chắn đang dịch chuyển:\n- Luật Giao thông đường bộ quy định: Khi có chuông báo hiệu hoặc rào chắn đang dịch chuyển đóng lại, tất cả người tham gia giao thông phải dừng lại ở phần đường của mình và trước rào chắn một khoảng cách an toàn, cấm vượt qua.\n- Tuyệt đối không được cố tăng ga phóng qua hay nhờ người gác chắn kéo chậm barie.\nĐáp án đúng: Dừng lại trước rào chắn một khoảng cách an toàn."
+  },
+  {
+   "id": 597,
+   "giai_thich": "Quy tắc nhập làn đường cao tốc an toàn:\n- Khi nhập vào đường cao tốc, xe phải chạy trên làn đường tăng tốc đến khi đạt tốc độ an toàn, chú ý quan sát và nhường đường cho các xe đang chạy trên đường cao tốc rồi mới chuyển làn tại nơi có vạch nét đứt.\n- Trong hình, xe con màu đỏ nhập làn cắt xéo góc đè lên vạch liền là vi phạm quy tắc giao thông đường bộ.\nĐáp án đúng: SAI."
+  },
+  {
+   "id": 598,
+   "giai_thich": "Quy tắc an toàn cấm vượt xe đang vượt:\n- Luật Giao thông đường bộ nghiêm cấm hành vi: 'Cấm vượt xe khi xe phía trước đang vượt xe khác' (tránh tình huống 3 xe dàn hàng ngang chiếm hết lòng đường).\n- Trong hình, xe con màu xanh đang lấn sang làn bên cạnh để vượt xe tải thùng phía trước.\n- Xe con màu đỏ đi sau tuyệt đối không được phép vượt xe con màu xanh lúc này.\nĐáp án đúng: Không được vượt."
+  },
+  {
+   "id": 599,
+   "giai_thich": "Phân tích vạch kẻ đường và hành vi vượt xe an toàn:\n- Vạch phân chia hai chiều xe chạy là VẠCH NÉT ĐỨT MÀU VÀNG (vạch 1.1), cho phép phương tiện đè vạch mượn làn để vượt khi bảo đảm an toàn.\n- Xe con màu vàng đã bật đèn xi-nhan xin vượt; phía trước xe ô tô màu xanh ở cùng làn với khoảng cách rất xa, đủ điều kiện an toàn để vượt rồi quay lại làn đường.\nDo đó hành vi vượt của xe con màu vàng là ĐÚNG quy tắc giao thông."
+  },
+  {
+   "id": 600,
+   "giai_thich": "Hiểu rõ góc quét đuôi và điểm mù của xe container/xe siêu trường:\n- Xe đầu kéo sơ mi rơ-moóc (container) có chiều dài cơ sở rất lớn. Khi chuyển hướng rẽ phải, đầu xe phải mở rộng vòng cua sang trái và phần đuôi rơ-moóc sẽ quét hẹp bó sát vỉa hè, tạo ra vùng điểm mù khổng lồ và góc kẹt nguy hiểm.\n- Xe con màu xanh và xe máy nếu cố vượt lên (dù bên trái hay bên phải) đều có nguy cơ bị cuốn vào gầm hoặc bị ép chèn vào lề đường.\nCách xử lý an toàn: Giảm tốc độ chờ xe container rẽ xong rồi tiếp tục đi."
+  }
+ ]
+}

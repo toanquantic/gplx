@@ -1,0 +1,199 @@
+{
+ "_nguon": {
+  "luat": "Điều 57 khoản 1 Luật Trật tự, an toàn giao thông đường bộ số 36/2024/QH15 (hiệu lực 01/01/2025)",
+  "sua_doi": "Luật số 118/2025/QH15 (thông qua 10/12/2025, hiệu lực 01/7/2026) sửa Điều 57 khoản 9, Điều 60, 61, 62 nhưng KHÔNG đổi danh mục 15 hạng; bổ sung đường nâng hạng D1, D2, D lên CE",
+  "sat_hach": "Thông tư 12/2025/TT-BCA (đến 30/6/2026) và Thông tư 108/2026/TT-BCA (từ 01/7/2026; cấu trúc đề lý thuyết mới từ 01/3/2027)",
+  "trich_qua": [
+   "https://xaydungchinhsach.chinhphu.vn/tu-1-1-2025-co-nhung-hang-giay-phep-lai-xe-nao-119240812165630751.htm",
+   "https://nhandan.vn/tu-112025-co-nhung-hang-giay-phep-lai-xe-nao-post824186.html",
+   "https://thuvienphapluat.vn/chinh-sach-phap-luat-moi/vn/ho-tro-phap-luat/chinh-sach-moi/101446/luat-sua-doi-luat-trat-tu-an-toan-giao-thong-duong-bo-2025-moi-nhat",
+   "https://luatvietnam.vn/giao-thong/thong-tu-108-2026-tt-bca-quy-dinh-sat-hach-cap-giay-phep-lai-xe-va-giay-phep-lai-xe-quoc-te-438989-d1.html"
+  ],
+  "luu_y": "Mô tả hạng là bản rút gọn trung thành từ các bài đăng lại toàn văn; chưa đối chiếu Công báo."
+ },
+ "uu_tien_du_an": {
+  "dot_1": [
+   "A1",
+   "A",
+   "B"
+  ],
+  "dot_2": [
+   "C1",
+   "C"
+  ],
+  "dot_3": [
+   "B1",
+   "D1",
+   "D2",
+   "D",
+   "BE",
+   "C1E",
+   "CE",
+   "D1E",
+   "D2E",
+   "DE"
+  ],
+  "quyet_dinh": "Toàn Nguyễn đồng ý ngày 11/10/2026"
+ },
+ "ghi_chu_uu_tien": "Người dùng yêu cầu A1, A2, B, C theo tên hạng cũ. Từ 01/01/2025 hạng A2 cũ tương ứng hạng A mới; B1/B2 cũ (ô tô) gộp vào hạng B mới; C cũ (tải trên 3.500 kg) tách thành C1 (3.500 đến 7.500 kg) và C (trên 7.500 kg). Đây là tương ứng gần đúng về loại xe, không phải quy tắc đổi bằng.",
+ "hang": [
+  {
+   "ma": "A1",
+   "loai": "mo_to",
+   "mo_ta": "Mô tô hai bánh dung tích xi-lanh đến 125 cm3 hoặc công suất động cơ điện đến 11 kW.",
+   "bao_gom_xe_cua_hang": [],
+   "thi_ly_thuyet": true,
+   "hang_cu_tuong_ung": "A1 (cũ: đến 175 cm3)",
+   "mien_ly_thuyet": "Có giấy phép lái xe ô tô còn hiệu lực thì được miễn sát hạch lý thuyết (Điều 4 khoản 1 điểm c Thông tư 108/2026/TT-BCA)"
+  },
+  {
+   "ma": "A",
+   "loai": "mo_to",
+   "mo_ta": "Mô tô hai bánh dung tích xi-lanh trên 125 cm3 hoặc công suất động cơ điện trên 11 kW.",
+   "bao_gom_xe_cua_hang": [
+    "A1"
+   ],
+   "thi_ly_thuyet": true,
+   "hang_cu_tuong_ung": "A2",
+   "mien_ly_thuyet": "Có giấy phép lái xe ô tô còn hiệu lực thì được miễn sát hạch lý thuyết (Điều 4 khoản 1 điểm c Thông tư 108/2026/TT-BCA)"
+  },
+  {
+   "ma": "B1",
+   "loai": "mo_to",
+   "mo_ta": "Mô tô ba bánh.",
+   "bao_gom_xe_cua_hang": [
+    "A1"
+   ],
+   "thi_ly_thuyet": true,
+   "hang_cu_tuong_ung": "A3 (gần đúng)"
+  },
+  {
+   "ma": "B",
+   "loai": "o_to",
+   "mo_ta": "Ô tô chở người đến 08 chỗ (không kể chỗ người lái); ô tô tải, ô tô chuyên dùng có khối lượng toàn bộ theo thiết kế đến 3.500 kg; xe hạng B kéo rơ moóc đến 750 kg.",
+   "bao_gom_xe_cua_hang": [],
+   "thi_ly_thuyet": true,
+   "hang_cu_tuong_ung": "B1, B2"
+  },
+  {
+   "ma": "C1",
+   "loai": "o_to",
+   "mo_ta": "Ô tô tải, ô tô chuyên dùng có khối lượng toàn bộ theo thiết kế trên 3.500 kg đến 7.500 kg; xe hạng C1 kéo rơ moóc đến 750 kg.",
+   "bao_gom_xe_cua_hang": [
+    "B"
+   ],
+   "thi_ly_thuyet": true,
+   "hang_cu_tuong_ung": "C (một phần)"
+  },
+  {
+   "ma": "C",
+   "loai": "o_to",
+   "mo_ta": "Ô tô tải, ô tô chuyên dùng có khối lượng toàn bộ theo thiết kế trên 7.500 kg; xe hạng C kéo rơ moóc đến 750 kg.",
+   "bao_gom_xe_cua_hang": [
+    "B",
+    "C1"
+   ],
+   "thi_ly_thuyet": true,
+   "hang_cu_tuong_ung": "C"
+  },
+  {
+   "ma": "D1",
+   "loai": "o_to",
+   "mo_ta": "Ô tô chở người trên 08 chỗ đến 16 chỗ (không kể chỗ người lái); xe hạng D1 kéo rơ moóc đến 750 kg.",
+   "bao_gom_xe_cua_hang": [
+    "B",
+    "C1",
+    "C"
+   ],
+   "thi_ly_thuyet": true,
+   "hang_cu_tuong_ung": "D (một phần)"
+  },
+  {
+   "ma": "D2",
+   "loai": "o_to",
+   "mo_ta": "Ô tô chở người (kể cả xe buýt) trên 16 chỗ đến 29 chỗ (không kể chỗ người lái); xe hạng D2 kéo rơ moóc đến 750 kg.",
+   "bao_gom_xe_cua_hang": [
+    "B",
+    "C1",
+    "C",
+    "D1"
+   ],
+   "thi_ly_thuyet": true,
+   "hang_cu_tuong_ung": "D (một phần)"
+  },
+  {
+   "ma": "D",
+   "loai": "o_to",
+   "mo_ta": "Ô tô chở người (kể cả xe buýt) trên 29 chỗ (không kể chỗ người lái); xe ô tô chở người giường nằm; xe hạng D kéo rơ moóc đến 750 kg.",
+   "bao_gom_xe_cua_hang": [
+    "B",
+    "C1",
+    "C",
+    "D1",
+    "D2"
+   ],
+   "thi_ly_thuyet": true,
+   "hang_cu_tuong_ung": "E"
+  },
+  {
+   "ma": "BE",
+   "loai": "o_to_keo_ro_mooc",
+   "mo_ta": "Xe hạng B kéo rơ moóc có khối lượng toàn bộ theo thiết kế trên 750 kg.",
+   "bao_gom_xe_cua_hang": [],
+   "thi_ly_thuyet": true,
+   "hang_cu_tuong_ung": null
+  },
+  {
+   "ma": "C1E",
+   "loai": "o_to_keo_ro_mooc",
+   "mo_ta": "Xe hạng C1 kéo rơ moóc có khối lượng toàn bộ theo thiết kế trên 750 kg.",
+   "bao_gom_xe_cua_hang": [],
+   "thi_ly_thuyet": true,
+   "hang_cu_tuong_ung": null
+  },
+  {
+   "ma": "CE",
+   "loai": "o_to_keo_ro_mooc",
+   "mo_ta": "Xe hạng C kéo rơ moóc có khối lượng toàn bộ theo thiết kế trên 750 kg; xe ô tô đầu kéo kéo sơ mi rơ moóc.",
+   "bao_gom_xe_cua_hang": [],
+   "thi_ly_thuyet": true,
+   "hang_cu_tuong_ung": null
+  },
+  {
+   "ma": "D1E",
+   "loai": "o_to_keo_ro_mooc",
+   "mo_ta": "Xe hạng D1 kéo rơ moóc có khối lượng toàn bộ theo thiết kế trên 750 kg.",
+   "bao_gom_xe_cua_hang": [],
+   "thi_ly_thuyet": true,
+   "hang_cu_tuong_ung": null
+  },
+  {
+   "ma": "D2E",
+   "loai": "o_to_keo_ro_mooc",
+   "mo_ta": "Xe hạng D2 kéo rơ moóc có khối lượng toàn bộ theo thiết kế trên 750 kg.",
+   "bao_gom_xe_cua_hang": [],
+   "thi_ly_thuyet": true,
+   "hang_cu_tuong_ung": null
+  },
+  {
+   "ma": "DE",
+   "loai": "o_to_keo_ro_mooc",
+   "mo_ta": "Xe hạng D kéo rơ moóc có khối lượng toàn bộ theo thiết kế trên 750 kg; xe ô tô chở khách nối toa.",
+   "bao_gom_xe_cua_hang": [],
+   "thi_ly_thuyet": true,
+   "hang_cu_tuong_ung": null
+  }
+ ],
+ "truong_hop_dac_biet": [
+  "Người khuyết tật điều khiển xe mô tô ba bánh dùng cho người khuyết tật được cấp GPLX hạng A1.",
+  "Người khuyết tật điều khiển ô tô số tự động có kết cấu phù hợp với tình trạng khuyết tật được cấp GPLX hạng B.",
+  "Xe chở người/chở hàng bốn bánh có gắn động cơ: dùng GPLX hạng tương ứng với ô tô chở người hoặc ô tô tải.",
+  "Ô tô cải tạo giảm số chỗ: dùng hạng GPLX của loại xe có kích thước giới hạn tương đương và số chỗ nhiều nhất."
+ ],
+ "nang_hang": "Luật 118/2025/QH15 (từ 01/7/2026) sửa Điều 60 khoản 3 điểm e về đào tạo nâng hạng lên nhóm kéo rơ moóc: B lên BE; C1 lên C1E; C, D1, D2, D lên CE; D1 lên D1E; D2 lên D2E; D lên DE.",
+ "bo_cau_hoi_ly_thuyet_hien_hanh": {
+  "A1_A": "250 câu",
+  "B1": "300 câu",
+  "B_tro_len": "600 câu (gồm cả BE, C1E, CE, D1E, D2E, DE)"
+ }
+}

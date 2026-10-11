@@ -1,0 +1,2935 @@
+[
+ {
+  "ma": "P.101",
+  "ten": "Đường cấm",
+  "nhom": "bien_cam",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
+ },
+ {
+  "ma": "P.102",
+  "ten": "Cấm đi ngược chiều",
+  "nhom": "bien_cam",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
+ },
+ {
+  "ma": "P.103a",
+  "ten": "Cấm xe ô tô",
+  "nhom": "bien_cam",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
+ },
+ {
+  "ma": "P.103b",
+  "ten": "Cấm xe ô tô rẽ phải",
+  "nhom": "bien_cam",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
+ },
+ {
+  "ma": "P.103c",
+  "ten": "Cấm xe ô tô rẽ trái",
+  "nhom": "bien_cam",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
+ },
+ {
+  "ma": "P.104",
+  "ten": "Cấm xe máy",
+  "nhom": "bien_cam",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
+ },
+ {
+  "ma": "P.105",
+  "ten": "Cấm xe ô tô và xe máy",
+  "nhom": "bien_cam",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
+ },
+ {
+  "ma": "P.106a",
+  "ten": "Cấm xe ô tô tải",
+  "nhom": "bien_cam",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
+ },
+ {
+  "ma": "P.106b",
+  "ten": "Cấm xe ô tô tải",
+  "nhom": "bien_cam",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
+ },
+ {
+  "ma": "P.106c",
+  "ten": "Cấm các xe chở hàng nguy hiểm",
+  "nhom": "bien_cam",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
+ },
+ {
+  "ma": "P.107",
+  "ten": "Cấm xe ô tô khách và xe ô tô tải",
+  "nhom": "bien_cam",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
+ },
+ {
+  "ma": "P.107a",
+  "ten": "Cấm xe ô tô khách",
+  "nhom": "bien_cam",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
+ },
+ {
+  "ma": "P.107b",
+  "ten": "Cấm xe ô tô taxi",
+  "nhom": "bien_cam",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
+ },
+ {
+  "ma": "P.108",
+  "ten": "Cấm xe kéo rơ-moóc",
+  "nhom": "bien_cam",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
+ },
+ {
+  "ma": "P.108a",
+  "ten": "Cấm xe sơ-mi rơ-moóc",
+  "nhom": "bien_cam",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
+ },
+ {
+  "ma": "P.109",
+  "ten": "Cấm máy kéo",
+  "nhom": "bien_cam",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
+ },
+ {
+  "ma": "P.110a",
+  "ten": "Cấm xe đạp",
+  "nhom": "bien_cam",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
+ },
+ {
+  "ma": "P.110b",
+  "ten": "Cấm xe đạp thồ",
+  "nhom": "bien_cam",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
+ },
+ {
+  "ma": "P.111a",
+  "ten": "Cấm xe gắn máy",
+  "nhom": "bien_cam",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
+ },
+ {
+  "ma": "P.111b",
+  "ten": "Cấm xe ba bánh loại có động cơ (xe lam, xích lô máy)",
+  "nhom": "bien_cam",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
+ },
+ {
+  "ma": "P.111c",
+  "ten": "Cấm xe ba bánh loại có động cơ (xe lam, xích lô máy)",
+  "nhom": "bien_cam",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
+ },
+ {
+  "ma": "P.111d",
+  "ten": "Cấm xe ba bánh loại không có động cơ (xích lô)",
+  "nhom": "bien_cam",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
+ },
+ {
+  "ma": "P.112",
+  "ten": "Cấm người đi bộ",
+  "nhom": "bien_cam",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
+ },
+ {
+  "ma": "P.113",
+  "ten": "Cấm xe người kéo, đẩy",
+  "nhom": "bien_cam",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
+ },
+ {
+  "ma": "P.114",
+  "ten": "Cấm xe vật nuôi kéo",
+  "nhom": "bien_cam",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
+ },
+ {
+  "ma": "P.115",
+  "ten": "Hạn chế trọng tải toàn bộ xe",
+  "nhom": "bien_cam",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
+ },
+ {
+  "ma": "P.116",
+  "ten": "Hạn chế tải trọng trên trục xe",
+  "nhom": "bien_cam",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
+ },
+ {
+  "ma": "P.117",
+  "ten": "Hạn chế chiều cao",
+  "nhom": "bien_cam",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
+ },
+ {
+  "ma": "P.118",
+  "ten": "Hạn chế chiều ngang xe",
+  "nhom": "bien_cam",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
+ },
+ {
+  "ma": "P.119",
+  "ten": "Hạn chế chiều dài xe",
+  "nhom": "bien_cam",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
+ },
+ {
+  "ma": "P.120",
+  "ten": "Hạn chế chiều dài xe cơ giới kéo theo rơ-moóc hoặc sơ-mi rơ - moóc",
+  "nhom": "bien_cam",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
+ },
+ {
+  "ma": "P.121",
+  "ten": "Cự ly tối thiểu giữa hai xe",
+  "nhom": "bien_cam",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
+ },
+ {
+  "ma": "P.123a",
+  "ten": "Cấm rẽ trái",
+  "nhom": "bien_cam",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
+ },
+ {
+  "ma": "P.123b",
+  "ten": "Cấm rẽ phải",
+  "nhom": "bien_cam",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
+ },
+ {
+  "ma": "P.124a",
+  "ten": "Cấm quay đầu xe",
+  "nhom": "bien_cam",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
+ },
+ {
+  "ma": "P.124b",
+  "ten": "Cấm ôtô quay đầu xe",
+  "nhom": "bien_cam",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
+ },
+ {
+  "ma": "P.124c",
+  "ten": "Cấm rẽ trái và quay đầu xe",
+  "nhom": "bien_cam",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
+ },
+ {
+  "ma": "P.124d",
+  "ten": "Cấm rẽ phải và quay đầu xe",
+  "nhom": "bien_cam",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
+ },
+ {
+  "ma": "P.124e",
+  "ten": "Cấm ô tô rẽ trái và quay đầu xe",
+  "nhom": "bien_cam",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
+ },
+ {
+  "ma": "P.124f",
+  "ten": "Cấm ô tô rẽ phải và quay đầu xe",
+  "nhom": "bien_cam",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
+ },
+ {
+  "ma": "P.125",
+  "ten": "Cấm vượt",
+  "nhom": "bien_cam",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
+ },
+ {
+  "ma": "P.126",
+  "ten": "Cấm xe ôtô tải vượt",
+  "nhom": "bien_cam",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
+ },
+ {
+  "ma": "P.127",
+  "ten": "Tốc độ tối đa cho phép",
+  "nhom": "bien_cam",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
+ },
+ {
+  "ma": "P.127a",
+  "ten": "Tốc độ tối đa cho phép về ban đêm",
+  "nhom": "bien_cam",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
+ },
+ {
+  "ma": "P.127b",
+  "ten": "Biển ghép tốc độ tối đa cho phép trên từng làn đường",
+  "nhom": "bien_cam",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
+ },
+ {
+  "ma": "P.127c",
+  "ten": "Biển ghép tốc độ tối đa cho phép theo phương tiện, trên từng làn đường",
+  "nhom": "bien_cam",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
+ },
+ {
+  "ma": "DP.127",
+  "ten": "Biển hết tốc độ tối đa cho phép theo biển ghép",
+  "nhom": "bien_cam",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
+ },
+ {
+  "ma": "P.128",
+  "ten": "Cấm sử dụng còi",
+  "nhom": "bien_cam",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
+ },
+ {
+  "ma": "P.129",
+  "ten": "Kiểm tra",
+  "nhom": "bien_cam",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
+ },
+ {
+  "ma": "P.130",
+  "ten": "Cấm dừng xe và đỗ xe",
+  "nhom": "bien_cam",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
+ },
+ {
+  "ma": "P.131a",
+  "ten": "Cấm đỗ xe",
+  "nhom": "bien_cam",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
+ },
+ {
+  "ma": "P.131b",
+  "ten": "Cấm đỗ xe",
+  "nhom": "bien_cam",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
+ },
+ {
+  "ma": "P.131c",
+  "ten": "Cấm đỗ xe",
+  "nhom": "bien_cam",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
+ },
+ {
+  "ma": "P.132",
+  "ten": "Nhường đường cho xe cơ giới đi ngược chiều qua đường hẹp",
+  "nhom": "bien_cam",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
+ },
+ {
+  "ma": "DP.133",
+  "ten": "Hết cấm vượt",
+  "nhom": "bien_cam",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
+ },
+ {
+  "ma": "DP.134",
+  "ten": "Hết tốc độ tối đa cho phép",
+  "nhom": "bien_cam",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
+ },
+ {
+  "ma": "DP.135",
+  "ten": "Hết tất cả các lệnh cấm",
+  "nhom": "bien_cam",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
+ },
+ {
+  "ma": "P.136",
+  "ten": "Cấm đi thẳng",
+  "nhom": "bien_cam",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
+ },
+ {
+  "ma": "P.137",
+  "ten": "Cấm rẽ trái, rẽ phải",
+  "nhom": "bien_cam",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
+ },
+ {
+  "ma": "P.138",
+  "ten": "Cấm đi thẳng, rẽ trái",
+  "nhom": "bien_cam",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
+ },
+ {
+  "ma": "P.139",
+  "ten": "Cấm đi thẳng, rẽ phải",
+  "nhom": "bien_cam",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
+ },
+ {
+  "ma": "P.140",
+  "ten": "Cấm xe công nông và các loại xe tương tự",
+  "nhom": "bien_cam",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
+ },
+ {
+  "ma": "W.201a",
+  "ten": "Chỗ ngoặt nguy hiểm",
+  "nhom": "bien_nguy_hiem",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
+ },
+ {
+  "ma": "W.201b",
+  "ten": "Chỗ ngoặt nguy hiểm",
+  "nhom": "bien_nguy_hiem",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
+ },
+ {
+  "ma": "W.201c",
+  "ten": "Chỗ ngoặt nguy hiểm có nguy cơ lật xe",
+  "nhom": "bien_nguy_hiem",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
+ },
+ {
+  "ma": "W.201d",
+  "ten": "Chỗ ngoặt nguy hiểm có nguy cơ lật xe",
+  "nhom": "bien_nguy_hiem",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
+ },
+ {
+  "ma": "W.202a",
+  "ten": "Nhiều chỗ ngoặt nguy hiểm liên tiếp",
+  "nhom": "bien_nguy_hiem",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
+ },
+ {
+  "ma": "W.202b",
+  "ten": "Nhiều chỗ ngoặt nguy hiểm liên tiếp",
+  "nhom": "bien_nguy_hiem",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
+ },
+ {
+  "ma": "W.203a",
+  "ten": "Đường bị thu hẹp",
+  "nhom": "bien_nguy_hiem",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
+ },
+ {
+  "ma": "W.203b",
+  "ten": "Đường bị thu hẹp",
+  "nhom": "bien_nguy_hiem",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
+ },
+ {
+  "ma": "W.203c",
+  "ten": "Đường bị thu hẹp",
+  "nhom": "bien_nguy_hiem",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
+ },
+ {
+  "ma": "W.204",
+  "ten": "Đường hai chiều",
+  "nhom": "bien_nguy_hiem",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
+ },
+ {
+  "ma": "W.205a",
+  "ten": "Đường giao nhau",
+  "nhom": "bien_nguy_hiem",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
+ },
+ {
+  "ma": "W.205b",
+  "ten": "Đường giao nhau",
+  "nhom": "bien_nguy_hiem",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
+ },
+ {
+  "ma": "W.205c",
+  "ten": "Đường giao nhau",
+  "nhom": "bien_nguy_hiem",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
+ },
+ {
+  "ma": "W.205d",
+  "ten": "Đường giao nhau",
+  "nhom": "bien_nguy_hiem",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
+ },
+ {
+  "ma": "W.205e",
+  "ten": "Đường giao nhau",
+  "nhom": "bien_nguy_hiem",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
+ },
+ {
+  "ma": "W.206",
+  "ten": "Giao nhau chạy theo vòng xuyến",
+  "nhom": "bien_nguy_hiem",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
+ },
+ {
+  "ma": "W.207a",
+  "ten": "Giao nhau với đường không ưu tiên (đường nhánh)",
+  "nhom": "bien_nguy_hiem",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
+ },
+ {
+  "ma": "W.207b",
+  "ten": "Giao nhau với đường không ưu tiên (đường nhánh)",
+  "nhom": "bien_nguy_hiem",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
+ },
+ {
+  "ma": "W.207c",
+  "ten": "Giao nhau với đường không ưu tiên (đường nhánh)",
+  "nhom": "bien_nguy_hiem",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
+ },
+ {
+  "ma": "W.207d",
+  "ten": "Giao nhau với đường không ưu tiên (đường nhánh)",
+  "nhom": "bien_nguy_hiem",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
+ },
+ {
+  "ma": "W.207e",
+  "ten": "Giao nhau với đường không ưu tiên (đường nhánh)",
+  "nhom": "bien_nguy_hiem",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
+ },
+ {
+  "ma": "W.207f",
+  "ten": "Giao nhau với đường không ưu tiên (đường nhánh)",
+  "nhom": "bien_nguy_hiem",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
+ },
+ {
+  "ma": "W.207g",
+  "ten": "Giao nhau với đường không ưu tiên (đường nhánh)",
+  "nhom": "bien_nguy_hiem",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
+ },
+ {
+  "ma": "W.207h",
+  "ten": "Giao nhau với đường không ưu tiên (đường nhánh)",
+  "nhom": "bien_nguy_hiem",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
+ },
+ {
+  "ma": "W.207i",
+  "ten": "Giao nhau với đường không ưu tiên (đường nhánh)",
+  "nhom": "bien_nguy_hiem",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
+ },
+ {
+  "ma": "W.207k",
+  "ten": "Giao nhau với đường không ưu tiên (đường nhánh)",
+  "nhom": "bien_nguy_hiem",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
+ },
+ {
+  "ma": "W.207l",
+  "ten": "Giao nhau với đường không ưu tiên (đường nhánh)",
+  "nhom": "bien_nguy_hiem",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
+ },
+ {
+  "ma": "W.208",
+  "ten": "Giao nhau với đường ưu tiên (đường chính)",
+  "nhom": "bien_nguy_hiem",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
+ },
+ {
+  "ma": "W.209",
+  "ten": "Giao nhau có tín hiệu đèn",
+  "nhom": "bien_nguy_hiem",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
+ },
+ {
+  "ma": "W.210",
+  "ten": "Giao nhau với đường sắt có rào chắn",
+  "nhom": "bien_nguy_hiem",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
+ },
+ {
+  "ma": "W.211",
+  "ten": "Giao nhau với đường sắt không có rào chắn",
+  "nhom": "bien_nguy_hiem",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
+ },
+ {
+  "ma": "W.212",
+  "ten": "Cầu hẹp",
+  "nhom": "bien_nguy_hiem",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
+ },
+ {
+  "ma": "W.213",
+  "ten": "Cầu tạm",
+  "nhom": "bien_nguy_hiem",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
+ },
+ {
+  "ma": "W.214",
+  "ten": "Cầu quay - cầu cất",
+  "nhom": "bien_nguy_hiem",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
+ },
+ {
+  "ma": "W.215a",
+  "ten": "Kè, vực sâu phía trước",
+  "nhom": "bien_nguy_hiem",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
+ },
+ {
+  "ma": "W.215b",
+  "ten": "Kè, vực sâu bên đường phía bên phải",
+  "nhom": "bien_nguy_hiem",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
+ },
+ {
+  "ma": "W.215c",
+  "ten": "Kè, vực sâu bên đường phía bên trái",
+  "nhom": "bien_nguy_hiem",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
+ },
+ {
+  "ma": "W.216a",
+  "ten": "Đường ngầm",
+  "nhom": "bien_nguy_hiem",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
+ },
+ {
+  "ma": "W.216b",
+  "ten": "Đường ngầm có nguy cơ lũ quét",
+  "nhom": "bien_nguy_hiem",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
+ },
+ {
+  "ma": "W.217",
+  "ten": "Bến phà",
+  "nhom": "bien_nguy_hiem",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
+ },
+ {
+  "ma": "W.218",
+  "ten": "Cửa chui",
+  "nhom": "bien_nguy_hiem",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
+ },
+ {
+  "ma": "W.219",
+  "ten": "Dốc xuống nguy hiểm",
+  "nhom": "bien_nguy_hiem",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
+ },
+ {
+  "ma": "W.220",
+  "ten": "Dốc lên nguy hiểm",
+  "nhom": "bien_nguy_hiem",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
+ },
+ {
+  "ma": "W.221a",
+  "ten": "Đường lồi lõm",
+  "nhom": "bien_nguy_hiem",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
+ },
+ {
+  "ma": "W.221b",
+  "ten": "Đường có gồ giảm tốc",
+  "nhom": "bien_nguy_hiem",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
+ },
+ {
+  "ma": "W.222a",
+  "ten": "Đường trơn",
+  "nhom": "bien_nguy_hiem",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
+ },
+ {
+  "ma": "W.222b",
+  "ten": "Lề đường nguy hiểm",
+  "nhom": "bien_nguy_hiem",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
+ },
+ {
+  "ma": "W.223a",
+  "ten": "Vách núi nguy hiểm",
+  "nhom": "bien_nguy_hiem",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
+ },
+ {
+  "ma": "W.223b",
+  "ten": "Vách núi nguy hiểm",
+  "nhom": "bien_nguy_hiem",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
+ },
+ {
+  "ma": "W.224",
+  "ten": "Đường người đi bộ cắt ngang",
+  "nhom": "bien_nguy_hiem",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
+ },
+ {
+  "ma": "W.225",
+  "ten": "Trẻ em",
+  "nhom": "bien_nguy_hiem",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
+ },
+ {
+  "ma": "W.226",
+  "ten": "Đường người đi xe đạp cắt ngang",
+  "nhom": "bien_nguy_hiem",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
+ },
+ {
+  "ma": "W.227",
+  "ten": "Công trường",
+  "nhom": "bien_nguy_hiem",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
+ },
+ {
+  "ma": "W.228a",
+  "ten": "Đá lở",
+  "nhom": "bien_nguy_hiem",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
+ },
+ {
+  "ma": "W.228b",
+  "ten": "Đá lở",
+  "nhom": "bien_nguy_hiem",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
+ },
+ {
+  "ma": "W.228c",
+  "ten": "Sỏi đá bắn lên",
+  "nhom": "bien_nguy_hiem",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
+ },
+ {
+  "ma": "W.228d",
+  "ten": "Nền đường yếu",
+  "nhom": "bien_nguy_hiem",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
+ },
+ {
+  "ma": "W.229",
+  "ten": "Dải máy bay lên xuống",
+  "nhom": "bien_nguy_hiem",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
+ },
+ {
+  "ma": "W.230",
+  "ten": "Gia súc",
+  "nhom": "bien_nguy_hiem",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
+ },
+ {
+  "ma": "W.231",
+  "ten": "Thú rừng vượt qua đường",
+  "nhom": "bien_nguy_hiem",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
+ },
+ {
+  "ma": "W.232",
+  "ten": "Gió ngang",
+  "nhom": "bien_nguy_hiem",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
+ },
+ {
+  "ma": "W.233",
+  "ten": "Nguy hiểm khác",
+  "nhom": "bien_nguy_hiem",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
+ },
+ {
+  "ma": "W.234",
+  "ten": "Giao nhau với đường hai chiều",
+  "nhom": "bien_nguy_hiem",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
+ },
+ {
+  "ma": "W.235",
+  "ten": "Đường đôi",
+  "nhom": "bien_nguy_hiem",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
+ },
+ {
+  "ma": "W.236",
+  "ten": "Kết thúc đường đôi",
+  "nhom": "bien_nguy_hiem",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
+ },
+ {
+  "ma": "W.237",
+  "ten": "Cầu vồng",
+  "nhom": "bien_nguy_hiem",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
+ },
+ {
+  "ma": "W.238",
+  "ten": "Đường cao tốc phía trước",
+  "nhom": "bien_nguy_hiem",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
+ },
+ {
+  "ma": "W.239a",
+  "ten": "Đường cáp điện ở phía trên",
+  "nhom": "bien_nguy_hiem",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
+ },
+ {
+  "ma": "W.239b",
+  "ten": "Chiều cao tĩnh không thực tế",
+  "nhom": "bien_nguy_hiem",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
+ },
+ {
+  "ma": "W.240",
+  "ten": "Đường hầm",
+  "nhom": "bien_nguy_hiem",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
+ },
+ {
+  "ma": "W.241",
+  "ten": "Ùn tắc giao thông",
+  "nhom": "bien_nguy_hiem",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
+ },
+ {
+  "ma": "W.242a",
+  "ten": "Nơi đường sắt giao vuông góc với đường bộ",
+  "nhom": "bien_nguy_hiem",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
+ },
+ {
+  "ma": "W.242b",
+  "ten": "Nơi đường sắt giao vuông góc với đường bộ",
+  "nhom": "bien_nguy_hiem",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
+ },
+ {
+  "ma": "W.243a",
+  "ten": "Nơi đường sắt giao không vuông góc với đường bộ",
+  "nhom": "bien_nguy_hiem",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
+ },
+ {
+  "ma": "W.243b",
+  "ten": "Nơi đường sắt giao không vuông góc với đường bộ",
+  "nhom": "bien_nguy_hiem",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
+ },
+ {
+  "ma": "W.243c",
+  "ten": "Nơi đường sắt giao không vuông góc với đường bộ",
+  "nhom": "bien_nguy_hiem",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
+ },
+ {
+  "ma": "W.244",
+  "ten": "Đoạn đường hay xảy ra tai nạn",
+  "nhom": "bien_nguy_hiem",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
+ },
+ {
+  "ma": "W.245a",
+  "ten": "Đi chậm",
+  "nhom": "bien_nguy_hiem",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
+ },
+ {
+  "ma": "W.245b",
+  "ten": "Đi chậm có chỉ dẫn tiếng Anh",
+  "nhom": "bien_nguy_hiem",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
+ },
+ {
+  "ma": "W.246a",
+  "ten": "Chú ý chướng ngại vật",
+  "nhom": "bien_nguy_hiem",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
+ },
+ {
+  "ma": "W.246b",
+  "ten": "Chú ý chướng ngại vật",
+  "nhom": "bien_nguy_hiem",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
+ },
+ {
+  "ma": "W.246c",
+  "ten": "Chú ý chướng ngại vật",
+  "nhom": "bien_nguy_hiem",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
+ },
+ {
+  "ma": "W.247",
+  "ten": "Chú ý xe đỗ",
+  "nhom": "bien_nguy_hiem",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
+ },
+ {
+  "ma": "R.122",
+  "ten": "Dừng lại",
+  "nhom": "bien_hieu_lenh",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
+ },
+ {
+  "ma": "R.301a",
+  "ten": "Hướng đi phải theo",
+  "nhom": "bien_hieu_lenh",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
+ },
+ {
+  "ma": "R.301b",
+  "ten": "Hướng đi phải theo",
+  "nhom": "bien_hieu_lenh",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
+ },
+ {
+  "ma": "R.301c",
+  "ten": "Hướng đi phải theo",
+  "nhom": "bien_hieu_lenh",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
+ },
+ {
+  "ma": "R.301d",
+  "ten": "Hướng đi phải theo",
+  "nhom": "bien_hieu_lenh",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
+ },
+ {
+  "ma": "R.301e",
+  "ten": "Hướng đi phải theo",
+  "nhom": "bien_hieu_lenh",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
+ },
+ {
+  "ma": "R.301f",
+  "ten": "Hướng đi phải theo",
+  "nhom": "bien_hieu_lenh",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
+ },
+ {
+  "ma": "R.301g",
+  "ten": "Hướng đi phải theo",
+  "nhom": "bien_hieu_lenh",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
+ },
+ {
+  "ma": "R.301h",
+  "ten": "Hướng đi phải theo",
+  "nhom": "bien_hieu_lenh",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
+ },
+ {
+  "ma": "R.302a",
+  "ten": "Hướng phải đi vòng chướng ngại vật",
+  "nhom": "bien_hieu_lenh",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
+ },
+ {
+  "ma": "R.302b",
+  "ten": "Hướng phải đi vòng chướng ngại vật",
+  "nhom": "bien_hieu_lenh",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
+ },
+ {
+  "ma": "R.302c",
+  "ten": "Hướng phải đi vòng chướng ngại vật",
+  "nhom": "bien_hieu_lenh",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
+ },
+ {
+  "ma": "R.303",
+  "ten": "Nơi giao nhau chạy theo vòng xuyến",
+  "nhom": "bien_hieu_lenh",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
+ },
+ {
+  "ma": "R.304",
+  "ten": "Đường dành cho xe thô sơ",
+  "nhom": "bien_hieu_lenh",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
+ },
+ {
+  "ma": "R.305",
+  "ten": "Đường dành cho người đi bộ",
+  "nhom": "bien_hieu_lenh",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
+ },
+ {
+  "ma": "R.306",
+  "ten": "Tốc độ tối thiểu cho phép",
+  "nhom": "bien_hieu_lenh",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
+ },
+ {
+  "ma": "R.307",
+  "ten": "Hết tốc độ tối thiểu",
+  "nhom": "bien_hieu_lenh",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
+ },
+ {
+  "ma": "R.308a",
+  "ten": "Tuyến đường cầu vượt cắt qua",
+  "nhom": "bien_hieu_lenh",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
+ },
+ {
+  "ma": "R.308b",
+  "ten": "Tuyến đường cầu vượt cắt qua",
+  "nhom": "bien_hieu_lenh",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
+ },
+ {
+  "ma": "R.309",
+  "ten": "Ấn còi",
+  "nhom": "bien_hieu_lenh",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
+ },
+ {
+  "ma": "R.310a",
+  "ten": "Hướng đi phải theo cho các xe chở hàng nguy hiểm",
+  "nhom": "bien_hieu_lenh",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
+ },
+ {
+  "ma": "R.310b",
+  "ten": "Hướng đi phải theo cho các xe chở hàng nguy hiểm",
+  "nhom": "bien_hieu_lenh",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
+ },
+ {
+  "ma": "R.310c",
+  "ten": "Hướng đi phải theo cho các xe chở hàng nguy hiểm",
+  "nhom": "bien_hieu_lenh",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
+ },
+ {
+  "ma": "R.403a",
+  "ten": "Đường dành cho xe ô tô",
+  "nhom": "bien_hieu_lenh",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
+ },
+ {
+  "ma": "R.403b",
+  "ten": "Đường dành cho xe ô tô, xe máy",
+  "nhom": "bien_hieu_lenh",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
+ },
+ {
+  "ma": "R.403c",
+  "ten": "Đường dành cho xe buýt",
+  "nhom": "bien_hieu_lenh",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
+ },
+ {
+  "ma": "R.403d",
+  "ten": "Đường dành cho xe ô tô con",
+  "nhom": "bien_hieu_lenh",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
+ },
+ {
+  "ma": "R.403e",
+  "ten": "Đường dành cho xe máy",
+  "nhom": "bien_hieu_lenh",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
+ },
+ {
+  "ma": "R.403f",
+  "ten": "Đường dành cho xe máy và xe đạp",
+  "nhom": "bien_hieu_lenh",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
+ },
+ {
+  "ma": "R.403g",
+  "ten": "Đường dành cho xe chở hàng bốn bánh gắn động cơ",
+  "nhom": "bien_hieu_lenh",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
+ },
+ {
+  "ma": "R.403h",
+  "ten": "Đường dành cho xe chở người bốn bánh gắn động cơ",
+  "nhom": "bien_hieu_lenh",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
+ },
+ {
+  "ma": "R.403k",
+  "ten": "Đường dành cho xe chở hàng, xe chở người bốn bánh gắn động cơ",
+  "nhom": "bien_hieu_lenh",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
+ },
+ {
+  "ma": "R.404a",
+  "ten": "Hết đoạn đường dành cho xe ô tô",
+  "nhom": "bien_hieu_lenh",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
+ },
+ {
+  "ma": "R.404b",
+  "ten": "Hết đoạn đường dành cho xe ô tô, xe máy",
+  "nhom": "bien_hieu_lenh",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
+ },
+ {
+  "ma": "R.404c",
+  "ten": "Hết đoạn đường dành cho xe buýt",
+  "nhom": "bien_hieu_lenh",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
+ },
+ {
+  "ma": "R.404d",
+  "ten": "Hết đoạn đường dành cho xe ô tô con",
+  "nhom": "bien_hieu_lenh",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
+ },
+ {
+  "ma": "R.404e",
+  "ten": "Hết đoạn đường dành cho xe máy",
+  "nhom": "bien_hieu_lenh",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
+ },
+ {
+  "ma": "R.404f",
+  "ten": "Hết đoạn đường dành cho xe máy và xe đạp",
+  "nhom": "bien_hieu_lenh",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
+ },
+ {
+  "ma": "R.404g",
+  "ten": "Hết đoạn đường dành cho xe chở hàng bốn bánh gắn động cơ",
+  "nhom": "bien_hieu_lenh",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
+ },
+ {
+  "ma": "R.404h",
+  "ten": "Hết đoạn đường dành cho xe chở người bốn bánh gắn động cơ",
+  "nhom": "bien_hieu_lenh",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
+ },
+ {
+  "ma": "R.404k",
+  "ten": "Hết đoạn đường dành cho xe chở hàng, xe chở người bốn bánh gắn động cơ",
+  "nhom": "bien_hieu_lenh",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
+ },
+ {
+  "ma": "R.411",
+  "ten": "Hướng đi trên mỗi làn đường phải theo",
+  "nhom": "bien_hieu_lenh",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
+ },
+ {
+  "ma": "R.412a",
+  "ten": "Làn đường dành cho xe ô tô khách",
+  "nhom": "bien_hieu_lenh",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
+ },
+ {
+  "ma": "R.412b",
+  "ten": "Làn đường dành cho xe ô tô con",
+  "nhom": "bien_hieu_lenh",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
+ },
+ {
+  "ma": "R.412c",
+  "ten": "Làn đường dành cho xe ôtô tải",
+  "nhom": "bien_hieu_lenh",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
+ },
+ {
+  "ma": "R.412d",
+  "ten": "Làn đường dành cho xe máy",
+  "nhom": "bien_hieu_lenh",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
+ },
+ {
+  "ma": "R.412e",
+  "ten": "Làn đường dành cho xe buýt",
+  "nhom": "bien_hieu_lenh",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
+ },
+ {
+  "ma": "R.412f",
+  "ten": "Làn đường dành cho xe ô tô",
+  "nhom": "bien_hieu_lenh",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
+ },
+ {
+  "ma": "R.412g",
+  "ten": "Làn đường dành cho xe máy và xe đạp",
+  "nhom": "bien_hieu_lenh",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
+ },
+ {
+  "ma": "R.412h",
+  "ten": "Làn đường dành cho xe đạp",
+  "nhom": "bien_hieu_lenh",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
+ },
+ {
+  "ma": "R.412i",
+  "ten": "Kết thúc làn đường dành cho xe ôtô khách",
+  "nhom": "bien_hieu_lenh",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
+ },
+ {
+  "ma": "R.412j",
+  "ten": "Kết thúc làn đường dành cho xe ô tô con",
+  "nhom": "bien_hieu_lenh",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
+ },
+ {
+  "ma": "R.412k",
+  "ten": "Kết thúc làn đường dành cho xe ô tô tải",
+  "nhom": "bien_hieu_lenh",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
+ },
+ {
+  "ma": "R.412l",
+  "ten": "Kết thúc làn đường dành cho xe máy",
+  "nhom": "bien_hieu_lenh",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
+ },
+ {
+  "ma": "R.412m",
+  "ten": "Kết thúc làn đường dành cho xe buýt",
+  "nhom": "bien_hieu_lenh",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
+ },
+ {
+  "ma": "R.412n",
+  "ten": "Kết thúc làn đường dành cho xe ôtô",
+  "nhom": "bien_hieu_lenh",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
+ },
+ {
+  "ma": "R.412o",
+  "ten": "Kết thúc làn đường dành cho xe máy và xe đạp",
+  "nhom": "bien_hieu_lenh",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
+ },
+ {
+  "ma": "R.412p",
+  "ten": "Kết thúc làn đường dành cho xe đạp",
+  "nhom": "bien_hieu_lenh",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
+ },
+ {
+  "ma": "R.415",
+  "ten": "Biển gộp làn đường theo phương tiện",
+  "nhom": "bien_hieu_lenh",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
+ },
+ {
+  "ma": "R.420",
+  "ten": "Bắt đầu khu đông dân cư",
+  "nhom": "bien_hieu_lenh",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
+ },
+ {
+  "ma": "R.421",
+  "ten": "Hết khu đông dân cư",
+  "nhom": "bien_hieu_lenh",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
+ },
+ {
+  "ma": "R.E,9a",
+  "ten": "Cấm đỗ xe trong khu vực",
+  "nhom": "bien_hieu_lenh",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
+ },
+ {
+  "ma": "R.E,9b",
+  "ten": "Cấm đỗ xe theo giờ trong khu vực",
+  "nhom": "bien_hieu_lenh",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
+ },
+ {
+  "ma": "R.E,9c",
+  "ten": "Khu vực đỗ xe",
+  "nhom": "bien_hieu_lenh",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
+ },
+ {
+  "ma": "R.E,9d",
+  "ten": "Tốc độ tối đa trong khu vực",
+  "nhom": "bien_hieu_lenh",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
+ },
+ {
+  "ma": "R.E,10a",
+  "ten": "Hết cấm đỗ xe trong khu vực",
+  "nhom": "bien_hieu_lenh",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
+ },
+ {
+  "ma": "R.E,10b",
+  "ten": "Hết cấm đỗ xe theo giờ trong khu vực",
+  "nhom": "bien_hieu_lenh",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
+ },
+ {
+  "ma": "R.E,10c",
+  "ten": "Hết khu vực đỗ xe",
+  "nhom": "bien_hieu_lenh",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
+ },
+ {
+  "ma": "R.E,10d",
+  "ten": "Hết tốc độ tối đa trong khu vực",
+  "nhom": "bien_hieu_lenh",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
+ },
+ {
+  "ma": "R.E,11a",
+  "ten": "Đường hầm",
+  "nhom": "bien_hieu_lenh",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
+ },
+ {
+  "ma": "R.E,11b",
+  "ten": "Kết thúc đường hầm",
+  "nhom": "bien_hieu_lenh",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
+ },
+ {
+  "ma": "I.401",
+  "ten": "Bắt đầu đường ưu tiên",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
+ },
+ {
+  "ma": "I.402",
+  "ten": "Hết đoạn đường ưu tiên",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
+ },
+ {
+  "ma": "I.405a",
+  "ten": "Đường cụt",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
+ },
+ {
+  "ma": "I.405b",
+  "ten": "Đường cụt",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
+ },
+ {
+  "ma": "I.405c",
+  "ten": "Đường cụt",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
+ },
+ {
+  "ma": "I.406",
+  "ten": "Được ưu tiên qua đường hẹp",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
+ },
+ {
+  "ma": "I.407a",
+  "ten": "Đường một chiều",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
+ },
+ {
+  "ma": "I.407b",
+  "ten": "Đường một chiều",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
+ },
+ {
+  "ma": "I.407c",
+  "ten": "Đường một chiều",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
+ },
+ {
+  "ma": "I.408",
+  "ten": "Nơi đỗ xe",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
+ },
+ {
+  "ma": "I.408a",
+  "ten": "Nơi đỗ xe một phần trên hè phố",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
+ },
+ {
+  "ma": "I.409",
+  "ten": "Chỗ quay xe",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
+ },
+ {
+  "ma": "I.410",
+  "ten": "Khu vực quay xe",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
+ },
+ {
+  "ma": "I.413a",
+  "ten": "Đường phía trước có làn đường dành cho ô tô khách",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
+ },
+ {
+  "ma": "I.413b",
+  "ten": "Rẽ ra đường có làn đường dành cho ô tô khách",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
+ },
+ {
+  "ma": "I.413c",
+  "ten": "Rẽ ra đường có làn đường dành cho ô tô khách",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
+ },
+ {
+  "ma": "I.414a",
+  "ten": "Chỉ hướng đường",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
+ },
+ {
+  "ma": "I.414b",
+  "ten": "Chỉ hướng đường",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
+ },
+ {
+  "ma": "I.414c",
+  "ten": "Chỉ hướng đường",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
+ },
+ {
+  "ma": "I.414d",
+  "ten": "Chỉ hướng đường",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
+ },
+ {
+  "ma": "I.415",
+  "ten": "Mũi tên chỉ hướng đi",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
+ },
+ {
+  "ma": "I.416",
+  "ten": "Đường tránh",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
+ },
+ {
+  "ma": "I.417a",
+  "ten": "Chỉ hướng đường phải đi cho từng loại xe",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
+ },
+ {
+  "ma": "I.417b",
+  "ten": "Chỉ hướng đường phải đi cho từng loại xe",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
+ },
+ {
+  "ma": "I.417c",
+  "ten": "Chỉ hướng đường phải đi cho từng loại xe",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
+ },
+ {
+  "ma": "I.418",
+  "ten": "Lối đi ở những vị trí cấm rẽ",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
+ },
+ {
+  "ma": "I.419a",
+  "ten": "Chỉ dẫn địa giới",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
+ },
+ {
+  "ma": "I.419b",
+  "ten": "Chỉ dẫn địa giới trên tuyến đường đối ngoại",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
+ },
+ {
+  "ma": "I.422a",
+  "ten": "Di tích lịch sử",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
+ },
+ {
+  "ma": "I.422b",
+  "ten": "Di tích lịch sử trên tuyến đường đối ngoại",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
+ },
+ {
+  "ma": "I.423a",
+  "ten": "Vị trí người đi bộ sang ngang",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
+ },
+ {
+  "ma": "I.423b",
+  "ten": "Vị trí người đi bộ sang ngang",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
+ },
+ {
+  "ma": "I.423c",
+  "ten": "Điểm bắt đầu đường đi bộ",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
+ },
+ {
+  "ma": "I.424a",
+  "ten": "Cầu vượt qua đường cho người đi bộ",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
+ },
+ {
+  "ma": "I.424b",
+  "ten": "Cầu vượt qua đường cho người đi bộ",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
+ },
+ {
+  "ma": "I.424c",
+  "ten": "Hầm chui qua đường cho người đi bộ",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
+ },
+ {
+  "ma": "I.424d",
+  "ten": "Hầm chui qua đường cho người đi bộ",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
+ },
+ {
+  "ma": "I.425",
+  "ten": "Bệnh viện",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
+ },
+ {
+  "ma": "I.426",
+  "ten": "Trạm cấp cứu",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
+ },
+ {
+  "ma": "I.427a",
+  "ten": "Trạm sửa chữa",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
+ },
+ {
+  "ma": "I.427b",
+  "ten": "Công trình kiểm soát tải trọng xe",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
+ },
+ {
+  "ma": "I.428",
+  "ten": "Cửa hàng xăng dầu",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
+ },
+ {
+  "ma": "I.429",
+  "ten": "Nơi rửa xe",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
+ },
+ {
+  "ma": "I.430",
+  "ten": "Điện thoại",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
+ },
+ {
+  "ma": "I.431",
+  "ten": "Trạm dừng nghỉ",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
+ },
+ {
+  "ma": "I.432",
+  "ten": "Khách sạn",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
+ },
+ {
+  "ma": "I.433a",
+  "ten": "Nơi nghỉ mát",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
+ },
+ {
+  "ma": "I.433b",
+  "ten": "Báo hiệu nơi cắm trại, nhà nghỉ lưu động",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
+ },
+ {
+  "ma": "I.433c",
+  "ten": "Báo hiệu nơi cắm trại, nhà nghỉ lưu động",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
+ },
+ {
+  "ma": "I.433d",
+  "ten": "Báo hiệu nơi cắm trại, nhà nghỉ lưu động",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
+ },
+ {
+  "ma": "I.433e",
+  "ten": "Báo hiệu nhà trọ",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
+ },
+ {
+  "ma": "I.434a",
+  "ten": "Bến xe buýt",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
+ },
+ {
+  "ma": "I.434b",
+  "ten": "Bến xe tải",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
+ },
+ {
+  "ma": "I.435",
+  "ten": "Bến xe điện",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
+ },
+ {
+  "ma": "I.436",
+  "ten": "Trạm cảnh sát giao thông",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
+ },
+ {
+  "ma": "I.439",
+  "ten": "Tên cầu",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
+ },
+ {
+  "ma": "I.440",
+  "ten": "Đoạn đường thi công",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
+ },
+ {
+  "ma": "I.441a",
+  "ten": "Báo hiệu phía trước có công trường thi công",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
+ },
+ {
+  "ma": "I.441b",
+  "ten": "Báo hiệu phía trước có công trường thi công",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
+ },
+ {
+  "ma": "I.441c",
+  "ten": "Báo hiệu phía trước có công trường thi công",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
+ },
+ {
+  "ma": "I.442",
+  "ten": "Chợ",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
+ },
+ {
+  "ma": "I.443",
+  "ten": "Xe kéo rơ-moóc",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
+ },
+ {
+  "ma": "I.444a",
+  "ten": "Biển báo chỉ dẫn địa điểm",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
+ },
+ {
+  "ma": "I.444b",
+  "ten": "Biển báo chỉ dẫn địa điểm",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
+ },
+ {
+  "ma": "I.444c",
+  "ten": "Biển báo chỉ dẫn địa điểm",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
+ },
+ {
+  "ma": "I.444d",
+  "ten": "Biển báo chỉ dẫn địa điểm",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
+ },
+ {
+  "ma": "I.444e",
+  "ten": "Biển báo chỉ dẫn địa điểm",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
+ },
+ {
+  "ma": "I.444f",
+  "ten": "Biển báo chỉ dẫn địa điểm",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
+ },
+ {
+  "ma": "I.444g",
+  "ten": "Biển báo chỉ dẫn địa điểm",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
+ },
+ {
+  "ma": "I.444h",
+  "ten": "Biển báo chỉ dẫn địa điểm",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
+ },
+ {
+  "ma": "I.444i",
+  "ten": "Biển báo chỉ dẫn địa điểm",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
+ },
+ {
+  "ma": "I.444j",
+  "ten": "Biển báo chỉ dẫn địa điểm",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
+ },
+ {
+  "ma": "I.444k",
+  "ten": "Biển báo chỉ dẫn địa điểm",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
+ },
+ {
+  "ma": "I.444l",
+  "ten": "Biển báo chỉ dẫn địa điểm",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
+ },
+ {
+  "ma": "I.444m",
+  "ten": "Biển báo chỉ dẫn địa điểm",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
+ },
+ {
+  "ma": "I.445a",
+  "ten": "Biển báo kiểu mô tả tình trạng đường",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
+ },
+ {
+  "ma": "I.445b",
+  "ten": "Biển báo kiểu mô tả tình trạng đường",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
+ },
+ {
+  "ma": "I.445c",
+  "ten": "Biển báo kiểu mô tả tình trạng đường",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
+ },
+ {
+  "ma": "I.445d",
+  "ten": "Biển báo kiểu mô tả tình trạng đường",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
+ },
+ {
+  "ma": "I.445e",
+  "ten": "Biển báo kiểu mô tả tình trạng đường",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
+ },
+ {
+  "ma": "I.445f",
+  "ten": "Biển báo kiểu mô tả tình trạng đường",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
+ },
+ {
+  "ma": "I.445g",
+  "ten": "Biển báo kiểu mô tả tình trạng đường",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
+ },
+ {
+  "ma": "I.445h",
+  "ten": "Biển báo kiểu mô tả tình trạng đường",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
+ },
+ {
+  "ma": "I.446",
+  "ten": "Nơi đỗ xe dành cho người khuyết tật",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
+ },
+ {
+  "ma": "I.447a",
+  "ten": "Cầu vượt liên thông",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
+ },
+ {
+  "ma": "I.447b",
+  "ten": "Cầu vượt liên thông",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
+ },
+ {
+  "ma": "I.447c",
+  "ten": "Cầu vượt liên thông",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
+ },
+ {
+  "ma": "I.447d",
+  "ten": "Cầu vượt liên thông",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
+ },
+ {
+  "ma": "I.448",
+  "ten": "Làn đường cứu nạn hay làn dừng xe khẩn cấp",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
+ },
+ {
+  "ma": "I.449",
+  "ten": "Biển tên đường",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
+ },
+ {
+  "ma": "IE.450a",
+  "ten": "Sơ đồ, khoảng cách đến nút giao với đường dẫn vào đường cao tốc",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-46"
+ },
+ {
+  "ma": "IE.450b",
+  "ten": "Sơ đồ, khoảng cách đến nút giao với đường dẫn vào đường cao tốc",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-46"
+ },
+ {
+  "ma": "IE.451a",
+  "ten": "Lối vào và khoảng cách đến lối vào đường cao tốc",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-46"
+ },
+ {
+  "ma": "IE.451b",
+  "ten": "Lối vào và khoảng cách đến lối vào đường cao tốc",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-46"
+ },
+ {
+  "ma": "IE.452",
+  "ten": "Bắt đầu đường cao tốc",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-46"
+ },
+ {
+  "ma": "IE.453a",
+  "ten": "Kết thúc đường cao tốc",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-46"
+ },
+ {
+  "ma": "IE.453b",
+  "ten": "Kết thúc đường cao tốc",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-46"
+ },
+ {
+  "ma": "IE.454",
+  "ten": "Khoảng cách đến lối ra phía trước",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-46"
+ },
+ {
+  "ma": "IE.455a",
+  "ten": "Khoảng cách đến các lối ra tiếp theo",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-46"
+ },
+ {
+  "ma": "IE.455b",
+  "ten": "Khoảng cách đến các lối ra tiếp theo",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-46"
+ },
+ {
+  "ma": "IE.456a",
+  "ten": "Trạm dừng nghỉ và khoảng cách đến trạm dừng nghỉ",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-46"
+ },
+ {
+  "ma": "IE.456b",
+  "ten": "Trạm dừng nghỉ và khoảng cách đến trạm dừng nghỉ",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-46"
+ },
+ {
+  "ma": "IE.456c",
+  "ten": "Trạm dừng nghỉ và khoảng cách đến trạm dừng nghỉ",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-46"
+ },
+ {
+  "ma": "IE.457a",
+  "ten": "Nơi đỗ xe trong trạm dừng nghỉ",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-46"
+ },
+ {
+  "ma": "IE.457b",
+  "ten": "Nơi đỗ xe trong trạm dừng nghỉ",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-46"
+ },
+ {
+  "ma": "IE.458",
+  "ten": "Khoảng cách đến các trạm dừng nghỉ tiếp theo",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-46"
+ },
+ {
+  "ma": "IE.459a",
+  "ten": "Khoảng cách đến khu tham quan, du lịch",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-46"
+ },
+ {
+  "ma": "IE.459b",
+  "ten": "Khoảng cách đến khu tham quan, du lịch",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-46"
+ },
+ {
+  "ma": "IE.460",
+  "ten": "Cột lý trình kilômét",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-46"
+ },
+ {
+  "ma": "IE.461a",
+  "ten": "Khu dịch vụ công cộng, giải trí",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-46"
+ },
+ {
+  "ma": "IE.461b",
+  "ten": "Khu dịch vụ công cộng, giải trí",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-46"
+ },
+ {
+  "ma": "IE.461c",
+  "ten": "Khu dịch vụ công cộng, giải trí",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-46"
+ },
+ {
+  "ma": "IE.461d",
+  "ten": "Khu dịch vụ công cộng, giải trí",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-46"
+ },
+ {
+  "ma": "IE.462",
+  "ten": "Tần số trên sóng radio",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-46"
+ },
+ {
+  "ma": "IE.463a",
+  "ten": "Công trình kiểm soát tải trọng xe",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-46"
+ },
+ {
+  "ma": "IE.463b",
+  "ten": "Công trình kiểm soát tải trọng xe",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-46"
+ },
+ {
+  "ma": "IE.463c",
+  "ten": "Công trình kiểm soát tải trọng xe",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-46"
+ },
+ {
+  "ma": "IE.464a",
+  "ten": "Địa điểm và phương hướng",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-46"
+ },
+ {
+  "ma": "IE.464b",
+  "ten": "Địa điểm và phương hướng",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-46"
+ },
+ {
+  "ma": "IE.465a",
+  "ten": "Địa điểm và khoảng cách",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-46"
+ },
+ {
+  "ma": "IE.465b",
+  "ten": "Địa điểm và khoảng cách",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-46"
+ },
+ {
+  "ma": "IE.466",
+  "ten": "Sơ đồ lối ra một chiều",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-46"
+ },
+ {
+  "ma": "IE.467a",
+  "ten": "Nhập làn",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-46"
+ },
+ {
+  "ma": "IE.467b",
+  "ten": "Nhập làn",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-46"
+ },
+ {
+  "ma": "IE.468a",
+  "ten": "Chướng ngại vật phía trước",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-46"
+ },
+ {
+  "ma": "IE.468b",
+  "ten": "Chướng ngại vật phía trước",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-46"
+ },
+ {
+  "ma": "IE.469",
+  "ten": "Hướng rẽ",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-46"
+ },
+ {
+  "ma": "IE.470",
+  "ten": "Số điện thoại khẩn cấp",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-46"
+ },
+ {
+  "ma": "IE.471",
+  "ten": "Giữ khoảng cách lái xe an toàn",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-46"
+ },
+ {
+  "ma": "IE.472a",
+  "ten": "Trạm thu phí",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-46"
+ },
+ {
+  "ma": "IE.472b",
+  "ten": "Trạm thu phí",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-46"
+ },
+ {
+  "ma": "IE.473",
+  "ten": "Giảm tốc độ",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-46"
+ },
+ {
+  "ma": "IE.474",
+  "ten": "Lối ra",
+  "nhom": "bien_chi_dan",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-46"
+ },
+ {
+  "ma": "S.501",
+  "ten": "Phạm vi tác dụng của biển",
+  "nhom": "bien_phu",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-41"
+ },
+ {
+  "ma": "S.502",
+  "ten": "Khoảng cách đến đối tượng báo hiệu",
+  "nhom": "bien_phu",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-41"
+ },
+ {
+  "ma": "S.503a",
+  "ten": "Hướng tác dụng của biển",
+  "nhom": "bien_phu",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-41"
+ },
+ {
+  "ma": "S.503b",
+  "ten": "Hướng tác dụng của biển",
+  "nhom": "bien_phu",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-41"
+ },
+ {
+  "ma": "S.503c",
+  "ten": "Hướng tác dụng của biển",
+  "nhom": "bien_phu",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-41"
+ },
+ {
+  "ma": "S.503d",
+  "ten": "Hướng tác dụng của biển",
+  "nhom": "bien_phu",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-41"
+ },
+ {
+  "ma": "S.503e",
+  "ten": "Hướng tác dụng của biển",
+  "nhom": "bien_phu",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-41"
+ },
+ {
+  "ma": "S.503f",
+  "ten": "Hướng tác dụng của biển",
+  "nhom": "bien_phu",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-41"
+ },
+ {
+  "ma": "S.H,3a",
+  "ten": "Hướng tác dụng của biển",
+  "nhom": "bien_phu",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-41"
+ },
+ {
+  "ma": "S.H,3b",
+  "ten": "Hướng tác dụng của biển",
+  "nhom": "bien_phu",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-41"
+ },
+ {
+  "ma": "S.H,3c",
+  "ten": "Hướng tác dụng của biển",
+  "nhom": "bien_phu",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-41"
+ },
+ {
+  "ma": "S.504",
+  "ten": "Làn đường",
+  "nhom": "bien_phu",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-41"
+ },
+ {
+  "ma": "S.505a",
+  "ten": "Loại xe",
+  "nhom": "bien_phu",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-41"
+ },
+ {
+  "ma": "S.505b",
+  "ten": "Loại xe hạn chế qua cầu",
+  "nhom": "bien_phu",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-41"
+ },
+ {
+  "ma": "S.505c",
+  "ten": "Tải trọng trục hạn chế qua cầu",
+  "nhom": "bien_phu",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-41"
+ },
+ {
+  "ma": "S.506a",
+  "ten": "Hướng đường ưu tiên",
+  "nhom": "bien_phu",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-41"
+ },
+ {
+  "ma": "S.506b",
+  "ten": "Hướng đường ưu tiên",
+  "nhom": "bien_phu",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-41"
+ },
+ {
+  "ma": "S.507",
+  "ten": "Hướng rẽ",
+  "nhom": "bien_phu",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-41"
+ },
+ {
+  "ma": "S.508a",
+  "ten": "Biểu thị thời gian",
+  "nhom": "bien_phu",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-41"
+ },
+ {
+  "ma": "S.508b",
+  "ten": "Biểu thị thời gian",
+  "nhom": "bien_phu",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-41"
+ },
+ {
+  "ma": "S.509a",
+  "ten": "Thuyết minh biển chính",
+  "nhom": "bien_phu",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-41"
+ },
+ {
+  "ma": "S.509b",
+  "ten": "Thuyết minh biển chính",
+  "nhom": "bien_phu",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-41"
+ },
+ {
+  "ma": "S.510a",
+  "ten": "Chú ý đường trơn có băng tuyết",
+  "nhom": "bien_phu",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-41"
+ },
+ {
+  "ma": "S.510b",
+  "ten": "Chú ý đường sắt",
+  "nhom": "bien_phu",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-41"
+ },
+ {
+  "ma": "S.G,7",
+  "ten": "Địa điểm cắm trại",
+  "nhom": "bien_phu",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-41"
+ },
+ {
+  "ma": "S.G,8",
+  "ten": "Địa điểm nhà trọ",
+  "nhom": "bien_phu",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-41"
+ },
+ {
+  "ma": "S.G,9b",
+  "ten": "Chỉ dẫn tới điểm đỗ xe dành cho lái xe muốn sử dụng phương tiện công cộng",
+  "nhom": "bien_phu",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-41"
+ },
+ {
+  "ma": "S.G,11a",
+  "ten": "Chỉ dẫn số lượng làn và hướng đi cho từng làn",
+  "nhom": "bien_phu",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-41"
+ },
+ {
+  "ma": "S.G,11c",
+  "ten": "Chỉ dẫn số lượng làn và hướng đi cho từng làn",
+  "nhom": "bien_phu",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-41"
+ },
+ {
+  "ma": "S.G,12a",
+  "ten": "Chỉ dẫn làn đường không lưu thông",
+  "nhom": "bien_phu",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-41"
+ },
+ {
+  "ma": "S.G,12b",
+  "ten": "Chỉ dẫn làn đường không lưu thông",
+  "nhom": "bien_phu",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-41"
+ },
+ {
+  "ma": "S.H,6",
+  "ten": "Ngoại lệ",
+  "nhom": "bien_phu",
+  "y_nghia": null,
+  "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-41"
+ },
+ {
+  "ma": "Vạch 1.1",
+  "ten": "Vạch phân chia hai chiều xe chạy (vạch tim đường), dạng vạch đơn, đứt nét",
+  "nhom": "vach_ke",
+  "y_nghia": null,
+  "nguon": "https://dulieuphapluat.vn/cong-cu/tra-cuu-vach-ke-duong.html"
+ },
+ {
+  "ma": "Vạch 1.2",
+  "ten": "Vạch phân chia hai chiều xe chạy (vạch tim đường), dạng vạch đơn, nét liền",
+  "nhom": "vach_ke",
+  "y_nghia": null,
+  "nguon": "https://dulieuphapluat.vn/cong-cu/tra-cuu-vach-ke-duong.html"
+ },
+ {
+  "ma": "Vạch 1.3",
+  "ten": "Vạch phân chia hai chiều xe chạy (vạch tim đường), dạng vạch đôi, nét liền",
+  "nhom": "vach_ke",
+  "y_nghia": null,
+  "nguon": "https://dulieuphapluat.vn/cong-cu/tra-cuu-vach-ke-duong.html"
+ },
+ {
+  "ma": "Vạch 1.4",
+  "ten": "Vạch phân chia hai chiều xe chạy, dạng vạch đôi gồm một vạch nét liền, một vạch nét đứt",
+  "nhom": "vach_ke",
+  "y_nghia": null,
+  "nguon": "https://dulieuphapluat.vn/cong-cu/tra-cuu-vach-ke-duong.html"
+ },
+ {
+  "ma": "Vạch 1.5",
+  "ten": "Vạch xác định ranh giới làn đường có thể thay đổi hướng xe chạy",
+  "nhom": "vach_ke",
+  "y_nghia": null,
+  "nguon": "https://dulieuphapluat.vn/cong-cu/tra-cuu-vach-ke-duong.html"
+ },
+ {
+  "ma": "Vạch 2.1",
+  "ten": "Vạch phân chia các làn xe cùng chiều, dạng vạch đơn, đứt nét",
+  "nhom": "vach_ke",
+  "y_nghia": null,
+  "nguon": "https://dulieuphapluat.vn/cong-cu/tra-cuu-vach-ke-duong.html"
+ },
+ {
+  "ma": "Vạch 2.2",
+  "ten": "Vạch phân chia các làn xe cùng chiều, dạng vạch đơn, liền nét",
+  "nhom": "vach_ke",
+  "y_nghia": null,
+  "nguon": "https://dulieuphapluat.vn/cong-cu/tra-cuu-vach-ke-duong.html"
+ },
+ {
+  "ma": "Vạch 2.3",
+  "ten": "Vạch giới hạn làn đường dành riêng hoặc làn đường ưu tiên",
+  "nhom": "vach_ke",
+  "y_nghia": null,
+  "nguon": "https://dulieuphapluat.vn/cong-cu/tra-cuu-vach-ke-duong.html"
+ },
+ {
+  "ma": "Vạch 2.4",
+  "ten": "Vạch phân chia các làn xe cùng chiều, dạng vạch kép (một vạch liền, một vạch đứt nét)",
+  "nhom": "vach_ke",
+  "y_nghia": null,
+  "nguon": "https://dulieuphapluat.vn/cong-cu/tra-cuu-vach-ke-duong.html"
+ },
+ {
+  "ma": "Vạch 3.1",
+  "ten": "Vạch giới hạn mép ngoài phần đường xe chạy hoặc vạch phân cách làn xe cơ giới và làn xe thô sơ",
+  "nhom": "vach_ke",
+  "y_nghia": null,
+  "nguon": "https://dulieuphapluat.vn/cong-cu/tra-cuu-vach-ke-duong.html"
+ },
+ {
+  "ma": "Vạch 3.2",
+  "ten": "Vạch giới hạn mép phần đường xe chạy",
+  "nhom": "vach_ke",
+  "y_nghia": null,
+  "nguon": "https://dulieuphapluat.vn/cong-cu/tra-cuu-vach-ke-duong.html"
+ },
+ {
+  "ma": "Vạch 3.3",
+  "ten": "Vạch 3.3",
+  "nhom": "vach_ke",
+  "y_nghia": "Vạch đứt nét, màu trắng, bề rộng vạch 45 cm cho đường ô tô cao tốc và 30 cm cho các đường khác; L1 = L2 = 100–300 cm (1:1). Xe được phép cắt, chuyển làn qua vạch; còn dùng kẻ đoạn chuyển tiếp từ vạch 2.1 sang vạch 3.2 (dài 50–100 m).",
+  "nguon": "https://dulieuphapluat.vn/cong-cu/tra-cuu-vach-ke-duong.html"
+ },
+ {
+  "ma": "Vạch 3.4",
+  "ten": "Vạch 3.4",
+  "nhom": "vach_ke",
+  "y_nghia": "Vạch đứt nét, màu trắng, nét liền L1 = 3–6 m, nét đứt L2 = 1–2 m, tỷ lệ L1:L2 = 3:1; chiều dài vạch 3.4 từ 50 m đến 100 m.",
+  "nguon": "https://dulieuphapluat.vn/cong-cu/tra-cuu-vach-ke-duong.html"
+ },
+ {
+  "ma": "Vạch 4.1",
+  "ten": "Vạch kênh hóa dòng xe dạng gạch chéo",
+  "nhom": "vach_ke",
+  "y_nghia": null,
+  "nguon": "https://dulieuphapluat.vn/cong-cu/tra-cuu-vach-ke-duong.html"
+ },
+ {
+  "ma": "Vạch 4.2",
+  "ten": "Vạch kênh hóa dòng xe dạng chữ V",
+  "nhom": "vach_ke",
+  "y_nghia": null,
+  "nguon": "https://dulieuphapluat.vn/cong-cu/tra-cuu-vach-ke-duong.html"
+ },
+ {
+  "ma": "Vạch 4.3",
+  "ten": "Vạch kênh hóa dòng xe dạng vành khuyên",
+  "nhom": "vach_ke",
+  "y_nghia": null,
+  "nguon": "https://dulieuphapluat.vn/cong-cu/tra-cuu-vach-ke-duong.html"
+ },
+ {
+  "ma": "Vạch 4.4",
+  "ten": "Vạch kẻ kiểu mắt võng",
+  "nhom": "vach_ke",
+  "y_nghia": null,
+  "nguon": "https://dulieuphapluat.vn/cong-cu/tra-cuu-vach-ke-duong.html"
+ },
+ {
+  "ma": "Vạch 5.1",
+  "ten": "Vạch dẫn hướng rẽ trái qua phạm vi nút giao",
+  "nhom": "vach_ke",
+  "y_nghia": null,
+  "nguon": "https://dulieuphapluat.vn/cong-cu/tra-cuu-vach-ke-duong.html"
+ },
+ {
+  "ma": "Vạch 5.2",
+  "ten": "Vạch phân làn đường kéo dài qua phạm vi nút giao",
+  "nhom": "vach_ke",
+  "y_nghia": null,
+  "nguon": "https://dulieuphapluat.vn/cong-cu/tra-cuu-vach-ke-duong.html"
+ },
+ {
+  "ma": "Vạch 5.3",
+  "ten": "Vạch làn chờ rẽ trái trong nút giao",
+  "nhom": "vach_ke",
+  "y_nghia": null,
+  "nguon": "https://dulieuphapluat.vn/cong-cu/tra-cuu-vach-ke-duong.html"
+ },
+ {
+  "ma": "Vạch 6.1",
+  "ten": "Vạch cấm đỗ xe trên đường",
+  "nhom": "vach_ke",
+  "y_nghia": null,
+  "nguon": "https://dulieuphapluat.vn/cong-cu/tra-cuu-vach-ke-duong.html"
+ },
+ {
+  "ma": "Vạch 6.2",
+  "ten": "Vạch cấm dừng xe, cấm đỗ xe trên đường",
+  "nhom": "vach_ke",
+  "y_nghia": null,
+  "nguon": "https://dulieuphapluat.vn/cong-cu/tra-cuu-vach-ke-duong.html"
+ },
+ {
+  "ma": "Vạch 7.1",
+  "ten": "Vạch dừng xe",
+  "nhom": "vach_ke",
+  "y_nghia": null,
+  "nguon": "https://dulieuphapluat.vn/cong-cu/tra-cuu-vach-ke-duong.html"
+ },
+ {
+  "ma": "Vạch 7.2",
+  "ten": "Vạch nhường đường",
+  "nhom": "vach_ke",
+  "y_nghia": null,
+  "nguon": "https://dulieuphapluat.vn/cong-cu/tra-cuu-vach-ke-duong.html"
+ },
+ {
+  "ma": "Vạch 7.3",
+  "ten": "Vạch đi bộ qua đường",
+  "nhom": "vach_ke",
+  "y_nghia": null,
+  "nguon": "https://dulieuphapluat.vn/cong-cu/tra-cuu-vach-ke-duong.html"
+ },
+ {
+  "ma": "Vạch 7.4",
+  "ten": "Vạch xe đạp qua đường",
+  "nhom": "vach_ke",
+  "y_nghia": null,
+  "nguon": "https://dulieuphapluat.vn/cong-cu/tra-cuu-vach-ke-duong.html"
+ },
+ {
+  "ma": "Vạch 7.5",
+  "ten": "Vạch xác định khu vực cấm xe thô sơ trong nút giao",
+  "nhom": "vach_ke",
+  "y_nghia": null,
+  "nguon": "https://dulieuphapluat.vn/cong-cu/tra-cuu-vach-ke-duong.html"
+ },
+ {
+  "ma": "Vạch 7.6",
+  "ten": "Vạch chỉ dẫn sắp đến chỗ có bố trí vạch đi bộ qua đường",
+  "nhom": "vach_ke",
+  "y_nghia": null,
+  "nguon": "https://dulieuphapluat.vn/cong-cu/tra-cuu-vach-ke-duong.html"
+ },
+ {
+  "ma": "Vạch 7.7",
+  "ten": "Vạch báo gần chỗ giao nhau với đường sắt",
+  "nhom": "vach_ke",
+  "y_nghia": null,
+  "nguon": "https://dulieuphapluat.vn/cong-cu/tra-cuu-vach-ke-duong.html"
+ },
+ {
+  "ma": "Vạch 7.8",
+  "ten": "Vạch xác định khoảng cách xe trên đường",
+  "nhom": "vach_ke",
+  "y_nghia": null,
+  "nguon": "https://dulieuphapluat.vn/cong-cu/tra-cuu-vach-ke-duong.html"
+ },
+ {
+  "ma": "Vạch 8.1",
+  "ten": "Vạch đứng trên mốc cố định",
+  "nhom": "vach_ke",
+  "y_nghia": null,
+  "nguon": "https://dulieuphapluat.vn/cong-cu/tra-cuu-vach-ke-duong.html"
+ },
+ {
+  "ma": "Vạch 8.2",
+  "ten": "Vạch xác định mép dưới thấp nhất của kết cấu cầu vượt qua đường hoặc công trình khác đi phía trên đường",
+  "nhom": "vach_ke",
+  "y_nghia": null,
+  "nguon": "https://dulieuphapluat.vn/cong-cu/tra-cuu-vach-ke-duong.html"
+ },
+ {
+  "ma": "Vạch 9.1",
+  "ten": "Vạch cấm xe quay đầu",
+  "nhom": "vach_ke",
+  "y_nghia": null,
+  "nguon": "https://dulieuphapluat.vn/cong-cu/tra-cuu-vach-ke-duong.html"
+ },
+ {
+  "ma": "Vạch 9.2",
+  "ten": "Vạch quy định vị trí dừng đỗ của phương tiện giao thông công cộng trên đường",
+  "nhom": "vach_ke",
+  "y_nghia": null,
+  "nguon": "https://dulieuphapluat.vn/cong-cu/tra-cuu-vach-ke-duong.html"
+ },
+ {
+  "ma": "Vạch 9.3",
+  "ten": "Vạch mũi tên chỉ hướng trên mặt đường",
+  "nhom": "vach_ke",
+  "y_nghia": null,
+  "nguon": "https://dulieuphapluat.vn/cong-cu/tra-cuu-vach-ke-duong.html"
+ },
+ {
+  "ma": "Vạch 9.4",
+  "ten": "Vạch mũi tên báo số làn xe phía trước bị giảm",
+  "nhom": "vach_ke",
+  "y_nghia": null,
+  "nguon": "https://dulieuphapluat.vn/cong-cu/tra-cuu-vach-ke-duong.html"
+ },
+ {
+  "ma": "Vạch 9.5",
+  "ten": "Vạch dạng chữ viết, chữ số, hoặc màu sắc trên mặt đường",
+  "nhom": "vach_ke",
+  "y_nghia": null,
+  "nguon": "https://dulieuphapluat.vn/cong-cu/tra-cuu-vach-ke-duong.html"
+ },
+ {
+  "ma": "Vạch 9.6",
+  "ten": "Vạch ký hiệu xe đạp trên mặt đường",
+  "nhom": "vach_ke",
+  "y_nghia": null,
+  "nguon": "https://dulieuphapluat.vn/cong-cu/tra-cuu-vach-ke-duong.html"
+ }
+]
