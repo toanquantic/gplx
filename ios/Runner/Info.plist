@@ -6,6 +6,10 @@
 	<true/>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleLocalizations</key>
+	<array>
+		<string>vi</string>
+	</array>
 	<key>CFBundleDisplayName</key>
 	<string>Ôn thi GPLX</string>
 	<key>CFBundleExecutable</key>

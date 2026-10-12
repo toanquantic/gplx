@@ -25,6 +25,11 @@ void main() {
     await tester.tap(find.text('B'));
     await tester.pumpAndSettle();
     expect(find.textContaining('Đã làm 0/600'), findsOneWidget);
+
+    await tester.tap(find.text('C1'));
+    await tester.pumpAndSettle();
+    expect(find.textContaining('35 câu · 22 phút'), findsOneWidget);
+    expect(find.textContaining('Ôn lại hôm nay'), findsOneWidget);
   });
 
   testWidgets('ôn câu điểm liệt: chọn đáp án thì hiện đúng sai và lưu tiến độ', (tester) async {
@@ -37,7 +42,7 @@ void main() {
     await tester.pumpAndSettle();
     expect(find.textContaining('Đáp án:'), findsOneWidget);
 
-    await tester.pageBack();
+    await tester.tap(find.byType(BackButton));
     await tester.pumpAndSettle();
     expect(find.textContaining('Đã làm 1/250'), findsOneWidget);
   });
@@ -76,7 +81,7 @@ void main() {
     expect(find.text('Tất cả 25'), findsOneWidget);
 
     // Về trang thi thử: lịch sử có bài vừa làm, mở lại được kết quả.
-    await tester.pageBack();
+    await tester.tap(find.byType(BackButton));
     await tester.pumpAndSettle();
     await tester.tap(find.text('Về trang chủ'));
     await tester.pumpAndSettle();
@@ -109,6 +114,11 @@ void main() {
 
   testWidgets('tra biển báo theo nhóm và từ khóa', (tester) async {
     await pumpApp(tester);
+    await tester.scrollUntilVisible(
+      find.text('Tra cứu biển báo'),
+      200,
+      scrollable: find.byType(Scrollable).first,
+    );
     await tester.tap(find.text('Tra cứu biển báo'));
     await tester.pumpAndSettle();
     await tester.tap(find.text('Biển cấm'));

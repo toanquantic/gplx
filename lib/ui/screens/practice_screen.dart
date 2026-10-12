@@ -8,10 +8,18 @@ import '../widgets/question_view.dart';
 
 /// Ôn tập: chọn đáp án là biết ngay đúng sai và xem giải thích.
 class PracticeScreen extends StatefulWidget {
-  const PracticeScreen({super.key, required this.title, required this.questions});
+  const PracticeScreen({
+    super.key,
+    required this.title,
+    required this.questions,
+    this.onAllAnswered,
+  });
 
   final String title;
   final List<Question> questions;
+
+  /// Gọi một lần khi đã trả lời hết các câu trong lượt ôn này.
+  final VoidCallback? onAllAnswered;
 
   @override
   State<PracticeScreen> createState() => _PracticeScreenState();
@@ -93,6 +101,7 @@ class _PracticeScreenState extends State<PracticeScreen> {
                       : (choice) {
                           setState(() => _picked[q.id] = choice);
                           progress.recordAnswer(q.id, choice == q.correctIndex);
+                          if (_picked.length == qs.length) widget.onAllAnswered?.call();
                         },
                 );
               },

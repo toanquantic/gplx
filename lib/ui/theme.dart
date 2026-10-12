@@ -23,6 +23,7 @@ class AppColors extends ThemeExtension<AppColors> {
     required this.warnIcon,
     required this.onWarnSoft,
     required this.partial,
+    required this.proBackground,
   });
 
   final Color background;
@@ -51,6 +52,9 @@ class AppColors extends ThemeExtension<AppColors> {
   /// Thanh điểm của nhóm câu chưa đúng hết.
   final Color partial;
 
+  /// Nền ấm của màn mời mua Pro.
+  final Color proBackground;
+
   static const light = AppColors(
     background: Color(0xFFF3F6F1),
     surface: Color(0xFFFFFFFF),
@@ -71,6 +75,7 @@ class AppColors extends ThemeExtension<AppColors> {
     warnIcon: Color(0xFFF5D6A6),
     onWarnSoft: Color(0xFF6B3A00),
     partial: Color(0xFFC8812A),
+    proBackground: Color(0xFFFBF6EC),
   );
 
   static const dark = AppColors(
@@ -93,6 +98,7 @@ class AppColors extends ThemeExtension<AppColors> {
     warnIcon: Color(0xFF5A421D),
     onWarnSoft: Color(0xFFF3D3A3),
     partial: Color(0xFFE0A050),
+    proBackground: Color(0xFF1C1810),
   );
 
   @override
@@ -103,7 +109,12 @@ class AppColors extends ThemeExtension<AppColors> {
 }
 
 extension AppColorsX on BuildContext {
-  AppColors get colors => Theme.of(this).extension<AppColors>()!;
+  /// Bảng màu của theme; theme không khai báo (ví dụ trong test) thì dùng bảng mặc định.
+  AppColors get colors {
+    final theme = Theme.of(this);
+    return theme.extension<AppColors>() ??
+        (theme.brightness == Brightness.dark ? AppColors.dark : AppColors.light);
+  }
 }
 
 const appFont = 'BeVietnamPro';
