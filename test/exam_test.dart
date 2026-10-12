@@ -4,6 +4,7 @@ import 'dart:math';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:on_thi_gplx/data/question_bank.dart';
 import 'package:on_thi_gplx/logic/exam.dart';
+import 'package:on_thi_gplx/state/progress.dart';
 
 QuestionBank loadBank() {
   String read(String name) => File('assets/data/$name').readAsStringSync();
@@ -81,7 +82,8 @@ void main() {
       }
     }
 
-    int wrongOption(int i) => (exam.questions[i].correctIndex + 1) % exam.questions[i].options.length;
+    int wrongOption(int i) =>
+        (exam.questions[i].correctIndex + 1) % exam.questions[i].options.length;
 
     test('đúng hết thì đạt', () {
       answerAll();
@@ -92,7 +94,10 @@ void main() {
 
     test('vừa đủ điểm đạt (27/30) thì đạt', () {
       answerAll();
-      final normal = [for (var i = 0; i < 30; i++) if (i != criticalIndex) i];
+      final normal = [
+        for (var i = 0; i < 30; i++)
+          if (i != criticalIndex) i,
+      ];
       for (final i in normal.take(3)) {
         exam.answers[i] = wrongOption(i);
       }
@@ -116,5 +121,58 @@ void main() {
       exam.answers[criticalIndex] = null;
       expect(exam.grade().failedCritical, isTrue);
     });
+  });
+
+  test('điểm theo nhóm cộng lại bằng tổng điểm và đúng cấu trúc đề', () {
+    final exam = generateExam(bank, 'B', random: Random(7));
+    for (var i = 0; i < exam.questions.length; i += 2) {
+      exam.answers[i] = exam.questions[i].correctIndex;
+    }
+    final groups = exam.scoreByGroup();
+    expect([for (final g in groups) g.group], exam.config.structure.keys.toList());
+    for (final g in groups) {
+      expect(g.total, exam.config.structure[g.group]);
+    }
+    expect(groups.fold(0, (s, g) => s + g.correct), exam.grade().correct);
+  });
+
+  test('bài thi lưu vào lịch sử dựng lại được y như cũ', () {
+    final exam = generateExam(bank, 'A1', random: Random(3));
+    exam.answers[0] = exam.questions[0].correctIndex;
+    exam.answers[5] = (exam.questions[5].correctIndex + 1) % exam.questions[5].options.length;
+    final result = exam.grade();
+    final record = ExamRecord.fromJson(
+      ExamRecord(
+        'A1',
+        DateTime(2026, 10, 12, 9, 30),
+        result.correct,
+        result.total,
+        result.passed,
+        failedCritical: result.failedCritical,
+        duration: const Duration(minutes: 3, seconds: 4),
+        questionIds: [for (final q in exam.questions) q.id],
+        answers: List.of(exam.answers),
+      ).toJson(),
+    );
+
+    expect(record.duration, const Duration(minutes: 3, seconds: 4));
+    expect(record.failedCritical, isTrue);
+    final restored = restoreExam(bank, record)!;
+    expect([for (final q in restored.questions) q.id], [for (final q in exam.questions) q.id]);
+    expect(restored.answers, exam.answers);
+    expect(restored.grade().correct, result.correct);
+  });
+
+  test('bản ghi lịch sử cũ (chưa lưu câu hỏi) vẫn đọc được', () {
+    final record = ExamRecord.fromJson({
+      'hang': 'B',
+      't': '2026-10-01T08:00:00.000',
+      'dung': 28,
+      'tong': 30,
+      'dat': true,
+    });
+    expect(record.failedCritical, isFalse);
+    expect(record.questionIds, isNull);
+    expect(restoreExam(bank, record), isNull);
   });
 }

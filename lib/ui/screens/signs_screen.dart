@@ -1,8 +1,19 @@
 import 'package:flutter/material.dart';
 
+import '../../models/models.dart';
 import '../app_scope.dart';
+import '../theme.dart';
 
 const _signGroups = {
+  'bien_cam': 'Biển cấm',
+  'bien_nguy_hiem': 'Nguy hiểm',
+  'bien_hieu_lenh': 'Hiệu lệnh',
+  'bien_chi_dan': 'Chỉ dẫn',
+  'bien_phu': 'Biển phụ',
+  'vach_ke': 'Vạch kẻ',
+};
+
+const _signGroupTitles = {
   'bien_cam': 'Biển báo cấm',
   'bien_hieu_lenh': 'Biển hiệu lệnh',
   'bien_nguy_hiem': 'Biển báo nguy hiểm và cảnh báo',
@@ -11,7 +22,7 @@ const _signGroups = {
   'vach_ke': 'Vạch kẻ đường',
 };
 
-/// Danh mục biển báo theo QCVN 41:2024 (mã và tên; chưa có hình riêng).
+/// Danh mục biển báo theo QCVN 41:2024 (mã và tên; chưa có hình riêng từng biển).
 class SignsScreen extends StatefulWidget {
   const SignsScreen({super.key});
 
@@ -21,60 +32,252 @@ class SignsScreen extends StatefulWidget {
 
 class _SignsScreenState extends State<SignsScreen> {
   String _query = '';
+  String? _group;
 
   @override
   Widget build(BuildContext context) {
     final signs = AppScope.of(context).bank.signs;
     final q = _query.trim().toLowerCase();
-    final filtered = q.isEmpty
-        ? signs
-        : signs
-            .where((s) =>
-                s.code.toLowerCase().contains(q) || s.name.toLowerCase().contains(q))
-            .toList();
-    final theme = Theme.of(context);
+    final filtered = signs
+        .where((s) => _group == null || s.group == _group)
+        .where(
+          (s) => q.isEmpty || s.code.toLowerCase().contains(q) || s.name.toLowerCase().contains(q),
+        )
+        .toList();
+    final c = context.colors;
+
+    Widget chip(String? group, String label) {
+      final on = _group == group;
+      return Padding(
+        padding: const EdgeInsets.only(right: 8),
+        child: ChoiceChip(
+          label: Text(label),
+          selected: on,
+          showCheckmark: false,
+          onSelected: (_) => setState(() => _group = group),
+          labelStyle: TextStyle(
+            fontFamily: appFont,
+            fontSize: 13.5,
+            fontWeight: FontWeight.w500,
+            color: on ? c.onAccent : c.text,
+          ),
+          selectedColor: c.accent,
+          backgroundColor: c.surface,
+          side: on ? BorderSide.none : BorderSide(color: c.borderStrong),
+          shape: const StadiumBorder(),
+        ),
+      );
+    }
+
     return Scaffold(
-      appBar: AppBar(title: const Text('Biển báo')),
-      body: Column(children: [
-        Padding(
-          padding: const EdgeInsets.fromLTRB(16, 8, 16, 8),
-          child: TextField(
-            decoration: const InputDecoration(
-              prefixIcon: Icon(Icons.search),
-              hintText: 'Tìm theo mã hoặc tên, ví dụ P.102',
-              border: OutlineInputBorder(),
+      appBar: AppBar(
+        titleSpacing: 0,
+        title: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            const Text('Biển báo'),
+            Text(
+              '${signs.length} biển · QCVN 41:2024',
+              style: TextStyle(fontSize: 12.5, fontWeight: FontWeight.w400, color: c.muted),
             ),
-            onChanged: (v) => setState(() => _query = v),
-          ),
+          ],
         ),
-        Expanded(
-          child: ListView.builder(
-            itemCount: filtered.length,
-            itemBuilder: (context, i) {
-              final s = filtered[i];
-              final header = i == 0 || filtered[i - 1].group != s.group;
-              return Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-                if (header)
-                  Padding(
-                    padding: const EdgeInsets.fromLTRB(16, 16, 16, 4),
-                    child: Text(_signGroups[s.group] ?? s.group,
-                        style: theme.textTheme.titleSmall
-                            ?.copyWith(color: theme.colorScheme.primary)),
-                  ),
-                ListTile(
-                  dense: true,
-                  leading: SizedBox(
-                    width: 64,
-                    child: Text(s.code, style: theme.textTheme.labelLarge),
-                  ),
-                  title: Text(s.name),
-                  subtitle: s.meaning == null ? null : Text(s.meaning!),
-                ),
-              ]);
-            },
+      ),
+      body: Column(
+        children: [
+          Padding(
+            padding: const EdgeInsets.fromLTRB(20, 0, 20, 12),
+            child: TextField(
+              decoration: InputDecoration(
+                prefixIcon: Icon(Icons.search, color: c.muted),
+                hintText: 'Tìm theo tên hoặc mã, ví dụ P.102',
+                isDense: true,
+              ),
+              onChanged: (v) => setState(() => _query = v),
+            ),
           ),
-        ),
-      ]),
+          SizedBox(
+            height: 40,
+            child: ListView(
+              scrollDirection: Axis.horizontal,
+              padding: const EdgeInsets.symmetric(horizontal: 20),
+              children: [
+                chip(null, 'Tất cả'),
+                for (final MapEntry(:key, :value) in _signGroups.entries) chip(key, value),
+              ],
+            ),
+          ),
+          const SizedBox(height: 4),
+          Expanded(
+            child: filtered.isEmpty
+                ? Center(
+                    child: Text('Không tìm thấy biển nào.', style: TextStyle(color: c.muted)),
+                  )
+                : ListView.builder(
+                    padding: const EdgeInsets.fromLTRB(20, 4, 20, 24),
+                    itemCount: filtered.length,
+                    itemBuilder: (context, i) {
+                      final s = filtered[i];
+                      final header = i == 0 || filtered[i - 1].group != s.group;
+                      return Column(
+                        crossAxisAlignment: CrossAxisAlignment.stretch,
+                        children: [
+                          if (header)
+                            Padding(
+                              padding: const EdgeInsets.fromLTRB(0, 12, 0, 4),
+                              child: Text(
+                                _signGroupTitles[s.group] ?? s.group,
+                                style: TextStyle(
+                                  fontSize: 13,
+                                  fontWeight: FontWeight.w600,
+                                  color: c.muted,
+                                ),
+                              ),
+                            ),
+                          Padding(
+                            padding: const EdgeInsets.only(top: 8),
+                            child: _SignTile(sign: s),
+                          ),
+                        ],
+                      );
+                    },
+                  ),
+          ),
+        ],
+      ),
     );
   }
+}
+
+class _SignTile extends StatelessWidget {
+  const _SignTile({required this.sign});
+
+  final TrafficSign sign;
+
+  @override
+  Widget build(BuildContext context) {
+    final c = context.colors;
+    return AppCard(
+      radius: 14,
+      padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
+      child: Row(
+        children: [
+          SignGroupGlyph(group: sign.group),
+          const SizedBox(width: 14),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  sign.code,
+                  style: TextStyle(fontSize: 12, fontWeight: FontWeight.w600, color: c.accent),
+                ),
+                Text(
+                  sign.name,
+                  style: const TextStyle(fontSize: 14.5, fontWeight: FontWeight.w500),
+                ),
+                if (sign.meaning != null) ...[
+                  const SizedBox(height: 2),
+                  Text(sign.meaning!, style: TextStyle(fontSize: 12.5, color: c.muted)),
+                ],
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+/// Hình dáng chung của nhóm biển (tròn viền đỏ, tam giác vàng...), chưa phải hình
+/// từng biển. Dữ liệu hiện chỉ có mã và tên biển.
+class SignGroupGlyph extends StatelessWidget {
+  const SignGroupGlyph({super.key, required this.group, this.size = 44});
+
+  final String group;
+  final double size;
+
+  @override
+  Widget build(BuildContext context) => ExcludeSemantics(
+    child: CustomPaint(size: Size.square(size), painter: _GlyphPainter(group)),
+  );
+}
+
+class _GlyphPainter extends CustomPainter {
+  _GlyphPainter(this.group);
+
+  final String group;
+
+  static const _red = Color(0xFFC8211B);
+  static const _yellow = Color(0xFFF6C51B);
+  static const _blue = Color(0xFF1D5BB5);
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    final w = size.width;
+    final center = Offset(w / 2, w / 2);
+    final fill = Paint()..style = PaintingStyle.fill;
+    final stroke = Paint()
+      ..style = PaintingStyle.stroke
+      ..strokeJoin = StrokeJoin.round;
+    switch (group) {
+      case 'bien_cam':
+        canvas.drawCircle(center, w * 0.44, fill..color = Colors.white);
+        canvas.drawCircle(
+          center,
+          w * 0.44,
+          stroke
+            ..color = _red
+            ..strokeWidth = w * 0.1,
+        );
+      case 'bien_nguy_hiem':
+        final path = Path()
+          ..moveTo(w / 2, w * 0.08)
+          ..lineTo(w * 0.94, w * 0.88)
+          ..lineTo(w * 0.06, w * 0.88)
+          ..close();
+        canvas.drawPath(path, fill..color = _yellow);
+        canvas.drawPath(
+          path,
+          stroke
+            ..color = _red
+            ..strokeWidth = w * 0.08,
+        );
+      case 'bien_hieu_lenh':
+        canvas.drawCircle(center, w * 0.46, fill..color = _blue);
+      case 'bien_chi_dan':
+        canvas.drawRRect(
+          RRect.fromRectAndRadius(
+            Rect.fromLTWH(w * 0.06, w * 0.06, w * 0.88, w * 0.88),
+            Radius.circular(w * 0.1),
+          ),
+          fill..color = _blue,
+        );
+      case 'bien_phu':
+        final r = RRect.fromRectAndRadius(
+          Rect.fromLTWH(w * 0.06, w * 0.24, w * 0.88, w * 0.52),
+          Radius.circular(w * 0.06),
+        );
+        canvas.drawRRect(r, fill..color = Colors.white);
+        canvas.drawRRect(
+          r,
+          stroke
+            ..color = Colors.black87
+            ..strokeWidth = w * 0.05,
+        );
+      default:
+        // Vạch kẻ đường: nền xám mặt đường với vạch trắng đứt quãng.
+        canvas.drawRRect(
+          RRect.fromRectAndRadius(Rect.fromLTWH(0, 0, w, w), Radius.circular(w * 0.18)),
+          fill..color = const Color(0xFF5E6862),
+        );
+        final line = Paint()..color = Colors.white;
+        for (var y = 0.1; y < 0.9; y += 0.3) {
+          canvas.drawRect(Rect.fromLTWH(w * 0.44, w * y, w * 0.12, w * 0.18), line);
+        }
+    }
+  }
+
+  @override
+  bool shouldRepaint(_GlyphPainter old) => old.group != group;
 }
