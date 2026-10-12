@@ -71,7 +71,9 @@ void main() {
       expect(again.reviews[1]!.isDue(again.today), isTrue);
       expect(studyStreak(again.studyDays, again.today), 2);
       expect(again.examDate, DateTime(2026, 10, 20));
-      expect(again.planDone, {1});
+      expect(again.isPlanStepDone(1), isTrue);
+      again.selectClass('C');
+      expect(again.isPlanStepDone(1), isFalse);
 
       await again.reset();
       expect((await load()).reviews, isEmpty);

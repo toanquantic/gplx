@@ -84,24 +84,24 @@ class _BeforeExamBody extends StatelessWidget {
     final steps = [
       _Step(
         title: '${critical.length} câu điểm liệt',
-        detail: progress.planDone.contains(1) ? 'Xong' : minutes(critical.length),
-        done: progress.planDone.contains(1),
+        detail: progress.isPlanStepDone(1) ? 'Xong' : minutes(critical.length),
+        done: progress.isPlanStepDone(1),
         onStart: () => practice(1, 'Câu điểm liệt', critical),
       ),
       _Step(
         title: wrong.isEmpty ? 'Câu từng làm sai' : '${wrong.length} câu từng làm sai',
-        detail: progress.planDone.contains(2)
+        detail: progress.isPlanStepDone(2)
             ? 'Xong'
             : wrong.isEmpty
             ? 'Không còn câu sai'
             : minutes(wrong.length),
-        done: progress.planDone.contains(2) || wrong.isEmpty,
+        done: progress.isPlanStepDone(2) || wrong.isEmpty,
         onStart: wrong.isEmpty ? null : () => practice(2, 'Câu từng làm sai', wrong),
       ),
       _Step(
         title: '${signs.length} câu biển báo hay nhầm',
-        detail: progress.planDone.contains(3) ? 'Xong' : minutes(signs.length),
-        done: progress.planDone.contains(3),
+        detail: progress.isPlanStepDone(3) ? 'Xong' : minutes(signs.length),
+        done: progress.isPlanStepDone(3),
         onStart: () => practice(3, 'Biển báo hay nhầm', signs),
       ),
       _Step(

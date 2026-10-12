@@ -98,9 +98,12 @@ class Progress extends ChangeNotifier {
   /// Ngày thi người dùng chọn cho chế độ "ngày trước khi thi".
   DateTime? examDate;
 
-  /// Lúc bắt đầu gói ôn trước ngày thi và các bước đã xong trong gói.
+  /// Lúc bắt đầu gói ôn trước ngày thi và các bước đã xong trong gói, theo
+  /// hạng (khóa `hạng:bước`), vì mỗi hạng có bộ câu riêng.
   DateTime? planStart;
-  final Set<int> planDone = {};
+  final Set<String> planDone = {};
+
+  bool isPlanStepDone(int step) => planDone.contains('$classCode:$step');
 
   DateTime get today => dayOf(clock());
 
@@ -135,7 +138,7 @@ class Progress extends ChangeNotifier {
     if (exam != null) examDate = parseDay(exam);
     final start = j['bat_dau_on'] as String?;
     if (start != null) planStart = DateTime.parse(start);
-    planDone.addAll((j['buoc_xong'] as List? ?? []).cast<int>());
+    planDone.addAll((j['buoc_xong'] as List? ?? []).cast<String>());
   }
 
   Future<void> _save() => _prefs.setString(
@@ -194,7 +197,7 @@ class Progress extends ChangeNotifier {
   }
 
   void markPlanStep(int step) {
-    if (!planDone.add(step)) return;
+    if (!planDone.add('$classCode:$step')) return;
     notifyListeners();
     _save();
   }

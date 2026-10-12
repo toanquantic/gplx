@@ -700,7 +700,12 @@ class ExamResultScreen extends StatelessWidget {
               children: [
                 Expanded(
                   child: OutlinedButton(
-                    onPressed: () => startExam(context, smart: exam.smart, replace: true),
+                    onPressed: () => startExam(
+                      context,
+                      // Hỏi lại quyền Pro: có thể đã bị thu hồi (hoàn tiền) trong lúc thi.
+                      smart: exam.smart && AppScope.read(context).entitlement.currentIsPro,
+                      replace: true,
+                    ),
                     child: const Text('Thi đề mới'),
                   ),
                 ),
