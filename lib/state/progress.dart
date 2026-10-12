@@ -4,6 +4,7 @@ import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../data/question_bank.dart';
+import '../logic/review.dart';
 
 class ExamRecord {
   const ExamRecord(
@@ -17,6 +18,7 @@ class ExamRecord {
     this.questionIds,
     this.answers,
     this.correctAnswers,
+    this.smart = false,
   });
 
   final String classCode;
@@ -36,6 +38,9 @@ class ExamRecord {
   /// Đáp án đúng của từng câu lúc thi, để nhận ra khi bộ đề trong app đã đổi.
   final List<int>? correctAnswers;
 
+  /// Đề ưu tiên câu yếu (bản Pro), khác đề rút ngẫu nhiên.
+  final bool smart;
+
   Map<String, dynamic> toJson() => {
     'hang': classCode,
     't': time.toIso8601String(),
@@ -47,6 +52,7 @@ class ExamRecord {
     if (questionIds != null) 'cau': questionIds,
     if (answers != null) 'chon': answers,
     if (correctAnswers != null) 'dap': correctAnswers,
+    if (smart) 'uu_tien': true,
   };
 
   factory ExamRecord.fromJson(Map<String, dynamic> j) => ExamRecord(
@@ -60,6 +66,7 @@ class ExamRecord {
     questionIds: (j['cau'] as List?)?.cast<int>(),
     answers: (j['chon'] as List?)?.cast<int?>(),
     correctAnswers: (j['dap'] as List?)?.cast<int>(),
+    smart: j['uu_tien'] as bool? ?? false,
   );
 }
 
@@ -67,10 +74,13 @@ class ExamRecord {
 ///
 /// Kết quả từng câu dùng chung cho mọi hạng, vì cùng một câu hỏi có cùng đáp án.
 class Progress extends ChangeNotifier {
-  Progress._(this._prefs);
+  Progress._(this._prefs, this.clock);
 
   static const _key = 'tien_do_v1';
   final SharedPreferences _prefs;
+
+  /// Đồng hồ, test truyền giờ giả vào để kiểm tra lịch ôn.
+  final DateTime Function() clock;
 
   String classCode = enabledClasses.first;
 
@@ -79,8 +89,23 @@ class Progress extends ChangeNotifier {
   final Set<int> bookmarks = {};
   final List<ExamRecord> exams = [];
 
-  static Future<Progress> load() async {
-    final p = Progress._(await SharedPreferences.getInstance());
+  /// Lịch ôn lại các câu từng sai, theo id câu.
+  final Map<int, ReviewCard> reviews = {};
+
+  /// Những ngày có làm câu hỏi (dạng `yyyy-mm-dd`), để tính chuỗi ngày học.
+  final Set<String> studyDays = {};
+
+  /// Ngày thi người dùng chọn cho chế độ "ngày trước khi thi".
+  DateTime? examDate;
+
+  /// Lúc bắt đầu gói ôn trước ngày thi và các bước đã xong trong gói.
+  DateTime? planStart;
+  final Set<int> planDone = {};
+
+  DateTime get today => dayOf(clock());
+
+  static Future<Progress> load({DateTime Function()? clock}) async {
+    final p = Progress._(await SharedPreferences.getInstance(), clock ?? DateTime.now);
     final raw = p._prefs.getString(_key);
     if (raw != null) {
       try {
@@ -102,6 +127,15 @@ class Progress extends ChangeNotifier {
     exams.addAll(
       (j['thi_thu'] as List? ?? []).map((e) => ExamRecord.fromJson(e as Map<String, dynamic>)),
     );
+    (j['on_lai'] as Map<String, dynamic>? ?? {}).forEach(
+      (k, v) => reviews[int.parse(k)] = ReviewCard.fromJson(v as Map<String, dynamic>),
+    );
+    studyDays.addAll((j['ngay_hoc'] as List? ?? []).cast<String>());
+    final exam = j['ngay_thi'] as String?;
+    if (exam != null) examDate = parseDay(exam);
+    final start = j['bat_dau_on'] as String?;
+    if (start != null) planStart = DateTime.parse(start);
+    planDone.addAll((j['buoc_xong'] as List? ?? []).cast<int>());
   }
 
   Future<void> _save() => _prefs.setString(
@@ -111,6 +145,11 @@ class Progress extends ChangeNotifier {
       'ket_qua': lastResult.map((k, v) => MapEntry('$k', v)),
       'danh_dau': bookmarks.toList(),
       'thi_thu': exams.map((e) => e.toJson()).toList(),
+      'on_lai': reviews.map((k, v) => MapEntry('$k', v.toJson())),
+      'ngay_hoc': studyDays.toList(),
+      if (examDate != null) 'ngay_thi': formatDay(examDate!),
+      if (planStart != null) 'bat_dau_on': planStart!.toIso8601String(),
+      'buoc_xong': planDone.toList(),
     }),
   );
 
@@ -120,8 +159,42 @@ class Progress extends ChangeNotifier {
     _save();
   }
 
-  void recordAnswer(int questionId, bool correct) {
-    lastResult[questionId] = correct;
+  void recordAnswer(int questionId, bool correct) => recordAnswers({questionId: correct});
+
+  /// Ghi nhiều câu một lần (ví dụ khi nộp bài thi), cập nhật cả lịch ôn.
+  void recordAnswers(Map<int, bool> results) {
+    if (results.isEmpty) return;
+    final now = today;
+    results.forEach((id, correct) {
+      lastResult[id] = correct;
+      final card = reviews[id];
+      if (!correct) {
+        reviews[id] = ReviewCard.wrong(card, now);
+      } else if (card != null) {
+        final next = card.correct(now);
+        next == null ? reviews.remove(id) : reviews[id] = next;
+      }
+    });
+    if (studyDays.add(formatDay(now))) {
+      // Chỉ cần giữ đủ để tính chuỗi ngày học.
+      final keep = formatDay(addDays(now, -400));
+      studyDays.removeWhere((d) => d.compareTo(keep) < 0);
+    }
+    notifyListeners();
+    _save();
+  }
+
+  /// Đặt ngày thi và bắt đầu lại gói ôn trước ngày thi.
+  void setExamDate(DateTime? date) {
+    examDate = date == null ? null : dayOf(date);
+    planStart = date == null ? null : clock();
+    planDone.clear();
+    notifyListeners();
+    _save();
+  }
+
+  void markPlanStep(int step) {
+    if (!planDone.add(step)) return;
     notifyListeners();
     _save();
   }
@@ -143,6 +216,11 @@ class Progress extends ChangeNotifier {
     lastResult.clear();
     bookmarks.clear();
     exams.clear();
+    reviews.clear();
+    studyDays.clear();
+    examDate = null;
+    planStart = null;
+    planDone.clear();
     notifyListeners();
     await _save();
   }

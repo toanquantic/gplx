@@ -38,6 +38,11 @@ void main() {
     expect(bank.forClass('B').length, 600);
     expect(bank.criticalFor('A1').length, 20);
     expect(bank.criticalFor('B').length, 60);
+    expect(bank.forClass('C1').length, 600);
+    expect(bank.forClass('C').length, 600);
+    expect(bank.criticalFor('C').length, 60);
+    expect(bank.examConfigs['C1']?.questionCount, 35);
+    expect(bank.examConfigs['C']?.passScore, 36);
     // Câu 73 là điểm liệt với ô tô nhưng là câu thường với A1/A.
     expect(bank.isCritical('B', 73), isTrue);
     expect(bank.isCritical('A1', 73), isFalse);
@@ -53,7 +58,7 @@ void main() {
     expect(bank.examConfigs['D']?.questionCount, 45);
   });
 
-  for (final code in [...enabledClasses, 'C1', 'C']) {
+  for (final code in enabledClasses) {
     test('rút đề hạng $code: đủ câu, 1 câu điểm liệt, không trùng, đúng bộ câu', () {
       final rng = Random(42);
       for (var round = 0; round < 200; round++) {

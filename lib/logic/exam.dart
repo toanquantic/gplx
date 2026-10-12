@@ -6,10 +6,13 @@ import '../state/progress.dart';
 
 /// Một đề thi thử đã rút, cùng các câu trả lời của người thi.
 class Exam {
-  Exam({required this.classCode, required this.config, required this.questions})
+  Exam({required this.classCode, required this.config, required this.questions, this.smart = false})
     : answers = List<int?>.filled(questions.length, null);
 
   final String classCode;
+
+  /// Đề ưu tiên câu yếu (bản Pro).
+  final bool smart;
   final ExamConfig config;
   final List<Question> questions;
 
@@ -111,6 +114,40 @@ Exam generateExam(QuestionBank bank, String classCode, {Random? random}) {
   return Exam(classCode: classCode, config: config, questions: picked);
 }
 
+/// Đề thi thử ưu tiên câu yếu (bản Pro): vẫn đúng `cau_truc` như đề thật, nhưng
+/// trong mỗi nhóm câu làm sai, câu đến hạn ôn và câu chưa làm có nhiều khả năng
+/// được rút hơn câu đã làm đúng. Câu điểm liệt từng sai được ưu tiên cao nhất.
+Exam generateSmartExam(QuestionBank bank, Progress progress, String classCode, {Random? random}) {
+  final config = bank.examConfigs[classCode];
+  if (config == null) {
+    throw ArgumentError('Chưa có cấu hình đề thi cho hạng $classCode');
+  }
+  final rng = random ?? Random();
+  final today = progress.today;
+  double weight(int id, bool critical) {
+    final last = progress.lastResult[id];
+    if (last == false) return critical ? 12 : 6;
+    if (progress.reviews[id]?.isDue(today) ?? false) return 4;
+    if (last == null) return 3;
+    return 1;
+  }
+
+  final picked = <Question>[];
+  config.structure.forEach((group, count) {
+    final pool = config.groups[group] ?? const <int>[];
+    if (pool.length < count) {
+      throw StateError('Nhóm $group của hạng $classCode chỉ có ${pool.length} câu');
+    }
+    // Rút có trọng số, không lặp (Efraimidis–Spirakis): khóa u^(1/w), lấy khóa lớn nhất.
+    final keyed = [
+      for (final id in pool) (id, pow(rng.nextDouble(), 1 / weight(id, group == 'diem_liet'))),
+    ]..sort((a, b) => b.$2.compareTo(a.$2));
+    final ids = [for (final k in keyed.take(count)) k.$1]..sort();
+    picked.addAll(ids.map((id) => bank.questions[id]!));
+  });
+  return Exam(classCode: classCode, config: config, questions: picked, smart: true);
+}
+
 /// Dựng lại bài thi đã lưu trong lịch sử để xem kết quả và từng câu.
 ///
 /// Trả về null với bản ghi cũ chưa lưu câu hỏi, hoặc khi bộ đề đã đổi (câu bị
@@ -136,7 +173,12 @@ Exam? restoreExam(QuestionBank bank, ExamRecord record) {
     if (a != null && (a < 0 || a >= q.options.length)) return null;
     questions.add(q);
   }
-  final exam = Exam(classCode: record.classCode, config: config, questions: questions);
+  final exam = Exam(
+    classCode: record.classCode,
+    config: config,
+    questions: questions,
+    smart: record.smart,
+  );
   for (var i = 0; i < answers.length; i++) {
     exam.answers[i] = answers[i];
   }

@@ -5,8 +5,8 @@ import 'package:flutter/services.dart' show AssetBundle, rootBundle;
 import '../models/models.dart';
 
 /// Các hạng đang mở trong app. Lộ trình trong `hang_gplx.json`:
-/// đợt 1 A1, A, B; đợt 2 C1, C (chỉ cần thêm mã vào đây).
-const enabledClasses = ['A1', 'A', 'B'];
+/// đợt 1 A1, A, B; đợt 2 C1, C; đợt 3 các hạng còn lại (chỉ cần thêm mã vào đây).
+const enabledClasses = ['A1', 'A', 'B', 'C1', 'C'];
 
 /// Toàn bộ dữ liệu ôn thi, nạp một lần từ assets và giữ trong bộ nhớ.
 class QuestionBank {
@@ -58,8 +58,7 @@ class QuestionBank {
     final source = qj['_nguon'] as Map<String, dynamic>;
 
     final classes = <String, LicenseClass>{
-      for (final j in (jsonDecode(classesJson)['hang'] as List)
-          .cast<Map<String, dynamic>>())
+      for (final j in (jsonDecode(classesJson)['hang'] as List).cast<Map<String, dynamic>>())
         j['ma'] as String: LicenseClass.fromJson(j),
     };
 
@@ -77,8 +76,7 @@ class QuestionBank {
     return QuestionBank._(
       questions: questions,
       chapters: [
-        for (final c in (qj['chuong'] as List).cast<Map<String, dynamic>>())
-          Chapter.fromJson(c),
+        for (final c in (qj['chuong'] as List).cast<Map<String, dynamic>>()) Chapter.fromJson(c),
       ],
       classes: classes,
       examConfigs: examConfigs,
@@ -104,6 +102,5 @@ class QuestionBank {
     return [for (final id in ids) questions[id]!]..sort((a, b) => a.id.compareTo(b.id));
   }
 
-  bool isCritical(String code, int id) =>
-      examConfigs[code]?.criticalIds.contains(id) ?? false;
+  bool isCritical(String code, int id) => examConfigs[code]?.criticalIds.contains(id) ?? false;
 }

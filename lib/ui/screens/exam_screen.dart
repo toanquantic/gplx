@@ -9,6 +9,8 @@ import '../app_scope.dart';
 import '../theme.dart';
 import '../widgets/question_grid.dart';
 import '../widgets/question_view.dart';
+import '../../monetization/entitlement.dart';
+import '../../monetization/paywall.dart';
 import 'practice_screen.dart';
 import 'signs_screen.dart';
 
@@ -30,11 +32,17 @@ String _verdict(ExamRecord e) => e.passed
     ? 'Trượt câu điểm liệt'
     : 'Không đạt';
 
-void _startExam(BuildContext context, {bool replace = false}) {
+/// Số đề gần nhất bản miễn phí xem được trong lịch sử thi.
+const freeHistoryLimit = 5;
+
+/// Mở đề thi thử mới của hạng đang chọn; [smart] là đề ưu tiên câu yếu (Pro).
+void startExam(BuildContext context, {bool smart = false, bool replace = false}) {
   final scope = AppScope.read(context);
-  final route = MaterialPageRoute<void>(
-    builder: (_) => ExamScreen(exam: generateExam(scope.bank, scope.progress.classCode)),
-  );
+  final code = scope.progress.classCode;
+  final exam = smart
+      ? generateSmartExam(scope.bank, scope.progress, code)
+      : generateExam(scope.bank, code);
+  final route = MaterialPageRoute<void>(builder: (_) => ExamScreen(exam: exam));
   replace ? Navigator.pushReplacement(context, route) : Navigator.push(context, route);
 }
 
@@ -147,51 +155,82 @@ class ExamIntroScreen extends StatelessWidget {
             ),
             icon: const Icon(Icons.play_arrow_rounded),
             label: const Text('Bắt đầu thi'),
-            onPressed: () => _startExam(context),
+            onPressed: () => startExam(context),
+          ),
+          const SizedBox(height: 10),
+          OutlinedButton(
+            onPressed: () => scope.entitlement.currentIsPro
+                ? startExam(context, smart: true)
+                : openPaywall(context),
+            child: const Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Icon(Icons.auto_awesome_outlined, size: 20),
+                SizedBox(width: 8),
+                Flexible(child: Text('Đề ưu tiên câu yếu')),
+                SizedBox(width: 8),
+                ProBadge(),
+              ],
+            ),
           ),
           if (history.isNotEmpty) ...[
             const SizedBox(height: 20),
             const Text('Lịch sử thi', style: TextStyle(fontSize: 15, fontWeight: FontWeight.w700)),
-            for (final e in history.take(20))
-              Padding(
-                padding: const EdgeInsets.only(top: 8),
-                child: AppCard(
-                  radius: 14,
-                  padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
-                  onTap: e.questionIds == null ? null : () => _openRecord(context, e),
-                  child: Row(
-                    children: [
-                      Container(
-                        width: 10,
-                        height: 10,
-                        decoration: BoxDecoration(
-                          color: e.passed ? c.accent : c.danger,
-                          shape: BoxShape.circle,
-                        ),
-                      ),
-                      const SizedBox(width: 12),
-                      Expanded(
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              '${e.correct}/${e.total} đúng · ${_verdict(e)}',
-                              style: const TextStyle(fontSize: 14, fontWeight: FontWeight.w600),
-                            ),
-                            Text(
-                              _formatTime(e.time),
-                              style: TextStyle(fontSize: 12, color: c.muted),
-                            ),
-                          ],
-                        ),
-                      ),
-                      if (e.questionIds != null) Icon(Icons.chevron_right, color: c.muted),
-                    ],
-                  ),
-                ),
+            ProGate(
+              locked: Column(
+                children: [
+                  for (final e in history.take(freeHistoryLimit)) _historyTile(context, e),
+                  if (history.length > freeHistoryLimit)
+                    const Padding(
+                      padding: EdgeInsets.only(top: 8),
+                      child: ProLockedCard(feature: 'Xem toàn bộ lịch sử thi'),
+                    ),
+                ],
               ),
+              child: Column(
+                children: [for (final e in history.take(100)) _historyTile(context, e)],
+              ),
+            ),
           ],
         ],
+      ),
+    );
+  }
+
+  Widget _historyTile(BuildContext context, ExamRecord e) {
+    final c = context.colors;
+    return Padding(
+      padding: const EdgeInsets.only(top: 8),
+      child: AppCard(
+        radius: 14,
+        padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
+        onTap: e.questionIds == null ? null : () => _openRecord(context, e),
+        child: Row(
+          children: [
+            Container(
+              width: 10,
+              height: 10,
+              decoration: BoxDecoration(
+                color: e.passed ? c.accent : c.danger,
+                shape: BoxShape.circle,
+              ),
+            ),
+            const SizedBox(width: 12),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    '${e.correct}/${e.total} đúng · ${_verdict(e)}',
+                    style: const TextStyle(fontSize: 14, fontWeight: FontWeight.w600),
+                  ),
+                  Text(_formatTime(e.time), style: TextStyle(fontSize: 12, color: c.muted)),
+                ],
+              ),
+            ),
+            if (e.questionIds != null) Icon(Icons.chevron_right, color: c.muted),
+          ],
+        ),
       ),
     );
   }
@@ -269,9 +308,10 @@ class _ExamScreenState extends State<ExamScreen> {
     final now = DateTime.now();
     final took = now.isAfter(_deadline) ? _deadline.difference(_started) : now.difference(_started);
     final progress = AppScope.read(context).progress;
-    for (var i = 0; i < exam.questions.length; i++) {
-      if (exam.answers[i] != null) progress.recordAnswer(exam.questions[i].id, exam.isCorrect(i));
-    }
+    progress.recordAnswers({
+      for (var i = 0; i < exam.questions.length; i++)
+        if (exam.answers[i] != null) exam.questions[i].id: exam.isCorrect(i),
+    });
     progress.recordExam(
       ExamRecord(
         exam.classCode,
@@ -284,6 +324,7 @@ class _ExamScreenState extends State<ExamScreen> {
         questionIds: [for (final q in exam.questions) q.id],
         answers: List.of(exam.answers),
         correctAnswers: [for (final q in exam.questions) q.correctIndex],
+        smart: exam.smart,
       ),
     );
     Navigator.pushReplacement(
@@ -659,7 +700,7 @@ class ExamResultScreen extends StatelessWidget {
               children: [
                 Expanded(
                   child: OutlinedButton(
-                    onPressed: () => _startExam(context, replace: true),
+                    onPressed: () => startExam(context, smart: exam.smart, replace: true),
                     child: const Text('Thi đề mới'),
                   ),
                 ),

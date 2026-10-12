@@ -1,13 +1,18 @@
 import 'package:flutter/material.dart';
 
 import '../../data/question_bank.dart';
+import '../../logic/insights.dart';
 import '../../models/models.dart';
+import '../../monetization/paywall.dart';
 import '../app_scope.dart';
 import '../theme.dart';
 import 'about_screen.dart';
+import 'before_exam_screen.dart';
 import 'exam_screen.dart';
 import 'practice_screen.dart';
+import 'review_screen.dart';
 import 'signs_screen.dart';
+import 'stats_screen.dart';
 
 void _open(BuildContext context, Widget screen) =>
     Navigator.push(context, MaterialPageRoute<void>(builder: (_) => screen));
@@ -29,6 +34,7 @@ class HomeScreen extends StatelessWidget {
     final critical = bank.criticalFor(code);
     final chapters = {for (final q in all) q.chapter}.length;
     final config = bank.examConfigs[code];
+    final due = ReviewPlan.of(bank, progress, code).due.length;
     final c = context.colors;
 
     return Scaffold(
@@ -120,6 +126,46 @@ class HomeScreen extends StatelessWidget {
             ),
             const SizedBox(height: 14),
             AppCard(
+              color: c.warnSoft,
+              borderColor: Colors.transparent,
+              padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
+              onTap: () => _open(context, const ReviewTodayScreen()),
+              child: Row(
+                children: [
+                  IconBadge(
+                    icon: Icons.event_repeat_outlined,
+                    background: c.warnIcon,
+                    foreground: c.onWarnSoft,
+                  ),
+                  const SizedBox(width: 12),
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          due == 0
+                              ? 'Ôn lại hôm nay: chưa có câu đến hạn'
+                              : 'Ôn lại hôm nay: $due câu sắp quên',
+                          style: TextStyle(
+                            fontSize: 14.5,
+                            fontWeight: FontWeight.w600,
+                            color: c.onWarnSoft,
+                          ),
+                        ),
+                        const SizedBox(height: 2),
+                        Text(
+                          'Lịch ôn thông minh · Bản Pro',
+                          style: TextStyle(fontSize: 12.5, color: c.onWarnSoft),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Icon(Icons.chevron_right, color: c.onWarnSoft),
+                ],
+              ),
+            ),
+            const SizedBox(height: 14),
+            AppCard(
               radius: 18,
               color: c.accent,
               borderColor: Colors.transparent,
@@ -197,6 +243,28 @@ class HomeScreen extends StatelessWidget {
                   onTap: () => _open(
                     context,
                     PracticeScreen(title: 'Câu đã đánh dấu', questions: bookmarked),
+                  ),
+                ),
+              ],
+            ),
+            const SizedBox(height: 10),
+            Row(
+              children: [
+                Expanded(
+                  child: _ProTile(
+                    icon: Icons.insights_outlined,
+                    title: 'Thống kê',
+                    subtitle: 'Dự đoán đỗ',
+                    onTap: () => _open(context, const StatsScreen()),
+                  ),
+                ),
+                const SizedBox(width: 10),
+                Expanded(
+                  child: _ProTile(
+                    icon: Icons.event_available_outlined,
+                    title: 'Trước ngày thi',
+                    subtitle: 'Gói ôn 4 bước',
+                    onTap: () => _open(context, const BeforeExamScreen()),
                   ),
                 ),
               ],
@@ -367,6 +435,56 @@ class _GridTile extends StatelessWidget {
                 style: TextStyle(fontSize: 12.5, color: c.muted),
               ),
             ],
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+/// Lối vào tính năng Pro ở trang chủ, có nhãn PRO nhỏ.
+class _ProTile extends StatelessWidget {
+  const _ProTile({
+    required this.icon,
+    required this.title,
+    required this.subtitle,
+    required this.onTap,
+  });
+
+  final IconData icon;
+  final String title;
+  final String subtitle;
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    final c = context.colors;
+    return AppCard(
+      padding: const EdgeInsets.all(14),
+      onTap: onTap,
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            children: [
+              Icon(icon, color: c.accent),
+              const Spacer(),
+              const ProBadge(),
+            ],
+          ),
+          const SizedBox(height: 10),
+          Text(
+            title,
+            maxLines: 1,
+            overflow: TextOverflow.ellipsis,
+            style: const TextStyle(fontSize: 14.5, fontWeight: FontWeight.w600),
+          ),
+          const SizedBox(height: 2),
+          Text(
+            subtitle,
+            maxLines: 1,
+            overflow: TextOverflow.ellipsis,
+            style: TextStyle(fontSize: 12.5, color: c.muted),
           ),
         ],
       ),
