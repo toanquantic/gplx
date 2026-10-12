@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 
 import '../../models/models.dart';
 import '../app_scope.dart';
+import '../theme.dart';
+import '../widgets/question_grid.dart';
 import '../widgets/question_view.dart';
 
 /// Ôn tập: chọn đáp án là biết ngay đúng sai và xem giải thích.
@@ -26,8 +28,11 @@ class _PracticeScreenState extends State<PracticeScreen> {
     super.dispose();
   }
 
-  void _go(int i) => _controller.animateToPage(i,
-      duration: const Duration(milliseconds: 250), curve: Curves.easeOut);
+  void _go(int i) => _controller.animateToPage(
+    i,
+    duration: const Duration(milliseconds: 250),
+    curve: Curves.easeOut,
+  );
 
   @override
   Widget build(BuildContext context) {
@@ -41,45 +46,59 @@ class _PracticeScreenState extends State<PracticeScreen> {
       );
     }
     final current = qs[_index];
+    final c = context.colors;
     return Scaffold(
       appBar: AppBar(
+        titleSpacing: 0,
         title: Text(widget.title),
         actions: [
           IconButton(
-            tooltip: 'Đánh dấu câu',
-            icon: Icon(progress.bookmarks.contains(current.id)
-                ? Icons.bookmark
-                : Icons.bookmark_border),
+            tooltip: progress.bookmarks.contains(current.id) ? 'Bỏ đánh dấu câu' : 'Đánh dấu câu',
+            color: c.accent,
+            icon: Icon(
+              progress.bookmarks.contains(current.id) ? Icons.bookmark : Icons.bookmark_border,
+            ),
             onPressed: () => progress.toggleBookmark(current.id),
           ),
           IconButton(
             tooltip: 'Danh sách câu',
-            icon: const Icon(Icons.grid_view),
-            onPressed: () => _showGrid(context),
+            icon: const Icon(Icons.grid_view_rounded),
+            onPressed: _showGrid,
           ),
+          const SizedBox(width: 4),
         ],
       ),
-      body: PageView.builder(
-        controller: _controller,
-        itemCount: qs.length,
-        onPageChanged: (i) => setState(() => _index = i),
-        itemBuilder: (context, i) {
-          final q = qs[i];
-          final picked = _picked[q.id];
-          return QuestionView(
-            question: q,
-            critical: scope.bank.isCritical(progress.classCode, q.id),
-            label: 'Câu ${q.id}  ·  ${i + 1}/${qs.length}',
-            selected: picked,
-            reveal: picked != null,
-            onSelect: picked != null
-                ? null
-                : (choice) {
-                    setState(() => _picked[q.id] = choice);
-                    progress.recordAnswer(q.id, choice == q.correctIndex);
-                  },
-          );
-        },
+      body: Column(
+        children: [
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 20),
+            child: ThinBar(value: (_index + 1) / qs.length, height: 4),
+          ),
+          Expanded(
+            child: PageView.builder(
+              controller: _controller,
+              itemCount: qs.length,
+              onPageChanged: (i) => setState(() => _index = i),
+              itemBuilder: (context, i) {
+                final q = qs[i];
+                final picked = _picked[q.id];
+                return QuestionView(
+                  question: q,
+                  critical: scope.bank.isCritical(progress.classCode, q.id),
+                  label: 'Câu ${q.id} · ${i + 1}/${qs.length}',
+                  selected: picked,
+                  reveal: picked != null,
+                  onSelect: picked != null
+                      ? null
+                      : (choice) {
+                          setState(() => _picked[q.id] = choice);
+                          progress.recordAnswer(q.id, choice == q.correctIndex);
+                        },
+                );
+              },
+            ),
+          ),
+        ],
       ),
       bottomNavigationBar: QuestionNavBar(
         index: _index,
@@ -90,35 +109,22 @@ class _PracticeScreenState extends State<PracticeScreen> {
     );
   }
 
-  void _showGrid(BuildContext context) {
+  Future<void> _showGrid() async {
     final progress = AppScope.read(context).progress;
-    showModalBottomSheet<void>(
-      context: context,
-      showDragHandle: true,
-      builder: (context) => GridView.builder(
-        padding: const EdgeInsets.all(16),
-        gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
-            maxCrossAxisExtent: 56, mainAxisSpacing: 8, crossAxisSpacing: 8),
-        itemCount: widget.questions.length,
-        itemBuilder: (context, i) {
-          final id = widget.questions[i].id;
-          final r = progress.lastResult[id];
-          return ActionChip(
-            padding: EdgeInsets.zero,
-            label: Text('${i + 1}'),
-            backgroundColor: r == null
-                ? null
-                : r
-                    ? Colors.green.withValues(alpha: 0.25)
-                    : Theme.of(context).colorScheme.errorContainer,
-            onPressed: () {
-              Navigator.pop(context);
-              _controller.jumpToPage(i);
-            },
-          );
-        },
-      ),
+    final picked = await QuestionGridSheet.show(
+      context,
+      title: widget.title,
+      current: _index,
+      states: [
+        for (final q in widget.questions)
+          switch (progress.lastResult[q.id]) {
+            true => CellState.correct,
+            false => CellState.wrong,
+            null => CellState.untouched,
+          },
+      ],
     );
+    if (picked != null && mounted) _controller.jumpToPage(picked);
   }
 }
 
@@ -140,28 +146,36 @@ class QuestionNavBar extends StatelessWidget {
   final Widget? trailing;
 
   @override
-  Widget build(BuildContext context) => SafeArea(
+  Widget build(BuildContext context) {
+    final c = context.colors;
+    return DecoratedBox(
+      decoration: BoxDecoration(
+        color: c.background,
+        border: Border(top: BorderSide(color: c.border)),
+      ),
+      child: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-          child: Row(children: [
-            TextButton.icon(
-              onPressed: index > 0 ? onPrev : null,
-              icon: const Icon(Icons.chevron_left),
-              label: const Text('Trước'),
-            ),
-            Expanded(
-              child: Align(
-                heightFactor: 1,
-                child: trailing ?? Text('${index + 1} / $total'),
+          padding: const EdgeInsets.fromLTRB(20, 12, 20, 12),
+          child: Row(
+            children: [
+              Expanded(
+                child: OutlinedButton(
+                  onPressed: index > 0 ? onPrev : null,
+                  child: const Text('Câu trước'),
+                ),
               ),
-            ),
-            TextButton.icon(
-              onPressed: index < total - 1 ? onNext : null,
-              icon: const Icon(Icons.chevron_right),
-              label: const Text('Sau'),
-              iconAlignment: IconAlignment.end,
-            ),
-          ]),
+              if (trailing != null) ...[const SizedBox(width: 10), trailing!],
+              const SizedBox(width: 10),
+              Expanded(
+                child: FilledButton(
+                  onPressed: index < total - 1 ? onNext : null,
+                  child: const Text('Câu tiếp'),
+                ),
+              ),
+            ],
+          ),
         ),
-      );
+      ),
+    );
+  }
 }

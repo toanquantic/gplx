@@ -1,0 +1,77 @@
+name: Build
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: build-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  FLUTTER_VERSION: 3.47.7
+
+jobs:
+  test:
+    name: Kiểm tra mã và chạy test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: ${{ env.FLUTTER_VERSION }}
+          channel: stable
+          cache: true
+      - run: flutter pub get
+      - run: flutter analyze
+      - run: flutter test
+
+  android:
+    name: Build Android (APK)
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: ${{ env.FLUTTER_VERSION }}
+          channel: stable
+          cache: true
+      - run: flutter pub get
+      # Bản release ký bằng khóa debug (xem android/app/build.gradle.kts), cài thử được
+      # trên máy thật nhưng chưa dùng để đưa lên Google Play.
+      - run: flutter build apk --release
+      - uses: actions/upload-artifact@v4
+        with:
+          name: on-thi-gplx-android-apk
+          path: build/app/outputs/flutter-apk/app-release.apk
+          retention-days: 14
+
+  ios:
+    name: Build iOS (chưa ký)
+    needs: test
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: ${{ env.FLUTTER_VERSION }}
+          channel: stable
+          cache: true
+      - run: flutter pub get
+      # Chưa có chứng chỉ Apple nên build không ký, chỉ để chắc chắn bản iOS biên dịch được.
+      - run: flutter build ios --release --no-codesign
+      # Bản cho iOS Simulator: tải về, giải nén và kéo vào Simulator trên Mac để chạy thử.
+      - run: flutter build ios --simulator --debug
+      - run: cd build/ios/iphonesimulator && zip -qr ../../../on-thi-gplx-simulator.zip Runner.app
+      - uses: actions/upload-artifact@v4
+        with:
+          name: on-thi-gplx-ios-simulator
+          path: on-thi-gplx-simulator.zip
+          retention-days: 14
