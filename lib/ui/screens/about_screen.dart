@@ -33,8 +33,9 @@ class AboutScreen extends StatelessWidget {
         Text('Lời giải thích', style: theme.textTheme.titleMedium),
         const SizedBox(height: 4),
         const Text(
-            'Lời giải thích lấy từ dự án On_THI_GPLX_B của Thi Thanh Chuong, '
-            'phát hành theo giấy phép MIT, chưa được kiểm duyệt.'),
+            'Lời giải thích do cộng đồng biên soạn (dự án mở On_THI_GPLX_B của Thi Thanh Chuong, '
+            'giấy phép MIT). Phần này chưa được cơ quan chức năng kiểm duyệt, '
+            'bạn chỉ nên dùng để tham khảo.'),
         TextButton(
           onPressed: () => showLicensePage(context: context, applicationName: 'Ôn thi GPLX'),
           child: const Text('Xem giấy phép'),
