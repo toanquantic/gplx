@@ -34,6 +34,29 @@ GitHub Actions (`.github/workflows/build.yml`) chạy trên mỗi PR và mỗi l
 - Android: `flutter build apk --release`, tải file APK ở mục Artifacts của lần chạy (`on-thi-gplx-android-apk`) để cài thử trên điện thoại
 - iOS: `flutter build ios --release --no-codesign` để chắc chắn bản iOS biên dịch được, kèm bản cho iOS Simulator (`on-thi-gplx-ios-simulator`). Chạy trên iPhone thật hoặc đưa lên App Store cần tài khoản Apple Developer và chứng chỉ ký
 
+### Ký bản Android để đưa lên Google Play
+
+Mã ứng dụng là `vn.gplx.on_thi_gplx` (không đổi được sau lần phát hành đầu). Chưa có khóa thì bản release ký bằng khóa debug, chỉ để cài thử.
+
+1. Tạo khóa tải lên (một lần, giữ file và mật khẩu cẩn thận, mất là không cập nhật app được nữa nếu chưa bật Play App Signing):
+
+   ```bash
+   keytool -genkey -v -keystore upload.jks -keyalg RSA -keysize 2048 -validity 10000 -alias upload
+   ```
+
+2. Build trên máy: tạo `android/key.properties` (đã nằm trong `.gitignore`):
+
+   ```properties
+   storeFile=/đường/dẫn/tới/upload.jks
+   storePassword=...
+   keyAlias=upload
+   keyPassword=...
+   ```
+
+   rồi chạy `flutter build appbundle --release`.
+
+3. Build trên GitHub Actions: vào Settings > Secrets and variables > Actions của repo, thêm `ANDROID_KEYSTORE_BASE64` (kết quả của `base64 -w0 upload.jks`), `ANDROID_KEYSTORE_PASSWORD`, `ANDROID_KEY_ALIAS`, `ANDROID_KEY_PASSWORD`. Từ lần chạy sau, APK được ký bằng khóa này và có thêm file AAB (`on-thi-gplx-android-aab`) để tải lên Google Play Console.
+
 ## Cấu trúc
 
 | Thư mục | Nội dung |
