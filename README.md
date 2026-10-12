@@ -7,20 +7,32 @@ App Flutter ôn thi lý thuyết giấy phép lái xe Việt Nam, chạy hoàn t
 ## Tính năng
 
 - Chọn hạng, xem tiến độ (đã làm, đúng, sai)
-- Ôn theo 6 chương, hoặc tất cả câu của hạng
+- Ôn theo 6 chương (có thanh tiến độ và số câu sai từng chương), hoặc tất cả câu của hạng
 - Ôn câu điểm liệt riêng theo hạng (A1/A 20 câu, B 60 câu)
 - Ôn lại câu làm sai, câu đã đánh dấu
-- Thi thử: rút đề ngẫu nhiên theo cấu trúc chính thức, tính giờ, tự nộp khi hết giờ, chấm theo điểm đạt và luật điểm liệt, xem lại từng câu
-- Tra cứu 419 biển báo theo QCVN 41:2024 (mã và tên)
+- Danh sách câu dạng lưới tô màu đúng/sai, lọc câu sai hoặc câu chưa làm
+- Thi thử: rút đề ngẫu nhiên theo cấu trúc chính thức, tính giờ, tự nộp khi hết giờ, chấm theo điểm đạt và luật điểm liệt
+- Kết quả thi: điểm theo từng nhóm câu, câu điểm liệt, thời gian làm bài; xem lại câu sai kèm giải thích; mở lại bài cũ từ lịch sử thi
+- Tra cứu 419 biển báo theo QCVN 41:2024 (mã và tên), lọc theo nhóm biển
 - Trang giới thiệu ghi nguồn và giấy phép MIT của lời giải thích
+
+Giao diện theo mockup "Mockup app Ôn thi GPLX" (phông Be Vietnam Pro, giấy phép OFL, đóng gói sẵn trong `assets/fonts/` để chạy offline), có cả giao diện tối.
 
 ## Chạy thử
 
 ```bash
 flutter pub get
 flutter run            # chọn thiết bị: Android, iOS, Chrome, desktop
-flutter test           # 28 test: dữ liệu, rút đề, chấm điểm, giao diện, mua Pro
+flutter test           # 33 test: dữ liệu, rút đề, chấm điểm, lịch sử thi, giao diện, mua Pro
 ```
+
+## Build Android và iOS
+
+GitHub Actions (`.github/workflows/build.yml`) chạy trên mỗi PR và mỗi lần push lên `main`:
+
+- `flutter analyze` và `flutter test`
+- Android: `flutter build apk --release`, tải file APK ở mục Artifacts của lần chạy (`on-thi-gplx-android-apk`) để cài thử trên điện thoại
+- iOS: `flutter build ios --release --no-codesign` để chắc chắn bản iOS biên dịch được, kèm bản cho iOS Simulator (`on-thi-gplx-ios-simulator`). Chạy trên iPhone thật hoặc đưa lên App Store cần tài khoản Apple Developer và chứng chỉ ký
 
 ## Cấu trúc
 
@@ -31,7 +43,7 @@ flutter test           # 28 test: dữ liệu, rút đề, chấm điểm, giao 
 | `lib/logic/exam.dart` | Rút đề theo `cau_truc` và chấm điểm |
 | `lib/state/progress.dart` | Tiến độ học lưu trên máy (shared_preferences) |
 | `lib/monetization/` | Bản Pro mở khóa một lần (`pro_lifetime`): `EntitlementService`, mua qua `in_app_purchase` trên Android/iOS (web và desktop luôn miễn phí), `ProGate`, màn mua Pro và khôi phục giao dịch |
-| `lib/ui/` | Các màn hình |
+| `lib/ui/` | Các màn hình; `theme.dart` chứa bảng màu và các thẻ dùng chung |
 | `assets/data/` | Bản sao dữ liệu từ `data/`; cập nhật bằng `tool/sync_data.sh` |
 
 Đề thi đọc hoàn toàn từ `cau_hinh_de_thi.json`. Khi cấu trúc đề đổi từ 01/3/2027 theo Thông tư 108/2026, chỉ cần cập nhật file này (và bộ câu hỏi mới nếu có), không phải sửa code.

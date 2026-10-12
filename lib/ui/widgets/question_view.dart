@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../models/models.dart';
+import '../theme.dart';
 
 const _letters = ['A', 'B', 'C', 'D', 'E'];
 
@@ -29,41 +30,31 @@ class QuestionView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final theme = Theme.of(context);
-    final scheme = theme.colorScheme;
+    final c = context.colors;
     return ListView(
-      padding: const EdgeInsets.fromLTRB(16, 16, 16, 32),
+      padding: const EdgeInsets.fromLTRB(20, 18, 20, 32),
       children: [
-        Row(children: [
-          Text(label ?? 'Câu ${question.id}',
-              style: theme.textTheme.labelLarge?.copyWith(color: scheme.primary)),
-          if (critical) ...[
-            const SizedBox(width: 8),
-            Container(
-              padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
-              decoration: BoxDecoration(
-                color: scheme.errorContainer,
-                borderRadius: BorderRadius.circular(12),
+        Row(
+          children: [
+            Flexible(
+              child: Text(
+                label ?? 'Câu ${question.id}',
+                style: TextStyle(fontSize: 13, fontWeight: FontWeight.w600, color: c.accent),
               ),
-              child: Text('Điểm liệt',
-                  style: theme.textTheme.labelSmall
-                      ?.copyWith(color: scheme.onErrorContainer)),
             ),
+            if (critical) ...[const SizedBox(width: 8), const CriticalChip()],
           ],
-        ]),
-        const SizedBox(height: 8),
-        Text(question.text, style: theme.textTheme.titleMedium),
+        ),
+        const SizedBox(height: 12),
+        Text(
+          question.text,
+          style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w600, height: 1.4),
+        ),
         if (question.image != null) ...[
-          const SizedBox(height: 12),
-          ClipRRect(
-            borderRadius: BorderRadius.circular(8),
-            child: ColoredBox(
-              color: Colors.white,
-              child: Image.asset(question.image!, fit: BoxFit.contain),
-            ),
-          ),
+          const SizedBox(height: 14),
+          QuestionImage(path: question.image!),
         ],
-        const SizedBox(height: 16),
+        const SizedBox(height: 14),
         for (var i = 0; i < question.options.length; i++)
           _OptionTile(
             letter: _letters[i],
@@ -71,10 +62,7 @@ class QuestionView extends StatelessWidget {
             state: _stateFor(i),
             onTap: onSelect == null ? null : () => onSelect!(i),
           ),
-        if (reveal) ...[
-          const SizedBox(height: 8),
-          _Explanation(question: question),
-        ],
+        if (reveal) ...[const SizedBox(height: 4), ExplanationCard(question: question)],
       ],
     );
   }
@@ -90,12 +78,7 @@ class QuestionView extends StatelessWidget {
 enum _OptionState { normal, selected, correct, wrong }
 
 class _OptionTile extends StatelessWidget {
-  const _OptionTile({
-    required this.letter,
-    required this.text,
-    required this.state,
-    this.onTap,
-  });
+  const _OptionTile({required this.letter, required this.text, required this.state, this.onTap});
 
   final String letter;
   final String text;
@@ -104,44 +87,80 @@ class _OptionTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final scheme = Theme.of(context).colorScheme;
-    final (Color bg, Color border, IconData? icon) = switch (state) {
-      _OptionState.normal => (scheme.surfaceContainerLow, scheme.outlineVariant, null),
-      _OptionState.selected => (scheme.primaryContainer, scheme.primary, null),
+    final c = context.colors;
+    final (
+      Color bg,
+      Color border,
+      double width,
+      Color badge,
+      Color onBadge,
+      IconData? icon,
+      String? hint,
+    ) = switch (state) {
+      _OptionState.normal => (c.surface, c.border, 1, c.track, c.text, null, null),
+      _OptionState.selected => (c.accentSoft, c.accent, 1.5, c.accent, c.onAccent, null, 'Đã chọn'),
       _OptionState.correct => (
-          Colors.green.withValues(alpha: 0.15),
-          Colors.green,
-          Icons.check_circle
-        ),
-      _OptionState.wrong => (scheme.errorContainer, scheme.error, Icons.cancel),
+        c.accentSoft,
+        c.accent,
+        1.5,
+        c.accent,
+        c.onAccent,
+        Icons.check_circle,
+        'Đáp án đúng',
+      ),
+      _OptionState.wrong => (
+        c.dangerSoft,
+        c.danger,
+        1.5,
+        c.danger,
+        c.onAccent,
+        Icons.cancel,
+        'Bạn chọn, sai',
+      ),
     };
     return Padding(
-      padding: const EdgeInsets.only(bottom: 8),
-      child: Material(
-        color: bg,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(12),
-          side: BorderSide(color: border),
-        ),
-        child: InkWell(
-          borderRadius: BorderRadius.circular(12),
-          onTap: onTap,
-          child: Padding(
-            padding: const EdgeInsets.all(12),
-            child: Row(crossAxisAlignment: CrossAxisAlignment.start, children: [
-              CircleAvatar(
-                radius: 13,
-                backgroundColor: border,
-                foregroundColor: scheme.surface,
-                child: Text(letter, style: const TextStyle(fontSize: 13)),
+      padding: const EdgeInsets.only(bottom: 10),
+      child: Semantics(
+        hint: hint,
+        selected: state != _OptionState.normal,
+        child: Material(
+          color: bg,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(14),
+            side: BorderSide(color: border, width: width),
+          ),
+          child: InkWell(
+            borderRadius: BorderRadius.circular(14),
+            onTap: onTap,
+            child: Padding(
+              padding: const EdgeInsets.all(14),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Container(
+                    width: 28,
+                    height: 28,
+                    alignment: Alignment.center,
+                    decoration: BoxDecoration(color: badge, shape: BoxShape.circle),
+                    child: Text(
+                      letter,
+                      style: TextStyle(fontSize: 13, fontWeight: FontWeight.w700, color: onBadge),
+                    ),
+                  ),
+                  const SizedBox(width: 12),
+                  Expanded(
+                    child: Padding(
+                      padding: const EdgeInsets.only(top: 3),
+                      child: Text(text, style: const TextStyle(fontSize: 15, height: 1.45)),
+                    ),
+                  ),
+                  if (icon != null) ...[
+                    const SizedBox(width: 8),
+                    Icon(icon, color: border, size: 22),
+                  ],
+                ],
               ),
-              const SizedBox(width: 12),
-              Expanded(child: Text(text)),
-              if (icon != null) ...[
-                const SizedBox(width: 8),
-                Icon(icon, color: border),
-              ],
-            ]),
+            ),
           ),
         ),
       ),
@@ -149,31 +168,78 @@ class _OptionTile extends StatelessWidget {
   }
 }
 
-class _Explanation extends StatelessWidget {
-  const _Explanation({required this.question});
+/// Đáp án đúng và lời giải thích của câu.
+class ExplanationCard extends StatelessWidget {
+  const ExplanationCard({super.key, required this.question});
 
   final Question question;
 
   @override
   Widget build(BuildContext context) {
-    final theme = Theme.of(context);
-    return Card(
-      elevation: 0,
-      color: theme.colorScheme.secondaryContainer,
-      child: Padding(
-        padding: const EdgeInsets.all(12),
-        child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-          Text('Đáp án: ${_letters[question.correctIndex]}',
-              style: theme.textTheme.titleSmall),
+    final c = context.colors;
+    return AppCard(
+      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            children: [
+              Icon(Icons.lightbulb_outline, size: 18, color: c.accent),
+              const SizedBox(width: 8),
+              Text(
+                'Đáp án: ${_letters[question.correctIndex]}',
+                style: TextStyle(fontSize: 14, fontWeight: FontWeight.w700, color: c.accent),
+              ),
+            ],
+          ),
           if (question.explanation != null) ...[
-            const SizedBox(height: 6),
-            Text(question.explanation!),
-            const SizedBox(height: 6),
-            Text('Giải thích do cộng đồng biên soạn, chỉ mang tính tham khảo.',
-                style: theme.textTheme.bodySmall),
+            const SizedBox(height: 8),
+            Text(question.explanation!, style: const TextStyle(fontSize: 14, height: 1.55)),
+            const SizedBox(height: 8),
+            Text(
+              'Giải thích do cộng đồng biên soạn, chỉ mang tính tham khảo.',
+              style: TextStyle(fontSize: 12, color: c.muted),
+            ),
           ],
-        ]),
+        ],
       ),
     );
   }
 }
+
+/// Nhãn đỏ "Điểm liệt".
+class CriticalChip extends StatelessWidget {
+  const CriticalChip({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    final c = context.colors;
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 3),
+      decoration: BoxDecoration(color: c.dangerSoft, borderRadius: BorderRadius.circular(999)),
+      child: Text(
+        'Điểm liệt',
+        style: TextStyle(fontSize: 12, fontWeight: FontWeight.w600, color: c.danger),
+      ),
+    );
+  }
+}
+
+/// Hình của câu hỏi, nền trắng để hình sa hình dễ nhìn cả khi dùng giao diện tối.
+class QuestionImage extends StatelessWidget {
+  const QuestionImage({super.key, required this.path});
+
+  final String path;
+
+  @override
+  Widget build(BuildContext context) => ClipRRect(
+    borderRadius: BorderRadius.circular(14),
+    child: ColoredBox(
+      color: Colors.white,
+      child: Image.asset(path, fit: BoxFit.contain, width: double.infinity),
+    ),
+  );
+}
+
+/// Chữ cái của phương án thứ [i].
+String optionLetter(int i) => _letters[i];

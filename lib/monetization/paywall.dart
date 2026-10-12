@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../ui/app_scope.dart';
+import '../ui/theme.dart';
 import 'store_entitlement.dart';
 
 /// Những gì gói Pro mang lại, hiện trên màn mời mua.
@@ -13,8 +14,8 @@ const proBenefits = [
 ];
 
 /// Mở màn mời mua Pro.
-Future<void> openPaywall(BuildContext context) => Navigator.push(
-    context, MaterialPageRoute<void>(builder: (_) => const PaywallScreen()));
+Future<void> openPaywall(BuildContext context) =>
+    Navigator.push(context, MaterialPageRoute<void>(builder: (_) => const PaywallScreen()));
 
 /// Màn mời mua Pro: lợi ích, giá từ cửa hàng, nút mua và khôi phục giao dịch.
 class PaywallScreen extends StatefulWidget {
@@ -43,27 +44,32 @@ class _PaywallScreenState extends State<PaywallScreen> {
       body: StreamBuilder<bool>(
         stream: service.isPro,
         initialData: service.currentIsPro,
-        builder: (context, snap) => ListView(padding: const EdgeInsets.all(16), children: [
-          Text('Học đúng câu mình yếu, biết khi nào đã sẵn sàng đi thi.',
-              style: theme.textTheme.titleMedium),
-          const SizedBox(height: 4),
-          const Text('Toàn bộ câu hỏi, giải thích và thi thử vẫn miễn phí.'),
-          const SizedBox(height: 16),
-          for (final b in proBenefits)
-            ListTile(
-              dense: true,
-              contentPadding: EdgeInsets.zero,
-              leading: const Icon(Icons.check_circle_outline),
-              title: Text(b),
+        builder: (context, snap) => ListView(
+          padding: const EdgeInsets.all(16),
+          children: [
+            Text(
+              'Học đúng câu mình yếu, biết khi nào đã sẵn sàng đi thi.',
+              style: theme.textTheme.titleMedium,
             ),
-          const SizedBox(height: 16),
-          if (snap.data == true)
-            const _Unlocked()
-          else if (service is PurchasableEntitlement)
-            _BuyPanel(service: service, offer: _offer!)
-          else
-            const Text('Bản Pro mua được trong app trên Android và iOS.'),
-        ]),
+            const SizedBox(height: 4),
+            const Text('Toàn bộ câu hỏi, giải thích và thi thử vẫn miễn phí.'),
+            const SizedBox(height: 16),
+            for (final b in proBenefits)
+              ListTile(
+                dense: true,
+                contentPadding: EdgeInsets.zero,
+                leading: const Icon(Icons.check_circle_outline),
+                title: Text(b),
+              ),
+            const SizedBox(height: 16),
+            if (snap.data == true)
+              const _Unlocked()
+            else if (service is PurchasableEntitlement)
+              _BuyPanel(service: service, offer: _offer!)
+            else
+              const Text('Bản Pro mua được trong app trên Android và iOS.'),
+          ],
+        ),
       ),
     );
   }
@@ -74,12 +80,12 @@ class _Unlocked extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => Card(
-        child: ListTile(
-          leading: Icon(Icons.verified, color: Theme.of(context).colorScheme.primary),
-          title: const Text('Bạn đã mở khóa Pro'),
-          subtitle: const Text('Cảm ơn bạn đã ủng hộ app.'),
-        ),
-      );
+    child: ListTile(
+      leading: Icon(Icons.verified, color: Theme.of(context).colorScheme.primary),
+      title: const Text('Bạn đã mở khóa Pro'),
+      subtitle: const Text('Cảm ơn bạn đã ủng hộ app.'),
+    ),
+  );
 }
 
 class _BuyPanel extends StatelessWidget {
@@ -94,37 +100,49 @@ class _BuyPanel extends StatelessWidget {
       valueListenable: service.state,
       builder: (context, state, _) {
         final busy = state == PurchaseState.pending;
-        return Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
-          FutureBuilder<ProOffer?>(
-            future: offer,
-            builder: (context, snap) {
-              final o = snap.data;
-              final label = switch (snap.connectionState) {
-                ConnectionState.done when o != null => 'Mở khóa Pro · ${o.price}',
-                ConnectionState.done => 'Mở khóa Pro',
-                _ => 'Đang tải giá…',
-              };
-              return FilledButton(
-                onPressed: busy || snap.connectionState != ConnectionState.done
-                    ? null
-                    : service.buy,
-                child: Text(label),
-              );
-            },
-          ),
-          const SizedBox(height: 4),
-          const Text('Trả một lần, dùng mãi mãi cho mọi hạng bằng.', textAlign: TextAlign.center),
-          if (busy) const Padding(padding: EdgeInsets.all(12), child: Center(child: CircularProgressIndicator())),
-          if (state == PurchaseState.error && service.lastError != null)
-            Padding(
-              padding: const EdgeInsets.only(top: 12),
-              child: Text(service.lastError!,
-                  style: TextStyle(color: Theme.of(context).colorScheme.error),
-                  textAlign: TextAlign.center),
+        return Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            FutureBuilder<ProOffer?>(
+              future: offer,
+              builder: (context, snap) {
+                final o = snap.data;
+                final label = switch (snap.connectionState) {
+                  ConnectionState.done when o != null => 'Mở khóa Pro · ${o.price}',
+                  ConnectionState.done => 'Mở khóa Pro',
+                  _ => 'Đang tải giá…',
+                };
+                return FilledButton(
+                  onPressed: busy || snap.connectionState != ConnectionState.done
+                      ? null
+                      : service.buy,
+                  child: Text(label),
+                );
+              },
             ),
-          const SizedBox(height: 8),
-          TextButton(onPressed: busy ? null : service.restore, child: const Text('Khôi phục giao dịch')),
-        ]);
+            const SizedBox(height: 4),
+            const Text('Trả một lần, dùng mãi mãi cho mọi hạng bằng.', textAlign: TextAlign.center),
+            if (busy)
+              const Padding(
+                padding: EdgeInsets.all(12),
+                child: Center(child: CircularProgressIndicator()),
+              ),
+            if (state == PurchaseState.error && service.lastError != null)
+              Padding(
+                padding: const EdgeInsets.only(top: 12),
+                child: Text(
+                  service.lastError!,
+                  style: TextStyle(color: Theme.of(context).colorScheme.error),
+                  textAlign: TextAlign.center,
+                ),
+              ),
+            const SizedBox(height: 8),
+            TextButton(
+              onPressed: busy ? null : service.restore,
+              child: const Text('Khôi phục giao dịch'),
+            ),
+          ],
+        );
       },
     );
   }
@@ -138,14 +156,14 @@ class ProLockedCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => Card(
-        child: ListTile(
-          leading: const Icon(Icons.lock_outline),
-          title: Text(feature),
-          subtitle: const Text('Có trong bản Pro'),
-          trailing: const Icon(Icons.chevron_right),
-          onTap: () => openPaywall(context),
-        ),
-      );
+    child: ListTile(
+      leading: const Icon(Icons.lock_outline),
+      title: Text(feature),
+      subtitle: const Text('Có trong bản Pro'),
+      trailing: const Icon(Icons.chevron_right),
+      onTap: () => openPaywall(context),
+    ),
+  );
 }
 
 /// Dòng "Bản Pro" trong màn Giới thiệu: trạng thái hiện tại và lối vào màn mời mua.
@@ -158,16 +176,49 @@ class ProStatusTile extends StatelessWidget {
     return StreamBuilder<bool>(
       stream: service.isPro,
       initialData: service.currentIsPro,
-      builder: (context, snap) => ListTile(
-        contentPadding: EdgeInsets.zero,
-        leading: Icon(snap.data == true ? Icons.verified : Icons.workspace_premium_outlined),
-        title: Text(snap.data == true ? 'Đã mở khóa Pro' : 'Bản Pro'),
-        subtitle: Text(snap.data == true
-            ? 'Xem quyền lợi hoặc khôi phục trên máy khác'
-            : 'Xem quyền lợi, mua hoặc khôi phục giao dịch'),
-        trailing: const Icon(Icons.chevron_right),
-        onTap: () => openPaywall(context),
-      ),
+      builder: (context, snap) {
+        final c = context.colors;
+        final pro = snap.data == true;
+        return AppCard(
+          color: c.warnSoft,
+          borderColor: Colors.transparent,
+          padding: const EdgeInsets.all(14),
+          onTap: () => openPaywall(context),
+          child: Row(
+            children: [
+              IconBadge(
+                icon: pro ? Icons.verified : Icons.star_outline_rounded,
+                background: c.warnIcon,
+                foreground: c.onWarnSoft,
+              ),
+              const SizedBox(width: 12),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      pro ? 'Đã mở khóa Pro' : 'Bản Pro',
+                      style: TextStyle(
+                        fontSize: 15,
+                        fontWeight: FontWeight.w600,
+                        color: c.onWarnSoft,
+                      ),
+                    ),
+                    const SizedBox(height: 2),
+                    Text(
+                      pro
+                          ? 'Xem quyền lợi hoặc khôi phục trên máy khác'
+                          : 'Xem quyền lợi, mua hoặc khôi phục giao dịch',
+                      style: TextStyle(fontSize: 12.5, color: c.onWarnSoft),
+                    ),
+                  ],
+                ),
+              ),
+              Icon(Icons.chevron_right, color: c.onWarnSoft),
+            ],
+          ),
+        );
+      },
     );
   }
 }

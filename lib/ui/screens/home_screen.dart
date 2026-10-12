@@ -3,10 +3,14 @@ import 'package:flutter/material.dart';
 import '../../data/question_bank.dart';
 import '../../models/models.dart';
 import '../app_scope.dart';
+import '../theme.dart';
 import 'about_screen.dart';
 import 'exam_screen.dart';
 import 'practice_screen.dart';
 import 'signs_screen.dart';
+
+void _open(BuildContext context, Widget screen) =>
+    Navigator.push(context, MaterialPageRoute<void>(builder: (_) => screen));
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -23,118 +27,351 @@ class HomeScreen extends StatelessWidget {
     final wrong = all.where((q) => progress.isWrong(q.id)).toList();
     final bookmarked = all.where((q) => progress.bookmarks.contains(q.id)).toList();
     final critical = bank.criticalFor(code);
-    final theme = Theme.of(context);
-
-    void open(Widget screen) =>
-        Navigator.push(context, MaterialPageRoute<void>(builder: (_) => screen));
+    final chapters = {for (final q in all) q.chapter}.length;
+    final config = bank.examConfigs[code];
+    final c = context.colors;
 
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Ôn thi GPLX'),
-        actions: [
-          IconButton(
-            tooltip: 'Giới thiệu và nguồn dữ liệu',
-            icon: const Icon(Icons.info_outline),
-            onPressed: () => open(const AboutScreen()),
-          ),
-        ],
-      ),
-      body: ListView(padding: const EdgeInsets.all(16), children: [
-        Text('Hạng bằng', style: theme.textTheme.labelLarge),
-        const SizedBox(height: 8),
-        SegmentedButton<String>(
-          segments: [
-            for (final c in enabledClasses) ButtonSegment(value: c, label: Text(c)),
-          ],
-          selected: {code},
-          onSelectionChanged: (s) => progress.selectClass(s.first),
-        ),
-        const SizedBox(height: 8),
-        Text(bank.classes[code]?.description ?? '', style: theme.textTheme.bodySmall),
-        const SizedBox(height: 16),
-        Card(
-          child: Padding(
-            padding: const EdgeInsets.all(16),
-            child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-              Text('Tiến độ hạng $code', style: theme.textTheme.titleMedium),
-              const SizedBox(height: 12),
-              LinearProgressIndicator(
-                value: all.isEmpty ? 0 : done / all.length,
-                minHeight: 8,
-                borderRadius: BorderRadius.circular(4),
+      body: SafeArea(
+        child: ListView(
+          padding: const EdgeInsets.fromLTRB(20, 8, 20, 24),
+          children: [
+            Row(
+              children: [
+                IconBadge(
+                  icon: Icons.donut_large,
+                  background: c.accent,
+                  foreground: c.onAccent,
+                  size: 36,
+                ),
+                const SizedBox(width: 10),
+                const Expanded(
+                  child: Text(
+                    'Ôn thi GPLX',
+                    style: TextStyle(fontSize: 22, fontWeight: FontWeight.w700),
+                  ),
+                ),
+                IconButton(
+                  tooltip: 'Giới thiệu và nguồn dữ liệu',
+                  icon: Icon(Icons.info_outline, color: c.muted),
+                  onPressed: () => _open(context, const AboutScreen()),
+                ),
+              ],
+            ),
+            const SizedBox(height: 14),
+            Text(
+              'Hạng bằng',
+              style: TextStyle(fontSize: 13, fontWeight: FontWeight.w600, color: c.muted),
+            ),
+            const SizedBox(height: 8),
+            _ClassPicker(selected: code, onSelect: progress.selectClass),
+            const SizedBox(height: 8),
+            Text(
+              bank.classes[code]?.description ?? '',
+              style: TextStyle(fontSize: 12.5, height: 1.45, color: c.muted),
+            ),
+            const SizedBox(height: 14),
+            AppCard(
+              radius: 18,
+              child: Row(
+                children: [
+                  _ProgressRing(value: all.isEmpty ? 0 : done / all.length),
+                  const SizedBox(width: 16),
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          'Tiến độ hạng $code',
+                          style: const TextStyle(fontSize: 15, fontWeight: FontWeight.w600),
+                        ),
+                        const SizedBox(height: 4),
+                        Text(
+                          'Đã làm $done/${all.length} câu',
+                          style: TextStyle(fontSize: 13, color: c.muted),
+                        ),
+                        const SizedBox(height: 4),
+                        Row(
+                          children: [
+                            Text(
+                              'Đúng $right',
+                              style: TextStyle(
+                                fontSize: 13,
+                                fontWeight: FontWeight.w500,
+                                color: c.accent,
+                              ),
+                            ),
+                            const SizedBox(width: 12),
+                            Text(
+                              'Sai ${wrong.length}',
+                              style: TextStyle(
+                                fontSize: 13,
+                                fontWeight: FontWeight.w500,
+                                color: c.danger,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
               ),
-              const SizedBox(height: 8),
-              Text('Đã làm $done/${all.length} câu · Đúng $right · Sai ${wrong.length}'),
-            ]),
-          ),
+            ),
+            const SizedBox(height: 14),
+            AppCard(
+              radius: 18,
+              color: c.accent,
+              borderColor: Colors.transparent,
+              onTap: () => _open(context, const ExamIntroScreen()),
+              child: Row(
+                children: [
+                  IconBadge(
+                    icon: Icons.timer_outlined,
+                    background: c.onAccent.withValues(alpha: 0.16),
+                    foreground: c.onAccent,
+                    size: 44,
+                  ),
+                  const SizedBox(width: 14),
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          'Thi thử',
+                          style: TextStyle(
+                            fontSize: 17,
+                            fontWeight: FontWeight.w700,
+                            color: c.onAccent,
+                          ),
+                        ),
+                        const SizedBox(height: 2),
+                        Text(
+                          config == null
+                              ? 'Đề theo cấu trúc thật'
+                              : '${config.questionCount} câu · ${config.minutes} phút · '
+                                    'đề theo cấu trúc thật',
+                          style: TextStyle(fontSize: 13, color: c.onAccentMuted),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Icon(Icons.chevron_right, color: c.onAccent),
+                ],
+              ),
+            ),
+            const SizedBox(height: 14),
+            GridView.count(
+              crossAxisCount: 2,
+              shrinkWrap: true,
+              physics: const NeverScrollableScrollPhysics(),
+              mainAxisSpacing: 10,
+              crossAxisSpacing: 10,
+              childAspectRatio: 1.55,
+              children: [
+                _GridTile(
+                  icon: Icons.menu_book_outlined,
+                  title: 'Ôn theo chương',
+                  subtitle: '${all.length} câu · $chapters chương',
+                  onTap: () => _open(context, const ChapterListScreen()),
+                ),
+                _GridTile(
+                  icon: Icons.warning_amber_rounded,
+                  iconColor: c.danger,
+                  title: 'Câu điểm liệt',
+                  subtitle: '${critical.length} câu · sai là trượt',
+                  onTap: () =>
+                      _open(context, PracticeScreen(title: 'Câu điểm liệt', questions: critical)),
+                ),
+                _GridTile(
+                  icon: Icons.replay,
+                  title: 'Câu làm sai',
+                  subtitle: wrong.isEmpty ? 'Chưa có câu sai' : '${wrong.length} câu cần ôn lại',
+                  onTap: () =>
+                      _open(context, PracticeScreen(title: 'Câu làm sai', questions: wrong)),
+                ),
+                _GridTile(
+                  icon: Icons.bookmark_border,
+                  title: 'Đã đánh dấu',
+                  subtitle: '${bookmarked.length} câu',
+                  onTap: () => _open(
+                    context,
+                    PracticeScreen(title: 'Câu đã đánh dấu', questions: bookmarked),
+                  ),
+                ),
+              ],
+            ),
+            const SizedBox(height: 10),
+            AppCard(
+              padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
+              onTap: () => _open(context, const SignsScreen()),
+              child: Row(
+                children: [
+                  Icon(Icons.signpost_outlined, color: c.accent),
+                  const SizedBox(width: 12),
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        const Text(
+                          'Tra cứu biển báo',
+                          style: TextStyle(fontSize: 14.5, fontWeight: FontWeight.w600),
+                        ),
+                        const SizedBox(height: 2),
+                        Text(
+                          '${bank.signs.length} biển theo QCVN 41:2024',
+                          style: TextStyle(fontSize: 12.5, color: c.muted),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Icon(Icons.chevron_right, color: c.muted),
+                ],
+              ),
+            ),
+          ],
         ),
-        const SizedBox(height: 8),
-        _MenuTile(
-          icon: Icons.timer_outlined,
-          title: 'Thi thử',
-          subtitle: 'Đề ngẫu nhiên theo cấu trúc đề thật, có tính giờ',
-          onTap: () => open(const ExamIntroScreen()),
-        ),
-        _MenuTile(
-          icon: Icons.menu_book_outlined,
-          title: 'Ôn theo chương',
-          subtitle: '${all.length} câu, chia theo 6 chương',
-          onTap: () => open(const ChapterListScreen()),
-        ),
-        _MenuTile(
-          icon: Icons.warning_amber_outlined,
-          title: 'Câu điểm liệt',
-          subtitle: '${critical.length} câu, sai một câu là trượt',
-          onTap: () => open(PracticeScreen(title: 'Câu điểm liệt', questions: critical)),
-        ),
-        _MenuTile(
-          icon: Icons.replay,
-          title: 'Câu làm sai',
-          subtitle: wrong.isEmpty ? 'Chưa có câu sai' : '${wrong.length} câu cần ôn lại',
-          onTap: () => open(PracticeScreen(title: 'Câu làm sai', questions: wrong)),
-        ),
-        _MenuTile(
-          icon: Icons.bookmark_border,
-          title: 'Câu đã đánh dấu',
-          subtitle: '${bookmarked.length} câu',
-          onTap: () => open(PracticeScreen(title: 'Câu đã đánh dấu', questions: bookmarked)),
-        ),
-        _MenuTile(
-          icon: Icons.signpost_outlined,
-          title: 'Biển báo',
-          subtitle: '${bank.signs.length} biển theo QCVN 41:2024',
-          onTap: () => open(const SignsScreen()),
-        ),
-      ]),
+      ),
     );
   }
 }
 
-class _MenuTile extends StatelessWidget {
-  const _MenuTile({
+/// Nút chọn hạng dạng phân đoạn, như mockup.
+class _ClassPicker extends StatelessWidget {
+  const _ClassPicker({required this.selected, required this.onSelect});
+
+  final String selected;
+  final ValueChanged<String> onSelect;
+
+  @override
+  Widget build(BuildContext context) {
+    final c = context.colors;
+    return Container(
+      padding: const EdgeInsets.all(4),
+      decoration: BoxDecoration(color: c.track, borderRadius: BorderRadius.circular(14)),
+      child: Row(
+        children: [
+          for (final code in enabledClasses)
+            Expanded(
+              child: Semantics(
+                selected: code == selected,
+                button: true,
+                child: Material(
+                  color: code == selected ? c.surface : Colors.transparent,
+                  elevation: code == selected ? 1 : 0,
+                  shadowColor: Colors.black26,
+                  borderRadius: BorderRadius.circular(10),
+                  child: InkWell(
+                    borderRadius: BorderRadius.circular(10),
+                    onTap: () => onSelect(code),
+                    child: SizedBox(
+                      height: 40,
+                      child: Center(
+                        child: Text(
+                          code,
+                          style: TextStyle(
+                            fontSize: 15,
+                            fontWeight: code == selected ? FontWeight.w600 : FontWeight.w500,
+                            color: code == selected ? c.accent : c.muted,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ),
+        ],
+      ),
+    );
+  }
+}
+
+class _ProgressRing extends StatelessWidget {
+  const _ProgressRing({required this.value});
+
+  final double value;
+
+  @override
+  Widget build(BuildContext context) {
+    final c = context.colors;
+    final percent = (value * 100).round();
+    return Semantics(
+      label: 'Đã làm $percent%',
+      excludeSemantics: true,
+      child: SizedBox.square(
+        dimension: 68,
+        child: Stack(
+          fit: StackFit.expand,
+          children: [
+            CircularProgressIndicator(
+              value: value,
+              strokeWidth: 8,
+              strokeCap: StrokeCap.round,
+              backgroundColor: c.accentSoft,
+              color: c.accent,
+            ),
+            Center(
+              child: Text(
+                '$percent%',
+                style: const TextStyle(fontSize: 15, fontWeight: FontWeight.w700),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class _GridTile extends StatelessWidget {
+  const _GridTile({
     required this.icon,
     required this.title,
     required this.subtitle,
     required this.onTap,
+    this.iconColor,
   });
 
   final IconData icon;
+  final Color? iconColor;
   final String title;
   final String subtitle;
   final VoidCallback onTap;
 
   @override
-  Widget build(BuildContext context) => Card(
-        elevation: 0,
-        color: Theme.of(context).colorScheme.surfaceContainerLow,
-        child: ListTile(
-          leading: Icon(icon),
-          title: Text(title),
-          subtitle: Text(subtitle),
-          trailing: const Icon(Icons.chevron_right),
-          onTap: onTap,
-        ),
-      );
+  Widget build(BuildContext context) {
+    final c = context.colors;
+    return AppCard(
+      padding: const EdgeInsets.all(14),
+      onTap: onTap,
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Icon(icon, color: iconColor ?? c.accent),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                title,
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
+                style: const TextStyle(fontSize: 14.5, fontWeight: FontWeight.w600),
+              ),
+              const SizedBox(height: 2),
+              Text(
+                subtitle,
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
+                style: TextStyle(fontSize: 12.5, color: c.muted),
+              ),
+            ],
+          ),
+        ],
+      ),
+    );
+  }
 }
 
 class ChapterListScreen extends StatelessWidget {
@@ -143,35 +380,143 @@ class ChapterListScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final scope = AppScope.of(context);
-    final code = scope.progress.classCode;
+    final progress = scope.progress;
+    final code = progress.classCode;
+    final all = scope.bank.forClass(code);
+    final done = all.where((q) => progress.lastResult.containsKey(q.id)).length;
+    final c = context.colors;
     return Scaffold(
-      appBar: AppBar(title: Text('Ôn theo chương · Hạng $code')),
-      body: ListView(children: [
-        ListTile(
-          leading: const CircleAvatar(child: Icon(Icons.all_inclusive, size: 20)),
-          title: const Text('Tất cả câu hỏi'),
-          subtitle: Text('${scope.bank.forClass(code).length} câu'),
-          onTap: () => _open(context, 'Tất cả câu hỏi', scope.bank.forClass(code)),
+      appBar: AppBar(
+        titleSpacing: 0,
+        title: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            const Text('Ôn theo chương'),
+            Text(
+              'Hạng $code · ${all.length} câu',
+              style: TextStyle(fontSize: 12.5, fontWeight: FontWeight.w400, color: c.muted),
+            ),
+          ],
         ),
-        for (final ch in scope.bank.chapters) _chapterTile(context, ch),
-      ]),
+      ),
+      body: ListView(
+        padding: const EdgeInsets.fromLTRB(20, 4, 20, 20),
+        children: [
+          AppCard(
+            color: c.accent,
+            borderColor: Colors.transparent,
+            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
+            onTap: () => _practice(context, 'Tất cả câu hỏi', all),
+            child: Row(
+              children: [
+                IconBadge(
+                  icon: Icons.all_inclusive,
+                  background: c.onAccent.withValues(alpha: 0.16),
+                  foreground: c.onAccent,
+                ),
+                const SizedBox(width: 14),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        'Tất cả câu hỏi',
+                        style: TextStyle(
+                          fontSize: 15.5,
+                          fontWeight: FontWeight.w600,
+                          color: c.onAccent,
+                        ),
+                      ),
+                      const SizedBox(height: 2),
+                      Text(
+                        'Đã làm $done/${all.length} câu',
+                        style: TextStyle(fontSize: 12.5, color: c.onAccentMuted),
+                      ),
+                    ],
+                  ),
+                ),
+                Icon(Icons.chevron_right, color: c.onAccent),
+              ],
+            ),
+          ),
+          for (final ch in scope.bank.chapters) _chapterCard(context, ch),
+        ],
+      ),
     );
   }
 
-  Widget _chapterTile(BuildContext context, Chapter ch) {
+  Widget _chapterCard(BuildContext context, Chapter ch) {
     final scope = AppScope.of(context);
-    final qs = scope.bank.forChapter(scope.progress.classCode, ch.number);
+    final progress = scope.progress;
+    final qs = scope.bank.forChapter(progress.classCode, ch.number);
     if (qs.isEmpty) return const SizedBox.shrink();
-    final done = qs.where((q) => scope.progress.lastResult.containsKey(q.id)).length;
-    return ListTile(
-      leading: CircleAvatar(child: Text('${ch.number}')),
-      title: Text(ch.name),
-      subtitle: Text('Đã làm $done/${qs.length} câu'),
-      onTap: () => _open(context, 'Chương ${ch.number}', qs),
+    final done = qs.where((q) => progress.lastResult.containsKey(q.id)).length;
+    final wrong = qs.where((q) => progress.isWrong(q.id)).length;
+    final c = context.colors;
+    return Padding(
+      padding: const EdgeInsets.only(top: 10),
+      child: AppCard(
+        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
+        onTap: () => _practice(context, 'Chương ${ch.number}', qs),
+        child: Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Container(
+              width: 40,
+              height: 40,
+              alignment: Alignment.center,
+              decoration: BoxDecoration(
+                color: c.accentSoft,
+                borderRadius: BorderRadius.circular(12),
+              ),
+              child: Text(
+                '${ch.number}',
+                style: TextStyle(fontSize: 16, fontWeight: FontWeight.w700, color: c.accent),
+              ),
+            ),
+            const SizedBox(width: 14),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    ch.name,
+                    style: const TextStyle(
+                      fontSize: 14.5,
+                      fontWeight: FontWeight.w600,
+                      height: 1.35,
+                    ),
+                  ),
+                  const SizedBox(height: 6),
+                  ThinBar(value: done / qs.length),
+                  const SizedBox(height: 6),
+                  Row(
+                    children: [
+                      Expanded(
+                        child: Text(
+                          'Đã làm $done/${qs.length} câu',
+                          style: TextStyle(fontSize: 12.5, color: c.muted),
+                        ),
+                      ),
+                      Text(
+                        wrong > 0 ? 'Sai $wrong' : (done > 0 ? 'Không sai câu nào' : ''),
+                        style: TextStyle(
+                          fontSize: 12.5,
+                          fontWeight: FontWeight.w500,
+                          color: wrong > 0 ? c.danger : c.accent,
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
+      ),
     );
   }
 
-  void _open(BuildContext context, String title, List<Question> qs) => Navigator.push(
-      context,
-      MaterialPageRoute<void>(builder: (_) => PracticeScreen(title: title, questions: qs)));
+  void _practice(BuildContext context, String title, List<Question> qs) =>
+      _open(context, PracticeScreen(title: title, questions: qs));
 }
