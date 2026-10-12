@@ -152,6 +152,7 @@ void main() {
         duration: const Duration(minutes: 3, seconds: 4),
         questionIds: [for (final q in exam.questions) q.id],
         answers: List.of(exam.answers),
+        correctAnswers: [for (final q in exam.questions) q.correctIndex],
       ).toJson(),
     );
 
@@ -161,6 +162,28 @@ void main() {
     expect([for (final q in restored.questions) q.id], [for (final q in exam.questions) q.id]);
     expect(restored.answers, exam.answers);
     expect(restored.grade().correct, result.correct);
+  });
+
+  test('không dựng lại bài thi khi bộ đề đã đổi đáp án hoặc số phương án', () {
+    final exam = generateExam(bank, 'A1', random: Random(5));
+    final ids = [for (final q in exam.questions) q.id];
+    final keys = [for (final q in exam.questions) q.correctIndex];
+    ExamRecord record({List<int>? correct, List<int?>? answers}) => ExamRecord(
+      'A1',
+      DateTime(2026, 10, 12),
+      0,
+      ids.length,
+      false,
+      questionIds: ids,
+      answers: answers ?? List<int?>.filled(ids.length, null),
+      correctAnswers: correct ?? keys,
+    );
+
+    expect(restoreExam(bank, record()), isNotNull);
+    final changedKey = List.of(keys)..[0] = (keys[0] + 1) % exam.questions[0].options.length;
+    expect(restoreExam(bank, record(correct: changedKey)), isNull);
+    final outOfRange = List<int?>.filled(ids.length, null)..[0] = 9;
+    expect(restoreExam(bank, record(answers: outOfRange)), isNull);
   });
 
   test('bản ghi lịch sử cũ (chưa lưu câu hỏi) vẫn đọc được', () {

@@ -16,6 +16,7 @@ class ExamRecord {
     this.duration,
     this.questionIds,
     this.answers,
+    this.correctAnswers,
   });
 
   final String classCode;
@@ -32,6 +33,9 @@ class ExamRecord {
   final List<int>? questionIds;
   final List<int?>? answers;
 
+  /// Đáp án đúng của từng câu lúc thi, để nhận ra khi bộ đề trong app đã đổi.
+  final List<int>? correctAnswers;
+
   Map<String, dynamic> toJson() => {
     'hang': classCode,
     't': time.toIso8601String(),
@@ -42,6 +46,7 @@ class ExamRecord {
     if (duration != null) 'giay': duration!.inSeconds,
     if (questionIds != null) 'cau': questionIds,
     if (answers != null) 'chon': answers,
+    if (correctAnswers != null) 'dap': correctAnswers,
   };
 
   factory ExamRecord.fromJson(Map<String, dynamic> j) => ExamRecord(
@@ -54,6 +59,7 @@ class ExamRecord {
     duration: j['giay'] == null ? null : Duration(seconds: j['giay'] as int),
     questionIds: (j['cau'] as List?)?.cast<int>(),
     answers: (j['chon'] as List?)?.cast<int?>(),
+    correctAnswers: (j['dap'] as List?)?.cast<int>(),
   );
 }
 

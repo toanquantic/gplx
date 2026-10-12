@@ -112,21 +112,31 @@ Exam generateExam(QuestionBank bank, String classCode, {Random? random}) {
 }
 
 /// Dựng lại bài thi đã lưu trong lịch sử để xem kết quả và từng câu.
-/// Trả về null với bản ghi cũ chưa lưu câu hỏi, hoặc khi dữ liệu đề đã đổi.
+///
+/// Trả về null với bản ghi cũ chưa lưu câu hỏi, hoặc khi bộ đề đã đổi (câu bị
+/// xóa, đổi đáp án đúng hay số phương án) so với lúc thi.
 Exam? restoreExam(QuestionBank bank, ExamRecord record) {
   final config = bank.examConfigs[record.classCode];
   final ids = record.questionIds;
   final answers = record.answers;
-  if (config == null || ids == null || answers == null || ids.length != answers.length) {
+  final keys = record.correctAnswers;
+  if (config == null ||
+      ids == null ||
+      answers == null ||
+      keys == null ||
+      ids.length != answers.length ||
+      ids.length != keys.length) {
     return null;
   }
-  final questions = [for (final id in ids) bank.questions[id]];
-  if (questions.contains(null)) return null;
-  final exam = Exam(
-    classCode: record.classCode,
-    config: config,
-    questions: questions.cast<Question>(),
-  );
+  final questions = <Question>[];
+  for (var i = 0; i < ids.length; i++) {
+    final q = bank.questions[ids[i]];
+    final a = answers[i];
+    if (q == null || q.correctIndex != keys[i]) return null;
+    if (a != null && (a < 0 || a >= q.options.length)) return null;
+    questions.add(q);
+  }
+  final exam = Exam(classCode: record.classCode, config: config, questions: questions);
   for (var i = 0; i < answers.length; i++) {
     exam.answers[i] = answers[i];
   }

@@ -198,7 +198,12 @@ class ExamIntroScreen extends StatelessWidget {
 
   void _openRecord(BuildContext context, ExamRecord record) {
     final exam = restoreExam(AppScope.read(context).bank, record);
-    if (exam == null) return;
+    if (exam == null) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text('Bộ đề đã được cập nhật nên không xem lại được bài thi này.')),
+      );
+      return;
+    }
     Navigator.push(
       context,
       MaterialPageRoute<void>(
@@ -278,6 +283,7 @@ class _ExamScreenState extends State<ExamScreen> {
         duration: took,
         questionIds: [for (final q in exam.questions) q.id],
         answers: List.of(exam.answers),
+        correctAnswers: [for (final q in exam.questions) q.correctIndex],
       ),
     );
     Navigator.pushReplacement(
