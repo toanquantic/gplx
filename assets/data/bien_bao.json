@@ -3,2933 +3,2933 @@
   "ma": "P.101",
   "ten": "Đường cấm",
   "nhom": "bien_cam",
-  "y_nghia": null,
+  "y_nghia": "Báo đường cấm tất cả các loại phương tiện đi lại cả hai hướng, trừ các xe được ưu tiên theo quy định. Nếu đường cấm vì đường, cầu bị tắc (biển đặt giữa đường kèm hàng rào chắn) thì cả xe ưu tiên cũng không được đi vào.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
  },
  {
   "ma": "P.102",
   "ten": "Cấm đi ngược chiều",
   "nhom": "bien_cam",
-  "y_nghia": null,
+  "y_nghia": "Báo đường cấm các loại xe (cơ giới và thô sơ) đi vào theo chiều đặt biển, trừ các xe được ưu tiên theo quy định. Người đi bộ được phép đi trên vỉa hè hoặc lề đường.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
  },
  {
   "ma": "P.103a",
   "ten": "Cấm xe ô tô",
   "nhom": "bien_cam",
-  "y_nghia": null,
+  "y_nghia": "Báo đường cấm các loại xe cơ giới, kể cả xe máy 3 bánh có thùng, đi qua; trừ xe máy 2 bánh, xe gắn máy và các xe được ưu tiên theo quy định.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
  },
  {
   "ma": "P.103b",
   "ten": "Cấm xe ô tô rẽ phải",
   "nhom": "bien_cam",
-  "y_nghia": null,
+  "y_nghia": "Cấm các loại xe cơ giới, kể cả xe máy 3 bánh có thùng, rẽ phải; trừ xe máy 2 bánh, xe gắn máy và các xe được ưu tiên theo quy định.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
  },
  {
   "ma": "P.103c",
   "ten": "Cấm xe ô tô rẽ trái",
   "nhom": "bien_cam",
-  "y_nghia": null,
+  "y_nghia": "Cấm các loại xe cơ giới, kể cả xe máy 3 bánh có thùng, rẽ trái; trừ xe máy 2 bánh, xe gắn máy và các xe được ưu tiên theo quy định.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
  },
  {
   "ma": "P.104",
   "ten": "Cấm xe máy",
   "nhom": "bien_cam",
-  "y_nghia": null,
+  "y_nghia": "Báo đường cấm các loại xe máy, trừ các xe được ưu tiên theo quy định. Biển không có giá trị cấm những người dắt xe máy.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
  },
  {
   "ma": "P.105",
   "ten": "Cấm xe ô tô và xe máy",
   "nhom": "bien_cam",
-  "y_nghia": null,
+  "y_nghia": "Báo đường cấm các loại xe cơ giới và xe máy đi qua, trừ các xe được ưu tiên theo quy định.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
  },
  {
   "ma": "P.106a",
   "ten": "Cấm xe ô tô tải",
   "nhom": "bien_cam",
-  "y_nghia": null,
+  "y_nghia": "Báo đường cấm các loại xe ô tô tải, trừ các xe được ưu tiên theo quy định. Biển cũng có hiệu lực cấm máy kéo và các xe máy chuyên dùng đi vào đoạn đường đặt biển.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
  },
  {
   "ma": "P.106b",
   "ten": "Cấm xe ô tô tải",
   "nhom": "bien_cam",
-  "y_nghia": null,
+  "y_nghia": "Cấm các xe ô tô tải có khối lượng chuyên chở (theo Giấy chứng nhận kiểm định) lớn hơn giá trị ghi trên biển (số tấn ghi trên hình xe). Biển cũng có hiệu lực cấm máy kéo và các xe máy chuyên dùng đi vào đoạn đường đặt biển.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
  },
  {
   "ma": "P.106c",
   "ten": "Cấm các xe chở hàng nguy hiểm",
   "nhom": "bien_cam",
-  "y_nghia": null,
+  "y_nghia": "Báo đường cấm các xe chở hàng nguy hiểm.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
  },
  {
   "ma": "P.107",
   "ten": "Cấm xe ô tô khách và xe ô tô tải",
   "nhom": "bien_cam",
-  "y_nghia": null,
+  "y_nghia": "Báo đường cấm xe ô tô chở khách và các loại xe ô tô tải, kể cả máy kéo và xe máy chuyên dùng, đi qua; trừ các xe được ưu tiên theo quy định.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
  },
  {
   "ma": "P.107a",
   "ten": "Cấm xe ô tô khách",
   "nhom": "bien_cam",
-  "y_nghia": null,
+  "y_nghia": "Báo đường cấm ô tô chở khách đi qua, trừ các xe được ưu tiên theo quy định. Biển này không cấm xe buýt. Nếu cấm theo số chỗ ngồi thì có biển phụ hoặc ghi số chỗ ngồi trên hình xe.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
  },
  {
   "ma": "P.107b",
   "ten": "Cấm xe ô tô taxi",
   "nhom": "bien_cam",
-  "y_nghia": null,
+  "y_nghia": "Báo đường cấm xe ô tô taxi đi lại. Trường hợp cấm taxi theo giờ thì có biển phụ ghi giờ cấm.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
  },
  {
   "ma": "P.108",
   "ten": "Cấm xe kéo rơ-moóc",
   "nhom": "bien_cam",
-  "y_nghia": null,
+  "y_nghia": "Báo đường cấm các loại xe cơ giới kéo theo rơ-moóc, kể cả xe máy, máy kéo, ô tô khách kéo theo rơ-moóc; trừ ô tô sơ-mi rơ-moóc và các xe được ưu tiên (có kéo theo rơ-moóc) theo quy định.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
  },
  {
   "ma": "P.108a",
   "ten": "Cấm xe sơ-mi rơ-moóc",
   "nhom": "bien_cam",
-  "y_nghia": null,
+  "y_nghia": "Báo đường cấm các loại xe sơ-mi rơ-moóc và các xe kéo rơ-moóc, trừ các xe được ưu tiên (có dạng sơ-mi rơ-moóc hoặc có kéo theo rơ-moóc) theo quy định.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
  },
  {
   "ma": "P.109",
   "ten": "Cấm máy kéo",
   "nhom": "bien_cam",
-  "y_nghia": null,
+  "y_nghia": "Báo đường cấm các loại máy kéo, kể cả máy kéo bánh hơi và bánh xích, đi qua.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
  },
  {
   "ma": "P.110a",
   "ten": "Cấm xe đạp",
   "nhom": "bien_cam",
-  "y_nghia": null,
+  "y_nghia": "Báo đường cấm xe đạp đi qua. Biển không có giá trị cấm những người dắt xe đạp.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
  },
  {
   "ma": "P.110b",
   "ten": "Cấm xe đạp thồ",
   "nhom": "bien_cam",
-  "y_nghia": null,
+  "y_nghia": "Báo đường cấm xe đạp thồ đi qua. Biển không cấm người dắt loại xe này.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
  },
  {
   "ma": "P.111a",
   "ten": "Cấm xe gắn máy",
   "nhom": "bien_cam",
-  "y_nghia": null,
+  "y_nghia": "Báo đường cấm xe gắn máy đi qua. Biển không có giá trị đối với xe đạp.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
  },
  {
   "ma": "P.111b",
   "ten": "Cấm xe ba bánh loại có động cơ (xe lam, xích lô máy)",
   "nhom": "bien_cam",
-  "y_nghia": null,
+  "y_nghia": "Báo đường cấm xe ba bánh loại có động cơ như xe lam, xe xích lô máy, xe lôi máy... đi qua.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
  },
  {
   "ma": "P.111c",
   "ten": "Cấm xe ba bánh loại có động cơ (xe lam, xích lô máy)",
   "nhom": "bien_cam",
-  "y_nghia": null,
+  "y_nghia": "Báo đường cấm xe ba bánh loại có động cơ như xe lam, xe xích lô máy, xe lôi máy... đi qua.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
  },
  {
   "ma": "P.111d",
   "ten": "Cấm xe ba bánh loại không có động cơ (xích lô)",
   "nhom": "bien_cam",
-  "y_nghia": null,
+  "y_nghia": "Báo đường cấm xe ba bánh loại không có động cơ như xe xích lô, xe lôi đạp... đi qua.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
  },
  {
   "ma": "P.112",
   "ten": "Cấm người đi bộ",
   "nhom": "bien_cam",
-  "y_nghia": null,
+  "y_nghia": "Báo đường cấm người đi bộ qua lại.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
  },
  {
   "ma": "P.113",
   "ten": "Cấm xe người kéo, đẩy",
   "nhom": "bien_cam",
-  "y_nghia": null,
+  "y_nghia": "Báo đường cấm xe thô sơ chuyển động do người kéo, đẩy đi qua. Biển không cấm xe nôi của trẻ em và phương tiện chuyên dùng để đi lại của người khuyết tật.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
  },
  {
   "ma": "P.114",
   "ten": "Cấm xe vật nuôi kéo",
   "nhom": "bien_cam",
-  "y_nghia": null,
+  "y_nghia": "Báo đường cấm súc vật vận tải hàng hóa hoặc hành khách đi qua, dù kéo xe hay chở trên lưng.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
  },
  {
   "ma": "P.115",
   "ten": "Hạn chế trọng tải toàn bộ xe",
   "nhom": "bien_cam",
-  "y_nghia": null,
+  "y_nghia": "Cấm các xe (cơ giới và thô sơ), kể cả xe được ưu tiên theo quy định, có trọng tải toàn bộ xe (trọng tải bản thân xe cộng khối lượng người, hành lý và hàng hóa trên xe) vượt quá trị số ghi trên biển đi qua.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
  },
  {
   "ma": "P.116",
   "ten": "Hạn chế tải trọng trên trục xe",
   "nhom": "bien_cam",
-  "y_nghia": null,
+  "y_nghia": "Cấm các xe (cơ giới và thô sơ), kể cả xe được ưu tiên theo quy định, có tải trọng phân bổ trên một trục bất kỳ của xe (cả xe và hàng) vượt quá trị số ghi trên biển đi qua.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
  },
  {
   "ma": "P.117",
   "ten": "Hạn chế chiều cao",
   "nhom": "bien_cam",
-  "y_nghia": null,
+  "y_nghia": "Cấm các xe (cơ giới và thô sơ), kể cả xe được ưu tiên theo quy định, có chiều cao (tính từ mặt đường, mặt cầu đến điểm cao nhất của xe hoặc hàng) vượt quá trị số ghi trên biển đi qua.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
  },
  {
   "ma": "P.118",
   "ten": "Hạn chế chiều ngang xe",
   "nhom": "bien_cam",
-  "y_nghia": null,
+  "y_nghia": "Cấm các xe (cơ giới và thô sơ), kể cả xe được ưu tiên theo quy định, có chiều ngang (kể cả xe và hàng hóa) vượt quá trị số ghi trên biển đi qua.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
  },
  {
   "ma": "P.119",
   "ten": "Hạn chế chiều dài xe",
   "nhom": "bien_cam",
-  "y_nghia": null,
+  "y_nghia": "Cấm các xe (cơ giới và thô sơ), kể cả xe được ưu tiên theo quy định, có độ dài toàn bộ (kể cả xe và hàng) lớn hơn trị số ghi trên biển (tính bằng mét) đi qua. Biển thường đặt ở đường cong nhỏ, đèo dốc quanh co.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
  },
  {
   "ma": "P.120",
   "ten": "Hạn chế chiều dài xe cơ giới kéo theo rơ-moóc hoặc sơ-mi rơ - moóc",
   "nhom": "bien_cam",
-  "y_nghia": null,
+  "y_nghia": "Cấm các xe cơ giới kéo theo moóc, kể cả ô tô sơ-mi rơ-moóc và xe được ưu tiên kéo moóc, có độ dài toàn bộ đoàn xe (kể cả xe, moóc và hàng) lớn hơn trị số ghi trên biển (tính bằng mét) đi qua.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
  },
  {
   "ma": "P.121",
   "ten": "Cự ly tối thiểu giữa hai xe",
   "nhom": "bien_cam",
-  "y_nghia": null,
+  "y_nghia": "Báo xe ô tô, kể cả xe được ưu tiên, phải đi cách nhau không nhỏ hơn khoảng cách (mét) ghi trên biển. Phạm vi hiệu lực báo bằng biển phụ S.501 hoặc đến biển DP.135 “Hết tất cả các lệnh cấm”.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
  },
  {
   "ma": "P.123a",
   "ten": "Cấm rẽ trái",
   "nhom": "bien_cam",
-  "y_nghia": null,
+  "y_nghia": "Cấm các loại xe (cơ giới và thô sơ) rẽ trái ở nơi đường giao nhau, trừ các xe được ưu tiên theo quy định. Biển không có giá trị cấm quay đầu xe.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
  },
  {
   "ma": "P.123b",
   "ten": "Cấm rẽ phải",
   "nhom": "bien_cam",
-  "y_nghia": null,
+  "y_nghia": "Cấm các loại xe (cơ giới và thô sơ) rẽ phải ở nơi đường giao nhau, trừ các xe được ưu tiên theo quy định. Biển không có giá trị cấm quay đầu xe.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
  },
  {
   "ma": "P.124a",
   "ten": "Cấm quay đầu xe",
   "nhom": "bien_cam",
-  "y_nghia": null,
+  "y_nghia": "Cấm các loại xe (cơ giới và thô sơ) quay đầu (kiểu chữ U), trừ các xe được ưu tiên theo quy định; chiều mũi tên phù hợp với chiều cấm quay đầu. Biển không có giá trị cấm rẽ trái để đi sang hướng đường khác.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
  },
  {
   "ma": "P.124b",
   "ten": "Cấm ôtô quay đầu xe",
   "nhom": "bien_cam",
-  "y_nghia": null,
+  "y_nghia": "Cấm xe ô tô và xe máy 3 bánh (sidecar) quay đầu (kiểu chữ U), trừ các xe được ưu tiên theo quy định. Biển không có giá trị cấm rẽ trái để đi sang hướng đường khác.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
  },
  {
   "ma": "P.124c",
   "ten": "Cấm rẽ trái và quay đầu xe",
   "nhom": "bien_cam",
-  "y_nghia": null,
+  "y_nghia": "Cấm các loại xe rẽ trái, đồng thời cấm quay đầu xe.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
  },
  {
   "ma": "P.124d",
   "ten": "Cấm rẽ phải và quay đầu xe",
   "nhom": "bien_cam",
-  "y_nghia": null,
+  "y_nghia": "Cấm các loại xe rẽ phải, đồng thời cấm quay đầu xe.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
  },
  {
   "ma": "P.124e",
   "ten": "Cấm ô tô rẽ trái và quay đầu xe",
   "nhom": "bien_cam",
-  "y_nghia": null,
+  "y_nghia": "Cấm xe ô tô rẽ trái, đồng thời cấm quay đầu xe.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
  },
  {
   "ma": "P.124f",
   "ten": "Cấm ô tô rẽ phải và quay đầu xe",
   "nhom": "bien_cam",
-  "y_nghia": null,
+  "y_nghia": "Cấm xe ô tô rẽ phải, đồng thời cấm quay đầu xe.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
  },
  {
   "ma": "P.125",
   "ten": "Cấm vượt",
   "nhom": "bien_cam",
-  "y_nghia": null,
+  "y_nghia": "Cấm tất cả các loại xe cơ giới vượt nhau (kể cả xe được ưu tiên theo quy định), nhưng được phép vượt xe máy 2 bánh, xe gắn máy. Hết hiệu lực khi gặp biển “Hết cấm vượt” hoặc biển “Hết tất cả các lệnh cấm”.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
  },
  {
   "ma": "P.126",
   "ten": "Cấm xe ôtô tải vượt",
   "nhom": "bien_cam",
-  "y_nghia": null,
+  "y_nghia": "Cấm ô tô tải có khối lượng chuyên chở lớn hơn 3.500 kg, kể cả xe được ưu tiên, vượt xe cơ giới khác; được vượt xe máy 2 bánh, xe gắn máy. Biển không cấm các xe cơ giới khác vượt nhau và vượt ô tô tải; hết hiệu lực tại biển DP.133 hoặc DP.135.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
  },
  {
   "ma": "P.127",
   "ten": "Tốc độ tối đa cho phép",
   "nhom": "bien_cam",
-  "y_nghia": null,
+  "y_nghia": "Cấm các loại xe cơ giới chạy với tốc độ vượt quá trị số (km/h) ghi trên biển, trừ các xe được ưu tiên theo quy định. Người lái vẫn phải căn cứ thời tiết, mặt đường, tình hình giao thông để chạy với tốc độ phù hợp, an toàn.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
  },
  {
   "ma": "P.127a",
   "ten": "Tốc độ tối đa cho phép về ban đêm",
   "nhom": "bien_cam",
-  "y_nghia": null,
+  "y_nghia": "Quy định tốc độ tối đa cho phép về ban đêm (không lớn hơn 80 km/h), chỉ có hiệu lực trong thời gian ghi trên biển và từ vị trí đặt biển đến biển R.421 “Hết khu đông dân cư”. Trong phạm vi này nếu gặp biển P.127 thì phải tuân theo tốc độ ghi trên biển P.127.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
  },
  {
   "ma": "P.127b",
   "ten": "Biển ghép tốc độ tối đa cho phép trên từng làn đường",
   "nhom": "bien_cam",
-  "y_nghia": null,
+  "y_nghia": "Quy định tốc độ tối đa cho phép trên từng làn đường; xe chạy trên làn nào phải tuân thủ tốc độ tối đa cho phép trên làn đường đó.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
  },
  {
   "ma": "P.127c",
   "ten": "Biển ghép tốc độ tối đa cho phép theo phương tiện, trên từng làn đường",
   "nhom": "bien_cam",
-  "y_nghia": null,
+  "y_nghia": "Quy định tốc độ tối đa cho phép theo từng loại phương tiện trên từng làn đường; các loại phương tiện phải đi đúng làn đường và tuân thủ tốc độ tối đa cho phép trên làn đó.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
  },
  {
   "ma": "DP.127",
   "ten": "Biển hết tốc độ tối đa cho phép theo biển ghép",
   "nhom": "bien_cam",
-  "y_nghia": null,
+  "y_nghia": "Báo hết đoạn đường áp dụng tốc độ tối đa theo biển ghép P.127b, P.127c. Kể từ biển này, các xe được phép chạy với tốc độ tối đa đã quy định trong Luật Đường bộ và Luật Trật tự, an toàn giao thông đường bộ.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
  },
  {
   "ma": "P.128",
   "ten": "Cấm sử dụng còi",
   "nhom": "bien_cam",
-  "y_nghia": null,
+  "y_nghia": "Cấm các loại xe sử dụng còi. Phạm vi hiệu lực báo bằng biển phụ S.501 hoặc đến biển DP.135 “Hết tất cả các lệnh cấm”.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
  },
  {
   "ma": "P.129",
   "ten": "Kiểm tra",
   "nhom": "bien_cam",
-  "y_nghia": null,
+  "y_nghia": "Báo nơi đặt trạm kiểm tra; các loại phương tiện vận tải qua đó phải dừng lại để làm thủ tục kiểm tra, kiểm soát theo quy định.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
  },
  {
   "ma": "P.130",
   "ten": "Cấm dừng xe và đỗ xe",
   "nhom": "bien_cam",
-  "y_nghia": null,
+  "y_nghia": "Cấm các loại xe cơ giới dừng và đỗ ở phía đường có đặt biển, trừ các xe được ưu tiên theo quy định; xe buýt chạy theo hành trình được hướng dẫn vị trí dừng thích hợp. Hiệu lực từ vị trí đặt biển đến nơi đường giao nhau, vị trí quy định dừng, đỗ xe hoặc biển DP.135.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
  },
  {
   "ma": "P.131a",
   "ten": "Cấm đỗ xe",
   "nhom": "bien_cam",
-  "y_nghia": null,
+  "y_nghia": "Cấm các loại xe cơ giới đỗ ở phía đường có đặt biển, trừ các xe được ưu tiên theo quy định. Hiệu lực từ vị trí đặt biển đến nơi đường giao nhau, vị trí quy định đỗ xe hoặc biển DP.135.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
  },
  {
   "ma": "P.131b",
   "ten": "Cấm đỗ xe",
   "nhom": "bien_cam",
-  "y_nghia": null,
+  "y_nghia": "Cấm các loại xe cơ giới đỗ ở phía đường có đặt biển vào những ngày lẻ, trừ các xe được ưu tiên theo quy định.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
  },
  {
   "ma": "P.131c",
   "ten": "Cấm đỗ xe",
   "nhom": "bien_cam",
-  "y_nghia": null,
+  "y_nghia": "Cấm các loại xe cơ giới đỗ ở phía đường có đặt biển vào những ngày chẵn, trừ các xe được ưu tiên theo quy định.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
  },
  {
   "ma": "P.132",
   "ten": "Nhường đường cho xe cơ giới đi ngược chiều qua đường hẹp",
   "nhom": "bien_cam",
-  "y_nghia": null,
+  "y_nghia": "Các loại xe (cơ giới và thô sơ), kể cả xe được ưu tiên theo quy định, khi đi vào đoạn đường hẹp hoặc cầu hẹp có đặt biển mà phía trước có xe cơ giới đang đi tới theo hướng ngược lại thì phải dừng lại ở vị trí thích hợp để nhường đường.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
  },
  {
   "ma": "DP.133",
   "ten": "Hết cấm vượt",
   "nhom": "bien_cam",
-  "y_nghia": null,
+  "y_nghia": "Báo hết đoạn đường cấm vượt: hiệu lực của biển P.125 và P.126 hết tác dụng. Các xe cơ giới được phép vượt nhau nhưng phải theo quy định về điều kiện cho phép vượt nhau.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
  },
  {
   "ma": "DP.134",
   "ten": "Hết tốc độ tối đa cho phép",
   "nhom": "bien_cam",
-  "y_nghia": null,
+  "y_nghia": "Báo hết đoạn đường tốc độ tối đa: hiệu lực của biển P.127 hết tác dụng. Kể từ biển này, các xe được chạy với tốc độ tối đa đã quy định trong Luật Đường bộ và Luật Trật tự, an toàn giao thông đường bộ.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
  },
  {
   "ma": "DP.135",
   "ten": "Hết tất cả các lệnh cấm",
   "nhom": "bien_cam",
-  "y_nghia": null,
+  "y_nghia": "Báo hết đoạn đường mà nhiều biển cấm cùng hết hiệu lực: biển P.121 và các biển cấm từ P.125 đến P.131 (a,b,c) đặt trước đó cùng hết tác dụng.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
  },
  {
   "ma": "P.136",
   "ten": "Cấm đi thẳng",
   "nhom": "bien_cam",
-  "y_nghia": null,
+  "y_nghia": "Cấm tất cả các loại xe đi thẳng qua nút giao phía trước, trừ xe ưu tiên theo quy định. Nếu cấm theo thời gian hoặc loại xe thì có biển phụ ghi thời gian hoặc hình vẽ loại xe cấm.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
  },
  {
   "ma": "P.137",
   "ten": "Cấm rẽ trái, rẽ phải",
   "nhom": "bien_cam",
-  "y_nghia": null,
+  "y_nghia": "Cấm tất cả các loại xe rẽ trái và rẽ phải ở các ngả đường phía trước, trừ xe ưu tiên theo quy định. Nếu cấm theo thời gian hoặc loại xe thì có biển phụ ghi thời gian hoặc hình vẽ loại xe cấm.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
  },
  {
   "ma": "P.138",
   "ten": "Cấm đi thẳng, rẽ trái",
   "nhom": "bien_cam",
-  "y_nghia": null,
+  "y_nghia": "Cấm tất cả các loại xe đi thẳng và rẽ trái qua nút giao phía trước, trừ xe ưu tiên theo quy định. Nếu cấm theo thời gian hoặc loại xe thì có biển phụ ghi thời gian hoặc hình vẽ loại xe cấm.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
  },
  {
   "ma": "P.139",
   "ten": "Cấm đi thẳng, rẽ phải",
   "nhom": "bien_cam",
-  "y_nghia": null,
+  "y_nghia": "Cấm tất cả các loại xe đi thẳng và rẽ phải qua nút giao phía trước, trừ xe ưu tiên theo quy định. Nếu cấm theo thời gian hoặc loại xe thì có biển phụ ghi thời gian hoặc hình vẽ loại xe cấm.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
  },
  {
   "ma": "P.140",
   "ten": "Cấm xe công nông và các loại xe tương tự",
   "nhom": "bien_cam",
-  "y_nghia": null,
+  "y_nghia": "Báo đường cấm xe công nông và các loại xe tương tự.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-22"
  },
  {
   "ma": "W.201a",
   "ten": "Chỗ ngoặt nguy hiểm",
   "nhom": "bien_nguy_hiem",
-  "y_nghia": null,
+  "y_nghia": "Báo trước sắp đến chỗ ngoặt nguy hiểm vòng bên trái. Chỗ ngoặt nguy hiểm là đường cong có góc chuyển hướng từ 45° trở lên hoặc bán kính nhỏ (≤100 m ở đồng bằng, ≤40 m ở vùng núi), hoặc đường cong ở nơi khó quan sát, hay đường cong đầu tiên sau đoạn thẳng dài từ 1 km.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
  },
  {
   "ma": "W.201b",
   "ten": "Chỗ ngoặt nguy hiểm",
   "nhom": "bien_nguy_hiem",
-  "y_nghia": null,
+  "y_nghia": "Báo trước sắp đến chỗ ngoặt nguy hiểm vòng bên phải. Chỗ ngoặt nguy hiểm là đường cong có góc chuyển hướng từ 45° trở lên hoặc bán kính nhỏ (≤100 m ở đồng bằng, ≤40 m ở vùng núi), hoặc đường cong ở nơi khó quan sát, hay đường cong đầu tiên sau đoạn thẳng dài từ 1 km.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
  },
  {
   "ma": "W.201c",
   "ten": "Chỗ ngoặt nguy hiểm có nguy cơ lật xe",
   "nhom": "bien_nguy_hiem",
-  "y_nghia": null,
+  "y_nghia": "Báo trước sắp đến chỗ ngoặt nguy hiểm khi đường cong vòng sang trái, có nguy cơ lật xe về bên phải đối với xe có trọng tâm cao, tải trọng lớn như xe tải, xe buýt giường nằm, xe chở chất lỏng.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
  },
  {
   "ma": "W.201d",
   "ten": "Chỗ ngoặt nguy hiểm có nguy cơ lật xe",
   "nhom": "bien_nguy_hiem",
-  "y_nghia": null,
+  "y_nghia": "Báo trước sắp đến chỗ ngoặt nguy hiểm khi đường cong vòng sang phải, có nguy cơ lật xe về bên trái đối với xe có trọng tâm cao, tải trọng lớn như xe tải, xe buýt giường nằm, xe chở chất lỏng.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
  },
  {
   "ma": "W.202a",
   "ten": "Nhiều chỗ ngoặt nguy hiểm liên tiếp",
   "nhom": "bien_nguy_hiem",
-  "y_nghia": null,
+  "y_nghia": "Báo trước sắp đến từ 2 chỗ ngoặt ngược chiều nhau ở gần nhau (trong đó có ít nhất một chỗ ngoặt nguy hiểm), chỗ ngoặt đầu tiên vòng bên trái. Hai chỗ ngoặt gọi là gần nhau khi đoạn thẳng giữa hai đường cong ngắn hơn 160 m.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
  },
  {
   "ma": "W.202b",
   "ten": "Nhiều chỗ ngoặt nguy hiểm liên tiếp",
   "nhom": "bien_nguy_hiem",
-  "y_nghia": null,
+  "y_nghia": "Báo trước sắp đến từ 2 chỗ ngoặt ngược chiều nhau ở gần nhau (trong đó có ít nhất một chỗ ngoặt nguy hiểm), chỗ ngoặt đầu tiên vòng bên phải. Hai chỗ ngoặt gọi là gần nhau khi đoạn thẳng giữa hai đường cong ngắn hơn 160 m.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
  },
  {
   "ma": "W.203a",
   "ten": "Đường bị thu hẹp",
   "nhom": "bien_nguy_hiem",
-  "y_nghia": null,
+  "y_nghia": "Báo trước sắp đến đoạn đường bị thu hẹp đột ngột cả hai bên. Phải chú ý quan sát xe ngược chiều; xe đi ở phía đường bị thu hẹp phải nhường đường cho xe đi ngược chiều.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
  },
  {
   "ma": "W.203b",
   "ten": "Đường bị thu hẹp",
   "nhom": "bien_nguy_hiem",
-  "y_nghia": null,
+  "y_nghia": "Báo trước sắp đến đoạn đường bị thu hẹp đột ngột về phía trái. Phải chú ý quan sát xe ngược chiều; xe đi ở phía đường bị thu hẹp phải nhường đường cho xe đi ngược chiều.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
  },
  {
   "ma": "W.203c",
   "ten": "Đường bị thu hẹp",
   "nhom": "bien_nguy_hiem",
-  "y_nghia": null,
+  "y_nghia": "Báo trước sắp đến đoạn đường bị thu hẹp đột ngột về phía phải. Phải chú ý quan sát xe ngược chiều; xe đi ở phía đường bị thu hẹp phải nhường đường cho xe đi ngược chiều.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
  },
  {
   "ma": "W.204",
   "ten": "Đường hai chiều",
   "nhom": "bien_nguy_hiem",
-  "y_nghia": null,
+  "y_nghia": "Báo trước sắp đến đoạn đường có xe đi cả hai chiều trên cùng phần đường: do sửa chữa hoặc trở ngại ở một phía đường, đoạn đường đôi tạm thời, chỗ hết dải phân cách giữa hoặc hết đoạn đường một chiều.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
  },
  {
   "ma": "W.205a",
   "ten": "Đường giao nhau",
   "nhom": "bien_nguy_hiem",
-  "y_nghia": null,
+  "y_nghia": "Báo trước sắp đến nơi giao nhau cùng mức của các tuyến đường cùng cấp (không có đường nào ưu tiên). Biển chủ yếu đặt ngoài nội thành, nội thị; trong nội thành, nội thị có thể không đặt.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
  },
  {
   "ma": "W.205b",
   "ten": "Đường giao nhau",
   "nhom": "bien_nguy_hiem",
-  "y_nghia": null,
+  "y_nghia": "Báo trước sắp đến nơi giao nhau cùng mức của các tuyến đường cùng cấp (không có đường nào ưu tiên). Biển chủ yếu đặt ngoài nội thành, nội thị; trong nội thành, nội thị có thể không đặt.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
  },
  {
   "ma": "W.205c",
   "ten": "Đường giao nhau",
   "nhom": "bien_nguy_hiem",
-  "y_nghia": null,
+  "y_nghia": "Báo trước sắp đến nơi giao nhau cùng mức của các tuyến đường cùng cấp (không có đường nào ưu tiên). Biển chủ yếu đặt ngoài nội thành, nội thị; trong nội thành, nội thị có thể không đặt.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
  },
  {
   "ma": "W.205d",
   "ten": "Đường giao nhau",
   "nhom": "bien_nguy_hiem",
-  "y_nghia": null,
+  "y_nghia": "Báo trước sắp đến nơi giao nhau cùng mức của các tuyến đường cùng cấp (không có đường nào ưu tiên). Biển chủ yếu đặt ngoài nội thành, nội thị; trong nội thành, nội thị có thể không đặt.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
  },
  {
   "ma": "W.205e",
   "ten": "Đường giao nhau",
   "nhom": "bien_nguy_hiem",
-  "y_nghia": null,
+  "y_nghia": "Báo trước sắp đến nơi giao nhau cùng mức của các tuyến đường cùng cấp (không có đường nào ưu tiên). Biển chủ yếu đặt ngoài nội thành, nội thị; trong nội thành, nội thị có thể không đặt.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
  },
  {
   "ma": "W.206",
   "ten": "Giao nhau chạy theo vòng xuyến",
   "nhom": "bien_nguy_hiem",
-  "y_nghia": null,
+  "y_nghia": "Báo trước nơi giao nhau có đảo an toàn ở giữa; các loại xe qua nút giao phải đi vòng xuyến quanh đảo an toàn theo chiều mũi tên. Trong nội thành, nội thị có thể không đặt biển này.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
  },
  {
   "ma": "W.207a",
   "ten": "Giao nhau với đường không ưu tiên (đường nhánh)",
   "nhom": "bien_nguy_hiem",
-  "y_nghia": null,
+  "y_nghia": "Đặt trên đường ưu tiên, báo trước sắp đến nơi giao nhau với đường không ưu tiên (hình vẽ theo hình dạng thực tế nút giao). Xe đi trên đường có biển này được quyền ưu tiên qua nơi giao nhau, chỉ phải nhường đường cho các xe được quyền ưu tiên theo quy định.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
  },
  {
   "ma": "W.207b",
   "ten": "Giao nhau với đường không ưu tiên (đường nhánh)",
   "nhom": "bien_nguy_hiem",
-  "y_nghia": null,
+  "y_nghia": "Đặt trên đường ưu tiên, báo trước sắp đến nơi giao nhau với đường không ưu tiên (hình vẽ theo hình dạng thực tế nút giao). Xe đi trên đường có biển này được quyền ưu tiên qua nơi giao nhau, chỉ phải nhường đường cho các xe được quyền ưu tiên theo quy định.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
  },
  {
   "ma": "W.207c",
   "ten": "Giao nhau với đường không ưu tiên (đường nhánh)",
   "nhom": "bien_nguy_hiem",
-  "y_nghia": null,
+  "y_nghia": "Đặt trên đường ưu tiên, báo trước sắp đến nơi giao nhau với đường không ưu tiên (hình vẽ theo hình dạng thực tế nút giao). Xe đi trên đường có biển này được quyền ưu tiên qua nơi giao nhau, chỉ phải nhường đường cho các xe được quyền ưu tiên theo quy định.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
  },
  {
   "ma": "W.207d",
   "ten": "Giao nhau với đường không ưu tiên (đường nhánh)",
   "nhom": "bien_nguy_hiem",
-  "y_nghia": null,
+  "y_nghia": "Đặt trên đường ưu tiên, báo trước sắp đến nơi giao nhau với đường không ưu tiên; biển này kèm biển phụ còn dùng cho đoạn giao liên tiếp với nhiều đường không ưu tiên. Xe đi trên đường có biển này được quyền ưu tiên qua nơi giao nhau, chỉ phải nhường đường cho các xe được quyền ưu tiên theo quy định.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
  },
  {
   "ma": "W.207e",
   "ten": "Giao nhau với đường không ưu tiên (đường nhánh)",
   "nhom": "bien_nguy_hiem",
-  "y_nghia": null,
+  "y_nghia": "Đặt trên đường ưu tiên, báo trước sắp đến nơi giao nhau với đường không ưu tiên; biển này kèm biển phụ còn dùng cho đoạn giao liên tiếp với nhiều đường không ưu tiên. Xe đi trên đường có biển này được quyền ưu tiên qua nơi giao nhau, chỉ phải nhường đường cho các xe được quyền ưu tiên theo quy định.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
  },
  {
   "ma": "W.207f",
   "ten": "Giao nhau với đường không ưu tiên (đường nhánh)",
   "nhom": "bien_nguy_hiem",
-  "y_nghia": null,
+  "y_nghia": "Đặt trên đường ưu tiên, báo trước sắp đến nơi giao nhau với đường không ưu tiên (hình vẽ theo hình dạng thực tế nút giao). Xe đi trên đường có biển này được quyền ưu tiên qua nơi giao nhau, chỉ phải nhường đường cho các xe được quyền ưu tiên theo quy định.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
  },
  {
   "ma": "W.207g",
   "ten": "Giao nhau với đường không ưu tiên (đường nhánh)",
   "nhom": "bien_nguy_hiem",
-  "y_nghia": null,
+  "y_nghia": "Đặt trên đường ưu tiên, báo trước sắp đến nơi giao nhau với đường không ưu tiên (hình vẽ theo hình dạng thực tế nút giao). Xe đi trên đường có biển này được quyền ưu tiên qua nơi giao nhau, chỉ phải nhường đường cho các xe được quyền ưu tiên theo quy định.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
  },
  {
   "ma": "W.207h",
   "ten": "Giao nhau với đường không ưu tiên (đường nhánh)",
   "nhom": "bien_nguy_hiem",
-  "y_nghia": null,
+  "y_nghia": "Đặt trên đường ưu tiên, báo trước sắp đến nơi giao nhau với đường không ưu tiên (hình vẽ theo hình dạng thực tế nút giao). Xe đi trên đường có biển này được quyền ưu tiên qua nơi giao nhau, chỉ phải nhường đường cho các xe được quyền ưu tiên theo quy định.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
  },
  {
   "ma": "W.207i",
   "ten": "Giao nhau với đường không ưu tiên (đường nhánh)",
   "nhom": "bien_nguy_hiem",
-  "y_nghia": null,
+  "y_nghia": "Đặt trên đường ưu tiên, báo trước sắp đến nơi giao nhau với đường không ưu tiên (hình vẽ theo hình dạng thực tế nút giao). Xe đi trên đường có biển này được quyền ưu tiên qua nơi giao nhau, chỉ phải nhường đường cho các xe được quyền ưu tiên theo quy định.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
  },
  {
   "ma": "W.207k",
   "ten": "Giao nhau với đường không ưu tiên (đường nhánh)",
   "nhom": "bien_nguy_hiem",
-  "y_nghia": null,
+  "y_nghia": "Đặt trên đường ưu tiên, báo trước sắp đến nơi giao nhau với đường không ưu tiên (hình vẽ theo hình dạng thực tế nút giao). Xe đi trên đường có biển này được quyền ưu tiên qua nơi giao nhau, chỉ phải nhường đường cho các xe được quyền ưu tiên theo quy định.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
  },
  {
   "ma": "W.207l",
   "ten": "Giao nhau với đường không ưu tiên (đường nhánh)",
   "nhom": "bien_nguy_hiem",
-  "y_nghia": null,
+  "y_nghia": "Đặt trên đường ưu tiên, báo trước sắp đến nơi giao nhau với đường không ưu tiên (hình vẽ theo hình dạng thực tế nút giao). Xe đi trên đường có biển này được quyền ưu tiên qua nơi giao nhau, chỉ phải nhường đường cho các xe được quyền ưu tiên theo quy định.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
  },
  {
   "ma": "W.208",
   "ten": "Giao nhau với đường ưu tiên (đường chính)",
   "nhom": "bien_nguy_hiem",
-  "y_nghia": null,
+  "y_nghia": "Đặt trên đường không ưu tiên, báo trước sắp đến nơi giao nhau với đường ưu tiên. Xe đi trên đường có biển này phải nhường đường cho xe đi trên đường ưu tiên khi qua nơi giao nhau (trừ xe được quyền ưu tiên theo quy định).",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
  },
  {
   "ma": "W.209",
   "ten": "Giao nhau có tín hiệu đèn",
   "nhom": "bien_nguy_hiem",
-  "y_nghia": null,
+  "y_nghia": "Báo trước nơi giao nhau có điều khiển giao thông bằng tín hiệu đèn, ở nơi người tham gia giao thông khó quan sát thấy đèn để kịp thời xử lý.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
  },
  {
   "ma": "W.210",
   "ten": "Giao nhau với đường sắt có rào chắn",
   "nhom": "bien_nguy_hiem",
-  "y_nghia": null,
+  "y_nghia": "Báo trước sắp đến chỗ giao nhau giữa đường bộ và đường sắt có rào chắn (cần chắn hoặc giàn chắn).",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
  },
  {
   "ma": "W.211",
   "ten": "Giao nhau với đường sắt không có rào chắn",
   "nhom": "bien_nguy_hiem",
-  "y_nghia": null,
+  "y_nghia": "Báo trước sắp đến chỗ giao nhau giữa đường bộ và đường sắt không có rào chắn, không có người điều khiển giao thông.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
  },
  {
   "ma": "W.212",
   "ten": "Cầu hẹp",
   "nhom": "bien_nguy_hiem",
-  "y_nghia": null,
+  "y_nghia": "Báo trước sắp đến cầu hẹp (chiều rộng phần xe chạy từ 4,50 m trở xuống). Khi qua cầu, lái xe phải đi chậm, quan sát, nhường nhau và dừng lại chờ ở hai đầu cầu.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
  },
  {
   "ma": "W.213",
   "ten": "Cầu tạm",
   "nhom": "bien_nguy_hiem",
-  "y_nghia": null,
+  "y_nghia": "Báo trước sắp đến cầu tạm, loại cầu làm để sử dụng tạm thời cho xe cộ qua lại. Người điều khiển phương tiện cần thận trọng; khi nước ngập nhất thiết không được qua cầu.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
  },
  {
   "ma": "W.214",
   "ten": "Cầu quay - cầu cất",
   "nhom": "bien_nguy_hiem",
-  "y_nghia": null,
+  "y_nghia": "Báo trước phía trước gặp cầu quay, cầu cất: loại cầu có lúc cắt giao thông đường bộ (quay hoặc nâng nhịp) để tàu thuyền qua lại. Khi đó các phương tiện đường bộ phải dừng lại chờ đợi.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
  },
  {
   "ma": "W.215a",
   "ten": "Kè, vực sâu phía trước",
   "nhom": "bien_nguy_hiem",
-  "y_nghia": null,
+  "y_nghia": "Báo trước sắp tới vị trí có kè chắn vực sâu hoặc sông suối ở phía trước, cần đề phòng nguy hiểm rơi xuống vực sâu hoặc sông suối. Đường đã có tường bảo vệ, hộ lan thì không nhất thiết đặt biển này.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
  },
  {
   "ma": "W.215b",
   "ten": "Kè, vực sâu bên đường phía bên phải",
   "nhom": "bien_nguy_hiem",
-  "y_nghia": null,
+  "y_nghia": "Báo trước sắp tới đoạn đường đi sát kè, vực sâu hoặc sông suối ở bên phải đường, cần đề phòng nguy hiểm rơi xuống vực sâu hoặc sông suối. Đường đã có tường bảo vệ, hộ lan thì không nhất thiết đặt biển này.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
  },
  {
   "ma": "W.215c",
   "ten": "Kè, vực sâu bên đường phía bên trái",
   "nhom": "bien_nguy_hiem",
-  "y_nghia": null,
+  "y_nghia": "Báo trước sắp tới đoạn đường đi sát kè, vực sâu hoặc sông suối ở bên trái đường, cần đề phòng nguy hiểm rơi xuống vực sâu hoặc sông suối. Đường đã có tường bảo vệ, hộ lan thì không nhất thiết đặt biển này.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
  },
  {
   "ma": "W.216a",
   "ten": "Đường ngầm",
   "nhom": "bien_nguy_hiem",
-  "y_nghia": null,
+  "y_nghia": "Báo trước vị trí có đường ngầm (đường tràn): đoạn đường vượt qua sông, suối, khe cạn mà nước có thể chảy tràn qua thường xuyên hoặc khi có lũ.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
  },
  {
   "ma": "W.216b",
   "ten": "Đường ngầm có nguy cơ lũ quét",
   "nhom": "bien_nguy_hiem",
-  "y_nghia": null,
+  "y_nghia": "Báo trước vị trí đường ngầm (đường tràn) thường xuyên có lũ quét; có thể kèm biển phụ chữ “LŨ”.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
  },
  {
   "ma": "W.217",
   "ten": "Bến phà",
   "nhom": "bien_nguy_hiem",
-  "y_nghia": null,
+  "y_nghia": "Báo trước sắp đến bến phà. Người tham gia giao thông phải tuân theo nội quy bến phà.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
  },
  {
   "ma": "W.218",
   "ten": "Cửa chui",
   "nhom": "bien_nguy_hiem",
-  "y_nghia": null,
+  "y_nghia": "Báo trước sắp đến chỗ đường có cổng chắn ngang (kiểu cổng thành, cầu vượt đường bộ dạng cầu vòm...) có ảnh hưởng đến giao thông.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
  },
  {
   "ma": "W.219",
   "ten": "Dốc xuống nguy hiểm",
   "nhom": "bien_nguy_hiem",
-  "y_nghia": null,
+  "y_nghia": "Báo trước sắp tới đoạn đường xuống dốc nguy hiểm; con số trên biển là độ dốc thực tế (%). Người lái phải chọn cách chạy xe phù hợp để xuống dốc thuận lợi, an toàn.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
  },
  {
   "ma": "W.220",
   "ten": "Dốc lên nguy hiểm",
   "nhom": "bien_nguy_hiem",
-  "y_nghia": null,
+  "y_nghia": "Báo trước sắp tới đoạn đường lên dốc nguy hiểm; con số trên biển là độ dốc thực tế (%). Người lái phải chọn cách chạy xe phù hợp để lên dốc thuận lợi, an toàn.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
  },
  {
   "ma": "W.221a",
   "ten": "Đường lồi lõm",
   "nhom": "bien_nguy_hiem",
-  "y_nghia": null,
+  "y_nghia": "Báo trước đường đang tốt, xe chạy nhanh sắp đột ngột chuyển sang đoạn lồi lõm, gập ghềnh, ổ gà, lượn sóng; xe chạy tốc độ cao sẽ nguy hiểm.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
  },
  {
   "ma": "W.221b",
   "ten": "Đường có gồ giảm tốc",
   "nhom": "bien_nguy_hiem",
-  "y_nghia": null,
+  "y_nghia": "Báo trước đoạn đường có gồ giảm tốc, cảnh báo xe đi chậm trước khi qua các điểm có gồ giảm tốc hoặc vị trí tiếp giáp đầu cầu, cống bị lún, võng.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
  },
  {
   "ma": "W.222a",
   "ten": "Đường trơn",
   "nhom": "bien_nguy_hiem",
-  "y_nghia": null,
+  "y_nghia": "Báo trước sắp tới đoạn đường có thể trơn trượt, đặc biệt khi thời tiết xấu, mưa phùn. Gặp biển này phải giảm tốc độ phù hợp và thận trọng.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
  },
  {
   "ma": "W.222b",
   "ten": "Lề đường nguy hiểm",
   "nhom": "bien_nguy_hiem",
-  "y_nghia": null,
+  "y_nghia": "Báo nơi lề đường không ổn định, xe đi vào dễ làm văng đất đá hoặc bánh xe quay tại chỗ.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
  },
  {
   "ma": "W.223a",
   "ten": "Vách núi nguy hiểm",
   "nhom": "bien_nguy_hiem",
-  "y_nghia": null,
+  "y_nghia": "Báo hiệu sắp vào đoạn đường đi sát vách núi, vừa hẹp vừa hạn chế tầm nhìn; người tham gia giao thông phải cẩn thận. Biển a hay b chọn theo vách núi nằm bên trái hoặc bên phải đường.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
  },
  {
   "ma": "W.223b",
   "ten": "Vách núi nguy hiểm",
   "nhom": "bien_nguy_hiem",
-  "y_nghia": null,
+  "y_nghia": "Báo hiệu sắp vào đoạn đường đi sát vách núi, vừa hẹp vừa hạn chế tầm nhìn; người tham gia giao thông phải cẩn thận. Biển a hay b chọn theo vách núi nằm bên trái hoặc bên phải đường.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
  },
  {
   "ma": "W.224",
   "ten": "Đường người đi bộ cắt ngang",
   "nhom": "bien_nguy_hiem",
-  "y_nghia": null,
+  "y_nghia": "Báo trước sắp tới phần đường dành cho người đi bộ sang qua đường. Các xe phải giảm tốc độ, nhường ưu tiên cho người đi bộ và chỉ được chạy xe khi không gây nguy hiểm cho người đi bộ.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
  },
  {
   "ma": "W.225",
   "ten": "Trẻ em",
   "nhom": "bien_nguy_hiem",
-  "y_nghia": null,
+  "y_nghia": "Báo trước gần đến đoạn đường thường có trẻ em đi ngang qua hoặc tụ tập (vườn trẻ, trường học, câu lạc bộ). Phải đi chậm, thận trọng đề phòng trẻ em xuất hiện và di chuyển bất ngờ trên đường.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
  },
  {
   "ma": "W.226",
   "ten": "Đường người đi xe đạp cắt ngang",
   "nhom": "bien_nguy_hiem",
-  "y_nghia": null,
+  "y_nghia": "Báo trước gần tới vị trí thường có người đi xe đạp từ đường nhỏ cắt ngang qua hoặc từ đường dành cho xe đạp nhập vào đường ô tô.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
  },
  {
   "ma": "W.227",
   "ten": "Công trường",
   "nhom": "bien_nguy_hiem",
-  "y_nghia": null,
+  "y_nghia": "Báo trước gần tới đoạn đường đang thi công sửa chữa, cải tạo, nâng cấp có người và máy móc làm việc trên mặt đường. Phải giảm tốc độ thích hợp, không gây nguy hiểm cho người và máy móc.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
  },
  {
   "ma": "W.228a",
   "ten": "Đá lở",
   "nhom": "bien_nguy_hiem",
-  "y_nghia": null,
+  "y_nghia": "Báo trước gần tới đoạn đường có đất đá từ taluy dương sụt lở bất ngờ, nhất là ở miền núi. Phải chú ý, đặc biệt khi thời tiết xấu, hạn chế tầm nhìn; không dừng, đỗ xe trong khu vực đá lở sau những trận mưa lớn.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
  },
  {
   "ma": "W.228b",
   "ten": "Đá lở",
   "nhom": "bien_nguy_hiem",
-  "y_nghia": null,
+  "y_nghia": "Báo trước gần tới đoạn đường có đất đá từ taluy dương sụt lở bất ngờ, nhất là ở miền núi. Phải chú ý, đặc biệt khi thời tiết xấu, hạn chế tầm nhìn; không dừng, đỗ xe trong khu vực đá lở sau những trận mưa lớn.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
  },
  {
   "ma": "W.228c",
   "ten": "Sỏi đá bắn lên",
   "nhom": "bien_nguy_hiem",
-  "y_nghia": null,
+  "y_nghia": "Báo trước nơi mặt đường có kết cấu rời rạc, xe đi qua làm đá, sỏi bắn lên gây nguy hiểm cho người và phương tiện.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
  },
  {
   "ma": "W.228d",
   "ten": "Nền đường yếu",
   "nhom": "bien_nguy_hiem",
-  "y_nghia": null,
+  "y_nghia": "Cảnh báo đoạn nền đường yếu, đang theo dõi lún, xe chạy tốc độ cao có thể gây nguy hiểm; lái xe cần giảm tốc độ hợp lý.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
  },
  {
   "ma": "W.229",
   "ten": "Dải máy bay lên xuống",
   "nhom": "bien_nguy_hiem",
-  "y_nghia": null,
+  "y_nghia": "Báo trước đoạn đường sát đường băng sân bay, cắt ngang hướng máy bay lên xuống ở độ cao không lớn. Khi cần, giao thông tại đây được điều khiển bằng cờ, đèn đỏ hoặc hiệu lệnh của người chỉ huy giao thông.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
  },
  {
   "ma": "W.230",
   "ten": "Gia súc",
   "nhom": "bien_nguy_hiem",
-  "y_nghia": null,
+  "y_nghia": "Báo trước gần tới đoạn đường thường có gia súc thả rông hoặc lùa qua đường. Người tham gia giao thông phải đi chậm, quan sát và dừng lại để gia súc qua đường an toàn.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
  },
  {
   "ma": "W.231",
   "ten": "Thú rừng vượt qua đường",
   "nhom": "bien_nguy_hiem",
-  "y_nghia": null,
+  "y_nghia": "Báo trước gần tới đoạn đường thường có thú rừng qua đường (qua rừng, khu bảo tồn thiên nhiên). Phải đi chậm, chú ý quan sát hai bên đường và thận trọng đề phòng tai nạn.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
  },
  {
   "ma": "W.232",
   "ten": "Gió ngang",
   "nhom": "bien_nguy_hiem",
-  "y_nghia": null,
+  "y_nghia": "Báo trước gần tới đoạn đường thường có gió ngang thổi mạnh gây nguy hiểm. Phải điều chỉnh tốc độ thích hợp, đề phòng gió mạnh gây lật xe. Biển chỉ đặt ngoài thành phố, khu đông dân cư.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
  },
  {
   "ma": "W.233",
   "ten": "Nguy hiểm khác",
   "nhom": "bien_nguy_hiem",
-  "y_nghia": null,
+  "y_nghia": "Báo trên đường có nguy hiểm khác mà không thể dùng được các biển cảnh báo từ W.201a đến W.232.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
  },
  {
   "ma": "W.234",
   "ten": "Giao nhau với đường hai chiều",
   "nhom": "bien_nguy_hiem",
-  "y_nghia": null,
+  "y_nghia": "Đặt trên đường một chiều, báo trước sắp đến vị trí giao nhau với đường hai chiều.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
  },
  {
   "ma": "W.235",
   "ten": "Đường đôi",
   "nhom": "bien_nguy_hiem",
-  "y_nghia": null,
+  "y_nghia": "Báo trước sắp đến đoạn đường đôi, có chiều đi và chiều về phân biệt bằng dải phân cách cứng.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
  },
  {
   "ma": "W.236",
   "ten": "Kết thúc đường đôi",
   "nhom": "bien_nguy_hiem",
-  "y_nghia": null,
+  "y_nghia": "Báo trước sắp kết thúc đoạn đường đôi (chiều đi và chiều về phân biệt bằng dải phân cách cứng). Đường hai chiều chia bằng vạch sơn thì không đặt biển này.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
  },
  {
   "ma": "W.237",
   "ten": "Cầu vồng",
   "nhom": "bien_nguy_hiem",
-  "y_nghia": null,
+  "y_nghia": "Nhắc lái xe thận trọng khi sắp đến công trình (cầu) có độ vồng lớn ảnh hưởng tới tầm nhìn.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
  },
  {
   "ma": "W.238",
   "ten": "Đường cao tốc phía trước",
   "nhom": "bien_nguy_hiem",
-  "y_nghia": null,
+  "y_nghia": "Đặt trên đường nhánh nhập vào đường cao tốc, báo cho phương tiện biết phía trước là đường cao tốc.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
  },
  {
   "ma": "W.239a",
   "ten": "Đường cáp điện ở phía trên",
   "nhom": "bien_nguy_hiem",
-  "y_nghia": null,
+  "y_nghia": "Báo nơi có đường dây điện cắt ngang phía trên tuyến đường; đi kèm biển S.509a ghi chiều cao an toàn.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
  },
  {
   "ma": "W.239b",
   "ten": "Chiều cao tĩnh không thực tế",
   "nhom": "bien_nguy_hiem",
-  "y_nghia": null,
+  "y_nghia": "Báo chiều cao tĩnh không thực tế: khoảng cách từ điểm cao nhất của mặt đường đến điểm thấp nhất của chướng ngại vật phía trên.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
  },
  {
   "ma": "W.240",
   "ten": "Đường hầm",
   "nhom": "bien_nguy_hiem",
-  "y_nghia": null,
+  "y_nghia": "Nhắc lái xe chú ý, chuẩn bị đi vào hầm đường bộ.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
  },
  {
   "ma": "W.241",
   "ten": "Ùn tắc giao thông",
   "nhom": "bien_nguy_hiem",
-  "y_nghia": null,
+  "y_nghia": "Báo đoạn đường hay xảy ra ùn tắc giao thông.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
  },
  {
   "ma": "W.242a",
   "ten": "Nơi đường sắt giao vuông góc với đường bộ",
   "nhom": "bien_nguy_hiem",
-  "y_nghia": null,
+  "y_nghia": "Bổ sung cho biển W.211, chỉ chỗ đường sắt giao vuông góc với đường bộ (không có rào chắn), nơi đường sắt chỉ có một cặp đường ray cắt ngang đường bộ; đặt cách ray gần nhất 10 m.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
  },
  {
   "ma": "W.242b",
   "ten": "Nơi đường sắt giao vuông góc với đường bộ",
   "nhom": "bien_nguy_hiem",
-  "y_nghia": null,
+  "y_nghia": "Bổ sung cho biển W.211, chỉ chỗ đường sắt giao vuông góc với đường bộ (không có rào chắn), nơi đường sắt có từ hai cặp đường ray trở lên cắt ngang đường bộ; đặt cách ray gần nhất 10 m.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
  },
  {
   "ma": "W.243a",
   "ten": "Nơi đường sắt giao không vuông góc với đường bộ",
   "nhom": "bien_nguy_hiem",
-  "y_nghia": null,
+  "y_nghia": "Báo trước sắp đến nơi đường sắt giao cắt cùng mức, không vuông góc với đường bộ, không có người gác, không có rào chắn; đặt dưới biển W.211. Biển này đặt cách ray gần nhất 50 m.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
  },
  {
   "ma": "W.243b",
   "ten": "Nơi đường sắt giao không vuông góc với đường bộ",
   "nhom": "bien_nguy_hiem",
-  "y_nghia": null,
+  "y_nghia": "Báo trước sắp đến nơi đường sắt giao cắt cùng mức, không vuông góc với đường bộ, không có người gác, không có rào chắn; đặt dưới biển W.211. Biển này đặt cách ray gần nhất 100 m.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
  },
  {
   "ma": "W.243c",
   "ten": "Nơi đường sắt giao không vuông góc với đường bộ",
   "nhom": "bien_nguy_hiem",
-  "y_nghia": null,
+  "y_nghia": "Báo trước sắp đến nơi đường sắt giao cắt cùng mức, không vuông góc với đường bộ, không có người gác, không có rào chắn; đặt dưới biển W.211. Biển này đặt cách ray gần nhất 150 m.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
  },
  {
   "ma": "W.244",
   "ten": "Đoạn đường hay xảy ra tai nạn",
   "nhom": "bien_nguy_hiem",
-  "y_nghia": null,
+  "y_nghia": "Cảnh báo đoạn đường phía trước thường xảy ra tai nạn, lái xe cần đặc biệt chú ý.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
  },
  {
   "ma": "W.245a",
   "ten": "Đi chậm",
   "nhom": "bien_nguy_hiem",
-  "y_nghia": null,
+  "y_nghia": "Nhắc lái xe giảm tốc độ, đi chậm trước khi đến đoạn đường yêu cầu đi chậm.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
  },
  {
   "ma": "W.245b",
   "ten": "Đi chậm có chỉ dẫn tiếng Anh",
   "nhom": "bien_nguy_hiem",
-  "y_nghia": null,
+  "y_nghia": "Nhắc lái xe giảm tốc độ, đi chậm trước đoạn đường yêu cầu đi chậm (có chỉ dẫn tiếng Anh); bắt buộc dùng trên các tuyến đường đối ngoại.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
  },
  {
   "ma": "W.246a",
   "ten": "Chú ý chướng ngại vật",
   "nhom": "bien_nguy_hiem",
-  "y_nghia": null,
+  "y_nghia": "Báo trước phía trước có chướng ngại vật, xe cần giảm tốc độ và vòng tránh ra hai bên theo chỉ dẫn trên biển.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
  },
  {
   "ma": "W.246b",
   "ten": "Chú ý chướng ngại vật",
   "nhom": "bien_nguy_hiem",
-  "y_nghia": null,
+  "y_nghia": "Báo trước phía trước có chướng ngại vật, xe cần giảm tốc độ và vòng tránh sang bên trái theo chỉ dẫn trên biển.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
  },
  {
   "ma": "W.246c",
   "ten": "Chú ý chướng ngại vật",
   "nhom": "bien_nguy_hiem",
-  "y_nghia": null,
+  "y_nghia": "Báo trước phía trước có chướng ngại vật, xe cần giảm tốc độ và vòng tránh sang bên phải theo chỉ dẫn trên biển.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
  },
  {
   "ma": "W.247",
   "ten": "Chú ý xe đỗ",
   "nhom": "bien_nguy_hiem",
-  "y_nghia": null,
+  "y_nghia": "Đặt trên mặt đường để cảnh báo có xe ô tô, máy kéo, rơ-moóc, sơ-mi rơ-moóc, xe máy chuyên dùng đang đỗ chiếm một phần đường xe chạy.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-28"
  },
  {
   "ma": "R.122",
   "ten": "Dừng lại",
   "nhom": "bien_hieu_lenh",
-  "y_nghia": null,
+  "y_nghia": "Buộc mọi loại xe cơ giới và thô sơ, kể cả xe được quyền ưu tiên, phải dừng lại trước biển hoặc trước vạch dừng và chỉ được đi khi có tín hiệu (người điều khiển giao thông hoặc đèn, cờ) cho phép. Nếu không có tín hiệu hoặc đèn không sáng, chỉ được đi khi không còn nguy cơ mất an toàn giao thông.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
  },
  {
   "ma": "R.301a",
   "ten": "Hướng đi phải theo",
   "nhom": "bien_hieu_lenh",
-  "y_nghia": null,
+  "y_nghia": "Bắt buộc các loại xe (thô sơ và cơ giới, trừ xe được quyền ưu tiên) chỉ được đi thẳng. Nếu đặt trước nơi giao nhau thì cấm rẽ phải, rẽ trái tại nơi giao nhau sau biển; nếu đặt sau nơi giao nhau thì cấm rẽ trái và quay đầu trên đoạn đường đến nơi giao nhau tiếp theo, chỉ được rẽ vào cổng nhà hoặc ngõ phố.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
  },
  {
   "ma": "R.301b",
   "ten": "Hướng đi phải theo",
   "nhom": "bien_hieu_lenh",
-  "y_nghia": null,
+  "y_nghia": "Bắt buộc các loại xe (thô sơ và cơ giới, trừ xe được quyền ưu tiên) chỉ được rẽ phải. Biển đặt sau nơi giao nhau, người tham gia giao thông chỉ được rẽ phải tại nơi giao nhau trước mặt biển, nhằm ngăn đi ngược chiều vào đường một chiều.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
  },
  {
   "ma": "R.301c",
   "ten": "Hướng đi phải theo",
   "nhom": "bien_hieu_lenh",
-  "y_nghia": null,
+  "y_nghia": "Bắt buộc các loại xe (thô sơ và cơ giới, trừ xe được quyền ưu tiên) chỉ được rẽ trái. Biển đặt sau nơi giao nhau, người tham gia giao thông chỉ được rẽ trái tại nơi giao nhau trước mặt biển, nhằm ngăn đi ngược chiều vào đường một chiều.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
  },
  {
   "ma": "R.301d",
   "ten": "Hướng đi phải theo",
   "nhom": "bien_hieu_lenh",
-  "y_nghia": null,
+  "y_nghia": "Bắt buộc các loại xe (thô sơ và cơ giới, trừ xe được quyền ưu tiên) chỉ được rẽ phải. Biển đặt trước nơi giao nhau, chỉ được rẽ phải tại nơi giao nhau phía sau biển.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
  },
  {
   "ma": "R.301e",
   "ten": "Hướng đi phải theo",
   "nhom": "bien_hieu_lenh",
-  "y_nghia": null,
+  "y_nghia": "Bắt buộc các loại xe (thô sơ và cơ giới, trừ xe được quyền ưu tiên) chỉ được rẽ trái. Biển đặt trước nơi giao nhau, chỉ được rẽ trái tại nơi giao nhau phía sau biển.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
  },
  {
   "ma": "R.301f",
   "ten": "Hướng đi phải theo",
   "nhom": "bien_hieu_lenh",
-  "y_nghia": null,
+  "y_nghia": "Bắt buộc các loại xe (thô sơ và cơ giới, trừ xe được quyền ưu tiên) chỉ được đi thẳng hoặc rẽ phải tại nơi giao nhau phía sau biển.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
  },
  {
   "ma": "R.301g",
   "ten": "Hướng đi phải theo",
   "nhom": "bien_hieu_lenh",
-  "y_nghia": null,
+  "y_nghia": "Bắt buộc các loại xe (thô sơ và cơ giới, trừ xe được quyền ưu tiên) chỉ được đi thẳng hoặc rẽ trái tại nơi giao nhau phía sau biển, và được phép quay đầu xe để đi theo hướng ngược lại.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
  },
  {
   "ma": "R.301h",
   "ten": "Hướng đi phải theo",
   "nhom": "bien_hieu_lenh",
-  "y_nghia": null,
+  "y_nghia": "Bắt buộc các loại xe (thô sơ và cơ giới, trừ xe được quyền ưu tiên) chỉ được rẽ trái, quay đầu hoặc rẽ phải tại nơi giao nhau trước mặt biển. Biển đặt sau nơi giao nhau nhằm ngăn đi ngược chiều vào đường một chiều.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
  },
  {
   "ma": "R.302a",
   "ten": "Hướng phải đi vòng chướng ngại vật",
   "nhom": "bien_hieu_lenh",
-  "y_nghia": null,
+  "y_nghia": "Báo các loại xe (cơ giới và thô sơ) phải đi vòng chướng ngại vật theo hướng mũi tên chỉ: chỉ được vòng sang phải. Biển còn dùng kết hợp với biển P.102 tại dải phân cách để báo chiều đi của phần đường một chiều.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
  },
  {
   "ma": "R.302b",
   "ten": "Hướng phải đi vòng chướng ngại vật",
   "nhom": "bien_hieu_lenh",
-  "y_nghia": null,
+  "y_nghia": "Báo các loại xe (cơ giới và thô sơ) phải đi vòng chướng ngại vật theo hướng mũi tên chỉ: chỉ được vòng sang trái. Biển còn dùng kết hợp với biển P.102 tại dải phân cách để báo chiều đi của phần đường một chiều.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
  },
  {
   "ma": "R.302c",
   "ten": "Hướng phải đi vòng chướng ngại vật",
   "nhom": "bien_hieu_lenh",
-  "y_nghia": null,
+  "y_nghia": "Báo các loại xe (cơ giới và thô sơ) phải đi vòng chướng ngại vật theo hướng mũi tên chỉ: được vòng sang trái hoặc sang phải.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
  },
  {
   "ma": "R.303",
   "ten": "Nơi giao nhau chạy theo vòng xuyến",
   "nhom": "bien_hieu_lenh",
-  "y_nghia": null,
+  "y_nghia": "Báo nơi giao nhau chạy theo vòng xuyến: bắt buộc các loại xe (thô sơ và cơ giới) muốn chuyển hướng phải chạy vòng theo đảo an toàn theo hướng mũi tên.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
  },
  {
   "ma": "R.304",
   "ten": "Đường dành cho xe thô sơ",
   "nhom": "bien_hieu_lenh",
-  "y_nghia": null,
+  "y_nghia": "Đường dành riêng cho xe thô sơ (kể cả xe của người khuyết tật) và người đi bộ. Cấm xe cơ giới, kể cả xe gắn máy và xe được quyền ưu tiên, đi vào; trừ trường hợp đi cắt ngang qua nhưng phải đảm bảo tuyệt đối an toàn cho xe thô sơ và người đi bộ.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
  },
  {
   "ma": "R.305",
   "ten": "Đường dành cho người đi bộ",
   "nhom": "bien_hieu_lenh",
-  "y_nghia": null,
+  "y_nghia": "Đường dành cho người đi bộ. Các loại xe cơ giới và thô sơ (trừ xe đạp và xe lăn của người khuyết tật), kể cả xe được quyền ưu tiên, không được đi vào; trừ trường hợp đi cắt ngang qua nhưng phải đảm bảo tuyệt đối an toàn cho người đi bộ.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
  },
  {
   "ma": "R.306",
   "ten": "Tốc độ tối thiểu cho phép",
   "nhom": "bien_hieu_lenh",
-  "y_nghia": null,
+  "y_nghia": "Bắt buộc xe cơ giới chạy với tốc độ không nhỏ hơn trị số ghi trên biển (km/h) trong điều kiện giao thông thuận lợi và an toàn. Xe có tốc độ tối đa theo nhà sản xuất không đạt tốc độ tối thiểu này thì không được đi vào đường này.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
  },
  {
   "ma": "R.307",
   "ten": "Hết tốc độ tối thiểu",
   "nhom": "bien_hieu_lenh",
-  "y_nghia": null,
+  "y_nghia": "Báo hết đoạn đường có tốc độ tối thiểu (biển R.306 hết hiệu lực). Từ biển này các xe được phép chạy chậm hơn trị số đã ghi nhưng không được gây cản trở các xe khác.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
  },
  {
   "ma": "R.308a",
   "ten": "Tuyến đường cầu vượt cắt qua",
   "nhom": "bien_hieu_lenh",
-  "y_nghia": null,
+  "y_nghia": "Báo phía trước có cầu vượt; xe có thể đi thẳng hoặc theo chỉ dẫn trên hình vẽ để rẽ trái.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
  },
  {
   "ma": "R.308b",
   "ten": "Tuyến đường cầu vượt cắt qua",
   "nhom": "bien_hieu_lenh",
-  "y_nghia": null,
+  "y_nghia": "Báo phía trước có cầu vượt; xe có thể đi thẳng hoặc theo chỉ dẫn trên hình vẽ để rẽ phải.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
  },
  {
   "ma": "R.309",
   "ten": "Ấn còi",
   "nhom": "bien_hieu_lenh",
-  "y_nghia": null,
+  "y_nghia": "Xe cộ đi đến vị trí đặt biển thì phải ấn còi. Biển đặt trước khúc đường ngoặt gấp hoặc sắp vào đường đèo dốc dọc lớn hơn 10%, tầm nhìn bị hạn chế.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
  },
  {
   "ma": "R.310a",
   "ten": "Hướng đi phải theo cho các xe chở hàng nguy hiểm",
   "nhom": "bien_hieu_lenh",
-  "y_nghia": null,
+  "y_nghia": "Báo các loại xe chở hàng nguy hiểm phải đi theo hướng quy định (hướng mũi tên trên biển).",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
  },
  {
   "ma": "R.310b",
   "ten": "Hướng đi phải theo cho các xe chở hàng nguy hiểm",
   "nhom": "bien_hieu_lenh",
-  "y_nghia": null,
+  "y_nghia": "Báo các loại xe chở hàng nguy hiểm phải đi theo hướng quy định (hướng mũi tên trên biển).",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
  },
  {
   "ma": "R.310c",
   "ten": "Hướng đi phải theo cho các xe chở hàng nguy hiểm",
   "nhom": "bien_hieu_lenh",
-  "y_nghia": null,
+  "y_nghia": "Báo các loại xe chở hàng nguy hiểm phải đi theo hướng quy định (hướng mũi tên trên biển).",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
  },
  {
   "ma": "R.403a",
   "ten": "Đường dành cho xe ô tô",
   "nhom": "bien_hieu_lenh",
-  "y_nghia": null,
+  "y_nghia": "Báo hiệu bắt đầu đường dành cho các loại xe ô tô đi lại. Ngoài các loại phương tiện quy định trên biển, các phương tiện khác không được phép đi vào đoạn đường này.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
  },
  {
   "ma": "R.403b",
   "ten": "Đường dành cho xe ô tô, xe máy",
   "nhom": "bien_hieu_lenh",
-  "y_nghia": null,
+  "y_nghia": "Báo hiệu bắt đầu đường dành cho các loại xe ô tô, xe máy đi lại. Ngoài các loại phương tiện quy định trên biển, các phương tiện khác không được phép đi vào đoạn đường này.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
  },
  {
   "ma": "R.403c",
   "ten": "Đường dành cho xe buýt",
   "nhom": "bien_hieu_lenh",
-  "y_nghia": null,
+  "y_nghia": "Báo hiệu bắt đầu đường dành cho xe buýt đi lại. Ngoài các loại phương tiện quy định trên biển, các phương tiện khác không được phép đi vào đoạn đường này.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
  },
  {
   "ma": "R.403d",
   "ten": "Đường dành cho xe ô tô con",
   "nhom": "bien_hieu_lenh",
-  "y_nghia": null,
+  "y_nghia": "Báo hiệu bắt đầu đường dành cho xe ô tô con đi lại. Ngoài các loại phương tiện quy định trên biển, các phương tiện khác không được phép đi vào đoạn đường này.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
  },
  {
   "ma": "R.403e",
   "ten": "Đường dành cho xe máy",
   "nhom": "bien_hieu_lenh",
-  "y_nghia": null,
+  "y_nghia": "Báo hiệu bắt đầu đường dành cho xe máy đi lại. Ngoài các loại phương tiện quy định trên biển, các phương tiện khác không được phép đi vào đoạn đường này.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
  },
  {
   "ma": "R.403f",
   "ten": "Đường dành cho xe máy và xe đạp",
   "nhom": "bien_hieu_lenh",
-  "y_nghia": null,
+  "y_nghia": "Báo hiệu bắt đầu đường dành cho xe máy (kể cả xe gắn máy) và xe đạp (kể cả xe thô sơ) đi lại. Ngoài các loại phương tiện quy định trên biển, các phương tiện khác không được phép đi vào đoạn đường này.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
  },
  {
   "ma": "R.403g",
   "ten": "Đường dành cho xe chở hàng bốn bánh gắn động cơ",
   "nhom": "bien_hieu_lenh",
-  "y_nghia": null,
+  "y_nghia": "Báo hiệu bắt đầu đường dành cho xe chở hàng bốn bánh gắn động cơ đi lại. Ngoài các loại phương tiện quy định trên biển, các phương tiện khác không được phép đi vào đoạn đường này.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
  },
  {
   "ma": "R.403h",
   "ten": "Đường dành cho xe chở người bốn bánh gắn động cơ",
   "nhom": "bien_hieu_lenh",
-  "y_nghia": null,
+  "y_nghia": "Báo hiệu bắt đầu đường dành cho xe chở người bốn bánh gắn động cơ đi lại. Ngoài các loại phương tiện quy định trên biển, các phương tiện khác không được phép đi vào đoạn đường này.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
  },
  {
   "ma": "R.403k",
   "ten": "Đường dành cho xe chở hàng, xe chở người bốn bánh gắn động cơ",
   "nhom": "bien_hieu_lenh",
-  "y_nghia": null,
+  "y_nghia": "Báo hiệu bắt đầu đường dành cho xe chở hàng, xe chở người bốn bánh gắn động cơ đi lại. Ngoài các loại phương tiện quy định trên biển, các phương tiện khác không được phép đi vào đoạn đường này.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
  },
  {
   "ma": "R.404a",
   "ten": "Hết đoạn đường dành cho xe ô tô",
   "nhom": "bien_hieu_lenh",
-  "y_nghia": null,
+  "y_nghia": "Báo hết đoạn đường dành cho xe ô tô đi lại (biển R.403a hết hiệu lực).",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
  },
  {
   "ma": "R.404b",
   "ten": "Hết đoạn đường dành cho xe ô tô, xe máy",
   "nhom": "bien_hieu_lenh",
-  "y_nghia": null,
+  "y_nghia": "Báo hết đoạn đường dành cho xe ô tô, xe máy đi lại (biển R.403b hết hiệu lực).",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
  },
  {
   "ma": "R.404c",
   "ten": "Hết đoạn đường dành cho xe buýt",
   "nhom": "bien_hieu_lenh",
-  "y_nghia": null,
+  "y_nghia": "Báo hết đoạn đường dành cho xe buýt đi lại (biển R.403c hết hiệu lực).",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
  },
  {
   "ma": "R.404d",
   "ten": "Hết đoạn đường dành cho xe ô tô con",
   "nhom": "bien_hieu_lenh",
-  "y_nghia": null,
+  "y_nghia": "Báo hết đoạn đường dành cho xe ô tô con đi lại (biển R.403d hết hiệu lực).",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
  },
  {
   "ma": "R.404e",
   "ten": "Hết đoạn đường dành cho xe máy",
   "nhom": "bien_hieu_lenh",
-  "y_nghia": null,
+  "y_nghia": "Báo hết đoạn đường dành cho xe máy đi lại (biển R.403e hết hiệu lực).",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
  },
  {
   "ma": "R.404f",
   "ten": "Hết đoạn đường dành cho xe máy và xe đạp",
   "nhom": "bien_hieu_lenh",
-  "y_nghia": null,
+  "y_nghia": "Báo hết đoạn đường dành cho xe máy, xe đạp, kể cả xe gắn máy đi lại (biển R.403f hết hiệu lực).",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
  },
  {
   "ma": "R.404g",
   "ten": "Hết đoạn đường dành cho xe chở hàng bốn bánh gắn động cơ",
   "nhom": "bien_hieu_lenh",
-  "y_nghia": null,
+  "y_nghia": "Báo hết đoạn đường dành cho xe chở hàng bốn bánh gắn động cơ đi lại (biển R.403g hết hiệu lực).",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
  },
  {
   "ma": "R.404h",
   "ten": "Hết đoạn đường dành cho xe chở người bốn bánh gắn động cơ",
   "nhom": "bien_hieu_lenh",
-  "y_nghia": null,
+  "y_nghia": "Báo hết đoạn đường dành cho xe chở người bốn bánh gắn động cơ đi lại (biển R.403h hết hiệu lực).",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
  },
  {
   "ma": "R.404k",
   "ten": "Hết đoạn đường dành cho xe chở hàng, xe chở người bốn bánh gắn động cơ",
   "nhom": "bien_hieu_lenh",
-  "y_nghia": null,
+  "y_nghia": "Báo hết đoạn đường dành cho xe chở hàng, xe chở người bốn bánh gắn động cơ đi lại (biển R.403k hết hiệu lực).",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
  },
  {
   "ma": "R.411",
   "ten": "Hướng đi trên mỗi làn đường phải theo",
   "nhom": "bien_hieu_lenh",
-  "y_nghia": null,
+  "y_nghia": "Báo số lượng làn đường và hướng đi trên mỗi làn đường theo vạch kẻ đường (vạch mũi tên trên mặt đường). Bắt buộc người tham gia giao thông phải đi đúng làn đường đã được chỉ dẫn hướng phù hợp với hành trình của xe.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
  },
  {
   "ma": "R.412a",
   "ten": "Làn đường dành cho xe ô tô khách",
   "nhom": "bien_hieu_lenh",
-  "y_nghia": null,
+  "y_nghia": "Làn đường dành riêng cho xe ô tô khách (kể cả ô tô buýt); có thể ghi số chỗ ngồi cho phép hoặc chữ “BRT” cho làn xe buýt nhanh. Các loại xe khác không được đi vào làn này (trừ xe được quyền ưu tiên). Khi đến gần nơi giao nhau, xe được phép chuyển làn theo đúng quy định để đi theo hành trình mong muốn.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
  },
  {
   "ma": "R.412b",
   "ten": "Làn đường dành cho xe ô tô con",
   "nhom": "bien_hieu_lenh",
-  "y_nghia": null,
+  "y_nghia": "Làn đường dành riêng cho xe ô tô con. Các loại xe khác không được đi vào làn này (trừ xe được quyền ưu tiên). Khi đến gần nơi giao nhau, xe được phép chuyển làn theo đúng quy định để đi theo hành trình mong muốn.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
  },
  {
   "ma": "R.412c",
   "ten": "Làn đường dành cho xe ôtô tải",
   "nhom": "bien_hieu_lenh",
-  "y_nghia": null,
+  "y_nghia": "Làn đường dành riêng cho xe ô tô tải; có thể ghi khối lượng chuyên chở cho phép trên hình xe (ví dụ “<3,5t”). Các loại xe khác không được đi vào làn này (trừ xe được quyền ưu tiên). Khi đến gần nơi giao nhau, xe được phép chuyển làn theo đúng quy định để đi theo hành trình mong muốn.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
  },
  {
   "ma": "R.412d",
   "ten": "Làn đường dành cho xe máy",
   "nhom": "bien_hieu_lenh",
-  "y_nghia": null,
+  "y_nghia": "Làn đường dành riêng cho xe máy và xe gắn máy. Các loại xe khác không được đi vào làn này (trừ xe được quyền ưu tiên). Khi đến gần nơi giao nhau, xe được phép chuyển làn theo đúng quy định để đi theo hành trình mong muốn.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
  },
  {
   "ma": "R.412e",
   "ten": "Làn đường dành cho xe buýt",
   "nhom": "bien_hieu_lenh",
-  "y_nghia": null,
+  "y_nghia": "Làn đường dành riêng cho xe buýt. Nếu vạch phân làn là nét đứt, xe khác được đi vào nhưng phải nhường, chuyển làn để không ảnh hưởng xe buýt; nếu là nét liền, xe khác không được đi vào (trừ xe được quyền ưu tiên).",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
  },
  {
   "ma": "R.412f",
   "ten": "Làn đường dành cho xe ô tô",
   "nhom": "bien_hieu_lenh",
-  "y_nghia": null,
+  "y_nghia": "Làn đường dành cho các loại xe ô tô. Các loại xe khác không được đi vào làn này (trừ xe được quyền ưu tiên). Khi đến gần nơi giao nhau, xe được phép chuyển làn theo đúng quy định để đi theo hành trình mong muốn.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
  },
  {
   "ma": "R.412g",
   "ten": "Làn đường dành cho xe máy và xe đạp",
   "nhom": "bien_hieu_lenh",
-  "y_nghia": null,
+  "y_nghia": "Làn đường dành riêng cho xe máy (kể cả xe gắn máy) và xe đạp (kể cả các loại xe thô sơ khác). Các loại xe khác không được đi vào làn này (trừ xe được quyền ưu tiên). Khi đến gần nơi giao nhau, xe được phép chuyển làn theo đúng quy định để đi theo hành trình mong muốn.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
  },
  {
   "ma": "R.412h",
   "ten": "Làn đường dành cho xe đạp",
   "nhom": "bien_hieu_lenh",
-  "y_nghia": null,
+  "y_nghia": "Làn đường dành riêng cho xe đạp (kể cả các loại xe thô sơ khác). Các loại xe khác không được đi vào làn này (trừ xe được quyền ưu tiên). Khi đến gần nơi giao nhau, xe được phép chuyển làn theo đúng quy định để đi theo hành trình mong muốn.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
  },
  {
   "ma": "R.412i",
   "ten": "Kết thúc làn đường dành cho xe ôtô khách",
   "nhom": "bien_hieu_lenh",
-  "y_nghia": null,
+  "y_nghia": "Báo kết thúc làn đường dành riêng cho xe ô tô khách đi lại.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
  },
  {
   "ma": "R.412j",
   "ten": "Kết thúc làn đường dành cho xe ô tô con",
   "nhom": "bien_hieu_lenh",
-  "y_nghia": null,
+  "y_nghia": "Báo kết thúc làn đường dành riêng cho xe ô tô con đi lại.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
  },
  {
   "ma": "R.412k",
   "ten": "Kết thúc làn đường dành cho xe ô tô tải",
   "nhom": "bien_hieu_lenh",
-  "y_nghia": null,
+  "y_nghia": "Báo kết thúc làn đường dành riêng cho xe ô tô tải đi lại.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
  },
  {
   "ma": "R.412l",
   "ten": "Kết thúc làn đường dành cho xe máy",
   "nhom": "bien_hieu_lenh",
-  "y_nghia": null,
+  "y_nghia": "Báo kết thúc làn đường dành riêng cho xe máy đi lại.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
  },
  {
   "ma": "R.412m",
   "ten": "Kết thúc làn đường dành cho xe buýt",
   "nhom": "bien_hieu_lenh",
-  "y_nghia": null,
+  "y_nghia": "Báo kết thúc làn đường dành riêng cho xe buýt đi lại.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
  },
  {
   "ma": "R.412n",
   "ten": "Kết thúc làn đường dành cho xe ôtô",
   "nhom": "bien_hieu_lenh",
-  "y_nghia": null,
+  "y_nghia": "Báo kết thúc làn đường dành riêng cho xe ô tô đi lại.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
  },
  {
   "ma": "R.412o",
   "ten": "Kết thúc làn đường dành cho xe máy và xe đạp",
   "nhom": "bien_hieu_lenh",
-  "y_nghia": null,
+  "y_nghia": "Báo kết thúc làn đường dành riêng cho xe máy và xe đạp đi lại.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
  },
  {
   "ma": "R.412p",
   "ten": "Kết thúc làn đường dành cho xe đạp",
   "nhom": "bien_hieu_lenh",
-  "y_nghia": null,
+  "y_nghia": "Báo kết thúc làn đường dành riêng cho xe đạp đi lại.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
  },
  {
   "ma": "R.415",
   "ten": "Biển gộp làn đường theo phương tiện",
   "nhom": "bien_hieu_lenh",
-  "y_nghia": null,
+  "y_nghia": "Báo số lượng làn đường và loại xe được phép lưu thông trên từng làn theo quy định (R.415a); R.415b báo kết thúc làn đường theo phương tiện. Biển không áp dụng với xe chuyển làn để ra vào hoặc dừng, đỗ bên đường; khi gần nơi giao nhau được chuyển làn theo đúng quy định.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
  },
  {
   "ma": "R.420",
   "ten": "Bắt đầu khu đông dân cư",
   "nhom": "bien_hieu_lenh",
-  "y_nghia": null,
+  "y_nghia": "Báo hiệu bắt đầu đoạn đường vào phạm vi khu đông dân cư; người tham gia giao thông phải tuân theo các quy định đi đường áp dụng ở khu đông dân cư cho đến biển R.421. Trong phạm vi này, gặp biển tốc độ tối đa P.127 thì phải chấp hành biển P.127.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
  },
  {
   "ma": "R.421",
   "ten": "Hết khu đông dân cư",
   "nhom": "bien_hieu_lenh",
-  "y_nghia": null,
+  "y_nghia": "Báo hiệu hết đoạn đường qua phạm vi khu đông dân cư; các quy định đi đường áp dụng ở khu đông dân cư hết hiệu lực.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
  },
  {
   "ma": "R.E,9a",
   "ten": "Cấm đỗ xe trong khu vực",
   "nhom": "bien_hieu_lenh",
-  "y_nghia": null,
+  "y_nghia": "Cấm đỗ xe trong khu vực: lệnh cấm đỗ xe có hiệu lực cho tất cả các tuyến đường trong khu vực (biển “Bắt đầu vào khu vực”, có chữ ZONE).",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
  },
  {
   "ma": "R.E,9b",
   "ten": "Cấm đỗ xe theo giờ trong khu vực",
   "nhom": "bien_hieu_lenh",
-  "y_nghia": null,
+  "y_nghia": "Cấm đỗ xe theo giờ trong khu vực: lệnh cấm đỗ xe theo thời gian ghi trên biển có hiệu lực cho tất cả các tuyến đường trong khu vực (biển “Bắt đầu vào khu vực”, có chữ ZONE).",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
  },
  {
   "ma": "R.E,9c",
   "ten": "Khu vực đỗ xe",
   "nhom": "bien_hieu_lenh",
-  "y_nghia": null,
+  "y_nghia": "Quy định khu vực đỗ xe; biển có hiệu lực cho tất cả các tuyến đường trong khu vực (biển “Bắt đầu vào khu vực”, có chữ ZONE).",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
  },
  {
   "ma": "R.E,9d",
   "ten": "Tốc độ tối đa trong khu vực",
   "nhom": "bien_hieu_lenh",
-  "y_nghia": null,
+  "y_nghia": "Hạn chế tốc độ tối đa trong khu vực: tốc độ tối đa ghi trên biển có hiệu lực cho tất cả các tuyến đường trong khu vực (biển “Bắt đầu vào khu vực”, có chữ ZONE).",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
  },
  {
   "ma": "R.E,10a",
   "ten": "Hết cấm đỗ xe trong khu vực",
   "nhom": "bien_hieu_lenh",
-  "y_nghia": null,
+  "y_nghia": "Báo hiệu ra khỏi khu vực cấm đỗ xe: hết cấm đỗ xe trong khu vực.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
  },
  {
   "ma": "R.E,10b",
   "ten": "Hết cấm đỗ xe theo giờ trong khu vực",
   "nhom": "bien_hieu_lenh",
-  "y_nghia": null,
+  "y_nghia": "Báo hiệu ra khỏi khu vực cấm đỗ xe theo giờ: hết cấm đỗ xe theo giờ trong khu vực.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
  },
  {
   "ma": "R.E,10c",
   "ten": "Hết khu vực đỗ xe",
   "nhom": "bien_hieu_lenh",
-  "y_nghia": null,
+  "y_nghia": "Báo hiệu hết khu vực đỗ xe (ra khỏi khu vực đỗ xe).",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
  },
  {
   "ma": "R.E,10d",
   "ten": "Hết tốc độ tối đa trong khu vực",
   "nhom": "bien_hieu_lenh",
-  "y_nghia": null,
+  "y_nghia": "Báo hiệu ra khỏi khu vực hạn chế tốc độ tối đa: hết hạn chế tốc độ tối đa trong khu vực.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
  },
  {
   "ma": "R.E,11a",
   "ten": "Đường hầm",
   "nhom": "bien_hieu_lenh",
-  "y_nghia": null,
+  "y_nghia": "Chỉ dẫn đoạn đường qua hầm có áp dụng quy định giao thông riêng.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
  },
  {
   "ma": "R.E,11b",
   "ten": "Kết thúc đường hầm",
   "nhom": "bien_hieu_lenh",
-  "y_nghia": null,
+  "y_nghia": "Chỉ dẫn hết đoạn đường qua hầm; các quy định giao thông riêng của đường hầm không còn áp dụng.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-32"
  },
  {
   "ma": "I.401",
   "ten": "Bắt đầu đường ưu tiên",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Báo hiệu bắt đầu đoạn đường ưu tiên: phương tiện trên đường này được quyền ưu tiên đi trước qua nơi giao nhau không có điều khiển giao thông; phương tiện từ đường khác nhập vào hay cắt ngang phải nhường đường (trừ xe ưu tiên theo quy định). Nếu nơi giao nhau có điều khiển giao thông thì quyền ưu tiên này hết tác dụng.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
  },
  {
   "ma": "I.402",
   "ten": "Hết đoạn đường ưu tiên",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Báo hiệu hết đoạn đường được quy định là đường ưu tiên.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
  },
  {
   "ma": "I.405a",
   "ten": "Đường cụt",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Chỉ dẫn lối rẽ vào đường cụt (đường xe không thể tiếp tục đi qua được); biển đặt trên đường chính trước nơi giao nhau để rẽ vào đường cụt, kiểu biển chọn theo hướng lối rẽ.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
  },
  {
   "ma": "I.405b",
   "ten": "Đường cụt",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Chỉ dẫn lối rẽ vào đường cụt (đường xe không thể tiếp tục đi qua được); biển đặt trên đường chính trước nơi giao nhau để rẽ vào đường cụt, kiểu biển chọn theo hướng lối rẽ.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
  },
  {
   "ma": "I.405c",
   "ten": "Đường cụt",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Chỉ dẫn phía trước là đường cụt, tức đường xe không thể tiếp tục đi qua được (ngõ cụt, đường hoặc cầu bị đứt, cầu hỏng...). Biển đặt trước đường cụt 300 m đến 500 m.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
  },
  {
   "ma": "I.406",
   "ten": "Được ưu tiên qua đường hẹp",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Chỉ dẫn cho người lái xe cơ giới biết mình được quyền ưu tiên đi trước trên đoạn đường hẹp. Tuy nhiên, nếu đã có xe (cơ giới hoặc thô sơ) đi ngược chiều vào phạm vi đường hẹp thì xe đi theo chiều ưu tiên vẫn phải nhường đường.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
  },
  {
   "ma": "I.407a",
   "ten": "Đường một chiều",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Chỉ dẫn đoạn đường chạy một chiều, đặt sau nơi đường giao nhau: các phương tiện chỉ được đi theo chiều mũi tên, cấm quay đầu đi ngược lại (trừ xe ưu tiên theo quy định).",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
  },
  {
   "ma": "I.407b",
   "ten": "Đường một chiều",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Chỉ dẫn đường sắp đi vào là đường một chiều, đặt trước nơi đường giao nhau: các phương tiện chỉ được đi theo chiều mũi tên, cấm quay đầu đi ngược lại (trừ xe ưu tiên theo quy định).",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
  },
  {
   "ma": "I.407c",
   "ten": "Đường một chiều",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Chỉ dẫn đường sắp đi vào là đường một chiều, đặt trước nơi đường giao nhau: các phương tiện chỉ được đi theo chiều mũi tên, cấm quay đầu đi ngược lại (trừ xe ưu tiên theo quy định).",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
  },
  {
   "ma": "I.408",
   "ten": "Nơi đỗ xe",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Chỉ dẫn nơi được phép đỗ xe, bãi đỗ xe, bến xe... Phạm vi được đỗ xe hết hiệu lực 10 m trước nơi đường giao nhau tiếp theo.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
  },
  {
   "ma": "I.408a",
   "ten": "Nơi đỗ xe một phần trên hè phố",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Chỉ dẫn nơi được phép đỗ xe một phần trên hè phố rộng; xe phải đỗ sao cho các bánh phía ghế phụ nằm trên hè phố.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
  },
  {
   "ma": "I.409",
   "ten": "Chỗ quay xe",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Chỉ dẫn vị trí được phép quay đầu xe.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
  },
  {
   "ma": "I.410",
   "ten": "Khu vực quay xe",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Chỉ dẫn khu vực được phép quay đầu xe; trên biển mô tả cách thức tiến hành quay xe.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
  },
  {
   "ma": "I.413a",
   "ten": "Đường phía trước có làn đường dành cho ô tô khách",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Chỉ dẫn đường phía trước có làn đường dành riêng cho ô tô khách chạy theo chiều ngược lại; biển đặt ở nơi giao nhau đầu đường một chiều mà hướng ngược chiều có ô tô khách được phép chạy.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
  },
  {
   "ma": "I.413b",
   "ten": "Rẽ ra đường có làn đường dành cho ô tô khách",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Chỉ dẫn tại nơi đường giao nhau, rẽ phải hoặc rẽ trái (tùy hướng trên biển) là rẽ ra đường có làn đường dành riêng cho ô tô khách.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
  },
  {
   "ma": "I.413c",
   "ten": "Rẽ ra đường có làn đường dành cho ô tô khách",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Chỉ dẫn tại nơi đường giao nhau, rẽ phải hoặc rẽ trái (tùy hướng trên biển) là rẽ ra đường có làn đường dành riêng cho ô tô khách.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
  },
  {
   "ma": "I.414a",
   "ten": "Chỉ hướng đường",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Đặt ở nơi đường giao nhau để chỉ hướng đường đến một địa danh, khu dân cư, kèm số hiệu (tên) đường và cự ly; loại này dùng khi chỉ có một địa danh trên hướng cần chỉ dẫn.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
  },
  {
   "ma": "I.414b",
   "ten": "Chỉ hướng đường",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Đặt ở nơi đường giao nhau để chỉ hướng đường đến một địa danh, khu dân cư, kèm số hiệu (tên) đường và cự ly; loại này dùng khi chỉ có một địa danh trên hướng cần chỉ dẫn.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
  },
  {
   "ma": "I.414c",
   "ten": "Chỉ hướng đường",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Đặt ở nơi đường giao nhau để chỉ hướng đường đến các địa danh, khu dân cư, kèm số hiệu (tên) đường và cự ly; loại này dùng khi có từ hai địa danh trở lên, địa danh xa hơn viết bên dưới.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
  },
  {
   "ma": "I.414d",
   "ten": "Chỉ hướng đường",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Đặt ở nơi đường giao nhau để chỉ hướng đường đến các địa danh, khu dân cư, kèm số hiệu (tên) đường và cự ly; loại này dùng khi có từ hai địa danh trở lên, địa danh xa hơn viết bên dưới.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
  },
  {
   "ma": "I.415",
   "ten": "Mũi tên chỉ hướng đi",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Đặt trong khu đông dân cư hoặc ở nơi giao nhau để chỉ hướng đi đến địa danh lân cận tiếp theo và khoảng cách đến đó (với địa danh gần có thể không ghi khoảng cách).",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
  },
  {
   "ma": "I.416",
   "ten": "Đường tránh",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Chỉ dẫn lối đi đường tránh, đường vòng khi đường phía trước bị cấm do đường, cầu bị tắc hoặc thi công, hoặc cấm một số loại xe đi qua; đặt trước nơi đường giao nhau.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
  },
  {
   "ma": "I.417a",
   "ten": "Chỉ hướng đường phải đi cho từng loại xe",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Đặt ở nơi đường giao nhau khi cấm hoặc hạn chế một số loại xe, để chỉ hướng đường mà từng loại xe phải đi đến khu dân cư tiếp theo.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
  },
  {
   "ma": "I.417b",
   "ten": "Chỉ hướng đường phải đi cho từng loại xe",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Đặt ở nơi đường giao nhau khi cấm hoặc hạn chế một số loại xe, để chỉ hướng đường mà từng loại xe phải đi đến khu dân cư tiếp theo.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
  },
  {
   "ma": "I.417c",
   "ten": "Chỉ hướng đường phải đi cho từng loại xe",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Đặt ở nơi đường giao nhau khi cấm hoặc hạn chế một số loại xe, để chỉ hướng đường mà từng loại xe phải đi đến khu dân cư tiếp theo.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
  },
  {
   "ma": "I.418",
   "ten": "Lối đi ở những vị trí cấm rẽ",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Chỉ lối đi ở nơi đường giao nhau bị cấm rẽ; biển đặt ở nơi giao nhau trước đường cấm rẽ.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
  },
  {
   "ma": "I.419a",
   "ten": "Chỉ dẫn địa giới",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Chỉ dẫn địa giới hành chính giữa các thành phố, tỉnh, huyện (áp dụng cho các tuyến đường thông thường, không phải đường đối ngoại).",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
  },
  {
   "ma": "I.419b",
   "ten": "Chỉ dẫn địa giới trên tuyến đường đối ngoại",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Chỉ dẫn địa giới hành chính giữa các thành phố, tỉnh, huyện; áp dụng trên các tuyến đường đối ngoại và tuyến đường có nhiều người nước ngoài đi lại.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
  },
  {
   "ma": "I.422a",
   "ten": "Di tích lịch sử",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Chỉ dẫn nơi có di tích lịch sử, danh lam thắng cảnh hoặc nơi có thể tham quan ở hai bên đường (áp dụng cho các tuyến đường thông thường).",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
  },
  {
   "ma": "I.422b",
   "ten": "Di tích lịch sử trên tuyến đường đối ngoại",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Chỉ dẫn nơi có di tích lịch sử, danh lam thắng cảnh hoặc nơi có thể tham quan ở hai bên đường; áp dụng trên tuyến đường đối ngoại và tuyến đường có nhiều người nước ngoài đi lại.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
  },
  {
   "ma": "I.423a",
   "ten": "Vị trí người đi bộ sang ngang",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Chỉ dẫn vị trí dành cho người đi bộ sang ngang đường. Gặp biển này, người lái xe phải chạy chậm, chú ý quan sát và ưu tiên cho người đi bộ sang ngang.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
  },
  {
   "ma": "I.423b",
   "ten": "Vị trí người đi bộ sang ngang",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Chỉ dẫn vị trí dành cho người đi bộ sang ngang đường. Gặp biển này, người lái xe phải chạy chậm, chú ý quan sát và ưu tiên cho người đi bộ sang ngang.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
  },
  {
   "ma": "I.423c",
   "ten": "Điểm bắt đầu đường đi bộ",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Chỉ dẫn cho người đi bộ và người lái xe biết nơi bắt đầu đoạn đường dành cho người đi bộ; biển không dùng cho vị trí đi bộ cắt ngang qua đường.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
  },
  {
   "ma": "I.424a",
   "ten": "Cầu vượt qua đường cho người đi bộ",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Chỉ dẫn người đi bộ sử dụng cầu vượt qua đường; dùng biển a hoặc b tùy hướng thực tế của người đi bộ qua đường.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
  },
  {
   "ma": "I.424b",
   "ten": "Cầu vượt qua đường cho người đi bộ",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Chỉ dẫn người đi bộ sử dụng cầu vượt qua đường; dùng biển a hoặc b tùy hướng thực tế của người đi bộ qua đường.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
  },
  {
   "ma": "I.424c",
   "ten": "Hầm chui qua đường cho người đi bộ",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Chỉ dẫn người đi bộ sử dụng hầm chui qua đường; dùng biển c hoặc d tùy hướng thực tế của người đi bộ qua hầm.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
  },
  {
   "ma": "I.424d",
   "ten": "Hầm chui qua đường cho người đi bộ",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Chỉ dẫn người đi bộ sử dụng hầm chui qua đường; dùng biển c hoặc d tùy hướng thực tế của người đi bộ qua hầm.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
  },
  {
   "ma": "I.425",
   "ten": "Bệnh viện",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Chỉ dẫn sắp đến cơ sở điều trị bệnh gần đường như bệnh viện, bệnh xá, trạm xá. Gặp biển này người tham gia giao thông phải đi chậm, chú ý quan sát và không sử dụng còi.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
  },
  {
   "ma": "I.426",
   "ten": "Trạm cấp cứu",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Chỉ dẫn nơi có trạm cấp cứu y tế ở gần đường.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
  },
  {
   "ma": "I.427a",
   "ten": "Trạm sửa chữa",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Chỉ dẫn nơi có xưởng, trạm chuyên phục vụ sửa chữa ô tô, xe máy hỏng trên đường.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
  },
  {
   "ma": "I.427b",
   "ten": "Công trình kiểm soát tải trọng xe",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Chỉ dẫn nơi đặt công trình kiểm soát tải trọng xe.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
  },
  {
   "ma": "I.428",
   "ten": "Cửa hàng xăng dầu",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Chỉ dẫn nơi có cửa hàng xăng dầu (I.428a), trạm nạp điện (I.428b) hoặc cả cửa hàng xăng dầu và trạm nạp điện (I.428c) phục vụ phương tiện đi trên đường.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
  },
  {
   "ma": "I.429",
   "ten": "Nơi rửa xe",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Chỉ dẫn nơi có bố trí rửa xe.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
  },
  {
   "ma": "I.430",
   "ten": "Điện thoại",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Chỉ dẫn nơi có trạm điện thoại công cộng chuyên phục vụ khách đi đường.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
  },
  {
   "ma": "I.431",
   "ten": "Trạm dừng nghỉ",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Chỉ dẫn nơi có các dịch vụ phục vụ khách đi đường như ăn uống, nghỉ ngơi, cung cấp nhiên liệu...; các biểu tượng trên biển thể hiện dịch vụ mà trạm có.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
  },
  {
   "ma": "I.432",
   "ten": "Khách sạn",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Chỉ dẫn nơi có khách sạn phục vụ khách đi đường.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
  },
  {
   "ma": "I.433a",
   "ten": "Nơi nghỉ mát",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Chỉ dẫn nơi nghỉ mát.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
  },
  {
   "ma": "I.433b",
   "ten": "Báo hiệu nơi cắm trại, nhà nghỉ lưu động",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Chỉ dẫn sắp đến nơi cắm trại; dùng trên tuyến đường đối ngoại và tuyến đường có nhiều người nước ngoài đi lại.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
  },
  {
   "ma": "I.433c",
   "ten": "Báo hiệu nơi cắm trại, nhà nghỉ lưu động",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Chỉ dẫn sắp đến nơi dành cho nhà lưu động (nơi tập kết nhà lưu động); dùng trên tuyến đường đối ngoại và tuyến đường có nhiều người nước ngoài đi lại.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
  },
  {
   "ma": "I.433d",
   "ten": "Báo hiệu nơi cắm trại, nhà nghỉ lưu động",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Chỉ dẫn sắp đến nơi cắm trại và nhà lưu động; dùng trên tuyến đường đối ngoại và tuyến đường có nhiều người nước ngoài đi lại.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
  },
  {
   "ma": "I.433e",
   "ten": "Báo hiệu nhà trọ",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Chỉ dẫn sắp đến nơi có nhà trọ; dùng trên tuyến đường đối ngoại và tuyến đường có nhiều người nước ngoài đi lại.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
  },
  {
   "ma": "I.434a",
   "ten": "Bến xe buýt",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Chỉ dẫn chỗ dừng đỗ xe buýt cho khách lên xuống. Nếu không phải là bến xe theo quy định thì chữ trên biển là “Điểm dừng xe buýt”; có thể kèm biển phụ ghi số hiệu, tên và lộ trình tuyến.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
  },
  {
   "ma": "I.434b",
   "ten": "Bến xe tải",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Chỉ dẫn khu vực đỗ xe tải để nhận và trả hàng hóa. Nếu không phải là bến xe theo quy định thì chữ trên biển là “Điểm dừng xe tải”.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
  },
  {
   "ma": "I.435",
   "ten": "Bến xe điện",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Chỉ dẫn chỗ dừng đỗ xe điện cho khách lên xuống.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
  },
  {
   "ma": "I.436",
   "ten": "Trạm cảnh sát giao thông",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Chỉ dẫn nơi đặt trạm cảnh sát giao thông. Các phương tiện phải giảm tốc độ đến mức an toàn và không được vượt khi đi qua khu vực này.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
  },
  {
   "ma": "I.439",
   "ten": "Tên cầu",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Cung cấp thông tin về một cây cầu: tên cầu, lý trình và tên đường; đặt ở hai đầu cầu, chủ yếu cho cầu dài hơn 30 m hoặc cầu có tên gắn với địa danh văn hóa, lịch sử.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
  },
  {
   "ma": "I.440",
   "ten": "Đoạn đường thi công",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Chỉ dẫn đoạn đường đang thi công sửa chữa hoặc nâng cấp cải tạo; biển đặt ở hai đầu đoạn đường thi công, sau biển I.441.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
  },
  {
   "ma": "I.441a",
   "ten": "Báo hiệu phía trước có công trường thi công",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Báo cho người tham gia giao thông biết phía trước có công trường thi công, sửa chữa hoặc nâng cấp đường; thường đặt cách hai đầu đoạn thi công 500 m, 100 m và 50 m, trước biển I.440.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
  },
  {
   "ma": "I.441b",
   "ten": "Báo hiệu phía trước có công trường thi công",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Báo cho người tham gia giao thông biết phía trước có công trường thi công, sửa chữa hoặc nâng cấp đường; thường đặt cách hai đầu đoạn thi công 500 m, 100 m và 50 m, trước biển I.440.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
  },
  {
   "ma": "I.441c",
   "ten": "Báo hiệu phía trước có công trường thi công",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Báo cho người tham gia giao thông biết phía trước có công trường thi công, sửa chữa hoặc nâng cấp đường; thường đặt cách hai đầu đoạn thi công 500 m, 100 m và 50 m, trước biển I.440.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
  },
  {
   "ma": "I.442",
   "ten": "Chợ",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Báo sắp đến khu vực có chợ gần đường; xe cơ giới qua lại khu vực này phải chú ý quan sát, giảm tốc độ.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
  },
  {
   "ma": "I.443",
   "ten": "Xe kéo rơ-moóc",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Báo hiệu xe có kéo moóc hoặc xe kéo xe; biển được đặt trên nóc cabin xe kéo.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
  },
  {
   "ma": "I.444a",
   "ten": "Biển báo chỉ dẫn địa điểm",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Biển chỉ dẫn địa điểm: chỉ hướng đến ga tàu (ga xe lửa); đặt ở trước nơi đường giao nhau với đường vào địa điểm đó.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
  },
  {
   "ma": "I.444b",
   "ten": "Biển báo chỉ dẫn địa điểm",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Biển chỉ dẫn địa điểm: chỉ hướng đến sân bay; đặt ở trước nơi đường giao nhau với đường vào địa điểm đó.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
  },
  {
   "ma": "I.444c",
   "ten": "Biển báo chỉ dẫn địa điểm",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Biển chỉ dẫn địa điểm: chỉ hướng đến bãi đậu xe; đặt ở trước nơi đường giao nhau với đường vào địa điểm đó.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
  },
  {
   "ma": "I.444d",
   "ten": "Biển báo chỉ dẫn địa điểm",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Biển chỉ dẫn địa điểm: chỉ hướng đến bến xe khách đường dài; đặt ở trước nơi đường giao nhau với đường vào địa điểm đó.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
  },
  {
   "ma": "I.444e",
   "ten": "Biển báo chỉ dẫn địa điểm",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Biển chỉ dẫn trạm cấp cứu: chỉ hướng đến bệnh viện và trạm cấp cứu; đặt ở nơi đường giao nhau với đường vào bệnh viện, trạm cấp cứu.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
  },
  {
   "ma": "I.444f",
   "ten": "Biển báo chỉ dẫn địa điểm",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Biển chỉ dẫn địa điểm: chỉ hướng đến bến tàu khách; đặt ở trước nơi đường giao nhau với đường vào địa điểm đó.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
  },
  {
   "ma": "I.444g",
   "ten": "Biển báo chỉ dẫn địa điểm",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Biển chỉ dẫn địa điểm: chỉ hướng đến khu danh thắng và du lịch; đặt ở trước nơi đường giao nhau với đường vào địa điểm đó.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
  },
  {
   "ma": "I.444h",
   "ten": "Biển báo chỉ dẫn địa điểm",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Biển chỉ dẫn địa điểm: chỉ hướng đến trạm bán xăng dầu; đặt ở trước nơi đường giao nhau với đường vào địa điểm đó.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
  },
  {
   "ma": "I.444i",
   "ten": "Biển báo chỉ dẫn địa điểm",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Biển chỉ dẫn địa điểm: chỉ hướng đến trạm phục vụ rửa xe; đặt ở trước nơi đường giao nhau với đường vào địa điểm đó.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
  },
  {
   "ma": "I.444j",
   "ten": "Biển báo chỉ dẫn địa điểm",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Biển chỉ dẫn địa điểm: chỉ hướng đến bến phà; đặt ở trước nơi đường giao nhau với đường ra bến phà.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
  },
  {
   "ma": "I.444k",
   "ten": "Biển báo chỉ dẫn địa điểm",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Biển chỉ dẫn địa điểm: chỉ hướng đến ga tàu điện ngầm; đặt ở nơi đường giao nhau với đường vào ga tàu điện ngầm.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
  },
  {
   "ma": "I.444l",
   "ten": "Biển báo chỉ dẫn địa điểm",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Biển chỉ dẫn địa điểm: chỉ hướng đến khu vực dịch vụ cho khách đi đường (trạm dừng nghỉ); đặt ở trước nơi đường giao nhau với đường vào địa điểm đó.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
  },
  {
   "ma": "I.444m",
   "ten": "Biển báo chỉ dẫn địa điểm",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Biển chỉ dẫn địa điểm: chỉ hướng đến trạm sửa chữa xe trong khu dịch vụ; đặt ở trước nơi đường giao nhau với đường vào địa điểm đó.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
  },
  {
   "ma": "I.445a",
   "ten": "Biển báo kiểu mô tả tình trạng đường",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Báo đường trơn, phải chạy chậm; đặt trước đoạn đường bị trơn trượt khi trời mưa, láng dầu...",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
  },
  {
   "ma": "I.445b",
   "ten": "Biển báo kiểu mô tả tình trạng đường",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Báo đường dốc, phải đi chậm, lái xe cẩn thận; đặt trước đoạn đường có độ dốc lớn và tầm nhìn hạn chế.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
  },
  {
   "ma": "I.445c",
   "ten": "Biển báo kiểu mô tả tình trạng đường",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Báo đoạn đường có sương mù, tầm nhìn hạn chế, phải đi chậm và tập trung quan sát.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
  },
  {
   "ma": "I.445d",
   "ten": "Biển báo kiểu mô tả tình trạng đường",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Báo đoạn đường có nền đường yếu (sụt lún, không bằng phẳng), nhắc lái xe đi chậm và cẩn thận.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
  },
  {
   "ma": "I.445e",
   "ten": "Biển báo kiểu mô tả tình trạng đường",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Báo xe lớn hoặc xe quá khổ phải đi sát về bên phải; đặt trước đoạn đường có từ hai làn xe trở lên, hướng dẫn xe lớn, quá khổ đi tốc độ thấp và không được chiếm làn của các loại xe khác.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
  },
  {
   "ma": "I.445f",
   "ten": "Biển báo kiểu mô tả tình trạng đường",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Báo chú ý khu vực có gió ngang mạnh; đặt trước khi vào cầu lớn, cầu vượt qua vịnh hoặc cửa núi thường có gió ngang cường độ mạnh.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
  },
  {
   "ma": "I.445g",
   "ten": "Biển báo kiểu mô tả tình trạng đường",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Báo đoạn đường nguy hiểm, hay xảy ra tai nạn; đặt trước khi vào đoạn đường đó để nhắc lái xe tập trung quan sát, giảm tốc độ.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
  },
  {
   "ma": "I.445h",
   "ten": "Biển báo kiểu mô tả tình trạng đường",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Báo đường xuống dốc liên tục, nhắc lái xe phải đi chậm, đi sát bên phải.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
  },
  {
   "ma": "I.446",
   "ten": "Nơi đỗ xe dành cho người khuyết tật",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Báo hiệu nơi đỗ xe dành cho người khuyết tật; có thể dùng kết hợp với biển P.131a “Cấm đỗ xe” và biển I.408 “Nơi đỗ xe”.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
  },
  {
   "ma": "I.447a",
   "ten": "Cầu vượt liên thông",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Đặt trước khi vào cầu vượt có tổ chức giao thông liên thông giữa các tuyến; kiểu biển (a, b, c, d) chọn theo hình thái nút giao. Tại các lối rẽ dùng biển I.414c, d để báo các hướng đi.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
  },
  {
   "ma": "I.447b",
   "ten": "Cầu vượt liên thông",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Đặt trước khi vào cầu vượt có tổ chức giao thông liên thông giữa các tuyến; kiểu biển (a, b, c, d) chọn theo hình thái nút giao. Tại các lối rẽ dùng biển I.414c, d để báo các hướng đi.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
  },
  {
   "ma": "I.447c",
   "ten": "Cầu vượt liên thông",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Đặt trước khi vào cầu vượt có tổ chức giao thông liên thông giữa các tuyến; kiểu biển (a, b, c, d) chọn theo hình thái nút giao. Tại các lối rẽ dùng biển I.414c, d để báo các hướng đi.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
  },
  {
   "ma": "I.447d",
   "ten": "Cầu vượt liên thông",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Đặt trước khi vào cầu vượt có tổ chức giao thông liên thông giữa các tuyến; kiểu biển (a, b, c, d) chọn theo hình thái nút giao. Tại các lối rẽ dùng biển I.414c, d để báo các hướng đi.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
  },
  {
   "ma": "I.448",
   "ten": "Làn đường cứu nạn hay làn dừng xe khẩn cấp",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Chỉ dẫn cho người tham gia giao thông biết vị trí và khoảng cách đến làn đường cứu nạn (làn thoát xe khẩn cấp); thường gồm các biển ở cự ly 2 km, 1 km, 300 m và tại chỗ rẽ.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
  },
  {
   "ma": "I.449",
   "ten": "Biển tên đường",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Báo tên đường trên các tuyến đường đối ngoại; biển có nền màu xanh đậm, chữ màu trắng.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-36"
  },
  {
   "ma": "IE.450a",
   "ten": "Sơ đồ, khoảng cách đến nút giao với đường dẫn vào đường cao tốc",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Biển chỉ dẫn khoảng cách đến nút giao với đường dẫn vào đường cao tốc, dùng để báo trước khoảng cách sắp đến nút giao này (ghi theo bội số của 100 m). Có thể đặt ở các nút giao trong phạm vi bán kính khoảng 5 km để báo trước từ xa hướng lên đường cao tốc.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-46"
  },
  {
   "ma": "IE.450b",
   "ten": "Sơ đồ, khoảng cách đến nút giao với đường dẫn vào đường cao tốc",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Biển chỉ dẫn sơ đồ đến đường dẫn vào đường cao tốc, giúp người lái biết hướng đi vào đường cao tốc tại nút giao phía trước. Biển đặt cách nút giao với đường dẫn vào đường cao tốc tối thiểu bằng tầm nhìn một chiều của cấp đường.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-46"
  },
  {
   "ma": "IE.451a",
   "ten": "Lối vào và khoảng cách đến lối vào đường cao tốc",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Biển chỉ dẫn khoảng cách đến lối vào đường cao tốc, đặt trên đường dẫn vào đường cao tốc, dùng để báo trước khoảng cách còn lại đến lối vào đường cao tốc.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-46"
  },
  {
   "ma": "IE.451b",
   "ten": "Lối vào và khoảng cách đến lối vào đường cao tốc",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Biển chỉ dẫn lối vào đường cao tốc, đặt ở vị trí cuối đường dẫn vào đường cao tốc.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-46"
  },
  {
   "ma": "IE.452",
   "ten": "Bắt đầu đường cao tốc",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Biển chỉ dẫn bắt đầu đường cao tốc, nền xanh lá cây chữ trắng, cho biết tên và ký hiệu đường cao tốc cùng tốc độ tối đa và tốc độ tối thiểu cho phép. Nếu các làn đường có tốc độ khác nhau thì hàng dưới của biển ghi tốc độ tương ứng cho từng làn.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-46"
  },
  {
   "ma": "IE.453a",
   "ten": "Kết thúc đường cao tốc",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Biển chỉ dẫn khoảng cách đến điểm kết thúc đường cao tốc, báo trước cho người lái biết còn bao xa nữa thì hết đường cao tốc.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-46"
  },
  {
   "ma": "IE.453b",
   "ten": "Kết thúc đường cao tốc",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Biển chỉ dẫn điểm kết thúc đường cao tốc, cho biết người lái đã đến vị trí kết thúc đường cao tốc.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-46"
  },
  {
   "ma": "IE.454",
   "ten": "Khoảng cách đến lối ra phía trước",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Biển chỉ dẫn khoảng cách đến lối ra phía trước trên đường cao tốc, thường đặt cách nút giao 1 km và 2 km (hoặc chỉ một biển cách 1 km). Khoảng cách ghi trên biển là số nguyên.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-46"
  },
  {
   "ma": "IE.455a",
   "ten": "Khoảng cách đến các lối ra tiếp theo",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Biển chỉ dẫn khoảng cách đến hai lối ra tiếp theo trên đường cao tốc, dùng để báo trước khi đi qua khu vực phía trước có nhiều nút giao. Biển đặt bên lề đường, phía trước nút giao.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-46"
  },
  {
   "ma": "IE.455b",
   "ten": "Khoảng cách đến các lối ra tiếp theo",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Biển chỉ dẫn khoảng cách đến ba lối ra tiếp theo trên đường cao tốc, dùng để báo trước khi đi qua khu vực phía trước có nhiều nút giao. Biển đặt bên lề đường, phía trước nút giao.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-46"
  },
  {
   "ma": "IE.456a",
   "ten": "Trạm dừng nghỉ và khoảng cách đến trạm dừng nghỉ",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Biển thông báo khoảng cách đến trạm dừng nghỉ trên đường cao tốc, kèm biểu tượng các dịch vụ chính như xăng dầu, ăn uống, nơi cung cấp thông tin (có thể thêm một dịch vụ thứ tư).",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-46"
  },
  {
   "ma": "IE.456b",
   "ten": "Trạm dừng nghỉ và khoảng cách đến trạm dừng nghỉ",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Biển chỉ dẫn hướng rẽ vào trạm dừng nghỉ, đặt cách nút giao vào trạm dừng nghỉ khoảng 150 m, kèm biểu tượng các dịch vụ có trong trạm.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-46"
  },
  {
   "ma": "IE.456c",
   "ten": "Trạm dừng nghỉ và khoảng cách đến trạm dừng nghỉ",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Biển chỉ dẫn lối vào trạm dừng nghỉ, đặt ngay trước lối vào trạm dừng nghỉ, kèm biểu tượng các dịch vụ có trong trạm.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-46"
  },
  {
   "ma": "IE.457a",
   "ten": "Nơi đỗ xe trong trạm dừng nghỉ",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Biển chỉ dẫn khoảng cách đến nơi đỗ xe trong trạm dừng nghỉ, thường được lắp cùng với biển chỉ dẫn đến trạm dừng nghỉ.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-46"
  },
  {
   "ma": "IE.457b",
   "ten": "Nơi đỗ xe trong trạm dừng nghỉ",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Biển chỉ dẫn hướng rẽ đến vị trí bãi đỗ xe trong trạm dừng nghỉ.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-46"
  },
  {
   "ma": "IE.458",
   "ten": "Khoảng cách đến các trạm dừng nghỉ tiếp theo",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Biển chỉ dẫn khoảng cách đến các trạm dừng nghỉ tiếp theo, đặt bên lề đường ngay sau khi ra khỏi trạm dừng nghỉ.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-46"
  },
  {
   "ma": "IE.459a",
   "ten": "Khoảng cách đến khu tham quan, du lịch",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Biển thông báo khoảng cách đến khu tham quan, du lịch, khu danh lam thắng cảnh, đặt ở bên lề đường cao tốc.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-46"
  },
  {
   "ma": "IE.459b",
   "ten": "Khoảng cách đến khu tham quan, du lịch",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Biển chỉ dẫn hướng rẽ vào khu tham quan, du lịch, đặt cách nút giao vào khu tham quan, du lịch khoảng 150 m.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-46"
  },
  {
   "ma": "IE.460",
   "ten": "Cột lý trình kilômét",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Biển chỉ dẫn cột lý trình kilômét trên đường cao tốc, gồm chữ Km và số lý trình viết theo chiều dọc, nền xanh lá cây, đặt ở lề đường; giúp người lái biết vị trí kilômét đang đi.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-46"
  },
  {
   "ma": "IE.461a",
   "ten": "Khu dịch vụ công cộng, giải trí",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Biển chỉ dẫn khoảng cách đến khu dịch vụ công cộng, giải trí (như sân bay, ga tàu hỏa, bến xe khách, bến cảng, sân gôn, bãi tắm biển...), kèm biểu tượng dịch vụ tương ứng.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-46"
  },
  {
   "ma": "IE.461b",
   "ten": "Khu dịch vụ công cộng, giải trí",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Biển chỉ dẫn hướng rẽ đến khu dịch vụ công cộng, giải trí, kèm biểu tượng dịch vụ tương ứng; đặt bên lề đường gần nút giao rẽ vào nơi cung cấp dịch vụ.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-46"
  },
  {
   "ma": "IE.461c",
   "ten": "Khu dịch vụ công cộng, giải trí",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Biển chỉ dẫn hướng rẽ vào khu dịch vụ công cộng (như sân bay, ga tàu hỏa, bến xe khách, bến cảng...), nền xanh lá cây, kèm biểu tượng dịch vụ tương ứng.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-46"
  },
  {
   "ma": "IE.461d",
   "ten": "Khu dịch vụ công cộng, giải trí",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Biển chỉ dẫn hướng rẽ vào khu giải trí (như sân gôn, khu câu cá, bãi tắm biển, khu rừng sinh thái), nền màu nâu chữ trắng.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-46"
  },
  {
   "ma": "IE.462",
   "ten": "Tần số trên sóng radio",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Biển chỉ dẫn tần số sóng radio phát thông tin thời tiết và các thông tin tiện ích liên quan đến giao thông trên đường cao tốc; dùng ở khu vực thời tiết hay thay đổi hoặc có điều kiện đi lại đặc biệt.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-46"
  },
  {
   "ma": "IE.463a",
   "ten": "Công trình kiểm soát tải trọng xe",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Biển chỉ dẫn khoảng cách đến Công trình kiểm soát tải trọng xe trên đường cao tốc.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-46"
  },
  {
   "ma": "IE.463b",
   "ten": "Công trình kiểm soát tải trọng xe",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Biển chỉ dẫn hướng rẽ vào nơi đặt Công trình kiểm soát tải trọng xe.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-46"
  },
  {
   "ma": "IE.463c",
   "ten": "Công trình kiểm soát tải trọng xe",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Biển chỉ dẫn lối vào Công trình kiểm soát tải trọng xe, đặt ở nút giao giữa đường cao tốc và đường vào công trình này.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-46"
  },
  {
   "ma": "IE.464a",
   "ten": "Địa điểm và phương hướng",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Biển chỉ dẫn địa điểm và phương hướng (lối ra một chiều), đặt trên giá long môn trước khu vực lối ra, gồm tên địa danh nơi đến và mũi tên chỉ làn xe cần đi để đến địa điểm đó.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-46"
  },
  {
   "ma": "IE.464b",
   "ten": "Địa điểm và phương hướng",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Biển chỉ dẫn hướng ra tại lối ra đường cao tốc, đặt tại dải phân ngã ba của nhánh rẽ hoặc gần nút giao phía lưng đường cong trên đường ra khỏi đường cao tốc, gồm tên địa danh và mũi tên chỉ hướng.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-46"
  },
  {
   "ma": "IE.465a",
   "ten": "Địa điểm và khoảng cách",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Biển chỉ dẫn hai địa điểm và khoảng cách (tính bằng km) đến các địa điểm đó; dòng trên cùng là nút giao đến địa danh gần nhất. Biển đặt bên lề đường ngay khi vào đường cao tốc và được lặp lại cách nhau hơn 10 km.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-46"
  },
  {
   "ma": "IE.465b",
   "ten": "Địa điểm và khoảng cách",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Biển chỉ dẫn ba địa điểm và khoảng cách (tính bằng km): dòng đầu là nút giao đến địa danh gần nhất, dòng thứ hai là khu du lịch hoặc đầu mối giao thông lớn, dòng cuối là thành phố lớn mà tuyến đường đi qua.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-46"
  },
  {
   "ma": "IE.466",
   "ten": "Sơ đồ lối ra một chiều",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Biển chỉ dẫn sơ đồ lối ra một chiều tại các nút giao trên đường cao tốc, được bố trí trên giá long môn.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-46"
  },
  {
   "ma": "IE.467a",
   "ten": "Nhập làn",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Biển chỉ dẫn vị trí nhập làn xe tại các nút giao thông có lưu lượng xe lớn, đặt bên lề đường gần vị trí nút giao.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-46"
  },
  {
   "ma": "IE.467b",
   "ten": "Nhập làn",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Biển chỉ dẫn khoảng cách đến vị trí nhập làn, giúp người lái biết trước sắp đến vị trí nhập làn xe.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-46"
  },
  {
   "ma": "IE.468a",
   "ten": "Chướng ngại vật phía trước",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Biển cảnh báo phía trước có chướng ngại vật cản trở lưu thông bình thường và chỉ dẫn đi theo hướng bên trái; gồm các đường xiên màu đen trên nền vàng huỳnh quang.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-46"
  },
  {
   "ma": "IE.468b",
   "ten": "Chướng ngại vật phía trước",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Biển cảnh báo phía trước có chướng ngại vật cản trở lưu thông bình thường và chỉ dẫn có thể đi được cả hai hướng; gồm các đường xiên màu đen trên nền vàng huỳnh quang.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-46"
  },
  {
   "ma": "IE.469",
   "ten": "Hướng rẽ",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Biển (tiêu phản quang) chỉ dẫn hướng rẽ, nhắc người lái chuẩn bị đổi hướng khi sắp vào đường cong nguy hiểm có bán kính nhỏ; đặt ở phía lưng đường cong, có loại chỉ hướng rẽ phải và rẽ trái.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-46"
  },
  {
   "ma": "IE.470",
   "ten": "Số điện thoại khẩn cấp",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Biển cung cấp số điện thoại khẩn cấp để người lái liên hệ khi có trường hợp khẩn cấp, sự cố hoặc tai nạn trên đường cao tốc.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-46"
  },
  {
   "ma": "IE.471",
   "ten": "Giữ khoảng cách lái xe an toàn",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Biển nền vàng huỳnh quang chữ đen, thông báo người lái phải giữ khoảng cách lái xe an toàn khi lưu thông trên đường cao tốc.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-46"
  },
  {
   "ma": "IE.472a",
   "ten": "Trạm thu phí",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Biển chỉ dẫn khoảng cách đến trạm thu phí, đặt cách trạm một khoảng phù hợp để người lái biết trước và chuẩn bị đến trạm thu phí.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-46"
  },
  {
   "ma": "IE.472b",
   "ten": "Trạm thu phí",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Biển chỉ dẫn trạm thu phí, báo cho người lái biết đã đến trạm thu phí trên đường cao tốc.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-46"
  },
  {
   "ma": "IE.473",
   "ten": "Giảm tốc độ",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Biển nền vàng huỳnh quang chữ đen, cảnh báo người lái chú ý và giảm tốc độ tại khu vực có nguy cơ mất an toàn giao thông, như đường cong nguy hiểm, sắp đến trạm thu phí, công trình kiểm soát tải trọng xe, trạm dừng nghỉ, khu vực hay có sương mù.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-46"
  },
  {
   "ma": "IE.474",
   "ten": "Lối ra",
   "nhom": "bien_chi_dan",
-  "y_nghia": null,
+  "y_nghia": "Biển chỉ dẫn lối ra đường cao tốc, nền xanh lá cây chữ trắng, đặt bên lề đường hoặc trên giá kiểu khung tại vị trí trước lối ra.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-46"
  },
  {
   "ma": "S.501",
   "ten": "Phạm vi tác dụng của biển",
   "nhom": "bien_phu",
-  "y_nghia": null,
+  "y_nghia": "Đặt bên dưới một số biển báo chính để thông báo chiều dài đoạn đường nguy hiểm hoặc cấm, hiệu lệnh, hạn chế; chiều dài ghi theo mét (m), lấy chẵn đến hàng chục mét.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-41"
  },
  {
   "ma": "S.502",
   "ten": "Khoảng cách đến đối tượng báo hiệu",
   "nhom": "bien_phu",
-  "y_nghia": null,
+  "y_nghia": "Đặt bên dưới biển báo nguy hiểm, biển báo cấm, biển hiệu lệnh và chỉ dẫn khi vị trí đặt biển khác quy định chung, để thông báo khoảng cách thực tế từ chỗ đặt biển đến đối tượng báo hiệu ở phía trước (tính bằng mét).",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-41"
  },
  {
   "ma": "S.503a",
   "ten": "Hướng tác dụng của biển",
   "nhom": "bien_phu",
-  "y_nghia": null,
+  "y_nghia": "Đặt bên dưới biển báo cấm, biển hiệu lệnh để chỉ hướng tác dụng của biển là hướng vuông góc với chiều đi.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-41"
  },
  {
   "ma": "S.503b",
   "ten": "Hướng tác dụng của biển",
   "nhom": "bien_phu",
-  "y_nghia": null,
+  "y_nghia": "Đặt bên dưới biển báo cấm, biển hiệu lệnh để chỉ đồng thời hai hướng tác dụng của biển (trái và phải), vuông góc với chiều đi.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-41"
  },
  {
   "ma": "S.503c",
   "ten": "Hướng tác dụng của biển",
   "nhom": "bien_phu",
-  "y_nghia": null,
+  "y_nghia": "Đặt bên dưới biển báo cấm, biển hiệu lệnh để chỉ hướng tác dụng của biển là hướng vuông góc với chiều đi.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-41"
  },
  {
   "ma": "S.503d",
   "ten": "Hướng tác dụng của biển",
   "nhom": "bien_phu",
-  "y_nghia": null,
+  "y_nghia": "Đặt bên dưới biển P.124 (a,b,c,d,e,f), P.130 “Cấm dừng xe và đỗ xe”, P.131 (a,b,c) “Cấm đỗ xe” để chỉ hướng tác dụng của biển là hướng song song với chiều đi.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-41"
  },
  {
   "ma": "S.503e",
   "ten": "Hướng tác dụng của biển",
   "nhom": "bien_phu",
-  "y_nghia": null,
+  "y_nghia": "Đặt bên dưới biển cấm dừng, cấm đỗ xe (P.124, P.130, P.131) để chỉ đồng thời hai hướng tác dụng (trước và sau) song song với chiều đi, tại nơi đặt biển nhắc lại lệnh cấm dừng và cấm đỗ xe.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-41"
  },
  {
   "ma": "S.503f",
   "ten": "Hướng tác dụng của biển",
   "nhom": "bien_phu",
-  "y_nghia": null,
+  "y_nghia": "Đặt bên dưới biển P.124 (a,b,c,d,e,f), P.130 “Cấm dừng xe và đỗ xe”, P.131 (a,b,c) “Cấm đỗ xe” để chỉ hướng tác dụng của biển là hướng song song với chiều đi.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-41"
  },
  {
   "ma": "S.H,3a",
   "ten": "Hướng tác dụng của biển",
   "nhom": "bien_phu",
-  "y_nghia": null,
+  "y_nghia": "Biển phụ chỉ hướng tác dụng của biển (theo Hiệp định GMS), có thể sử dụng trên các tuyến đường đối ngoại và các tuyến đường có nhiều người đi lại.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-41"
  },
  {
   "ma": "S.H,3b",
   "ten": "Hướng tác dụng của biển",
   "nhom": "bien_phu",
-  "y_nghia": null,
+  "y_nghia": "Biển phụ chỉ hướng tác dụng của biển (theo Hiệp định GMS), có thể sử dụng trên các tuyến đường đối ngoại và các tuyến đường có nhiều người đi lại.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-41"
  },
  {
   "ma": "S.H,3c",
   "ten": "Hướng tác dụng của biển",
   "nhom": "bien_phu",
-  "y_nghia": null,
+  "y_nghia": "Biển phụ chỉ hướng tác dụng của biển (theo Hiệp định GMS), có thể sử dụng trên các tuyến đường đối ngoại và các tuyến đường có nhiều người đi lại.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-41"
  },
  {
   "ma": "S.504",
   "ten": "Làn đường",
   "nhom": "bien_phu",
-  "y_nghia": null,
+  "y_nghia": "Đặt bên trên làn đường, dưới biển báo cấm, biển hiệu lệnh hoặc dưới đèn tín hiệu để chỉ làn đường chịu hiệu lực của biển báo hay đèn tín hiệu đó.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-41"
  },
  {
   "ma": "S.505a",
   "ten": "Loại xe",
   "nhom": "bien_phu",
-  "y_nghia": null,
+  "y_nghia": "Đặt bên dưới biển báo cấm, biển hiệu lệnh hoặc biển chỉ dẫn để chỉ loại xe chịu hiệu lực của biển đó; hình vẽ trên biển thể hiện loại xe chịu hiệu lực.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-41"
  },
  {
   "ma": "S.505b",
   "ten": "Loại xe hạn chế qua cầu",
   "nhom": "bien_phu",
-  "y_nghia": null,
+  "y_nghia": "Đặt bên dưới biển P.106a “Cấm xe ô tô tải” ở hai đầu cầu để chỉ các loại xe tải chịu hiệu lực của biển và trọng tải toàn bộ xe cho phép (gồm trọng tải bản thân xe và khối lượng chuyên chở) tương ứng với mỗi loại xe, không phụ thuộc số lượng trục.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-41"
  },
  {
   "ma": "S.505c",
   "ten": "Tải trọng trục hạn chế qua cầu",
   "nhom": "bien_phu",
-  "y_nghia": null,
+  "y_nghia": "Đặt bên dưới biển P.106a “Cấm xe ô tô tải” để chỉ tải trọng trục lớn nhất cho phép của xe tải tương ứng với mỗi loại trục (trục đơn, trục kép, trục ba). Khi đặt cùng biển S.505b, xe qua cầu phải thỏa mãn điều kiện của cả hai biển.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-41"
  },
  {
   "ma": "S.506a",
   "ten": "Hướng đường ưu tiên",
   "nhom": "bien_phu",
-  "y_nghia": null,
+  "y_nghia": "Đặt bên dưới biển I.401 trên đường ưu tiên để chỉ dẫn cho người tham gia giao thông trên đường này biết hướng đường ưu tiên ở ngã tư.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-41"
  },
  {
   "ma": "S.506b",
   "ten": "Hướng đường ưu tiên",
   "nhom": "bien_phu",
-  "y_nghia": null,
+  "y_nghia": "Đặt bên dưới biển W.208 và biển R.122 trên đường không ưu tiên để chỉ dẫn cho người tham gia giao thông trên đường này biết hướng đường ưu tiên ở ngã tư.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-41"
  },
  {
   "ma": "S.507",
   "ten": "Hướng rẽ",
   "nhom": "bien_phu",
-  "y_nghia": null,
+  "y_nghia": "Sử dụng độc lập để báo trước chỗ rẽ nguy hiểm và chỉ hướng rẽ, đặt khi người tham gia giao thông khó nhận biết hướng rẽ của đường. Biển không thay thế cho các biển báo nguy hiểm W.201 (a,b) và W.202 (a,b,c).",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-41"
  },
  {
   "ma": "S.508a",
   "ten": "Biểu thị thời gian",
   "nhom": "bien_phu",
-  "y_nghia": null,
+  "y_nghia": "Đặt dưới biển báo cấm hoặc biển hiệu lệnh để quy định thời gian hiệu lực của biển: khoảng thời gian trong ngày (từ giờ... đến giờ...), ngày chẵn, lẻ, thứ trong tuần hoặc một khoảng thời gian nhất định (ví dụ “>5 phút”).",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-41"
  },
  {
   "ma": "S.508b",
   "ten": "Biểu thị thời gian",
   "nhom": "bien_phu",
-  "y_nghia": null,
+  "y_nghia": "Đặt dưới biển báo cấm hoặc biển hiệu lệnh để quy định thời gian hiệu lực của biển: khoảng thời gian trong ngày (từ giờ... đến giờ...), ngày chẵn, lẻ, thứ trong tuần hoặc một khoảng thời gian nhất định (ví dụ “>5 phút”).",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-41"
  },
  {
   "ma": "S.509a",
   "ten": "Thuyết minh biển chính",
   "nhom": "bien_phu",
-  "y_nghia": null,
+  "y_nghia": "Biển “Chiều cao an toàn” đặt bên dưới biển W.239 “Đường cáp điện ở phía trên” để chỉ rõ chiều cao cho các phương tiện đi qua an toàn.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-41"
  },
  {
   "ma": "S.509b",
   "ten": "Thuyết minh biển chính",
   "nhom": "bien_phu",
-  "y_nghia": null,
+  "y_nghia": "Biển “Cấm đỗ xe” có thể đặt thêm bên dưới biển P.130, P.131 (a,b,c) khi cần thiết để làm rõ thông tin.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-41"
  },
  {
   "ma": "S.510a",
   "ten": "Chú ý đường trơn có băng tuyết",
   "nhom": "bien_phu",
-  "y_nghia": null,
+  "y_nghia": "Biển phụ cảnh báo đường trơn, có tuyết trong những ngày trời có tuyết.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-41"
  },
  {
   "ma": "S.510b",
   "ten": "Chú ý đường sắt",
   "nhom": "bien_phu",
-  "y_nghia": null,
+  "y_nghia": "Biển phụ cảnh báo khi rẽ vào đường nhánh sẽ có giao cắt với đường sắt (khoảng cách giữa đường sắt với đoạn đường đặt biển dưới 100 m).",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-41"
  },
  {
   "ma": "S.G,7",
   "ten": "Địa điểm cắm trại",
   "nhom": "bien_phu",
-  "y_nghia": null,
+  "y_nghia": "Chỉ dẫn tới địa điểm cắm trại.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-41"
  },
  {
   "ma": "S.G,8",
   "ten": "Địa điểm nhà trọ",
   "nhom": "bien_phu",
-  "y_nghia": null,
+  "y_nghia": "Chỉ dẫn tới địa điểm nhà trọ.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-41"
  },
  {
   "ma": "S.G,9b",
   "ten": "Chỉ dẫn tới điểm đỗ xe dành cho lái xe muốn sử dụng phương tiện công cộng",
   "nhom": "bien_phu",
-  "y_nghia": null,
+  "y_nghia": "Chỉ dẫn tới địa điểm đỗ xe dành cho xe có lái xe muốn sử dụng phương tiện công cộng.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-41"
  },
  {
   "ma": "S.G,11a",
   "ten": "Chỉ dẫn số lượng làn và hướng đi cho từng làn",
   "nhom": "bien_phu",
-  "y_nghia": null,
+  "y_nghia": "Thông báo cho lái xe số làn và hướng đi của từng làn xe; số mũi tên trên biển bằng số làn xe đi cùng hướng và chỉ dẫn số lượng làn xe của hướng đi sắp tới.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-41"
  },
  {
   "ma": "S.G,11c",
   "ten": "Chỉ dẫn số lượng làn và hướng đi cho từng làn",
   "nhom": "bien_phu",
-  "y_nghia": null,
+  "y_nghia": "Thông báo cho lái xe số làn và hướng đi của từng làn xe; số mũi tên trên biển bằng số làn xe đi cùng hướng và chỉ dẫn số lượng làn xe của hướng đi sắp tới.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-41"
  },
  {
   "ma": "S.G,12a",
   "ten": "Chỉ dẫn làn đường không lưu thông",
   "nhom": "bien_phu",
-  "y_nghia": null,
+  "y_nghia": "Chỉ dẫn cho lái xe biết làn đường không lưu thông.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-41"
  },
  {
   "ma": "S.G,12b",
   "ten": "Chỉ dẫn làn đường không lưu thông",
   "nhom": "bien_phu",
-  "y_nghia": null,
+  "y_nghia": "Chỉ dẫn cho lái xe biết làn đường không lưu thông.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-41"
  },
  {
   "ma": "S.H,6",
   "ten": "Ngoại lệ",
   "nhom": "bien_phu",
-  "y_nghia": null,
+  "y_nghia": "Biển phụ “Ngoại lệ” (Except) chỉ các trường hợp biển cấm hoặc hạn chế được coi là không áp dụng đặc biệt cho một nhóm đối tượng tham gia giao thông nào đó; nhóm đối tượng này được thể hiện trên biển.",
   "nguon": "https://hethongphapluat.com/quy-chuan-ky-thuat-quoc-gia-qcvn-41-2024-bgtvt-ve-bao-hieu-duong-bo/dieu-41"
  },
  {
   "ma": "Vạch 1.1",
   "ten": "Vạch phân chia hai chiều xe chạy (vạch tim đường), dạng vạch đơn, đứt nét",
   "nhom": "vach_ke",
-  "y_nghia": null,
+  "y_nghia": "Vạch đơn, đứt nét, màu vàng, dùng để phân chia hai chiều xe chạy ngược chiều nhau. Xe được phép cắt qua để sử dụng làn ngược chiều từ cả hai phía.",
   "nguon": "https://dulieuphapluat.vn/cong-cu/tra-cuu-vach-ke-duong.html"
  },
  {
   "ma": "Vạch 1.2",
   "ten": "Vạch phân chia hai chiều xe chạy (vạch tim đường), dạng vạch đơn, nét liền",
   "nhom": "vach_ke",
-  "y_nghia": null,
+  "y_nghia": "Vạch đơn, nét liền, màu vàng, dùng để phân chia hai chiều xe chạy ngược chiều; xe không được lấn làn, không được đè lên vạch. Thường dùng ở đoạn đường không đảm bảo tầm nhìn vượt xe.",
   "nguon": "https://dulieuphapluat.vn/cong-cu/tra-cuu-vach-ke-duong.html"
  },
  {
   "ma": "Vạch 1.3",
   "ten": "Vạch phân chia hai chiều xe chạy (vạch tim đường), dạng vạch đôi, nét liền",
   "nhom": "vach_ke",
-  "y_nghia": null,
+  "y_nghia": "Vạch đôi, nét liền, màu vàng, dùng để phân chia hai chiều xe chạy ngược chiều; xe không được lấn làn, không được đè lên vạch. Thường dùng cho đường từ 4 làn xe cơ giới trở lên, không có dải phân cách giữa.",
   "nguon": "https://dulieuphapluat.vn/cong-cu/tra-cuu-vach-ke-duong.html"
  },
  {
   "ma": "Vạch 1.4",
   "ten": "Vạch phân chia hai chiều xe chạy, dạng vạch đôi gồm một vạch nét liền, một vạch nét đứt",
   "nhom": "vach_ke",
-  "y_nghia": null,
+  "y_nghia": "Vạch đôi màu vàng gồm một vạch liền và một vạch đứt, phân chia hai chiều xe chạy ngược chiều. Xe ở làn tiếp giáp vạch đứt được phép cắt qua và sử dụng làn ngược chiều khi cần thiết; xe ở làn tiếp giáp vạch liền không được lấn làn hoặc đè lên vạch.",
   "nguon": "https://dulieuphapluat.vn/cong-cu/tra-cuu-vach-ke-duong.html"
  },
  {
   "ma": "Vạch 1.5",
   "ten": "Vạch xác định ranh giới làn đường có thể thay đổi hướng xe chạy",
   "nhom": "vach_ke",
-  "y_nghia": null,
+  "y_nghia": "Vạch đôi, đứt nét, màu vàng, xác định ranh giới làn đường có thể thay đổi hướng xe chạy theo thời gian. Hướng xe chạy trên làn ở từng thời điểm do người điều khiển giao thông, tín hiệu đèn, biển báo hoặc báo hiệu khác quy định.",
   "nguon": "https://dulieuphapluat.vn/cong-cu/tra-cuu-vach-ke-duong.html"
  },
  {
   "ma": "Vạch 2.1",
   "ten": "Vạch phân chia các làn xe cùng chiều, dạng vạch đơn, đứt nét",
   "nhom": "vach_ke",
-  "y_nghia": null,
+  "y_nghia": "Vạch đơn, đứt nét, màu trắng, dùng để phân chia các làn xe cùng chiều. Xe được phép chuyển làn qua vạch này.",
   "nguon": "https://dulieuphapluat.vn/cong-cu/tra-cuu-vach-ke-duong.html"
  },
  {
   "ma": "Vạch 2.2",
   "ten": "Vạch phân chia các làn xe cùng chiều, dạng vạch đơn, liền nét",
   "nhom": "vach_ke",
-  "y_nghia": null,
+  "y_nghia": "Vạch đơn, liền nét, màu trắng, phân chia các làn xe cùng chiều trong trường hợp không cho phép xe chuyển làn hoặc sử dụng làn khác; xe không được lấn làn, không được đè lên vạch.",
   "nguon": "https://dulieuphapluat.vn/cong-cu/tra-cuu-vach-ke-duong.html"
  },
  {
   "ma": "Vạch 2.3",
   "ten": "Vạch giới hạn làn đường dành riêng hoặc làn đường ưu tiên",
   "nhom": "vach_ke",
-  "y_nghia": null,
+  "y_nghia": "Vạch trắng giới hạn làn dành riêng (nét liền) hoặc làn ưu tiên (nét đứt) cho một loại xe cơ giới. Xe khác không được đi vào làn dành riêng trừ trường hợp khẩn cấp; xe khác được dùng làn ưu tiên nhưng phải nhường đường khi loại xe được ưu tiên xuất hiện.",
   "nguon": "https://dulieuphapluat.vn/cong-cu/tra-cuu-vach-ke-duong.html"
  },
  {
   "ma": "Vạch 2.4",
   "ten": "Vạch phân chia các làn xe cùng chiều, dạng vạch kép (một vạch liền, một vạch đứt nét)",
   "nhom": "vach_ke",
-  "y_nghia": null,
+  "y_nghia": "Vạch kép phân chia các làn xe cùng chiều gồm một vạch liền và một vạch đứt. Xe ở làn tiếp giáp vạch đứt được phép cắt qua khi cần thiết; xe ở làn tiếp giáp vạch liền không được lấn làn hoặc đè lên vạch.",
   "nguon": "https://dulieuphapluat.vn/cong-cu/tra-cuu-vach-ke-duong.html"
  },
  {
   "ma": "Vạch 3.1",
   "ten": "Vạch giới hạn mép ngoài phần đường xe chạy hoặc vạch phân cách làn xe cơ giới và làn xe thô sơ",
   "nhom": "vach_ke",
-  "y_nghia": null,
+  "y_nghia": "Vạch xác định mép ngoài phần đường xe chạy, hoặc phân cách làn xe cơ giới với làn xe thô sơ. Xe được phép đè lên vạch khi cần thiết và phải nhường đường cho xe thô sơ.",
   "nguon": "https://dulieuphapluat.vn/cong-cu/tra-cuu-vach-ke-duong.html"
  },
  {
   "ma": "Vạch 3.2",
   "ten": "Vạch giới hạn mép phần đường xe chạy",
   "nhom": "vach_ke",
-  "y_nghia": null,
+  "y_nghia": "Vạch liền nét, màu trắng, khổ rộng, dùng để phân cách làn xe cơ bản với làn chuyển tốc hoặc làn phụ thêm, kênh hóa làn xe ở khu vực tách, nhập làn. Xe không được chuyển làn qua vạch 3.2, trừ trường hợp khẩn cấp theo quy định của pháp luật.",
   "nguon": "https://dulieuphapluat.vn/cong-cu/tra-cuu-vach-ke-duong.html"
  },
  {
   "ma": "Vạch 3.3",
   "ten": "Vạch 3.3",
   "nhom": "vach_ke",
-  "y_nghia": "Vạch đứt nét, màu trắng, bề rộng vạch 45 cm cho đường ô tô cao tốc và 30 cm cho các đường khác; L1 = L2 = 100–300 cm (1:1). Xe được phép cắt, chuyển làn qua vạch; còn dùng kẻ đoạn chuyển tiếp từ vạch 2.1 sang vạch 3.2 (dài 50–100 m).",
+  "y_nghia": "Vạch đứt nét, màu trắng, khổ rộng, dùng để phân cách làn xe cơ bản với làn chuyển tốc hoặc làn phụ thêm ở khu vực tách, nhập làn; xe được phép cắt qua, chuyển làn qua vạch. Vạch còn dùng làm đoạn chuyển tiếp từ vạch 2.1 sang vạch 3.2.",
   "nguon": "https://dulieuphapluat.vn/cong-cu/tra-cuu-vach-ke-duong.html"
  },
  {
   "ma": "Vạch 3.4",
   "ten": "Vạch 3.4",
   "nhom": "vach_ke",
-  "y_nghia": "Vạch đứt nét, màu trắng, nét liền L1 = 3–6 m, nét đứt L2 = 1–2 m, tỷ lệ L1:L2 = 3:1; chiều dài vạch 3.4 từ 50 m đến 100 m.",
+  "y_nghia": "Vạch đứt nét, màu trắng, dùng để báo hiệu sắp đến vạch liền 1.2 hoặc 2.2, hoặc làm đoạn chuyển tiếp từ vạch 1.1 sang 1.2, từ vạch 2.1 sang 2.2.",
   "nguon": "https://dulieuphapluat.vn/cong-cu/tra-cuu-vach-ke-duong.html"
  },
  {
   "ma": "Vạch 4.1",
   "ten": "Vạch kênh hóa dòng xe dạng gạch chéo",
   "nhom": "vach_ke",
-  "y_nghia": null,
+  "y_nghia": "Vạch gạch chéo giới hạn phần mặt đường không dùng cho xe chạy, nhằm kênh hóa các dòng giao thông. Xe phải đi theo tuyến đường quy định, không được lấn vạch hoặc cắt qua vạch trừ trường hợp khẩn cấp.",
   "nguon": "https://dulieuphapluat.vn/cong-cu/tra-cuu-vach-ke-duong.html"
  },
  {
   "ma": "Vạch 4.2",
   "ten": "Vạch kênh hóa dòng xe dạng chữ V",
   "nhom": "vach_ke",
-  "y_nghia": null,
+  "y_nghia": "Vạch dạng chữ V giới hạn phần mặt đường không dùng cho xe chạy, nhằm kênh hóa các dòng giao thông (thường ở mũi đảo tách, nhập làn). Xe phải đi theo tuyến đường quy định, không được lấn vạch hoặc cắt qua vạch trừ trường hợp khẩn cấp.",
   "nguon": "https://dulieuphapluat.vn/cong-cu/tra-cuu-vach-ke-duong.html"
  },
  {
   "ma": "Vạch 4.3",
   "ten": "Vạch kênh hóa dòng xe dạng vành khuyên",
   "nhom": "vach_ke",
-  "y_nghia": null,
+  "y_nghia": "Vạch vành khuyên màu trắng kẻ ở trung tâm ngã tư giao nhau cùng mức, chỉ thị các phương tiện phải đi vòng quanh phạm vi kẻ vạch theo chiều ngược chiều kim đồng hồ. Không được lấn vạch hoặc cắt qua vạch trừ trường hợp khẩn cấp.",
   "nguon": "https://dulieuphapluat.vn/cong-cu/tra-cuu-vach-ke-duong.html"
  },
  {
   "ma": "Vạch 4.4",
   "ten": "Vạch kẻ kiểu mắt võng",
   "nhom": "vach_ke",
-  "y_nghia": null,
+  "y_nghia": "Vạch kẻ kiểu mắt võng màu vàng báo cho người điều khiển không được dừng phương tiện trong phạm vi phần mặt đường có kẻ vạch, để tránh ùn tắc giao thông (thường ở nút giao, cổng trường học, bệnh viện...).",
   "nguon": "https://dulieuphapluat.vn/cong-cu/tra-cuu-vach-ke-duong.html"
  },
  {
   "ma": "Vạch 5.1",
   "ten": "Vạch dẫn hướng rẽ trái qua phạm vi nút giao",
   "nhom": "vach_ke",
-  "y_nghia": null,
+  "y_nghia": "Vạch đứt nét kéo dài qua nút giao, định hướng quỹ đạo cho dòng xe rẽ trái, nhằm tăng tính dẫn hướng; xe có thể cắt qua vạch khi cần thiết.",
   "nguon": "https://dulieuphapluat.vn/cong-cu/tra-cuu-vach-ke-duong.html"
  },
  {
   "ma": "Vạch 5.2",
   "ten": "Vạch phân làn đường kéo dài qua phạm vi nút giao",
   "nhom": "vach_ke",
-  "y_nghia": null,
+  "y_nghia": "Vạch đứt nét màu trắng kéo dài qua phạm vi nút giao (thường ở nút giao lệch), định hướng quỹ đạo cho dòng xe đi thẳng; xe có thể cắt qua vạch khi cần thiết.",
   "nguon": "https://dulieuphapluat.vn/cong-cu/tra-cuu-vach-ke-duong.html"
  },
  {
   "ma": "Vạch 5.3",
   "ten": "Vạch làn chờ rẽ trái trong nút giao",
   "nhom": "vach_ke",
-  "y_nghia": null,
+  "y_nghia": "Vạch tạo làn chờ rẽ trái trong nút giao có đèn tín hiệu. Xe rẽ trái đã vượt qua vạch dừng ở nhánh dẫn nhưng chưa ra khỏi khu vực làn chờ khi hết thời gian cho phép rẽ trái thì phải dừng lại trong làn chờ.",
   "nguon": "https://dulieuphapluat.vn/cong-cu/tra-cuu-vach-ke-duong.html"
  },
  {
   "ma": "Vạch 6.1",
   "ten": "Vạch cấm đỗ xe trên đường",
   "nhom": "vach_ke",
-  "y_nghia": null,
+  "y_nghia": "Vạch đứt khúc màu vàng sơn trên bó vỉa hoặc mặt đường sát mép, báo hiệu không được phép đỗ xe bên đường phía có vạch.",
   "nguon": "https://dulieuphapluat.vn/cong-cu/tra-cuu-vach-ke-duong.html"
  },
  {
   "ma": "Vạch 6.2",
   "ten": "Vạch cấm dừng xe, cấm đỗ xe trên đường",
   "nhom": "vach_ke",
-  "y_nghia": null,
+  "y_nghia": "Vạch liền nét màu vàng sơn trên bó vỉa hoặc mặt đường sát mép, báo hiệu không được phép dừng xe, đỗ xe bên đường phía có vạch.",
   "nguon": "https://dulieuphapluat.vn/cong-cu/tra-cuu-vach-ke-duong.html"
  },
  {
   "ma": "Vạch 7.1",
   "ten": "Vạch dừng xe",
   "nhom": "vach_ke",
-  "y_nghia": null,
+  "y_nghia": "Vạch liền nét màu trắng kẻ ngang đường, xác định vị trí người điều khiển phương tiện phải dừng lại khi có tín hiệu đèn đỏ hoặc biển R.122 \"Dừng xe\", hoặc trong các điều kiện nhất định như trước nút giao với đường sắt, trên làn chờ rẽ trái, trước vạch người đi bộ qua đường.",
   "nguon": "https://dulieuphapluat.vn/cong-cu/tra-cuu-vach-ke-duong.html"
  },
  {
   "ma": "Vạch 7.2",
   "ten": "Vạch nhường đường",
   "nhom": "vach_ke",
-  "y_nghia": null,
+  "y_nghia": "Vạch nhường đường màu trắng (vạch đôi đứt nét kèm tam giác ngược, hoặc dãy tam giác), báo hiệu xe phải đi chậm hoặc dừng lại khi cần thiết để nhường đường cho phương tiện, người trên các hướng khác đi trước. Dùng kết hợp với biển W.208 \"Giao với đường ưu tiên\".",
   "nguon": "https://dulieuphapluat.vn/cong-cu/tra-cuu-vach-ke-duong.html"
  },
  {
   "ma": "Vạch 7.3",
   "ten": "Vạch đi bộ qua đường",
   "nhom": "vach_ke",
-  "y_nghia": null,
+  "y_nghia": "Vạch xác định phạm vi phần đường dành cho người đi bộ cắt qua đường. Xe phải dừng trước vạch dừng khi đèn đỏ; nơi không có đèn tín hiệu và biển R.122, xe phải dừng lại nhường đường cho người đi bộ đang qua đường.",
   "nguon": "https://dulieuphapluat.vn/cong-cu/tra-cuu-vach-ke-duong.html"
  },
  {
   "ma": "Vạch 7.4",
   "ten": "Vạch xe đạp qua đường",
   "nhom": "vach_ke",
-  "y_nghia": null,
+  "y_nghia": "Vạch xác định phạm vi phần đường dành cho xe đạp cắt ngang qua đường tại chỗ giao nhau. Nơi không có người hoặc tín hiệu điều khiển giao thông, xe đạp phải nhường đường cho xe cơ giới chạy trên đường cắt ngang.",
   "nguon": "https://dulieuphapluat.vn/cong-cu/tra-cuu-vach-ke-duong.html"
  },
  {
   "ma": "Vạch 7.5",
   "ten": "Vạch xác định khu vực cấm xe thô sơ trong nút giao",
   "nhom": "vach_ke",
-  "y_nghia": null,
+  "y_nghia": "Vạch đứt khúc màu vàng, báo cho người điều khiển xe thô sơ biết phạm vi cấm khi đi vào nút giao ngã tư có đèn tín hiệu điều khiển.",
   "nguon": "https://dulieuphapluat.vn/cong-cu/tra-cuu-vach-ke-duong.html"
  },
  {
   "ma": "Vạch 7.6",
   "ten": "Vạch chỉ dẫn sắp đến chỗ có bố trí vạch đi bộ qua đường",
   "nhom": "vach_ke",
-  "y_nghia": null,
+  "y_nghia": "Vạch hình thoi màu trắng, báo hiệu sắp đến chỗ có vạch đi bộ qua đường, đặc biệt ở giữa đoạn đường nối hai nút, để cảnh báo người lái xe phải nhường đường cho người đi bộ qua đường.",
   "nguon": "https://dulieuphapluat.vn/cong-cu/tra-cuu-vach-ke-duong.html"
  },
  {
   "ma": "Vạch 7.7",
   "ten": "Vạch báo gần chỗ giao nhau với đường sắt",
   "nhom": "vach_ke",
-  "y_nghia": null,
+  "y_nghia": "Cụm vạch có vạch chéo \"X\" và chữ \"R\", báo cho người tham gia giao thông biết phía trước có chỗ giao nhau với đường sắt, nhắc người lái xe thận trọng. Chỉ dùng ở chỗ giao nhau không có người gác chắn đường sắt.",
   "nguon": "https://dulieuphapluat.vn/cong-cu/tra-cuu-vach-ke-duong.html"
  },
  {
   "ma": "Vạch 7.8",
   "ten": "Vạch xác định khoảng cách xe trên đường",
   "nhom": "vach_ke",
-  "y_nghia": null,
+  "y_nghia": "Vạch hình mũi nhọn màu trắng kẻ trên mặt đường, giúp lái xe xác định khoảng cách để giữ cự ly an toàn với xe chạy phía trước. Thường dùng trên đường cao tốc ở nơi hay xảy ra tai nạn do vượt xe hoặc đâm va từ phía sau.",
   "nguon": "https://dulieuphapluat.vn/cong-cu/tra-cuu-vach-ke-duong.html"
  },
  {
   "ma": "Vạch 8.1",
   "ten": "Vạch đứng trên mốc cố định",
   "nhom": "vach_ke",
-  "y_nghia": null,
+  "y_nghia": "Vạch chéo xen kẽ vàng – đen hoặc đỏ – trắng kẻ trên mặt đứng của chướng ngại vật (trụ cầu, tường cầu vượt, cửa hầm, dải phân cách, đảo an toàn...), cảnh báo người lái chú ý phía trước có chướng ngại vật cao hơn mặt đường để đề phòng va quệt.",
   "nguon": "https://dulieuphapluat.vn/cong-cu/tra-cuu-vach-ke-duong.html"
  },
  {
   "ma": "Vạch 8.2",
   "ten": "Vạch xác định mép dưới thấp nhất của kết cấu cầu vượt qua đường hoặc công trình khác đi phía trên đường",
   "nhom": "vach_ke",
-  "y_nghia": null,
+  "y_nghia": "Vạch đỏ – trắng xen kẽ thẳng đứng, xác định mép dưới cùng của cầu vượt hoặc công trình tương tự phía trên đường, nhằm cảnh báo người tham gia giao thông về các công trình này.",
   "nguon": "https://dulieuphapluat.vn/cong-cu/tra-cuu-vach-ke-duong.html"
  },
  {
   "ma": "Vạch 9.1",
   "ten": "Vạch cấm xe quay đầu",
   "nhom": "vach_ke",
-  "y_nghia": null,
+  "y_nghia": "Vạch màu vàng kẻ ở những vị trí cấm quay đầu xe tại nút giao hoặc chỗ mở dải phân cách giữa hai chiều xe chạy.",
   "nguon": "https://dulieuphapluat.vn/cong-cu/tra-cuu-vach-ke-duong.html"
  },
  {
   "ma": "Vạch 9.2",
   "ten": "Vạch quy định vị trí dừng đỗ của phương tiện giao thông công cộng trên đường",
   "nhom": "vach_ke",
-  "y_nghia": null,
+  "y_nghia": "Vạch hình chữ M màu vàng, quy định vị trí dừng của phương tiện vận tải hành khách công cộng (xe buýt, taxi...). Phương tiện khác và người đi bộ không được dừng, đỗ trong phạm vi kẻ vạch và trong khoảng 15 m về hai phía của vạch.",
   "nguon": "https://dulieuphapluat.vn/cong-cu/tra-cuu-vach-ke-duong.html"
  },
  {
   "ma": "Vạch 9.3",
   "ten": "Vạch mũi tên chỉ hướng trên mặt đường",
   "nhom": "vach_ke",
-  "y_nghia": null,
+  "y_nghia": "Mũi tên màu trắng trên mặt đường chỉ hướng xe phải đi, chủ yếu ở nút giao có tách nhập làn và đường nhiều làn; cũng dùng trên đường một chiều để xác nhận hướng giao thông.",
   "nguon": "https://dulieuphapluat.vn/cong-cu/tra-cuu-vach-ke-duong.html"
  },
  {
   "ma": "Vạch 9.4",
   "ten": "Vạch mũi tên báo số làn xe phía trước bị giảm",
   "nhom": "vach_ke",
-  "y_nghia": null,
+  "y_nghia": "Mũi tên màu trắng báo cho người lái biết số làn xe phía trước theo hướng mũi tên bị giảm và phải chuyển làn đi theo hướng mũi tên.",
   "nguon": "https://dulieuphapluat.vn/cong-cu/tra-cuu-vach-ke-duong.html"
  },
  {
   "ma": "Vạch 9.5",
   "ten": "Vạch dạng chữ viết, chữ số, hoặc màu sắc trên mặt đường",
   "nhom": "vach_ke",
-  "y_nghia": null,
+  "y_nghia": "Chữ viết, chữ số (như \"STOP\", \"ÔTÔ\", \"XE MÁY\", \"XE BUÝT\", \"XE ĐẠP\") hoặc màu sắc trên mặt đường, dùng kèm các báo hiệu khác để làm rõ ý nghĩa của báo hiệu, ví dụ chỉ làn dành riêng cho một loại xe.",
   "nguon": "https://dulieuphapluat.vn/cong-cu/tra-cuu-vach-ke-duong.html"
  },
  {
   "ma": "Vạch 9.6",
   "ten": "Vạch ký hiệu xe đạp trên mặt đường",
   "nhom": "vach_ke",
-  "y_nghia": null,
+  "y_nghia": "Hình xe đạp màu trắng vẽ trên mặt đường, dùng trên các làn đường dành riêng cho xe đạp.",
   "nguon": "https://dulieuphapluat.vn/cong-cu/tra-cuu-vach-ke-duong.html"
  }
 ]

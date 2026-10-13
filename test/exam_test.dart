@@ -41,7 +41,10 @@ void main() {
       }
     }
     expect(bank.chapters.length, 6);
-    expect(bank.signs, isNotEmpty);
+    expect(bank.signs.length, 419);
+    for (final s in bank.signs) {
+      expect(s.meaning?.trim(), isNotEmpty, reason: s.code);
+    }
   });
 
   test('bộ câu và câu điểm liệt theo hạng', () {

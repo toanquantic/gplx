@@ -22,7 +22,7 @@ const _signGroupTitles = {
   'vach_ke': 'Vạch kẻ đường',
 };
 
-/// Danh mục biển báo theo QCVN 41:2024 (mã và tên; chưa có hình riêng từng biển).
+/// Danh mục biển báo theo QCVN 41:2024: mã, tên và ý nghĩa (chưa có hình riêng từng biển).
 class SignsScreen extends StatefulWidget {
   const SignsScreen({super.key});
 
@@ -41,7 +41,11 @@ class _SignsScreenState extends State<SignsScreen> {
     final filtered = signs
         .where((s) => _group == null || s.group == _group)
         .where(
-          (s) => q.isEmpty || s.code.toLowerCase().contains(q) || s.name.toLowerCase().contains(q),
+          (s) =>
+              q.isEmpty ||
+              s.code.toLowerCase().contains(q) ||
+              s.name.toLowerCase().contains(q) ||
+              (s.meaning?.toLowerCase().contains(q) ?? false),
         )
         .toList();
     final c = context.colors;
@@ -90,7 +94,7 @@ class _SignsScreenState extends State<SignsScreen> {
             child: TextField(
               decoration: InputDecoration(
                 prefixIcon: Icon(Icons.search, color: c.muted),
-                hintText: 'Tìm theo tên hoặc mã, ví dụ P.102',
+                hintText: 'Tìm theo tên, mã hoặc ý nghĩa',
                 isDense: true,
               ),
               onChanged: (v) => setState(() => _query = v),
@@ -149,18 +153,29 @@ class _SignsScreenState extends State<SignsScreen> {
   }
 }
 
-class _SignTile extends StatelessWidget {
+/// Một biển: mã, tên và ý nghĩa (rút gọn 2 dòng, chạm để xem đủ).
+class _SignTile extends StatefulWidget {
   const _SignTile({required this.sign});
 
   final TrafficSign sign;
 
   @override
+  State<_SignTile> createState() => _SignTileState();
+}
+
+class _SignTileState extends State<_SignTile> {
+  bool _expanded = false;
+
+  @override
   Widget build(BuildContext context) {
+    final sign = widget.sign;
     final c = context.colors;
     return AppCard(
       radius: 14,
       padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
+      onTap: sign.meaning == null ? null : () => setState(() => _expanded = !_expanded),
       child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           SignGroupGlyph(group: sign.group),
           const SizedBox(width: 14),
@@ -178,7 +193,12 @@ class _SignTile extends StatelessWidget {
                 ),
                 if (sign.meaning != null) ...[
                   const SizedBox(height: 2),
-                  Text(sign.meaning!, style: TextStyle(fontSize: 12.5, color: c.muted)),
+                  Text(
+                    sign.meaning!,
+                    maxLines: _expanded ? null : 2,
+                    overflow: _expanded ? null : TextOverflow.ellipsis,
+                    style: TextStyle(fontSize: 12.5, height: 1.45, color: c.muted),
+                  ),
                 ],
               ],
             ),
@@ -190,7 +210,7 @@ class _SignTile extends StatelessWidget {
 }
 
 /// Hình dáng chung của nhóm biển (tròn viền đỏ, tam giác vàng...), chưa phải hình
-/// từng biển. Dữ liệu hiện chỉ có mã và tên biển.
+/// từng biển.
 class SignGroupGlyph extends StatelessWidget {
   const SignGroupGlyph({super.key, required this.group, this.size = 44});
 
