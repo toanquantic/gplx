@@ -62,14 +62,27 @@ void main() {
     expect(bank.isCritical('A1', 73), isFalse);
   });
 
-  test('các hạng đang mở đều có cấu hình đề và điểm đạt', () {
+  test('mở đủ 15 hạng, hạng nào cũng có cấu hình đề và mô tả', () {
+    expect(enabledClasses.length, 15);
+    expect(enabledClasses.toSet().length, 15);
+    expect(enabledClasses.toSet(), bank.classes.keys.toSet());
     for (final code in enabledClasses) {
       final c = bank.examConfigs[code];
       expect(c, isNotNull, reason: code);
-      expect(c!.passScore, isNotNull, reason: code);
+      // Chỉ B1 chưa xác minh được điểm đạt từ nguồn tin cậy.
+      expect(c!.passScore == null, code == 'B1', reason: code);
       expect(c.structure.values.fold<int>(0, (a, b) => a + b), c.questionCount, reason: code);
     }
-    expect(bank.examConfigs['D']?.questionCount, 45);
+    for (final code in ['D1', 'D2', 'D', 'BE', 'C1E', 'CE', 'D1E', 'D2E', 'DE']) {
+      expect(bank.examConfigs[code]?.questionCount, 45, reason: code);
+      expect(bank.examConfigs[code]?.minutes, 26, reason: code);
+      expect(bank.examConfigs[code]?.passScore, 41, reason: code);
+      expect(bank.forClass(code).length, 600, reason: code);
+      expect(bank.criticalFor(code).length, 60, reason: code);
+    }
+    expect(bank.forClass('B1').length, 300);
+    expect(bank.criticalFor('B1').length, 30);
+    expect(bank.examConfigs['B1']?.questionCount, 25);
   });
 
   for (final code in enabledClasses) {

@@ -315,7 +315,8 @@ class HomeScreen extends StatelessWidget {
   }
 }
 
-/// Nút chọn hạng dạng phân đoạn, như mockup.
+/// Nút chọn hạng dạng phân đoạn, như mockup: các hạng phổ biến hiện sẵn, các hạng
+/// còn lại chọn trong mục "Khác".
 class _ClassPicker extends StatelessWidget {
   const _ClassPicker({required this.selected, required this.onSelect});
 
@@ -325,41 +326,127 @@ class _ClassPicker extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final c = context.colors;
-    return Container(
-      padding: const EdgeInsets.all(4),
-      decoration: BoxDecoration(color: c.track, borderRadius: BorderRadius.circular(14)),
-      child: Row(
-        children: [
-          for (final code in enabledClasses)
-            Expanded(
-              child: Semantics(
-                selected: code == selected,
-                button: true,
-                child: Material(
-                  color: code == selected ? c.surface : Colors.transparent,
-                  elevation: code == selected ? 1 : 0,
-                  shadowColor: Colors.black26,
-                  borderRadius: BorderRadius.circular(10),
-                  child: InkWell(
-                    borderRadius: BorderRadius.circular(10),
-                    onTap: () => onSelect(code),
-                    child: SizedBox(
-                      height: 40,
-                      child: Center(
-                        child: Text(
-                          code,
-                          style: TextStyle(
-                            fontSize: 15,
-                            fontWeight: code == selected ? FontWeight.w600 : FontWeight.w500,
-                            color: code == selected ? c.accent : c.muted,
-                          ),
-                        ),
-                      ),
+    final other = !quickClasses.contains(selected);
+
+    Widget segment(String label, bool on, VoidCallback onTap) => Expanded(
+      child: Semantics(
+        selected: on,
+        button: true,
+        child: Material(
+          color: on ? c.surface : Colors.transparent,
+          elevation: on ? 1 : 0,
+          shadowColor: Colors.black26,
+          borderRadius: BorderRadius.circular(10),
+          child: InkWell(
+            borderRadius: BorderRadius.circular(10),
+            onTap: onTap,
+            child: SizedBox(
+              height: 40,
+              child: Center(
+                child: FittedBox(
+                  fit: BoxFit.scaleDown,
+                  child: Text(
+                    label,
+                    style: TextStyle(
+                      fontSize: 15,
+                      fontWeight: on ? FontWeight.w600 : FontWeight.w500,
+                      color: on ? c.accent : c.muted,
                     ),
                   ),
                 ),
               ),
             ),
+          ),
+        ),
+      ),
+    );
+
+    return Container(
+      padding: const EdgeInsets.all(4),
+      decoration: BoxDecoration(color: c.track, borderRadius: BorderRadius.circular(14)),
+      child: Row(
+        children: [
+          for (final code in quickClasses) segment(code, code == selected, () => onSelect(code)),
+          segment(other ? selected : 'Khác', other, () async {
+            final code = await _ClassSheet.show(context, selected);
+            if (code != null) onSelect(code);
+          }),
+        ],
+      ),
+    );
+  }
+}
+
+/// Danh sách đủ các hạng, gom theo nhóm xe, kèm mô tả ngắn.
+class _ClassSheet extends StatelessWidget {
+  const _ClassSheet({required this.selected});
+
+  final String selected;
+
+  static Future<String?> show(BuildContext context, String selected) =>
+      showModalBottomSheet<String>(
+        context: context,
+        showDragHandle: true,
+        isScrollControlled: true,
+        builder: (_) => _ClassSheet(selected: selected),
+      );
+
+  @override
+  Widget build(BuildContext context) {
+    final bank = AppScope.of(context).bank;
+    final c = context.colors;
+    return DraggableScrollableSheet(
+      expand: false,
+      initialChildSize: 0.75,
+      maxChildSize: 0.95,
+      builder: (context, controller) => ListView(
+        controller: controller,
+        padding: const EdgeInsets.fromLTRB(20, 0, 20, 24),
+        children: [
+          const Text('Chọn hạng bằng', style: TextStyle(fontSize: 18, fontWeight: FontWeight.w700)),
+          for (final MapEntry(key: title, value: codes) in classGroups.entries) ...[
+            Padding(
+              padding: const EdgeInsets.fromLTRB(0, 16, 0, 6),
+              child: Text(
+                title,
+                style: TextStyle(fontSize: 13, fontWeight: FontWeight.w600, color: c.muted),
+              ),
+            ),
+            for (final code in codes)
+              Padding(
+                padding: const EdgeInsets.only(bottom: 8),
+                child: AppCard(
+                  radius: 14,
+                  padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
+                  onTap: () => Navigator.pop(context, code),
+                  child: Row(
+                    children: [
+                      SizedBox(
+                        width: 48,
+                        child: Text(
+                          code,
+                          style: TextStyle(
+                            fontSize: 16,
+                            fontWeight: FontWeight.w700,
+                            color: c.accent,
+                          ),
+                        ),
+                      ),
+                      Expanded(
+                        child: Text(
+                          bank.classes[code]?.description ?? '',
+                          style: TextStyle(fontSize: 13, height: 1.4, color: c.muted),
+                        ),
+                      ),
+                      if (code == selected) ...[
+                        const SizedBox(width: 8),
+                        Icon(Icons.check_circle, color: c.accent, size: 20),
+                      ],
+                    ],
+                  ),
+                ),
+              ),
+          ],
         ],
       ),
     );
