@@ -25,7 +25,8 @@ class ExamRecord {
   final DateTime time;
   final int correct;
   final int total;
-  final bool passed;
+  /// Null khi chưa kết luận được (hạng chưa xác minh điểm đạt).
+  final bool? passed;
   final bool failedCritical;
 
   /// Thời gian làm bài. Các trường dưới đây null ở bản ghi cũ.
@@ -60,7 +61,7 @@ class ExamRecord {
     DateTime.parse(j['t'] as String),
     j['dung'] as int,
     j['tong'] as int,
-    j['dat'] as bool,
+    j['dat'] as bool?,
     failedCritical: j['liet'] as bool? ?? false,
     duration: j['giay'] == null ? null : Duration(seconds: j['giay'] as int),
     questionIds: (j['cau'] as List?)?.cast<int>(),

@@ -158,7 +158,7 @@ PassPrediction? predictPass(QuestionBank bank, Progress progress, String code) {
   final exams = progress.exams.where((e) => e.classCode == code).toList();
   final recent = exams.take(5).toList();
   if (recent.isNotEmpty) {
-    final passRate = recent.where((e) => e.passed).length / recent.length;
+    final passRate = recent.where((e) => e.passed == true).length / recent.length;
     final w = recent.length / 10;
     probability = probability * (1 - w) + passRate * w;
   }

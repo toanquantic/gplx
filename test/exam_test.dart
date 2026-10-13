@@ -99,6 +99,22 @@ void main() {
     });
   }
 
+  test('hạng B1 chưa có điểm đạt: không báo đạt hay trượt, trừ khi sai câu điểm liệt', () {
+    final exam = generateExam(bank, 'B1', random: Random(3));
+    for (var i = 0; i < exam.questions.length; i++) {
+      exam.answers[i] = exam.questions[i].correctIndex;
+    }
+    final r = exam.grade();
+    expect(r.correct, 25);
+    expect(r.passed, isNull);
+    final ci = exam.questions.indexWhere((q) => bank.isCritical('B1', q.id));
+    exam.answers[ci] = null;
+    expect(exam.grade().passed, isFalse);
+    expect(exam.grade().failedCritical, isTrue);
+    final saved = ExamRecord('B1', DateTime(2026, 10, 13), r.correct, r.total, r.passed);
+    expect(ExamRecord.fromJson(saved.toJson()).passed, isNull);
+  });
+
   group('chấm điểm', () {
     late Exam exam;
     late int criticalIndex;
