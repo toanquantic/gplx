@@ -6,6 +6,7 @@ import '../../models/models.dart';
 import '../../monetization/paywall.dart';
 import '../app_scope.dart';
 import '../theme.dart';
+import '../widgets/reminder_tile.dart';
 import 'about_screen.dart';
 import 'before_exam_screen.dart';
 import 'exam_screen.dart';
@@ -305,6 +306,8 @@ class HomeScreen extends StatelessWidget {
                 ],
               ),
             ),
+            const SizedBox(height: 10),
+            const ReminderTile(),
           ],
         ),
       ),

@@ -2,6 +2,7 @@ import 'package:flutter/widgets.dart';
 
 import '../data/question_bank.dart';
 import '../monetization/entitlement.dart';
+import '../notifications/reminders.dart';
 import '../state/progress.dart';
 
 /// Cung cấp bộ câu hỏi và tiến độ học cho toàn bộ cây widget.
@@ -11,11 +12,13 @@ class AppScope extends InheritedNotifier<Progress> {
     required this.bank,
     required Progress progress,
     this.entitlement = const FreeEntitlementService(),
+    this.reminders = const NoReminderScheduler(),
     required super.child,
   }) : super(notifier: progress);
 
   final QuestionBank bank;
   final EntitlementService entitlement;
+  final ReminderScheduler reminders;
 
   static AppScope of(BuildContext context) =>
       context.dependOnInheritedWidgetOfExactType<AppScope>()!;

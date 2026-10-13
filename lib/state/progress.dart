@@ -103,6 +103,9 @@ class Progress extends ChangeNotifier {
   DateTime? planStart;
   final Set<String> planDone = {};
 
+  /// Giờ nhắc học mỗi ngày, tính bằng phút từ nửa đêm; null là tắt.
+  int? reminderMinutes;
+
   bool isPlanStepDone(int step) => planDone.contains('$classCode:$step');
 
   DateTime get today => dayOf(clock());
@@ -139,6 +142,7 @@ class Progress extends ChangeNotifier {
     final start = j['bat_dau_on'] as String?;
     if (start != null) planStart = DateTime.parse(start);
     planDone.addAll((j['buoc_xong'] as List? ?? []).cast<String>());
+    reminderMinutes = j['nhac'] as int?;
   }
 
   Future<void> _save() => _prefs.setString(
@@ -153,6 +157,7 @@ class Progress extends ChangeNotifier {
       if (examDate != null) 'ngay_thi': formatDay(examDate!),
       if (planStart != null) 'bat_dau_on': planStart!.toIso8601String(),
       'buoc_xong': planDone.toList(),
+      if (reminderMinutes != null) 'nhac': reminderMinutes,
     }),
   );
 
@@ -192,6 +197,12 @@ class Progress extends ChangeNotifier {
     examDate = date == null ? null : dayOf(date);
     planStart = date == null ? null : clock();
     planDone.clear();
+    notifyListeners();
+    _save();
+  }
+
+  void setReminder(int? minutes) {
+    reminderMinutes = minutes;
     notifyListeners();
     _save();
   }

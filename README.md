@@ -15,6 +15,7 @@ App đang mở các hạng **A1, A, B, C1, C**. Muốn mở thêm hạng khác c
 - Kết quả thi: điểm theo từng nhóm câu, câu điểm liệt, thời gian làm bài; xem lại câu sai kèm giải thích; mở lại bài cũ từ lịch sử thi
 - Tra cứu 419 biển báo theo QCVN 41:2024 (mã và tên), lọc theo nhóm biển
 - Trang giới thiệu ghi nguồn và giấy phép MIT của lời giải thích
+- Nhắc học mỗi ngày (Android, iOS): bật ở trang chủ, mặc định 20:00, đổi giờ được. App đặt sẵn thông báo cho 7 ngày tới, mỗi ngày một lời nhắc tính từ tiến độ (số câu đến hạn ôn với bản Pro, số ngày còn lại đến ngày thi); hôm đó đã học thì không nhắc
 
 Bản Pro (mở khóa một lần): ôn lại câu sai theo lịch giãn cách, thống kê theo chương và dự đoán khả năng đỗ, đề ưu tiên câu yếu, gói ôn trước ngày thi, mẹo nhớ nhanh. Mẹo nhớ nằm trong `assets/data/meo_nho.json`, do app tự biên soạn từ đáp án bộ 600 câu; test kiểm tra các con số trong mẹo khớp đáp án đúng.
 
