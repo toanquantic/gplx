@@ -49,7 +49,7 @@ class _OnThiAppState extends State<OnThiApp> {
   void initState() {
     super.initState();
     _loading.then((data) {
-      if (mounted) _sync = ReminderSync(data.$2, _entitlement, _reminders);
+      if (mounted) _sync = ReminderSync(data.$1, data.$2, _entitlement, _reminders);
     }, onError: (_) {});
   }
 

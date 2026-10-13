@@ -3,6 +3,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:on_thi_gplx/logic/reminder_plan.dart';
 import 'package:on_thi_gplx/logic/review.dart';
 import 'package:on_thi_gplx/monetization/entitlement.dart';
+import 'package:on_thi_gplx/monetization/store_entitlement.dart';
 import 'package:on_thi_gplx/notifications/reminder_sync.dart';
 import 'package:on_thi_gplx/notifications/reminders.dart';
 import 'package:on_thi_gplx/state/progress.dart';
@@ -122,7 +123,7 @@ void main() {
     testWidgets('bật nhắc thì xin quyền, lưu 20:00 và đặt lịch; tắt thì hủy', (tester) async {
       final fake = FakeReminderScheduler();
       final progress = await pump(tester, fake);
-      final sync = ReminderSync(progress, const FreeEntitlementService(), fake);
+      final sync = ReminderSync(loadBank(), progress, const FreeEntitlementService(), fake);
       addTearDown(sync.dispose);
       expect(find.text('Đang tắt'), findsOneWidget);
 
@@ -137,6 +138,31 @@ void main() {
       await tester.pump(const Duration(seconds: 3));
       expect(progress.reminderMinutes, isNull);
       expect(fake.calls.last, isEmpty);
+    });
+
+    test('mở app khi nhắc đang tắt thì vẫn hủy thông báo cũ một lần', () async {
+      final progress = await Progress.load(clock: () => now);
+      final fake = FakeReminderScheduler();
+      final sync = ReminderSync(loadBank(), progress, const FreeEntitlementService(), fake);
+      await Future<void>.delayed(const Duration(milliseconds: 2100));
+      expect(fake.calls, [isEmpty]);
+      progress.recordAnswer(1, true);
+      await Future<void>.delayed(const Duration(milliseconds: 2100));
+      expect(fake.calls.length, 1);
+      sync.dispose();
+    });
+
+    test('Pro chỉ đếm câu đến hạn của hạng đang học', () async {
+      final progress = await Progress.load(clock: () => DateTime(2026, 10, 12, 9));
+      // Câu 300 chỉ thuộc bộ ô tô, câu 1 thuộc mọi hạng.
+      progress.recordAnswers({300: false, 1: false});
+      progress.setReminder(defaultReminderMinutes);
+      final fake = FakeReminderScheduler();
+      final sync = ReminderSync(loadBank(), progress, const ForcedProEntitlementService(), fake);
+      await Future<void>.delayed(const Duration(milliseconds: 2100));
+      expect(progress.classCode, 'A1');
+      expect(fake.calls.last[1].body, startsWith('1 câu đến hạn'));
+      sync.dispose();
     });
 
     testWidgets('không được phép gửi thông báo thì giữ trạng thái tắt', (tester) async {
