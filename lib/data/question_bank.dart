@@ -16,6 +16,7 @@ class QuestionBank {
     required this.classes,
     required this.examConfigs,
     required this.signs,
+    required this.tipGroups,
     required this.sourceNote,
   });
 
@@ -24,6 +25,7 @@ class QuestionBank {
   final Map<String, LicenseClass> classes;
   final Map<String, ExamConfig> examConfigs;
   final List<TrafficSign> signs;
+  final List<TipGroup> tipGroups;
   final String sourceNote;
 
   static Future<QuestionBank> load([AssetBundle? bundle]) async {
@@ -35,6 +37,7 @@ class QuestionBank {
       examConfigJson: await read('cau_hinh_de_thi.json'),
       classesJson: await read('hang_gplx.json'),
       signsJson: await read('bien_bao.json'),
+      tipsJson: await read('meo_nho.json'),
     );
   }
 
@@ -44,6 +47,7 @@ class QuestionBank {
     required String examConfigJson,
     required String classesJson,
     required String signsJson,
+    required String tipsJson,
   }) {
     final explanations = <int, String>{
       for (final e in (jsonDecode(explanationsJson)['giai_thich'] as List))
@@ -84,6 +88,10 @@ class QuestionBank {
         for (final s in (jsonDecode(signsJson) as List).cast<Map<String, dynamic>>())
           TrafficSign.fromJson(s),
       ],
+      tipGroups: [
+        for (final t in (jsonDecode(tipsJson)['nhom'] as List).cast<Map<String, dynamic>>())
+          TipGroup.fromJson(t),
+      ],
       sourceNote: '${source['ten']}, ${source['co_quan']}. ${source['van_ban']}.',
     );
   }
@@ -100,6 +108,25 @@ class QuestionBank {
   List<Question> criticalFor(String code) {
     final ids = examConfigs[code]?.criticalIds ?? const <int>[];
     return [for (final id in ids) questions[id]!]..sort((a, b) => a.id.compareTo(b.id));
+  }
+
+  /// Các nhóm mẹo có câu thuộc hạng [code], mỗi nhóm chỉ giữ câu của hạng đó.
+  List<(TipGroup, List<Question>)> tipsForClass(String code) => [
+    for (final g in tipGroups)
+      if (_tipQuestions(g, code) case final qs when qs.isNotEmpty) (g, qs),
+  ];
+
+  List<Question> _tipQuestions(TipGroup g, String code) => [
+    for (final id in g.questionIds)
+      if (questions[id]!.classes.contains(code)) questions[id]!,
+  ];
+
+  /// Nhóm mẹo đầu tiên có câu [id], hoặc null.
+  TipGroup? tipFor(int id) {
+    for (final g in tipGroups) {
+      if (g.questionIds.contains(id)) return g;
+    }
+    return null;
   }
 
   bool isCritical(String code, int id) => examConfigs[code]?.criticalIds.contains(id) ?? false;

@@ -12,6 +12,7 @@ import 'package:on_thi_gplx/ui/app_scope.dart';
 import 'package:on_thi_gplx/ui/screens/before_exam_screen.dart';
 import 'package:on_thi_gplx/ui/screens/review_screen.dart';
 import 'package:on_thi_gplx/ui/screens/stats_screen.dart';
+import 'package:on_thi_gplx/ui/screens/tips_screen.dart';
 import 'package:on_thi_gplx/ui/theme.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -155,6 +156,49 @@ void main() {
     expect(smartHits, greaterThan(randomHits * 2));
   });
 
+  group('mẹo nhớ nhanh', () {
+    test('mỗi nhóm trỏ tới câu có thật, không trùng câu giữa các nhóm', () {
+      final seen = <int>{};
+      for (final g in bank.tipGroups) {
+        expect(g.tips, isNotEmpty, reason: g.code);
+        for (final id in g.questionIds) {
+          expect(bank.questions[id], isNotNull, reason: '${g.code}: câu $id');
+          expect(seen.add(id), isTrue, reason: 'câu $id nằm ở hai nhóm');
+        }
+      }
+      expect(bank.tipFor(145)?.code, 'toc_do');
+      expect(bank.tipFor(1), isNull);
+    });
+
+    test('con số trong đáp án đúng có mặt trong mẹo của nhóm', () {
+      // Đáp án dạng "60 km/h.", "35 m.", "18 tuổi.", "Không quá 4 giờ."
+      final number = RegExp(r'^(?:Không quá )?(\d+) (?:km/h|m|tuổi|giờ)');
+      var checked = 0;
+      for (final g in bank.tipGroups) {
+        final text = g.tips.join(' ');
+        for (final id in g.questionIds) {
+          final q = bank.questions[id]!;
+          final m = number.firstMatch(q.options[q.correctIndex]);
+          if (m == null) continue;
+          checked++;
+          expect(text, contains(m.group(1)), reason: '${g.code}: câu $id');
+        }
+      }
+      expect(checked, greaterThan(10));
+    });
+
+    test('chỉ giữ nhóm và câu thuộc hạng đang học', () {
+      final a1 = bank.tipsForClass('A1');
+      final codes = [for (final (g, _) in a1) g.code];
+      expect(codes, isNot(contains('khoang_cach')));
+      expect(codes, isNot(contains('thoi_gian_lai')));
+      for (final (_, qs) in a1) {
+        expect(qs.every((q) => q.classes.contains('A1')), isTrue);
+      }
+      expect(bank.tipsForClass('B').length, bank.tipGroups.length);
+    });
+  });
+
   group('màn Pro', () {
     Future<Progress> pump(WidgetTester tester, Widget screen, {bool pro = true}) async {
       final progress = (await tester.runAsync(load))!;
@@ -213,6 +257,22 @@ void main() {
       await tester.pumpAndSettle();
       expect(find.text('Chưa đủ dữ liệu'), findsOneWidget);
       expect(find.text('Làm nốt 248 câu chưa gặp'), findsOneWidget);
+    });
+
+    testWidgets('mẹo nhớ nhanh: bản miễn phí bị khóa, bản Pro mở nhóm và ôn câu', (tester) async {
+      await pump(tester, const TipsScreen(), pro: false);
+      expect(find.text('Xem bản Pro'), findsOneWidget);
+      expect(find.text('Tốc độ tối đa'), findsNothing);
+
+      await pump(tester, const TipsScreen(initialCode: 'toc_do'));
+      expect(find.text('Tốc độ tối đa'), findsOneWidget);
+      expect(find.textContaining('nhớ dãy 90, 80, 70, 60'), findsOneWidget);
+      await tester.tap(find.textContaining('Ôn ').first);
+      await tester.pumpAndSettle();
+      expect(find.textContaining('Câu 41 · 1/'), findsOneWidget);
+      await tester.tap(find.text(String.fromCharCode(65 + bank.questions[41]!.correctIndex)).last);
+      await tester.pumpAndSettle();
+      expect(find.text('Mẹo nhớ: Tốc độ tối đa'), findsOneWidget);
     });
 
     testWidgets('ngày trước khi thi: 4 bước, xong bước điểm liệt khi làm hết', (tester) async {

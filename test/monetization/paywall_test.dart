@@ -16,6 +16,10 @@ void main() {
 
   Future<void> pump(WidgetTester tester, EntitlementService service) async {
     final progress = (await tester.runAsync(Progress.load))!;
+    // Cỡ màn điện thoại, đủ cao để thấy nút mua dưới danh sách quyền lợi.
+    tester.view.physicalSize = const Size(1080, 2400);
+    tester.view.devicePixelRatio = 2.5;
+    addTearDown(tester.view.reset);
     await tester.pumpWidget(AppScope(
       bank: bank,
       progress: progress,

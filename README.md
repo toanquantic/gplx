@@ -2,7 +2,7 @@
 
 App Flutter ôn thi lý thuyết giấy phép lái xe Việt Nam, chạy hoàn toàn offline. Dữ liệu là bộ 600 câu của Cục CSGT (áp dụng từ 01/6/2025), lấy từ thư mục `data/` của dự án.
 
-Đợt 1 mở các hạng **A1, A, B**. Muốn mở thêm C1, C chỉ cần thêm mã vào `enabledClasses` trong `lib/data/question_bank.dart`, vì dữ liệu và cấu hình đề đã có sẵn.
+App đang mở các hạng **A1, A, B, C1, C**. Muốn mở thêm hạng khác chỉ cần thêm mã vào `enabledClasses` trong `lib/data/question_bank.dart`, vì dữ liệu và cấu hình đề đã có sẵn.
 
 ## Tính năng
 
@@ -16,6 +16,8 @@ App Flutter ôn thi lý thuyết giấy phép lái xe Việt Nam, chạy hoàn t
 - Tra cứu 419 biển báo theo QCVN 41:2024 (mã và tên), lọc theo nhóm biển
 - Trang giới thiệu ghi nguồn và giấy phép MIT của lời giải thích
 
+Bản Pro (mở khóa một lần): ôn lại câu sai theo lịch giãn cách, thống kê theo chương và dự đoán khả năng đỗ, đề ưu tiên câu yếu, gói ôn trước ngày thi, mẹo nhớ nhanh. Mẹo nhớ nằm trong `assets/data/meo_nho.json`, do app tự biên soạn từ đáp án bộ 600 câu; test kiểm tra các con số trong mẹo khớp đáp án đúng.
+
 Giao diện theo mockup "Mockup app Ôn thi GPLX" (phông Be Vietnam Pro, giấy phép OFL, đóng gói sẵn trong `assets/fonts/` để chạy offline), có cả giao diện tối.
 
 ## Chạy thử
@@ -23,7 +25,7 @@ Giao diện theo mockup "Mockup app Ôn thi GPLX" (phông Be Vietnam Pro, giấy
 ```bash
 flutter pub get
 flutter run            # chọn thiết bị: Android, iOS, Chrome, desktop
-flutter test           # 33 test: dữ liệu, rút đề, chấm điểm, lịch sử thi, giao diện, mua Pro
+flutter test           # dữ liệu, rút đề, chấm điểm, lịch sử thi, giao diện, mua Pro, tính năng Pro
 ```
 
 ## Build Android và iOS

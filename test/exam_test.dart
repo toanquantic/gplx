@@ -14,6 +14,7 @@ QuestionBank loadBank() {
     examConfigJson: read('cau_hinh_de_thi.json'),
     classesJson: read('hang_gplx.json'),
     signsJson: read('bien_bao.json'),
+    tipsJson: read('meo_nho.json'),
   );
 }
 

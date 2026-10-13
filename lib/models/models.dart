@@ -131,6 +131,30 @@ class TrafficSign {
       j['y_nghia'] as String?);
 }
 
+/// Một nhóm mẹo nhớ nhanh (bản Pro), tự biên soạn trong `meo_nho.json`.
+class TipGroup {
+  const TipGroup({
+    required this.code,
+    required this.title,
+    required this.tips,
+    required this.questionIds,
+  });
+
+  final String code;
+  final String title;
+  final List<String> tips;
+
+  /// Các câu trong bộ 600 câu mà nhóm mẹo này giúp trả lời.
+  final List<int> questionIds;
+
+  factory TipGroup.fromJson(Map<String, dynamic> j) => TipGroup(
+        code: j['ma'] as String,
+        title: j['ten'] as String,
+        tips: (j['meo'] as List).cast<String>(),
+        questionIds: (j['cau'] as List).cast<int>(),
+      );
+}
+
 const groupLabels = {
   'quy_dinh_chung': 'Quy định chung',
   'diem_liet': 'Câu điểm liệt',

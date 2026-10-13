@@ -13,6 +13,7 @@ import 'practice_screen.dart';
 import 'review_screen.dart';
 import 'signs_screen.dart';
 import 'stats_screen.dart';
+import 'tips_screen.dart';
 
 void _open(BuildContext context, Widget screen) =>
     Navigator.push(context, MaterialPageRoute<void>(builder: (_) => screen));
@@ -268,6 +269,13 @@ class HomeScreen extends StatelessWidget {
                   ),
                 ),
               ],
+            ),
+            const SizedBox(height: 10),
+            _ProTile(
+              icon: Icons.tips_and_updates_outlined,
+              title: 'Mẹo nhớ nhanh',
+              subtitle: 'Tốc độ, khoảng cách, xe ưu tiên, thứ tự qua giao lộ',
+              onTap: () => _open(context, const TipsScreen()),
             ),
             const SizedBox(height: 10),
             AppCard(
