@@ -26,11 +26,12 @@ String _formatDuration(Duration d) {
 }
 
 /// Dòng tóm tắt kết quả, dùng trong lịch sử thi.
-String _verdict(ExamRecord e) => e.passed
-    ? 'Đạt'
-    : e.failedCritical
-    ? 'Trượt câu điểm liệt'
-    : 'Không đạt';
+String _verdict(ExamRecord e) => switch (e.passed) {
+  true => 'Đạt',
+  null => 'Chưa xác minh điểm đạt',
+  false when e.failedCritical => 'Trượt câu điểm liệt',
+  false => 'Không đạt',
+};
 
 /// Số đề gần nhất bản miễn phí xem được trong lịch sử thi.
 const freeHistoryLimit = 5;
@@ -211,7 +212,11 @@ class ExamIntroScreen extends StatelessWidget {
               width: 10,
               height: 10,
               decoration: BoxDecoration(
-                color: e.passed ? c.accent : c.danger,
+                color: switch (e.passed) {
+                  true => c.accent,
+                  false => c.danger,
+                  null => c.muted,
+                },
                 shape: BoxShape.circle,
               ),
             ),
@@ -539,7 +544,11 @@ class ExamResultScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final c = context.colors;
-    final color = result.passed ? c.accent : c.danger;
+    final color = switch (result.passed) {
+      true => c.accent,
+      false => c.danger,
+      null => c.muted,
+    };
     final wrong = [
       for (var i = 0; i < exam.questions.length; i++)
         if (!exam.isCorrect(i)) i,
@@ -563,13 +572,21 @@ class ExamResultScreen extends StatelessWidget {
             child: Column(
               children: [
                 Icon(
-                  result.passed ? Icons.verified_rounded : Icons.cancel_rounded,
+                  switch (result.passed) {
+                    true => Icons.verified_rounded,
+                    false => Icons.cancel_rounded,
+                    null => Icons.fact_check_outlined,
+                  },
                   size: 56,
                   color: color,
                 ),
                 const SizedBox(height: 6),
                 Text(
-                  result.passed ? 'Đạt' : 'Không đạt',
+                  switch (result.passed) {
+                    true => 'Đạt',
+                    false => 'Không đạt',
+                    null => 'Đã chấm điểm',
+                  },
                   style: TextStyle(fontSize: 22, fontWeight: FontWeight.w700, color: color),
                 ),
                 const SizedBox(height: 4),

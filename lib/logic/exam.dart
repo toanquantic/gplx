@@ -62,7 +62,8 @@ class Exam {
       total: questions.length,
       passScore: pass,
       failedCritical: failedCritical,
-      passed: pass != null && correct >= pass && !failedCritical,
+      // Chưa có điểm đạt thì chỉ kết luận được khi sai câu điểm liệt.
+      passed: failedCritical ? false : (pass == null ? null : correct >= pass),
     );
   }
 }
@@ -90,7 +91,9 @@ class ExamResult {
 
   /// Trả lời sai (hoặc bỏ trống) câu điểm liệt: trượt dù đủ điểm.
   final bool failedCritical;
-  final bool passed;
+
+  /// Null khi hạng chưa xác minh điểm đạt và không sai câu điểm liệt.
+  final bool? passed;
 }
 
 /// Rút đề theo `cau_truc` của hạng: mỗi nhóm lấy ngẫu nhiên đúng số câu quy định,

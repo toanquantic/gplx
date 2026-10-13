@@ -4,9 +4,20 @@ import 'package:flutter/services.dart' show AssetBundle, rootBundle;
 
 import '../models/models.dart';
 
-/// Các hạng đang mở trong app. Lộ trình trong `hang_gplx.json`:
-/// đợt 1 A1, A, B; đợt 2 C1, C; đợt 3 các hạng còn lại (chỉ cần thêm mã vào đây).
-const enabledClasses = ['A1', 'A', 'B', 'C1', 'C'];
+/// Các nhóm hạng đang mở trong app, theo thứ tự hiện trong danh sách chọn hạng
+/// (đủ 15 hạng của Điều 57 Luật 36/2024).
+const classGroups = {
+  'Mô tô': ['A1', 'A', 'B1'],
+  'Ô tô con, ô tô tải': ['B', 'C1', 'C'],
+  'Ô tô chở người': ['D1', 'D2', 'D'],
+  'Kéo rơ moóc': ['BE', 'C1E', 'CE', 'D1E', 'D2E', 'DE'],
+};
+
+/// Các hạng đang mở trong app.
+final enabledClasses = [for (final codes in classGroups.values) ...codes];
+
+/// Các hạng hiện sẵn trên thanh chọn ở trang chủ; hạng khác chọn trong mục "Khác".
+const quickClasses = ['A1', 'A', 'B', 'C1', 'C'];
 
 /// Toàn bộ dữ liệu ôn thi, nạp một lần từ assets và giữ trong bộ nhớ.
 class QuestionBank {

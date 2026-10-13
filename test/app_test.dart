@@ -35,6 +35,25 @@ void main() {
     expect(find.textContaining('Ôn lại hôm nay'), findsOneWidget);
   });
 
+  testWidgets('chọn hạng khác trong danh sách: D và B1', (tester) async {
+    await pumpApp(tester);
+    await tester.tap(find.text('Khác'));
+    await tester.pumpAndSettle();
+    expect(find.text('Chọn hạng bằng'), findsOneWidget);
+    await tester.scrollUntilVisible(find.text('D'), 200, scrollable: find.byType(Scrollable).last);
+    await tester.tap(find.text('D'));
+    await tester.pumpAndSettle();
+    expect(find.text('Khác'), findsNothing);
+    expect(find.textContaining('Đã làm 0/600'), findsOneWidget);
+    expect(find.textContaining('45 câu · 26 phút'), findsOneWidget);
+
+    await tester.tap(find.text('D'));
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('B1').last);
+    await tester.pumpAndSettle();
+    expect(find.textContaining('Đã làm 0/300'), findsOneWidget);
+  });
+
   testWidgets('ôn câu điểm liệt: chọn đáp án thì hiện đúng sai và lưu tiến độ', (tester) async {
     await pumpApp(tester);
     await tester.tap(find.text('Câu điểm liệt'));

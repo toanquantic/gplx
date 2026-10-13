@@ -106,7 +106,7 @@ class _StatsBody extends StatelessWidget {
             const SizedBox(width: 8),
             tile('$criticalRight/${critical.length}', 'câu điểm liệt'),
             const SizedBox(width: 8),
-            tile('${exams.where((e) => e.passed).length}/${exams.length}', 'đề thi đạt'),
+            tile('${exams.where((e) => e.passed == true).length}/${exams.length}', 'đề thi đạt'),
           ],
         ),
         const SizedBox(height: 14),
@@ -574,7 +574,7 @@ class _ScoresPainter extends CustomPainter {
       canvas.drawCircle(
         Offset(x(i), y(exams[i].correct)),
         4.5,
-        Paint()..color = exams[i].passed ? pass : fail,
+        Paint()..color = exams[i].passed == true ? pass : fail,
       );
     }
   }
