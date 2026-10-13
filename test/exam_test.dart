@@ -15,11 +15,22 @@ QuestionBank loadBank() {
     classesJson: read('hang_gplx.json'),
     signsJson: read('bien_bao.json'),
     tipsJson: read('meo_nho.json'),
+    reviewJson: read('giai_thich_ra_soat.json'),
   );
 }
 
 void main() {
   final bank = loadBank();
+
+  test('bản rà soát lời giải thích: đủ câu điểm liệt, thay đúng câu đã sửa', () {
+    for (final code in ['A1', 'A', 'B', 'C1', 'C']) {
+      for (final q in bank.criticalFor(code)) {
+        expect(q.explanationReviewed, isTrue, reason: 'câu ${q.id} hạng $code');
+      }
+    }
+    expect(bank.questions[35]!.explanation, contains('Cả ba ý trên'));
+    expect(bank.questions[1]!.explanationReviewed, isFalse);
+  });
 
   test('nạp đủ 600 câu, đáp án hợp lệ, hình tồn tại', () {
     expect(bank.questions.length, 600);

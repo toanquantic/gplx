@@ -10,6 +10,7 @@ class Question {
     required this.classes,
     this.image,
     this.explanation,
+    this.explanationReviewed = false,
   });
 
   final int id;
@@ -30,7 +31,14 @@ class Question {
   final String? image;
   final String? explanation;
 
-  factory Question.fromJson(Map<String, dynamic> j, {String? explanation}) {
+  /// Lời giải thích đã được đọc lại, đối chiếu với đáp án (`giai_thich_ra_soat.json`).
+  final bool explanationReviewed;
+
+  factory Question.fromJson(
+    Map<String, dynamic> j, {
+    String? explanation,
+    bool explanationReviewed = false,
+  }) {
     final hinh = j['hinh'] as String?;
     return Question(
       id: j['id'] as int,
@@ -43,6 +51,7 @@ class Question {
       classes: (j['hang'] as List).cast<String>().toSet(),
       image: hinh == null ? null : 'assets/data/$hinh',
       explanation: explanation ?? j['giai_thich'] as String?,
+      explanationReviewed: explanationReviewed,
     );
   }
 }

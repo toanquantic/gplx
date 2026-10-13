@@ -204,7 +204,9 @@ class ExplanationCard extends StatelessWidget {
             Text(question.explanation!, style: const TextStyle(fontSize: 14, height: 1.55)),
             const SizedBox(height: 8),
             Text(
-              'Giải thích do cộng đồng biên soạn, chỉ mang tính tham khảo.',
+              question.explanationReviewed
+                  ? 'Giải thích đã được rà soát theo đáp án, chỉ mang tính tham khảo.'
+                  : 'Giải thích do cộng đồng biên soạn, chỉ mang tính tham khảo.',
               style: TextStyle(fontSize: 12, color: c.muted),
             ),
           ],

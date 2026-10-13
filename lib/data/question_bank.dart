@@ -38,6 +38,7 @@ class QuestionBank {
       classesJson: await read('hang_gplx.json'),
       signsJson: await read('bien_bao.json'),
       tipsJson: await read('meo_nho.json'),
+      reviewJson: await read('giai_thich_ra_soat.json'),
     );
   }
 
@@ -48,16 +49,27 @@ class QuestionBank {
     required String classesJson,
     required String signsJson,
     required String tipsJson,
+    required String reviewJson,
   }) {
     final explanations = <int, String>{
       for (final e in (jsonDecode(explanationsJson)['giai_thich'] as List))
         if (e['giai_thich'] != null) e['id'] as int: e['giai_thich'] as String,
     };
+    // Bản rà soát: thay lời giải thích sai hoặc khó hiểu, đánh dấu câu đã đọc lại.
+    final review = jsonDecode(reviewJson) as Map<String, dynamic>;
+    for (final e in (review['sua'] as List).cast<Map<String, dynamic>>()) {
+      explanations[e['id'] as int] = e['giai_thich'] as String;
+    }
+    final reviewed = (review['da_ra_soat'] as List).cast<int>().toSet();
 
     final qj = jsonDecode(questionsJson) as Map<String, dynamic>;
     final questions = <int, Question>{
       for (final j in (qj['cau_hoi'] as List).cast<Map<String, dynamic>>())
-        j['id'] as int: Question.fromJson(j, explanation: explanations[j['id']]),
+        j['id'] as int: Question.fromJson(
+          j,
+          explanation: explanations[j['id']],
+          explanationReviewed: reviewed.contains(j['id']),
+        ),
     };
     final source = qj['_nguon'] as Map<String, dynamic>;
 

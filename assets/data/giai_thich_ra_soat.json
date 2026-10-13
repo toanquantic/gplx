@@ -1,0 +1,107 @@
+{
+ "_ghi_chu": "Rà soát lời giải thích cộng đồng (giai_thich_cong_dong.json, giấy phép MIT, tác giả Thi Thanh Chuong). 'da_ra_soat' là các câu đã đọc lại, đối chiếu với đáp án đúng; 'sua' là lời giải thích viết lại thay cho bản gốc, kèm lý do. File này không bị tool/sync_data.sh ghi đè.",
+ "da_ra_soat": [
+  19,
+  20,
+  21,
+  22,
+  23,
+  24,
+  25,
+  26,
+  27,
+  28,
+  30,
+  32,
+  34,
+  35,
+  47,
+  48,
+  52,
+  53,
+  55,
+  58,
+  63,
+  64,
+  65,
+  66,
+  67,
+  68,
+  70,
+  71,
+  72,
+  73,
+  74,
+  85,
+  86,
+  87,
+  88,
+  89,
+  90,
+  91,
+  92,
+  93,
+  97,
+  98,
+  102,
+  117,
+  163,
+  165,
+  167,
+  197,
+  198,
+  206,
+  215,
+  226,
+  234,
+  245,
+  246,
+  252,
+  253,
+  254,
+  255,
+  260
+ ],
+ "sua": [
+  {
+   "id": 22,
+   "giai_thich": "Đua xe trái phép bị nghiêm cấm. Tùy tính chất, mức độ vi phạm, người đua xe có thể bị xử phạt vi phạm hành chính hoặc bị truy cứu trách nhiệm hình sự, không chỉ bị nhắc nhở.",
+   "ly_do": "Bỏ chi tiết \"khởi tố tù giam\" không có trong đáp án; nói rõ hai hướng xử lý."
+  },
+  {
+   "id": 23,
+   "giai_thich": "Lái ô tô khi trong cơ thể có chất ma túy bị nghiêm cấm. Người vi phạm vừa bị phạt tiền vừa bị tước giấy phép lái xe, nên chọn \"Cả hai ý trên\".",
+   "ly_do": "Câu gốc có lỗi chữ (\"khung kịch khung\"); viết lại cho rõ."
+  },
+  {
+   "id": 25,
+   "giai_thich": "Lái ô tô khi trong máu hoặc hơi thở có nồng độ cồn bị nghiêm cấm. Người vi phạm bị phạt tiền và có thể bị tước giấy phép lái xe (tùy mức nồng độ cồn), nên chọn \"Cả hai ý trên\".",
+   "ly_do": "Bản gốc nói luôn bị tước giấy phép, trong khi đáp án ghi \"có thể bị tước\"."
+  },
+  {
+   "id": 30,
+   "giai_thich": "Cả hai hành vi đều bị cấm: lắp đặt, sử dụng thiết bị âm thanh, ánh sáng trên xe gây mất trật tự, an toàn giao thông; và cản trở người, phương tiện, ném gạch, đất, đá, vật khác vào người và xe đang đi trên đường.",
+   "ly_do": "Bản gốc thêm ví dụ (còi, đèn ưu tiên, đèn LED pha) không có trong câu hỏi; viết lại sát hai ý của đáp án."
+  },
+  {
+   "id": 35,
+   "giai_thich": "Người lái mô tô phải quan sát, giảm tốc độ hoặc dừng lại ở cả ba nhóm tình huống: đường hẹp, đường vòng, quanh co, đèo dốc; nơi cầu, cống hẹp, đập tràn, đường ngầm, hầm; và khi trời mưa, gió, sương, khói, bụi, mặt đường trơn trượt, lầy lội, có đất đá rơi vãi. Vì vậy chọn \"Cả ba ý trên\".",
+   "ly_do": "Bản gốc giải thích nhầm sang tình huống khác (người đi bộ, xe buýt, vòng xuyến)."
+  },
+  {
+   "id": 52,
+   "giai_thich": "Dùng tay cầm và sử dụng điện thoại hoặc thiết bị điện tử khi đang lái xe bị cấm vì làm người lái mất tập trung, không kịp xử lý tình huống. Muốn dùng điện thoại phải dừng xe ở nơi cho phép.",
+   "ly_do": "Bỏ con số \"giảm 80% khả năng phản xạ\" không có nguồn."
+  },
+  {
+   "id": 55,
+   "giai_thich": "Không được quay đầu xe ở phần đường dành cho người đi bộ qua đường, trên cầu, đầu cầu, trên đường cao tốc, nơi đường bộ giao nhau cùng mức với đường sắt, đường hẹp, đường dốc. Ý 2 sai vì quốc lộ và phía trước, phía sau vạch người đi bộ không phải nơi bị cấm quay đầu.",
+   "ly_do": "Viết lại sát danh sách trong đáp án và nói vì sao ý 2 sai."
+  },
+  {
+   "id": 206,
+   "giai_thich": "Xuống dốc dài bằng xe tay ga: giữ tay ga ở mức phù hợp và phanh cả phanh trước lẫn phanh sau để giảm tốc độ. Không tắt máy hay tắt chìa khóa điện khi xe đang chạy vì dễ mất kiểm soát xe.",
+   "ly_do": "Bản gốc có chi tiết không đúng với xe máy (\"độ bám côn\", \"trợ lực lái\")."
+  }
+ ]
+}
