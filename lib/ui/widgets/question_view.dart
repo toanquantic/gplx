@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 
 import '../../models/models.dart';
+import '../../monetization/entitlement.dart';
+import '../../monetization/paywall.dart';
+import '../app_scope.dart';
 import '../theme.dart';
 
 const _letters = ['A', 'B', 'C', 'D', 'E'];
@@ -62,7 +65,11 @@ class QuestionView extends StatelessWidget {
             state: _stateFor(i),
             onTap: onSelect == null ? null : () => onSelect!(i),
           ),
-        if (reveal) ...[const SizedBox(height: 4), ExplanationCard(question: question)],
+        if (reveal) ...[
+          const SizedBox(height: 4),
+          ExplanationCard(question: question),
+          TipHint(questionId: question.id),
+        ],
       ],
     );
   }
@@ -197,11 +204,81 @@ class ExplanationCard extends StatelessWidget {
             Text(question.explanation!, style: const TextStyle(fontSize: 14, height: 1.55)),
             const SizedBox(height: 8),
             Text(
-              'Giải thích do cộng đồng biên soạn, chỉ mang tính tham khảo.',
+              question.explanationReviewed
+                  ? 'Giải thích đã được rà soát theo đáp án, chỉ mang tính tham khảo.'
+                  : 'Giải thích do cộng đồng biên soạn, chỉ mang tính tham khảo.',
               style: TextStyle(fontSize: 12, color: c.muted),
             ),
           ],
         ],
+      ),
+    );
+  }
+}
+
+/// Mẹo nhớ nhanh của câu (bản Pro). Bản miễn phí chỉ thấy một dòng mời mở khóa.
+class TipHint extends StatelessWidget {
+  const TipHint({super.key, required this.questionId});
+
+  final int questionId;
+
+  @override
+  Widget build(BuildContext context) {
+    final group = AppScope.of(context).bank.tipFor(questionId);
+    if (group == null) return const SizedBox.shrink();
+    final c = context.colors;
+    return Padding(
+      padding: const EdgeInsets.only(top: 10),
+      child: ProGate(
+        locked: AppCard(
+          color: c.warnSoft,
+          borderColor: Colors.transparent,
+          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+          onTap: () => openPaywall(context),
+          child: Row(
+            children: [
+              Icon(Icons.tips_and_updates_outlined, size: 18, color: c.onWarnSoft),
+              const SizedBox(width: 8),
+              Expanded(
+                child: Text(
+                  'Có mẹo nhớ nhanh cho câu này',
+                  style: TextStyle(fontSize: 13.5, color: c.onWarnSoft),
+                ),
+              ),
+              const ProBadge(),
+            ],
+          ),
+        ),
+        child: AppCard(
+          color: c.warnSoft,
+          borderColor: Colors.transparent,
+          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Row(
+                children: [
+                  Icon(Icons.tips_and_updates_outlined, size: 18, color: c.onWarnSoft),
+                  const SizedBox(width: 8),
+                  Expanded(
+                    child: Text(
+                      'Mẹo nhớ: ${group.title}',
+                      style: TextStyle(
+                        fontSize: 14,
+                        fontWeight: FontWeight.w700,
+                        color: c.onWarnSoft,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+              for (final tip in group.tips) ...[
+                const SizedBox(height: 6),
+                Text(tip, style: TextStyle(fontSize: 13.5, height: 1.5, color: c.onWarnSoft)),
+              ],
+            ],
+          ),
+        ),
       ),
     );
   }

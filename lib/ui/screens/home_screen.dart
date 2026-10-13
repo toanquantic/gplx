@@ -6,6 +6,7 @@ import '../../models/models.dart';
 import '../../monetization/paywall.dart';
 import '../app_scope.dart';
 import '../theme.dart';
+import '../widgets/reminder_tile.dart';
 import 'about_screen.dart';
 import 'before_exam_screen.dart';
 import 'exam_screen.dart';
@@ -13,6 +14,7 @@ import 'practice_screen.dart';
 import 'review_screen.dart';
 import 'signs_screen.dart';
 import 'stats_screen.dart';
+import 'tips_screen.dart';
 
 void _open(BuildContext context, Widget screen) =>
     Navigator.push(context, MaterialPageRoute<void>(builder: (_) => screen));
@@ -270,6 +272,13 @@ class HomeScreen extends StatelessWidget {
               ],
             ),
             const SizedBox(height: 10),
+            _ProTile(
+              icon: Icons.tips_and_updates_outlined,
+              title: 'Mẹo nhớ nhanh',
+              subtitle: 'Tốc độ, khoảng cách, xe ưu tiên, thứ tự qua giao lộ',
+              onTap: () => _open(context, const TipsScreen()),
+            ),
+            const SizedBox(height: 10),
             AppCard(
               padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
               onTap: () => _open(context, const SignsScreen()),
@@ -297,6 +306,8 @@ class HomeScreen extends StatelessWidget {
                 ],
               ),
             ),
+            const SizedBox(height: 10),
+            const ReminderTile(),
           ],
         ),
       ),

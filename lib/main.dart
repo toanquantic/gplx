@@ -4,6 +4,8 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'data/question_bank.dart';
 import 'monetization/entitlement.dart';
 import 'monetization/store_entitlement.dart';
+import 'notifications/reminder_sync.dart';
+import 'notifications/reminders.dart';
 import 'state/progress.dart';
 import 'ui/app_scope.dart';
 import 'ui/screens/about_screen.dart';
@@ -23,12 +25,15 @@ Future<AppData> loadAppData() =>
         .then((r) => (r[0] as QuestionBank, r[1] as Progress));
 
 class OnThiApp extends StatefulWidget {
-  const OnThiApp({super.key, this.loader = loadAppData, this.entitlement});
+  const OnThiApp({super.key, this.loader = loadAppData, this.entitlement, this.reminders});
 
   final Future<AppData> Function() loader;
 
   /// Mặc định chọn theo nền tảng; test truyền bản giả vào đây.
   final EntitlementService? entitlement;
+
+  /// Mặc định chọn theo nền tảng (chỉ Android, iOS có thông báo).
+  final ReminderScheduler? reminders;
 
   @override
   State<OnThiApp> createState() => _OnThiAppState();
@@ -37,6 +42,22 @@ class OnThiApp extends StatefulWidget {
 class _OnThiAppState extends State<OnThiApp> {
   late final Future<AppData> _loading = widget.loader();
   late final EntitlementService _entitlement = widget.entitlement ?? createEntitlementService();
+  late final ReminderScheduler _reminders = widget.reminders ?? createReminderScheduler();
+  ReminderSync? _sync;
+
+  @override
+  void initState() {
+    super.initState();
+    _loading.then((data) {
+      if (mounted) _sync = ReminderSync(data.$1, data.$2, _entitlement, _reminders);
+    }, onError: (_) {});
+  }
+
+  @override
+  void dispose() {
+    _sync?.dispose();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -65,6 +86,7 @@ class _OnThiAppState extends State<OnThiApp> {
           bank: bank,
           progress: progress,
           entitlement: _entitlement,
+          reminders: _reminders,
           child: app(const HomeScreen()),
         );
       },

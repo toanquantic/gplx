@@ -1,0 +1,135 @@
+{
+ "_nguon": {
+  "tac_gia": "Tự biên soạn cho app Ôn thi GPLX",
+  "can_cu": "Tóm tắt từ đáp án đúng của bộ 600 câu (Cục CSGT, 2025). Mỗi nhóm ghi danh sách câu áp dụng; test tự động kiểm tra các con số trong mẹo khớp với đáp án."
+ },
+ "nhom": [
+  {
+   "ma": "toc_do",
+   "ten": "Tốc độ tối đa",
+   "meo": [
+    "Trong khu đông dân cư mọi ô tô và mô tô như nhau: đường đôi hoặc một chiều từ 2 làn trở lên là 60 km/h, đường hai chiều hoặc chỉ 1 làn là 50 km/h.",
+    "Ngoài khu đông dân cư, đường từ 2 làn trở lên nhớ dãy 90, 80, 70, 60: ô tô đến 28 chỗ (trừ buýt) và tải đến 3,5 tấn chạy 90; ô tô trên 28 chỗ và tải trên 3,5 tấn chạy 80; xe buýt, đầu kéo sơ mi rơ moóc, mô tô, ô tô chuyên dùng chạy 70; ô tô kéo rơ moóc, kéo xe khác, xi téc, trộn bê tông chạy 60.",
+    "Đường hai chiều hoặc chỉ 1 làn (ngoài khu đông dân cư): mỗi nhóm trên bớt 10, thành 80, 70, 60, 50.",
+    "Xe gắn máy và xe máy chuyên dùng tối đa 40 km/h. Xe chở hàng bốn bánh có gắn động cơ tối đa 50 km/h."
+   ],
+   "cau": [41, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157]
+  },
+  {
+   "ma": "khoang_cach",
+   "ten": "Khoảng cách an toàn",
+   "meo": [
+    "Đường khô ráo, không có biển cự ly: chạy 60 km/h giữ 35 m; trên 60 đến 80 km/h giữ 55 m; trên 80 đến 100 km/h giữ 70 m; trên 100 đến 120 km/h giữ 100 m. Nhớ dãy 35, 55, 70, 100.",
+    "Dưới 60 km/h không có con số cố định: chủ động giữ khoảng cách phù hợp với xe trước và với mật độ xe thực tế."
+   ],
+   "cau": [158, 159, 160, 161, 162, 166]
+  },
+  {
+   "ma": "do_tuoi",
+   "ten": "Độ tuổi lái xe",
+   "meo": [
+    "Từ 16 đến dưới 18 tuổi chỉ được lái xe gắn máy.",
+    "18 tuổi: mô tô (A1, A), ô tô đến 8 chỗ và tải đến 3,5 tấn (B), tải trên 3,5 đến 7,5 tấn (C1).",
+    "24 tuổi: xe chở người trên 16 đến 29 chỗ (D2). 27 tuổi: xe trên 29 chỗ, xe giường nằm (D).",
+    "Lái xe trên 29 chỗ hoặc xe giường nằm tối đa đến đủ 57 tuổi với nam, đủ 55 tuổi với nữ.",
+    "Giao xe cho người chưa đủ tuổi, không có bằng, hoặc bằng đã bị trừ hết 12 điểm đều bị nghiêm cấm."
+   ],
+   "cau": [27, 118, 119, 120, 121, 122, 123, 137]
+  },
+  {
+   "ma": "diem_gplx",
+   "ten": "Điểm giấy phép lái xe",
+   "meo": [
+    "Mỗi giấy phép lái xe có 12 điểm. Chưa bị trừ hết điểm thì sau 12 tháng không bị trừ thêm sẽ được phục hồi đủ 12 điểm.",
+    "Bị trừ hết điểm: sau ít nhất 06 tháng được dự kiểm tra kiến thức pháp luật, đạt thì được phục hồi điểm."
+   ],
+   "cau": [140, 141]
+  },
+  {
+   "ma": "hang_gplx",
+   "ten": "Hạng A1 lái được xe gì",
+   "meo": [
+    "Hạng A1 (cấp từ 01/01/2025): mô tô hai bánh đến 125 cm3 hoặc động cơ điện đến 11 kW.",
+    "Hạng A1 không được lái mô tô ba bánh."
+   ],
+   "cau": [124, 125]
+  },
+  {
+   "ma": "nong_do_con",
+   "ten": "Rượu bia, nồng độ cồn",
+   "meo": [
+    "Lái xe mà trong máu hoặc hơi thở có nồng độ cồn là bị nghiêm cấm, không có mức cho phép.",
+    "Cấm với cả người lái ô tô, mô tô, xe gắn máy và xe đạp. Người lái ô tô có nồng độ cồn bị phạt tiền và có thể bị tước giấy phép lái xe."
+   ],
+   "cau": [24, 25, 26, 192]
+  },
+  {
+   "ma": "xe_uu_tien",
+   "ten": "Xe ưu tiên",
+   "meo": [
+    "Thứ tự ưu tiên: xe chữa cháy, rồi xe quân sự, công an, kiểm sát đi làm nhiệm vụ khẩn cấp và đoàn xe có Cảnh sát giao thông dẫn đường, rồi xe cứu thương, rồi xe hộ đê, cứu nạn, cứu hộ, thiên tai, cuối cùng là đoàn xe tang.",
+    "Gặp xe ưu tiên đang phát tín hiệu: giảm tốc độ, đi sát lề phải hoặc dừng lại để nhường; không được vượt. Xe Cảnh sát giao thông không phát tín hiệu ưu tiên thì được vượt khi an toàn.",
+    "Xe ưu tiên đi làm nhiệm vụ không bị hạn chế tốc độ, được đi không theo đèn tín hiệu, được đi vào đường ngược chiều; trên cao tốc chỉ được đi ngược chiều ở làn dừng xe khẩn cấp."
+   ],
+   "cau": [53, 94, 95, 96, 97, 98]
+  },
+  {
+   "ma": "hieu_lenh",
+   "ten": "Hiệu lệnh, đèn và biển",
+   "meo": [
+    "Khi báo hiệu mâu thuẫn, chấp hành theo thứ tự: người điều khiển giao thông, rồi đèn tín hiệu, rồi biển báo, rồi vạch kẻ đường. Biển tạm thời được ưu tiên hơn biển cố định.",
+    "Cảnh sát giơ tay thẳng đứng: mọi hướng phải dừng, trừ xe đã ở trong nơi giao nhau. Tay dang ngang: người phía trước và phía sau dừng, người hai bên được đi.",
+    "Đèn vàng: dừng trước vạch dừng; đã đi trên hoặc qua vạch thì được đi tiếp. Vàng nhấp nháy: được đi nhưng phải quan sát, giảm tốc độ, nhường người đi bộ, xe lăn và các xe khác."
+   ],
+   "cau": [36, 37, 38, 39, 40]
+  },
+  {
+   "ma": "giao_lo",
+   "ten": "Thứ tự xe qua nơi giao nhau",
+   "meo": [
+    "Xét lần lượt: xe đã ở trong nơi giao nhau đi trước; rồi đến xe ưu tiên; rồi đến xe trên đường ưu tiên, đường chính; đường nhánh nhường đường chính.",
+    "Các xe ngang hàng (cùng cấp đường, không có vòng xuyến): nhường xe đến từ bên phải. Nơi có vòng xuyến: nhường xe đến từ bên trái.",
+    "Vẫn ngang hàng thì xét hướng đi: rẽ phải trước, đi thẳng sau, rẽ trái cuối cùng."
+   ],
+   "cau": [91, 487, 488, 489, 490, 492, 493, 494, 495, 496, 498, 501, 504, 506, 517, 520, 525, 533, 534, 536, 540, 549, 551, 567, 568, 574, 583, 584, 588, 589, 591, 593]
+  },
+  {
+   "ma": "coi_den",
+   "ten": "Còi và đèn",
+   "meo": [
+    "Trong khu đông dân cư, khu khám chữa bệnh chỉ được dùng còi từ 05 giờ đến 22 giờ. Từ 22 giờ đến 05 giờ sáng muốn vượt chỉ được báo hiệu bằng đèn.",
+    "Còi chỉ dùng khi có tình huống có thể mất an toàn hoặc báo hiệu chuẩn bị vượt; không bấm liên tục, kéo dài."
+   ],
+   "cau": [49, 50, 80, 193]
+  },
+  {
+   "ma": "thoi_gian_lai",
+   "ten": "Thời gian lái xe kinh doanh vận tải",
+   "meo": [
+    "Lái liên tục không quá 4 giờ, cả ngày không quá 10 giờ. Nhớ cặp số 4 và 10."
+   ],
+   "cau": [171, 172]
+  },
+  {
+   "ma": "cao_toc",
+   "ten": "Đường cao tốc",
+   "meo": [
+    "Không được vào cao tốc: mô tô, xe gắn máy, xe thô sơ, người đi bộ, xe bốn bánh có gắn động cơ và xe máy chuyên dùng chạy chậm hơn tốc độ tối thiểu.",
+    "Làn dừng khẩn cấp chỉ để dừng khi gặp sự cố, kể cả lúc ùn tắc cũng không được chạy vào (trừ xe ưu tiên).",
+    "Trên cao tốc không được lùi xe, quay đầu xe, không dừng đỗ trên phần đường xe chạy (trừ khi xe không thể vào làn khẩn cấp).",
+    "Lỡ lối ra thì đi tiếp đến lối ra sau. Xe hỏng không vào được làn khẩn cấp: bật đèn khẩn cấp, đặt biển hoặc đèn cảnh báo phía sau tối thiểu 150 m."
+   ],
+   "cau": [111, 112, 113, 114, 115, 116, 117]
+  },
+  {
+   "ma": "cho_nguoi",
+   "ten": "Chở người",
+   "meo": [
+    "Xe máy chỉ được chở tối đa 2 người khi chở người bệnh đi cấp cứu, áp giải người vi phạm, trẻ em dưới 12 tuổi, người già yếu hoặc khuyết tật.",
+    "Người ngồi sau không đội mũ bảo hiểm: phạt cả người lái và người được chở.",
+    "Ô tô chở trẻ dưới 10 tuổi và cao dưới 1,35 m: không cho ngồi cùng hàng ghế với người lái (trừ xe chỉ có một hàng ghế), phải dùng thiết bị an toàn phù hợp."
+   ],
+   "cau": [42, 69, 75]
+  }
+ ]
+}

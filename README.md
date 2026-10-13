@@ -2,7 +2,7 @@
 
 App Flutter ôn thi lý thuyết giấy phép lái xe Việt Nam, chạy hoàn toàn offline. Dữ liệu là bộ 600 câu của Cục CSGT (áp dụng từ 01/6/2025), lấy từ thư mục `data/` của dự án.
 
-Đợt 1 mở các hạng **A1, A, B**. Muốn mở thêm C1, C chỉ cần thêm mã vào `enabledClasses` trong `lib/data/question_bank.dart`, vì dữ liệu và cấu hình đề đã có sẵn.
+App đang mở các hạng **A1, A, B, C1, C**. Muốn mở thêm hạng khác chỉ cần thêm mã vào `enabledClasses` trong `lib/data/question_bank.dart`, vì dữ liệu và cấu hình đề đã có sẵn.
 
 ## Tính năng
 
@@ -13,8 +13,11 @@ App Flutter ôn thi lý thuyết giấy phép lái xe Việt Nam, chạy hoàn t
 - Danh sách câu dạng lưới tô màu đúng/sai, lọc câu sai hoặc câu chưa làm
 - Thi thử: rút đề ngẫu nhiên theo cấu trúc chính thức, tính giờ, tự nộp khi hết giờ, chấm theo điểm đạt và luật điểm liệt
 - Kết quả thi: điểm theo từng nhóm câu, câu điểm liệt, thời gian làm bài; xem lại câu sai kèm giải thích; mở lại bài cũ từ lịch sử thi
-- Tra cứu 419 biển báo theo QCVN 41:2024 (mã và tên), lọc theo nhóm biển
+- Tra cứu 419 biển báo theo QCVN 41:2024 (mã, tên và ý nghĩa tóm tắt từ Phụ lục B–G), tìm theo mã, tên hoặc ý nghĩa, lọc theo nhóm biển
 - Trang giới thiệu ghi nguồn và giấy phép MIT của lời giải thích
+- Nhắc học mỗi ngày (Android, iOS): bật ở trang chủ, mặc định 20:00, đổi giờ được. App đặt sẵn thông báo cho 7 ngày tới, mỗi ngày một lời nhắc tính từ tiến độ (số câu đến hạn ôn với bản Pro, số ngày còn lại đến ngày thi); hôm đó đã học thì không nhắc
+
+Bản Pro (mở khóa một lần): ôn lại câu sai theo lịch giãn cách, thống kê theo chương và dự đoán khả năng đỗ, đề ưu tiên câu yếu, gói ôn trước ngày thi, mẹo nhớ nhanh. Mẹo nhớ nằm trong `assets/data/meo_nho.json`, do app tự biên soạn từ đáp án bộ 600 câu; test kiểm tra các con số trong mẹo khớp đáp án đúng.
 
 Giao diện theo mockup "Mockup app Ôn thi GPLX" (phông Be Vietnam Pro, giấy phép OFL, đóng gói sẵn trong `assets/fonts/` để chạy offline), có cả giao diện tối.
 
@@ -23,7 +26,7 @@ Giao diện theo mockup "Mockup app Ôn thi GPLX" (phông Be Vietnam Pro, giấy
 ```bash
 flutter pub get
 flutter run            # chọn thiết bị: Android, iOS, Chrome, desktop
-flutter test           # 33 test: dữ liệu, rút đề, chấm điểm, lịch sử thi, giao diện, mua Pro
+flutter test           # dữ liệu, rút đề, chấm điểm, lịch sử thi, giao diện, mua Pro, tính năng Pro
 ```
 
 ## Build Android và iOS
@@ -33,6 +36,29 @@ GitHub Actions (`.github/workflows/build.yml`) chạy trên mỗi PR và mỗi l
 - `flutter analyze` và `flutter test`
 - Android: `flutter build apk --release`, tải file APK ở mục Artifacts của lần chạy (`on-thi-gplx-android-apk`) để cài thử trên điện thoại
 - iOS: `flutter build ios --release --no-codesign` để chắc chắn bản iOS biên dịch được, kèm bản cho iOS Simulator (`on-thi-gplx-ios-simulator`). Chạy trên iPhone thật hoặc đưa lên App Store cần tài khoản Apple Developer và chứng chỉ ký
+
+### Ký bản Android để đưa lên Google Play
+
+Mã ứng dụng là `vn.gplx.on_thi_gplx` (không đổi được sau lần phát hành đầu). Chưa có khóa thì bản release ký bằng khóa debug, chỉ để cài thử.
+
+1. Tạo khóa tải lên (một lần, giữ file và mật khẩu cẩn thận, mất là không cập nhật app được nữa nếu chưa bật Play App Signing):
+
+   ```bash
+   keytool -genkey -v -keystore upload.jks -keyalg RSA -keysize 2048 -validity 10000 -alias upload
+   ```
+
+2. Build trên máy: tạo `android/key.properties` (đã nằm trong `.gitignore`):
+
+   ```properties
+   storeFile=/đường/dẫn/tới/upload.jks
+   storePassword=...
+   keyAlias=upload
+   keyPassword=...
+   ```
+
+   rồi chạy `flutter build appbundle --release`.
+
+3. Build trên GitHub Actions: vào Settings > Secrets and variables > Actions của repo, thêm `ANDROID_KEYSTORE_BASE64` (kết quả của `base64 -w0 upload.jks`), `ANDROID_KEYSTORE_PASSWORD`, `ANDROID_KEY_ALIAS`, `ANDROID_KEY_PASSWORD`. Từ lần chạy sau, APK được ký bằng khóa này và có thêm file AAB (`on-thi-gplx-android-aab`) để tải lên Google Play Console.
 
 ## Cấu trúc
 

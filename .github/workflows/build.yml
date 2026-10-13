@@ -44,13 +44,37 @@ jobs:
           channel: stable
           cache: true
       - run: flutter pub get
-      # Bản release ký bằng khóa debug (xem android/app/build.gradle.kts), cài thử được
-      # trên máy thật nhưng chưa dùng để đưa lên Google Play.
+      # Có secret ANDROID_KEYSTORE_BASE64 thì ký bằng khóa phát hành và build thêm file AAB để
+      # đưa lên Google Play. Không có (ví dụ PR từ fork) thì ký bằng khóa debug, chỉ cài thử được.
+      - name: Giải mã khóa ký Android
+        env:
+          ANDROID_KEYSTORE_BASE64: ${{ secrets.ANDROID_KEYSTORE_BASE64 }}
+        run: |
+          if [ -n "$ANDROID_KEYSTORE_BASE64" ]; then
+            echo "$ANDROID_KEYSTORE_BASE64" | base64 -d > "$RUNNER_TEMP/upload.jks"
+            echo "ANDROID_KEYSTORE_PATH=$RUNNER_TEMP/upload.jks" >> "$GITHUB_ENV"
+          fi
       - run: flutter build apk --release
+        env:
+          ANDROID_KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+          ANDROID_KEY_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
+          ANDROID_KEY_PASSWORD: ${{ secrets.ANDROID_KEY_PASSWORD }}
       - uses: actions/upload-artifact@v4
         with:
           name: on-thi-gplx-android-apk
           path: build/app/outputs/flutter-apk/app-release.apk
+          retention-days: 14
+      - if: env.ANDROID_KEYSTORE_PATH != ''
+        run: flutter build appbundle --release
+        env:
+          ANDROID_KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+          ANDROID_KEY_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
+          ANDROID_KEY_PASSWORD: ${{ secrets.ANDROID_KEY_PASSWORD }}
+      - if: env.ANDROID_KEYSTORE_PATH != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: on-thi-gplx-android-aab
+          path: build/app/outputs/bundle/release/app-release.aab
           retention-days: 14
 
   ios:

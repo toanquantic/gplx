@@ -16,6 +16,7 @@ class QuestionBank {
     required this.classes,
     required this.examConfigs,
     required this.signs,
+    required this.tipGroups,
     required this.sourceNote,
   });
 
@@ -24,6 +25,7 @@ class QuestionBank {
   final Map<String, LicenseClass> classes;
   final Map<String, ExamConfig> examConfigs;
   final List<TrafficSign> signs;
+  final List<TipGroup> tipGroups;
   final String sourceNote;
 
   static Future<QuestionBank> load([AssetBundle? bundle]) async {
@@ -35,6 +37,8 @@ class QuestionBank {
       examConfigJson: await read('cau_hinh_de_thi.json'),
       classesJson: await read('hang_gplx.json'),
       signsJson: await read('bien_bao.json'),
+      tipsJson: await read('meo_nho.json'),
+      reviewJson: await read('giai_thich_ra_soat.json'),
     );
   }
 
@@ -44,16 +48,28 @@ class QuestionBank {
     required String examConfigJson,
     required String classesJson,
     required String signsJson,
+    required String tipsJson,
+    required String reviewJson,
   }) {
     final explanations = <int, String>{
       for (final e in (jsonDecode(explanationsJson)['giai_thich'] as List))
         if (e['giai_thich'] != null) e['id'] as int: e['giai_thich'] as String,
     };
+    // Bản rà soát: thay lời giải thích sai hoặc khó hiểu, đánh dấu câu đã đọc lại.
+    final review = jsonDecode(reviewJson) as Map<String, dynamic>;
+    for (final e in (review['sua'] as List).cast<Map<String, dynamic>>()) {
+      explanations[e['id'] as int] = e['giai_thich'] as String;
+    }
+    final reviewed = (review['da_ra_soat'] as List).cast<int>().toSet();
 
     final qj = jsonDecode(questionsJson) as Map<String, dynamic>;
     final questions = <int, Question>{
       for (final j in (qj['cau_hoi'] as List).cast<Map<String, dynamic>>())
-        j['id'] as int: Question.fromJson(j, explanation: explanations[j['id']]),
+        j['id'] as int: Question.fromJson(
+          j,
+          explanation: explanations[j['id']],
+          explanationReviewed: reviewed.contains(j['id']),
+        ),
     };
     final source = qj['_nguon'] as Map<String, dynamic>;
 
@@ -84,6 +100,10 @@ class QuestionBank {
         for (final s in (jsonDecode(signsJson) as List).cast<Map<String, dynamic>>())
           TrafficSign.fromJson(s),
       ],
+      tipGroups: [
+        for (final t in (jsonDecode(tipsJson)['nhom'] as List).cast<Map<String, dynamic>>())
+          TipGroup.fromJson(t),
+      ],
       sourceNote: '${source['ten']}, ${source['co_quan']}. ${source['van_ban']}.',
     );
   }
@@ -100,6 +120,25 @@ class QuestionBank {
   List<Question> criticalFor(String code) {
     final ids = examConfigs[code]?.criticalIds ?? const <int>[];
     return [for (final id in ids) questions[id]!]..sort((a, b) => a.id.compareTo(b.id));
+  }
+
+  /// Các nhóm mẹo có câu thuộc hạng [code], mỗi nhóm chỉ giữ câu của hạng đó.
+  List<(TipGroup, List<Question>)> tipsForClass(String code) => [
+    for (final g in tipGroups)
+      if (_tipQuestions(g, code) case final qs when qs.isNotEmpty) (g, qs),
+  ];
+
+  List<Question> _tipQuestions(TipGroup g, String code) => [
+    for (final id in g.questionIds)
+      if (questions[id]!.classes.contains(code)) questions[id]!,
+  ];
+
+  /// Nhóm mẹo đầu tiên có câu [id], hoặc null.
+  TipGroup? tipFor(int id) {
+    for (final g in tipGroups) {
+      if (g.questionIds.contains(id)) return g;
+    }
+    return null;
   }
 
   bool isCritical(String code, int id) => examConfigs[code]?.criticalIds.contains(id) ?? false;

@@ -10,6 +10,7 @@ class Question {
     required this.classes,
     this.image,
     this.explanation,
+    this.explanationReviewed = false,
   });
 
   final int id;
@@ -30,7 +31,14 @@ class Question {
   final String? image;
   final String? explanation;
 
-  factory Question.fromJson(Map<String, dynamic> j, {String? explanation}) {
+  /// Lời giải thích đã được đọc lại, đối chiếu với đáp án (`giai_thich_ra_soat.json`).
+  final bool explanationReviewed;
+
+  factory Question.fromJson(
+    Map<String, dynamic> j, {
+    String? explanation,
+    bool explanationReviewed = false,
+  }) {
     final hinh = j['hinh'] as String?;
     return Question(
       id: j['id'] as int,
@@ -43,6 +51,7 @@ class Question {
       classes: (j['hang'] as List).cast<String>().toSet(),
       image: hinh == null ? null : 'assets/data/$hinh',
       explanation: explanation ?? j['giai_thich'] as String?,
+      explanationReviewed: explanationReviewed,
     );
   }
 }
@@ -129,6 +138,30 @@ class TrafficSign {
   factory TrafficSign.fromJson(Map<String, dynamic> j) => TrafficSign(
       j['ma'] as String, j['ten'] as String, j['nhom'] as String,
       j['y_nghia'] as String?);
+}
+
+/// Một nhóm mẹo nhớ nhanh (bản Pro), tự biên soạn trong `meo_nho.json`.
+class TipGroup {
+  const TipGroup({
+    required this.code,
+    required this.title,
+    required this.tips,
+    required this.questionIds,
+  });
+
+  final String code;
+  final String title;
+  final List<String> tips;
+
+  /// Các câu trong bộ 600 câu mà nhóm mẹo này giúp trả lời.
+  final List<int> questionIds;
+
+  factory TipGroup.fromJson(Map<String, dynamic> j) => TipGroup(
+        code: j['ma'] as String,
+        title: j['ten'] as String,
+        tips: (j['meo'] as List).cast<String>(),
+        questionIds: (j['cau'] as List).cast<int>(),
+      );
 }
 
 const groupLabels = {
