@@ -56,8 +56,10 @@ class AboutScreen extends StatelessWidget {
                 section('Lời giải thích', [
                   para(
                     'Lời giải thích do cộng đồng biên soạn (dự án mở On_THI_GPLX_B của '
-                    'Thi Thanh Chuong, giấy phép MIT). Phần này chưa được cơ quan chức năng '
-                    'kiểm duyệt, bạn chỉ nên dùng để tham khảo.',
+                    'Thi Thanh Chuong, giấy phép MIT). App đã đọc lại cả 600 lời giải thích, '
+                    'đối chiếu với đáp án và QCVN 41:2024, và viết lại những câu sai hoặc khó '
+                    'hiểu. Phần này chưa được cơ quan chức năng kiểm duyệt, bạn chỉ nên dùng để '
+                    'tham khảo.',
                   ),
                   TextButton(
                     style: TextButton.styleFrom(

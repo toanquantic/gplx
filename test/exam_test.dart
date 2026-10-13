@@ -22,14 +22,13 @@ QuestionBank loadBank() {
 void main() {
   final bank = loadBank();
 
-  test('bản rà soát lời giải thích: đủ câu điểm liệt, thay đúng câu đã sửa', () {
-    for (final code in ['A1', 'A', 'B', 'C1', 'C']) {
-      for (final q in bank.criticalFor(code)) {
-        expect(q.explanationReviewed, isTrue, reason: 'câu ${q.id} hạng $code');
-      }
+  test('bản rà soát lời giải thích: đủ 600 câu, thay đúng câu đã sửa', () {
+    for (final q in bank.questions.values) {
+      expect(q.explanationReviewed, isTrue, reason: 'câu ${q.id}');
+      expect(q.explanation?.trim(), isNotEmpty, reason: 'câu ${q.id}');
     }
     expect(bank.questions[35]!.explanation, contains('Cả ba ý trên'));
-    expect(bank.questions[1]!.explanationReviewed, isFalse);
+    expect(bank.questions[352]!.explanation, contains('800m'));
   });
 
   test('nạp đủ 600 câu, đáp án hợp lệ, hình tồn tại', () {
