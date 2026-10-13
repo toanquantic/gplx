@@ -14,6 +14,7 @@ App đang mở các hạng **A1, A, B, C1, C**. Muốn mở thêm hạng khác c
 - Thi thử: rút đề ngẫu nhiên theo cấu trúc chính thức, tính giờ, tự nộp khi hết giờ, chấm theo điểm đạt và luật điểm liệt
 - Kết quả thi: điểm theo từng nhóm câu, câu điểm liệt, thời gian làm bài; xem lại câu sai kèm giải thích; mở lại bài cũ từ lịch sử thi
 - Tra cứu 419 biển báo theo QCVN 41:2024 (mã, tên và ý nghĩa tóm tắt từ Phụ lục B–G), tìm theo mã, tên hoặc ý nghĩa, lọc theo nhóm biển
+- Lời giải thích đã được đọc lại cả 600 câu, 179 câu viết lại (`assets/data/giai_thich_ra_soat.json`, kèm lý do)
 - Trang giới thiệu ghi nguồn và giấy phép MIT của lời giải thích
 - Nhắc học mỗi ngày (Android, iOS): bật ở trang chủ, mặc định 20:00, đổi giờ được. App đặt sẵn thông báo cho 7 ngày tới, mỗi ngày một lời nhắc tính từ tiến độ (số câu đến hạn ôn với bản Pro, số ngày còn lại đến ngày thi); hôm đó đã học thì không nhắc
 
