@@ -19,8 +19,55 @@ import 'tips_screen.dart';
 void _open(BuildContext context, Widget screen) =>
     Navigator.push(context, MaterialPageRoute<void>(builder: (_) => screen));
 
-class HomeScreen extends StatelessWidget {
+/// Đổi hạng đang học. Khác hạng mặc định thì hỏi có ghi nhớ cho lần mở app sau
+/// không; đóng hộp thoại là giữ nguyên hạng cũ.
+Future<void> changeClass(BuildContext context, String code) async {
+  final progress = AppScope.read(context).progress;
+  if (code == progress.classCode && code == progress.defaultClass) return;
+  if (code == progress.defaultClass) return progress.selectClass(code);
+  final remember = await showDialog<bool>(
+    context: context,
+    builder: (context) => AlertDialog(
+      title: Text('Ghi nhớ hạng $code?'),
+      content: Text(
+        progress.defaultClass == null
+            ? 'Ghi nhớ thì lần sau mở app sẽ vào thẳng hạng $code.'
+            : 'Ghi nhớ thì lần sau mở app sẽ vào thẳng hạng $code thay cho '
+                  'hạng ${progress.defaultClass}. Chọn "Chỉ lần này" để ôn thử hạng $code '
+                  'mà vẫn giữ hạng ${progress.defaultClass} làm mặc định.',
+      ),
+      actions: [
+        TextButton(
+          onPressed: () => Navigator.pop(context, false),
+          child: const Text('Chỉ lần này'),
+        ),
+        FilledButton(onPressed: () => Navigator.pop(context, true), child: const Text('Ghi nhớ')),
+      ],
+    ),
+  );
+  if (remember != null) progress.selectClass(code, remember: remember);
+}
+
+class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
+
+  @override
+  State<HomeScreen> createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
+  @override
+  void initState() {
+    super.initState();
+    // Lần đầu mở app: hỏi hạng thi trước khi vào trang chủ.
+    WidgetsBinding.instance.addPostFrameCallback((_) async {
+      if (!mounted) return;
+      final progress = AppScope.read(context).progress;
+      if (progress.defaultClass != null) return;
+      final code = await _FirstClassDialog.show(context);
+      progress.selectClass(code);
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -60,6 +107,14 @@ class HomeScreen extends StatelessWidget {
                   ),
                 ),
                 IconButton(
+                  tooltip: 'Đổi hạng thi',
+                  icon: Icon(Icons.swap_horiz, color: c.muted),
+                  onPressed: () async {
+                    final picked = await _ClassSheet.show(context, code);
+                    if (picked != null && context.mounted) await changeClass(context, picked);
+                  },
+                ),
+                IconButton(
                   tooltip: 'Giới thiệu và nguồn dữ liệu',
                   icon: Icon(Icons.info_outline, color: c.muted),
                   onPressed: () => _open(context, const AboutScreen()),
@@ -72,12 +127,19 @@ class HomeScreen extends StatelessWidget {
               style: TextStyle(fontSize: 13, fontWeight: FontWeight.w600, color: c.muted),
             ),
             const SizedBox(height: 8),
-            _ClassPicker(selected: code, onSelect: progress.selectClass),
+            _ClassPicker(selected: code, onSelect: (code) => changeClass(context, code)),
             const SizedBox(height: 8),
             Text(
               bank.classes[code]?.description ?? '',
               style: TextStyle(fontSize: 12.5, height: 1.45, color: c.muted),
             ),
+            if (progress.defaultClass != null && progress.defaultClass != code) ...[
+              const SizedBox(height: 4),
+              Text(
+                'Đang ôn thử hạng $code. Mở app lần sau sẽ vào hạng ${progress.defaultClass}.',
+                style: TextStyle(fontSize: 12.5, height: 1.45, color: c.accent),
+              ),
+            ],
             const SizedBox(height: 14),
             AppCard(
               radius: 18,
@@ -392,65 +454,124 @@ class _ClassSheet extends StatelessWidget {
       );
 
   @override
+  Widget build(BuildContext context) => DraggableScrollableSheet(
+    expand: false,
+    initialChildSize: 0.75,
+    maxChildSize: 0.95,
+    builder: (context, controller) => ListView(
+      controller: controller,
+      padding: const EdgeInsets.fromLTRB(20, 0, 20, 24),
+      children: [
+        const Text('Chọn hạng bằng', style: TextStyle(fontSize: 18, fontWeight: FontWeight.w700)),
+        ..._classOptions(context, selected, (code) => Navigator.pop(context, code)),
+      ],
+    ),
+  );
+}
+
+/// Hộp thoại chọn hạng thi lần đầu mở app, bắt buộc chọn một hạng.
+class _FirstClassDialog extends StatelessWidget {
+  const _FirstClassDialog();
+
+  static Future<String> show(BuildContext context) async => (await showDialog<String>(
+    context: context,
+    barrierDismissible: false,
+    builder: (_) => const _FirstClassDialog(),
+  ))!;
+
+  @override
   Widget build(BuildContext context) {
-    final bank = AppScope.of(context).bank;
     final c = context.colors;
-    return DraggableScrollableSheet(
-      expand: false,
-      initialChildSize: 0.75,
-      maxChildSize: 0.95,
-      builder: (context, controller) => ListView(
-        controller: controller,
-        padding: const EdgeInsets.fromLTRB(20, 0, 20, 24),
-        children: [
-          const Text('Chọn hạng bằng', style: TextStyle(fontSize: 18, fontWeight: FontWeight.w700)),
-          for (final MapEntry(key: title, value: codes) in classGroups.entries) ...[
-            Padding(
-              padding: const EdgeInsets.fromLTRB(0, 16, 0, 6),
-              child: Text(
-                title,
-                style: TextStyle(fontSize: 13, fontWeight: FontWeight.w600, color: c.muted),
+    return PopScope(
+      canPop: false,
+      child: Dialog(
+        child: ConstrainedBox(
+          constraints: BoxConstraints(maxHeight: MediaQuery.sizeOf(context).height * 0.85),
+          child: ListView(
+            shrinkWrap: true,
+            padding: const EdgeInsets.fromLTRB(20, 20, 20, 16),
+            children: [
+              const Text(
+                'Bạn ôn thi hạng nào?',
+                style: TextStyle(fontSize: 18, fontWeight: FontWeight.w700),
               ),
-            ),
-            for (final code in codes)
-              Padding(
-                padding: const EdgeInsets.only(bottom: 8),
-                child: AppCard(
-                  radius: 14,
-                  padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
-                  onTap: () => Navigator.pop(context, code),
-                  child: Row(
-                    children: [
-                      SizedBox(
-                        width: 48,
-                        child: Text(
-                          code,
-                          style: TextStyle(
-                            fontSize: 16,
-                            fontWeight: FontWeight.w700,
-                            color: c.accent,
-                          ),
-                        ),
-                      ),
-                      Expanded(
-                        child: Text(
-                          bank.classes[code]?.description ?? '',
-                          style: TextStyle(fontSize: 13, height: 1.4, color: c.muted),
-                        ),
-                      ),
-                      if (code == selected) ...[
-                        const SizedBox(width: 8),
-                        Icon(Icons.check_circle, color: c.accent, size: 20),
-                      ],
-                    ],
-                  ),
-                ),
+              const SizedBox(height: 6),
+              Text(
+                'Lần sau mở app sẽ vào thẳng hạng này. Đổi hạng bất cứ lúc nào bằng nút '
+                'Đổi hạng thi ở trang chủ.',
+                style: TextStyle(fontSize: 13, height: 1.4, color: c.muted),
               ),
-          ],
-        ],
+              ..._classOptions(context, null, (code) => Navigator.pop(context, code)),
+            ],
+          ),
+        ),
       ),
     );
   }
+}
+
+/// Các hạng gom theo nhóm xe, kèm mô tả ngắn; đánh dấu hạng [selected] và hạng
+/// mặc định.
+List<Widget> _classOptions(BuildContext context, String? selected, ValueChanged<String> onPick) {
+  final scope = AppScope.of(context);
+  final bank = scope.bank;
+  final defaultClass = scope.progress.defaultClass;
+  final c = context.colors;
+  return [
+    for (final MapEntry(key: title, value: codes) in classGroups.entries) ...[
+      Padding(
+        padding: const EdgeInsets.fromLTRB(0, 16, 0, 6),
+        child: Text(
+          title,
+          style: TextStyle(fontSize: 13, fontWeight: FontWeight.w600, color: c.muted),
+        ),
+      ),
+      for (final code in codes)
+        Padding(
+          padding: const EdgeInsets.only(bottom: 8),
+          child: AppCard(
+            radius: 14,
+            padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
+            onTap: () => onPick(code),
+            child: Row(
+              children: [
+                SizedBox(
+                  width: 48,
+                  child: Text(
+                    code,
+                    style: TextStyle(fontSize: 16, fontWeight: FontWeight.w700, color: c.accent),
+                  ),
+                ),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      if (code == defaultClass)
+                        Text(
+                          'Mặc định khi mở app',
+                          style: TextStyle(
+                            fontSize: 12,
+                            fontWeight: FontWeight.w600,
+                            color: c.accent,
+                          ),
+                        ),
+                      Text(
+                        bank.classes[code]?.description ?? '',
+                        style: TextStyle(fontSize: 13, height: 1.4, color: c.muted),
+                      ),
+                    ],
+                  ),
+                ),
+                if (code == selected) ...[
+                  const SizedBox(width: 8),
+                  Icon(Icons.check_circle, color: c.accent, size: 20),
+                ],
+              ],
+            ),
+          ),
+        ),
+    ],
+  ];
 }
 
 class _ProgressRing extends StatelessWidget {

@@ -25,6 +25,7 @@ class ExamRecord {
   final DateTime time;
   final int correct;
   final int total;
+
   /// Null khi chưa kết luận được (hạng chưa xác minh điểm đạt).
   final bool? passed;
   final bool failedCritical;
@@ -83,7 +84,11 @@ class Progress extends ChangeNotifier {
   /// Đồng hồ, test truyền giờ giả vào để kiểm tra lịch ôn.
   final DateTime Function() clock;
 
+  /// Hạng đang học trong lần mở app này.
   String classCode = enabledClasses.first;
+
+  /// Hạng ghi nhớ để lần sau mở app vào thẳng; null khi chưa chọn lần nào.
+  String? defaultClass;
 
   /// Lần trả lời gần nhất của mỗi câu: true là đúng.
   final Map<int, bool> lastResult = {};
@@ -126,7 +131,7 @@ class Progress extends ChangeNotifier {
 
   void _restore(Map<String, dynamic> j) {
     final code = j['hang'] as String?;
-    if (code != null && enabledClasses.contains(code)) classCode = code;
+    if (code != null && enabledClasses.contains(code)) classCode = defaultClass = code;
     (j['ket_qua'] as Map<String, dynamic>? ?? {}).forEach(
       (k, v) => lastResult[int.parse(k)] = v as bool,
     );
@@ -149,7 +154,7 @@ class Progress extends ChangeNotifier {
   Future<void> _save() => _prefs.setString(
     _key,
     jsonEncode({
-      'hang': classCode,
+      if (defaultClass != null) 'hang': defaultClass,
       'ket_qua': lastResult.map((k, v) => MapEntry('$k', v)),
       'danh_dau': bookmarks.toList(),
       'thi_thu': exams.map((e) => e.toJson()).toList(),
@@ -162,10 +167,12 @@ class Progress extends ChangeNotifier {
     }),
   );
 
-  void selectClass(String code) {
+  /// Đổi hạng đang học; [remember] thì lần sau mở app cũng vào hạng này.
+  void selectClass(String code, {bool remember = true}) {
     classCode = code;
+    if (remember) defaultClass = code;
     notifyListeners();
-    _save();
+    if (remember) _save();
   }
 
   void recordAnswer(int questionId, bool correct) => recordAnswers({questionId: correct});
