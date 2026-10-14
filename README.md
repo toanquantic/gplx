@@ -6,7 +6,8 @@ App mở đủ 15 hạng: mô tô **A1, A, B1**; ô tô **B, C1, C**; xe khách 
 
 ## Tính năng
 
-- Chọn hạng, xem tiến độ (đã làm, đúng, sai)
+- Lần đầu mở app chọn hạng thi, lần sau vào thẳng hạng đó; đổi hạng bằng nút "Đổi hạng thi" và chọn ghi nhớ làm mặc định hoặc chỉ ôn thử lần này
+- Xem tiến độ theo hạng (đã làm, đúng, sai)
 - Ôn theo 6 chương (có thanh tiến độ và số câu sai từng chương), hoặc tất cả câu của hạng
 - Ôn câu điểm liệt riêng theo hạng (A1/A 20 câu, B1 30 câu, ô tô 60 câu)
 - Ôn lại câu làm sai, câu đã đánh dấu

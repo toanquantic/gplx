@@ -5,9 +5,15 @@ import 'package:on_thi_gplx/notifications/reminders.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 void main() {
-  setUp(() => SharedPreferences.setMockInitialValues({}));
+  // Đã chọn hạng A1 từ lần trước, để vào thẳng trang chủ.
+  setUp(() => SharedPreferences.setMockInitialValues({'tien_do_v1': '{"hang":"A1"}'}));
 
-  Future<void> pumpApp(WidgetTester tester) async {
+  /// [fresh] dựng lại app từ đầu, như đóng rồi mở lại (giữ dữ liệu đã lưu).
+  Future<void> pumpApp(WidgetTester tester, {bool fresh = false}) async {
+    if (fresh) {
+      await tester.pumpWidget(const SizedBox());
+      await tester.pumpAndSettle();
+    }
     tester.view.physicalSize = const Size(1080, 2400);
     tester.view.devicePixelRatio = 2.5;
     addTearDown(tester.view.reset);
@@ -27,9 +33,13 @@ void main() {
 
     await tester.tap(find.text('B'));
     await tester.pumpAndSettle();
+    await tester.tap(find.text('Ghi nhớ'));
+    await tester.pumpAndSettle();
     expect(find.textContaining('Đã làm 0/600'), findsOneWidget);
 
     await tester.tap(find.text('C1'));
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('Ghi nhớ'));
     await tester.pumpAndSettle();
     expect(find.textContaining('35 câu · 22 phút'), findsOneWidget);
     expect(find.textContaining('Ôn lại hôm nay'), findsOneWidget);
@@ -43,6 +53,8 @@ void main() {
     await tester.scrollUntilVisible(find.text('D'), 200, scrollable: find.byType(Scrollable).last);
     await tester.tap(find.text('D'));
     await tester.pumpAndSettle();
+    await tester.tap(find.text('Ghi nhớ'));
+    await tester.pumpAndSettle();
     expect(find.text('Khác'), findsNothing);
     expect(find.textContaining('Đã làm 0/600'), findsOneWidget);
     expect(find.textContaining('45 câu · 26 phút'), findsOneWidget);
@@ -51,7 +63,63 @@ void main() {
     await tester.pumpAndSettle();
     await tester.tap(find.text('B1').last);
     await tester.pumpAndSettle();
+    await tester.tap(find.text('Ghi nhớ'));
+    await tester.pumpAndSettle();
     expect(find.textContaining('Đã làm 0/300'), findsOneWidget);
+  });
+
+  testWidgets('lần đầu mở app phải chọn hạng, lần sau vào thẳng hạng đó', (tester) async {
+    SharedPreferences.setMockInitialValues({});
+    await pumpApp(tester);
+    expect(find.text('Bạn ôn thi hạng nào?'), findsOneWidget);
+    // Không đóng được khi chưa chọn.
+    await tester.tapAt(const Offset(5, 5));
+    await tester.pumpAndSettle();
+    expect(find.text('Bạn ôn thi hạng nào?'), findsOneWidget);
+
+    await tester.tap(find.descendant(of: find.byType(Dialog), matching: find.text('B')));
+    await tester.pumpAndSettle();
+    expect(find.text('Bạn ôn thi hạng nào?'), findsNothing);
+    expect(find.textContaining('Đã làm 0/600'), findsOneWidget);
+
+    // Mở lại app: không hỏi nữa, vào thẳng hạng B.
+    await pumpApp(tester, fresh: true);
+    expect(find.text('Bạn ôn thi hạng nào?'), findsNothing);
+    expect(find.textContaining('Đã làm 0/600'), findsOneWidget);
+  });
+
+  testWidgets('đổi hạng qua nút Đổi hạng thi: chỉ lần này hoặc ghi nhớ', (tester) async {
+    await pumpApp(tester);
+    await tester.tap(find.byTooltip('Đổi hạng thi'));
+    await tester.pumpAndSettle();
+    expect(find.text('Mặc định khi mở app'), findsOneWidget);
+    await tester.tap(find.text('B').last);
+    await tester.pumpAndSettle();
+    expect(find.text('Ghi nhớ hạng B?'), findsOneWidget);
+    await tester.tap(find.text('Chỉ lần này'));
+    await tester.pumpAndSettle();
+    expect(find.textContaining('Đã làm 0/600'), findsOneWidget);
+    expect(find.textContaining('Mở app lần sau sẽ vào hạng A1'), findsOneWidget);
+
+    // Mở lại app: vẫn là hạng A1.
+    await pumpApp(tester, fresh: true);
+    expect(find.textContaining('Đã làm 0/250'), findsOneWidget);
+
+    await tester.tap(find.byTooltip('Đổi hạng thi'));
+    await tester.pumpAndSettle();
+    final inSheet = find.descendant(
+      of: find.byType(DraggableScrollableSheet),
+      matching: find.text('C'),
+    );
+    await tester.scrollUntilVisible(inSheet, 200, scrollable: find.byType(Scrollable).last);
+    await tester.tap(inSheet);
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('Ghi nhớ'));
+    await tester.pumpAndSettle();
+    expect(find.textContaining('Mở app lần sau'), findsNothing);
+
+    await pumpApp(tester, fresh: true);
+    expect(find.textContaining('Tiến độ hạng C'), findsOneWidget);
   });
 
   testWidgets('ôn câu điểm liệt: chọn đáp án thì hiện đúng sai và lưu tiến độ', (tester) async {
