@@ -25,20 +25,34 @@ void main() {
     await tester.pumpAndSettle();
   }
 
+  /// Bấm "Đổi hạng" trên thẻ hạng rồi chọn [code] trong danh sách.
+  Future<void> pickClass(WidgetTester tester, String code) async {
+    await tester.tap(find.text('Đổi hạng'));
+    await tester.pumpAndSettle();
+    expect(find.text('Chọn hạng bằng'), findsOneWidget);
+    final inSheet = find.descendant(
+      of: find.byType(DraggableScrollableSheet),
+      matching: find.text(code),
+    );
+    await tester.scrollUntilVisible(inSheet, 200, scrollable: find.byType(Scrollable).last);
+    await tester.tap(inSheet);
+    await tester.pumpAndSettle();
+  }
+
   testWidgets('trang chủ hiện hạng và các mục ôn tập', (tester) async {
     await pumpApp(tester);
     expect(find.text('Ôn thi GPLX'), findsOneWidget);
+    expect(find.text('Hạng A1'), findsOneWidget);
     expect(find.text('Thi thử'), findsOneWidget);
     expect(find.textContaining('Đã làm 0/250'), findsOneWidget);
 
-    await tester.tap(find.text('B'));
-    await tester.pumpAndSettle();
+    await pickClass(tester, 'B');
     await tester.tap(find.text('Ghi nhớ'));
     await tester.pumpAndSettle();
+    expect(find.text('Hạng B'), findsOneWidget);
     expect(find.textContaining('Đã làm 0/600'), findsOneWidget);
 
-    await tester.tap(find.text('C1'));
-    await tester.pumpAndSettle();
+    await pickClass(tester, 'C1');
     await tester.tap(find.text('Ghi nhớ'));
     await tester.pumpAndSettle();
     expect(find.textContaining('35 câu · 22 phút'), findsOneWidget);
@@ -47,22 +61,14 @@ void main() {
 
   testWidgets('chọn hạng khác trong danh sách: D và B1', (tester) async {
     await pumpApp(tester);
-    await tester.tap(find.text('Khác'));
-    await tester.pumpAndSettle();
-    expect(find.text('Chọn hạng bằng'), findsOneWidget);
-    await tester.scrollUntilVisible(find.text('D'), 200, scrollable: find.byType(Scrollable).last);
-    await tester.tap(find.text('D'));
-    await tester.pumpAndSettle();
+    await pickClass(tester, 'D');
     await tester.tap(find.text('Ghi nhớ'));
     await tester.pumpAndSettle();
-    expect(find.text('Khác'), findsNothing);
+    expect(find.text('Hạng D'), findsOneWidget);
     expect(find.textContaining('Đã làm 0/600'), findsOneWidget);
     expect(find.textContaining('45 câu · 26 phút'), findsOneWidget);
 
-    await tester.tap(find.text('D'));
-    await tester.pumpAndSettle();
-    await tester.tap(find.text('B1').last);
-    await tester.pumpAndSettle();
+    await pickClass(tester, 'B1');
     await tester.tap(find.text('Ghi nhớ'));
     await tester.pumpAndSettle();
     expect(find.textContaining('Đã làm 0/300'), findsOneWidget);
@@ -88,16 +94,19 @@ void main() {
     expect(find.textContaining('Đã làm 0/600'), findsOneWidget);
   });
 
-  testWidgets('đổi hạng qua nút Đổi hạng thi: chỉ lần này hoặc ghi nhớ', (tester) async {
+  testWidgets('đổi hạng qua link Đổi hạng: chỉ lần này hoặc ghi nhớ', (tester) async {
     await pumpApp(tester);
-    await tester.tap(find.byTooltip('Đổi hạng thi'));
+    await tester.tap(find.text('Đổi hạng'));
     await tester.pumpAndSettle();
     expect(find.text('Mặc định khi mở app'), findsOneWidget);
-    await tester.tap(find.text('B').last);
+    await tester.tapAt(const Offset(5, 5));
     await tester.pumpAndSettle();
+
+    await pickClass(tester, 'B');
     expect(find.text('Ghi nhớ hạng B?'), findsOneWidget);
     await tester.tap(find.text('Chỉ lần này'));
     await tester.pumpAndSettle();
+    expect(find.text('Đang ôn thử'), findsOneWidget);
     expect(find.textContaining('Đã làm 0/600'), findsOneWidget);
     expect(find.textContaining('Mở app lần sau sẽ vào hạng A1'), findsOneWidget);
 
@@ -105,15 +114,7 @@ void main() {
     await pumpApp(tester, fresh: true);
     expect(find.textContaining('Đã làm 0/250'), findsOneWidget);
 
-    await tester.tap(find.byTooltip('Đổi hạng thi'));
-    await tester.pumpAndSettle();
-    final inSheet = find.descendant(
-      of: find.byType(DraggableScrollableSheet),
-      matching: find.text('C'),
-    );
-    await tester.scrollUntilVisible(inSheet, 200, scrollable: find.byType(Scrollable).last);
-    await tester.tap(inSheet);
-    await tester.pumpAndSettle();
+    await pickClass(tester, 'C');
     await tester.tap(find.text('Ghi nhớ'));
     await tester.pumpAndSettle();
     expect(find.textContaining('Mở app lần sau'), findsNothing);
@@ -209,6 +210,8 @@ void main() {
       200,
       scrollable: find.byType(Scrollable).first,
     );
+    await tester.ensureVisible(find.text('Tra cứu biển báo'));
+    await tester.pumpAndSettle();
     await tester.tap(find.text('Tra cứu biển báo'));
     await tester.pumpAndSettle();
     await tester.tap(find.text('Biển cấm'));

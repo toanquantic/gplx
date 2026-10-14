@@ -2,11 +2,11 @@
 
 App Flutter ôn thi lý thuyết giấy phép lái xe Việt Nam, chạy hoàn toàn offline. Dữ liệu là bộ 600 câu của Cục CSGT (áp dụng từ 01/6/2025), lấy từ thư mục `data/` của dự án.
 
-App mở đủ 15 hạng: mô tô **A1, A, B1**; ô tô **B, C1, C**; xe khách **D1, D2, D**; kéo rơ moóc **BE, C1E, CE, D1E, D2E, DE**. Trang chủ hiện sẵn A1, A, B, C1, C; các hạng khác chọn ở mục "Khác". Danh sách nằm ở `classGroups` trong `lib/data/question_bank.dart`. Hạng B1 chưa xác minh được điểm đạt nên đề thi thử B1 chỉ chấm số câu đúng, không báo đạt hay trượt.
+App mở đủ 15 hạng: mô tô **A1, A, B1**; ô tô **B, C1, C**; xe khách **D1, D2, D**; kéo rơ moóc **BE, C1E, CE, D1E, D2E, DE**. Trang chủ hiện nổi bật hạng đang ôn, bấm "Đổi hạng" để chọn hạng khác. Danh sách nằm ở `classGroups` trong `lib/data/question_bank.dart`. Hạng B1 chưa xác minh được điểm đạt nên đề thi thử B1 chỉ chấm số câu đúng, không báo đạt hay trượt.
 
 ## Tính năng
 
-- Lần đầu mở app chọn hạng thi, lần sau vào thẳng hạng đó; đổi hạng bằng nút "Đổi hạng thi" và chọn ghi nhớ làm mặc định hoặc chỉ ôn thử lần này
+- Lần đầu mở app chọn hạng thi, lần sau vào thẳng hạng đó; đổi hạng bằng link "Đổi hạng" trên thẻ hạng ở trang chủ và chọn ghi nhớ làm mặc định hoặc chỉ ôn thử lần này
 - Xem tiến độ theo hạng (đã làm, đúng, sai)
 - Ôn theo 6 chương (có thanh tiến độ và số câu sai từng chương), hoặc tất cả câu của hạng
 - Ôn câu điểm liệt riêng theo hạng (A1/A 20 câu, B1 30 câu, ô tô 60 câu)
