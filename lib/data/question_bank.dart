@@ -16,9 +16,6 @@ const classGroups = {
 /// Các hạng đang mở trong app.
 final enabledClasses = [for (final codes in classGroups.values) ...codes];
 
-/// Các hạng hiện sẵn trên thanh chọn ở trang chủ; hạng khác chọn trong mục "Khác".
-const quickClasses = ['A1', 'A', 'B', 'C1', 'C'];
-
 /// Toàn bộ dữ liệu ôn thi, nạp một lần từ assets và giữ trong bộ nhớ.
 class QuestionBank {
   QuestionBank._({

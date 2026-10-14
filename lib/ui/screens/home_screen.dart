@@ -107,14 +107,6 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                 ),
                 IconButton(
-                  tooltip: 'Đổi hạng thi',
-                  icon: Icon(Icons.swap_horiz, color: c.muted),
-                  onPressed: () async {
-                    final picked = await _ClassSheet.show(context, code);
-                    if (picked != null && context.mounted) await changeClass(context, picked);
-                  },
-                ),
-                IconButton(
                   tooltip: 'Giới thiệu và nguồn dữ liệu',
                   icon: Icon(Icons.info_outline, color: c.muted),
                   onPressed: () => _open(context, const AboutScreen()),
@@ -122,24 +114,15 @@ class _HomeScreenState extends State<HomeScreen> {
               ],
             ),
             const SizedBox(height: 14),
-            Text(
-              'Hạng bằng',
-              style: TextStyle(fontSize: 13, fontWeight: FontWeight.w600, color: c.muted),
+            _ClassCard(
+              code: code,
+              description: bank.classes[code]?.description ?? '',
+              defaultClass: progress.defaultClass,
+              onChange: () async {
+                final picked = await _ClassSheet.show(context, code);
+                if (picked != null && context.mounted) await changeClass(context, picked);
+              },
             ),
-            const SizedBox(height: 8),
-            _ClassPicker(selected: code, onSelect: (code) => changeClass(context, code)),
-            const SizedBox(height: 8),
-            Text(
-              bank.classes[code]?.description ?? '',
-              style: TextStyle(fontSize: 12.5, height: 1.45, color: c.muted),
-            ),
-            if (progress.defaultClass != null && progress.defaultClass != code) ...[
-              const SizedBox(height: 4),
-              Text(
-                'Đang ôn thử hạng $code. Mở app lần sau sẽ vào hạng ${progress.defaultClass}.',
-                style: TextStyle(fontSize: 12.5, height: 1.45, color: c.accent),
-              ),
-            ],
             const SizedBox(height: 14),
             AppCard(
               radius: 18,
@@ -377,62 +360,87 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 }
 
-/// Nút chọn hạng dạng phân đoạn, như mockup: các hạng phổ biến hiện sẵn, các hạng
-/// còn lại chọn trong mục "Khác".
-class _ClassPicker extends StatelessWidget {
-  const _ClassPicker({required this.selected, required this.onSelect});
+/// Thẻ hạng đang học ở đầu trang chủ, kèm link đổi hạng.
+class _ClassCard extends StatelessWidget {
+  const _ClassCard({
+    required this.code,
+    required this.description,
+    required this.defaultClass,
+    required this.onChange,
+  });
 
-  final String selected;
-  final ValueChanged<String> onSelect;
+  final String code;
+  final String description;
+  final String? defaultClass;
+  final VoidCallback onChange;
 
   @override
   Widget build(BuildContext context) {
     final c = context.colors;
-    final other = !quickClasses.contains(selected);
-
-    Widget segment(String label, bool on, VoidCallback onTap) => Expanded(
-      child: Semantics(
-        selected: on,
-        button: true,
-        child: Material(
-          color: on ? c.surface : Colors.transparent,
-          elevation: on ? 1 : 0,
-          shadowColor: Colors.black26,
-          borderRadius: BorderRadius.circular(10),
-          child: InkWell(
-            borderRadius: BorderRadius.circular(10),
-            onTap: onTap,
-            child: SizedBox(
-              height: 40,
-              child: Center(
-                child: FittedBox(
-                  fit: BoxFit.scaleDown,
-                  child: Text(
-                    label,
-                    style: TextStyle(
-                      fontSize: 15,
-                      fontWeight: on ? FontWeight.w600 : FontWeight.w500,
-                      color: on ? c.accent : c.muted,
-                    ),
+    final trying = defaultClass != null && defaultClass != code;
+    return AppCard(
+      radius: 18,
+      color: c.accentSoft,
+      borderColor: Colors.transparent,
+      padding: const EdgeInsets.fromLTRB(16, 14, 8, 4),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Container(
+                constraints: const BoxConstraints(minWidth: 56),
+                height: 56,
+                padding: const EdgeInsets.symmetric(horizontal: 10),
+                alignment: Alignment.center,
+                decoration: BoxDecoration(color: c.accent, borderRadius: BorderRadius.circular(14)),
+                child: Text(
+                  code,
+                  style: TextStyle(fontSize: 22, fontWeight: FontWeight.w700, color: c.onAccent),
+                ),
+              ),
+              const SizedBox(width: 14),
+              Expanded(
+                child: Padding(
+                  padding: const EdgeInsets.only(right: 8),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        trying ? 'Đang ôn thử' : 'Bạn đang ôn thi',
+                        style: TextStyle(fontSize: 12.5, color: c.muted),
+                      ),
+                      Text(
+                        'Hạng $code',
+                        style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w700),
+                      ),
+                      const SizedBox(height: 2),
+                      Text(
+                        description,
+                        style: TextStyle(fontSize: 12.5, height: 1.45, color: c.muted),
+                      ),
+                      if (trying) ...[
+                        const SizedBox(height: 4),
+                        Text(
+                          'Mở app lần sau sẽ vào hạng $defaultClass.',
+                          style: TextStyle(fontSize: 12.5, height: 1.45, color: c.accent),
+                        ),
+                      ],
+                    ],
                   ),
                 ),
               ),
+            ],
+          ),
+          Align(
+            alignment: Alignment.centerRight,
+            child: TextButton.icon(
+              onPressed: onChange,
+              icon: const Icon(Icons.swap_horiz, size: 18),
+              label: const Text('Đổi hạng'),
             ),
           ),
-        ),
-      ),
-    );
-
-    return Container(
-      padding: const EdgeInsets.all(4),
-      decoration: BoxDecoration(color: c.track, borderRadius: BorderRadius.circular(14)),
-      child: Row(
-        children: [
-          for (final code in quickClasses) segment(code, code == selected, () => onSelect(code)),
-          segment(other ? selected : 'Khác', other, () async {
-            final code = await _ClassSheet.show(context, selected);
-            if (code != null) onSelect(code);
-          }),
         ],
       ),
     );
@@ -497,8 +505,8 @@ class _FirstClassDialog extends StatelessWidget {
               ),
               const SizedBox(height: 6),
               Text(
-                'Lần sau mở app sẽ vào thẳng hạng này. Đổi hạng bất cứ lúc nào bằng nút '
-                'Đổi hạng thi ở trang chủ.',
+                'Lần sau mở app sẽ vào thẳng hạng này. Đổi hạng bất cứ lúc nào ở '
+                'trang chủ.',
                 style: TextStyle(fontSize: 13, height: 1.4, color: c.muted),
               ),
               ..._classOptions(context, null, (code) => Navigator.pop(context, code)),
