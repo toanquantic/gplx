@@ -61,7 +61,7 @@ for (const { s, f } of ico) jobs.push({ kind: 'rounded', size: s, file: f, abs: 
     await page.setContent(`<html><body style="margin:0">${variant(j.kind).replace('width="512" height="512"', `width="${j.size}" height="${j.size}"`)}</body></html>`);
     const dest = j.abs ? j.file : out(j.file);
     await page.screenshot({ path: dest, omitBackground: !j.opaque, clip: { x: 0, y: 0, width: j.size, height: j.size } });
-    if (j.opaque) execFileSync('convert', [dest, '-alpha', 'off', dest]);
+    if (j.opaque) execFileSync('convert', [dest, '-alpha', 'off', '-strip', '-define', 'png:exclude-chunks=date,time', dest]);
   }
   await browser.close();
   execFileSync('convert', [...ico.map((i) => i.f), out('windows/runner/resources/app_icon.ico')]);
