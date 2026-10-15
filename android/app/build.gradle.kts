@@ -29,8 +29,9 @@ android {
     }
 
     defaultConfig {
-        // Mã ứng dụng trên Google Play, không đổi được sau khi phát hành lần đầu.
-        applicationId = "vn.gplx.on_thi_gplx"
+        // Mã ứng dụng trên Google Play, không đổi được sau khi phát hành lần đầu. Khác với
+        // namespace ở trên vì vn.gplx.on_thi_gplx đã có app khác dùng trên Google Play.
+        applicationId = "io.github.toanquantic.onthigplx"
         // You can update the following values to match your application needs.
         // For more information, see: https://flutter.dev/to/review-gradle-config.
         minSdk = flutter.minSdkVersion

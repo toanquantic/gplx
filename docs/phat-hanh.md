@@ -4,7 +4,7 @@ Repo đã có sẵn phần ký và build. Những việc dưới đây cần ch�
 
 | | Android | iOS |
 |---|---|---|
-| Mã ứng dụng | `vn.gplx.on_thi_gplx` | `vn.gplx.onThiGplx` |
+| Mã ứng dụng | `io.github.toanquantic.onthigplx` | `io.github.toanquantic.onthigplx` |
 | Sản phẩm mua trong app | `pro_lifetime` (sản phẩm một lần, không phải gói thuê bao) | `pro_lifetime` (Non-Consumable) |
 | Workflow | `.github/workflows/release.yml`, bấm tay ở tab Actions | như bên trái |
 
@@ -29,7 +29,7 @@ Mã ứng dụng không đổi được sau lần phát hành đầu. Muốn đ�
 ## 3. Khóa App Store Connect API (cho iOS)
 
 1. Vào https://developer.apple.com/account, mục Membership, chép **Team ID** (10 ký tự).
-2. Vào Certificates, Identifiers & Profiles > Identifiers, tạo App ID `vn.gplx.onThiGplx`, bật **In-App Purchase**.
+2. Vào Certificates, Identifiers & Profiles > Identifiers, tạo App ID `io.github.toanquantic.onthigplx`, bật **In-App Purchase**.
 3. Vào App Store Connect > Users and Access > Integrations > App Store Connect API, tạo khóa **Team Key** với quyền **Admin** (cần quyền này để Xcode tự tạo chứng chỉ phân phối). Tải file `AuthKey_XXXXXXXXXX.p8` (chỉ tải được một lần), chép **Key ID** và **Issuer ID**.
 
 Không cần tự tạo chứng chỉ `.p12` hay provisioning profile: workflow để Xcode tự tạo bằng khóa API này.
@@ -61,7 +61,7 @@ Có 4 secret Android đầu tiên thì workflow Build thường cũng ký APK/AA
 
 **Google Play Console** > Create app: tên "Ôn thi GPLX", ngôn ngữ mặc định Tiếng Việt, App, Free.
 
-**App Store Connect** > Apps > New App: nền tảng iOS, tên (tên phải chưa ai dùng trên App Store, nếu trùng thì thêm chữ, ví dụ "Ôn thi GPLX 600 câu"), ngôn ngữ chính Vietnamese, Bundle ID `vn.gplx.onThiGplx`, SKU tùy chọn (ví dụ `onthigplx`).
+**App Store Connect** > Apps > New App: nền tảng iOS, tên (tên phải chưa ai dùng trên App Store, nếu trùng thì thêm chữ, ví dụ "Ôn thi GPLX 600 câu"), ngôn ngữ chính Vietnamese, Bundle ID `io.github.toanquantic.onthigplx`, SKU tùy chọn (ví dụ `onthigplx`).
 
 Tạo sản phẩm `pro_lifetime` ở cả hai bên (Play: Monetize > Products > In-app products; App Store: Monetization > In-App Purchases > Non-Consumable), đặt giá và tên, mô tả tiếng Việt. Apple yêu cầu ảnh chụp màn hình mua Pro để duyệt sản phẩm này, và sản phẩm đầu tiên phải gửi duyệt cùng phiên bản app.
 
