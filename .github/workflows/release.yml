@@ -1,0 +1,176 @@
+name: Release
+
+# Chỉ chạy khi bấm "Run workflow" trong tab Actions, không tự chạy theo push hay PR.
+# Mặc định chỉ build bản đã ký và để ở mục Artifacts. Chọn upload thì:
+#   - Android: đưa AAB lên Google Play, kênh chọn ở "track", trạng thái nháp (draft)
+#   - iOS: đưa IPA lên App Store Connect (TestFlight)
+# Gửi duyệt và phát hành cho người dùng vẫn bấm tay trong Play Console và App Store Connect.
+on:
+  workflow_dispatch:
+    inputs:
+      platform:
+        description: Nền tảng
+        type: choice
+        options: [both, android, ios]
+        default: both
+      upload:
+        description: Tải lên Google Play (nháp) và TestFlight
+        type: boolean
+        default: false
+      track:
+        description: Kênh Google Play
+        type: choice
+        options: [internal, alpha, beta, production]
+        default: internal
+
+concurrency:
+  group: release
+  cancel-in-progress: false
+
+env:
+  FLUTTER_VERSION: 3.47.7
+  # Số build tăng dần mỗi lần chạy workflow này, cả hai store đều yêu cầu số sau lớn hơn số trước.
+  # Cộng thêm 100 để không trùng các bản đã tải tay (pubspec.yaml đang là +1).
+  BUILD_NUMBER: ${{ github.run_number }}
+
+jobs:
+  test:
+    name: Kiểm tra mã và chạy test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: ${{ env.FLUTTER_VERSION }}
+          channel: stable
+          cache: true
+      - run: flutter pub get
+      - run: flutter analyze
+      - run: flutter test
+
+  android:
+    name: Android (AAB đã ký)
+    needs: test
+    if: inputs.platform != 'ios'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: ${{ env.FLUTTER_VERSION }}
+          channel: stable
+          cache: true
+      - run: flutter pub get
+      - name: Giải mã khóa ký Android
+        env:
+          ANDROID_KEYSTORE_BASE64: ${{ secrets.ANDROID_KEYSTORE_BASE64 }}
+        run: |
+          if [ -z "$ANDROID_KEYSTORE_BASE64" ]; then
+            echo "::error::Chưa có secret ANDROID_KEYSTORE_BASE64, xem docs/phat-hanh.md"
+            exit 1
+          fi
+          echo "$ANDROID_KEYSTORE_BASE64" | base64 -d > "$RUNNER_TEMP/upload.jks"
+          echo "ANDROID_KEYSTORE_PATH=$RUNNER_TEMP/upload.jks" >> "$GITHUB_ENV"
+      - run: flutter build appbundle --release --build-number=$((BUILD_NUMBER + 100))
+        env:
+          ANDROID_KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+          ANDROID_KEY_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
+          ANDROID_KEY_PASSWORD: ${{ secrets.ANDROID_KEY_PASSWORD }}
+      - uses: actions/upload-artifact@v4
+        with:
+          name: on-thi-gplx-release-aab
+          path: build/app/outputs/bundle/release/app-release.aab
+          retention-days: 30
+      - name: Tải lên Google Play (nháp)
+        if: inputs.upload
+        uses: r0adkll/upload-google-play@v1
+        with:
+          serviceAccountJsonPlainText: ${{ secrets.PLAY_SERVICE_ACCOUNT_JSON }}
+          packageName: vn.gplx.on_thi_gplx
+          releaseFiles: build/app/outputs/bundle/release/app-release.aab
+          track: ${{ inputs.track }}
+          status: draft
+
+  ios:
+    name: iOS (IPA đã ký)
+    needs: test
+    if: inputs.platform != 'android'
+    runs-on: macos-latest
+    env:
+      TEAM_ID: ${{ secrets.APPLE_TEAM_ID }}
+      ASC_KEY_ID: ${{ secrets.APP_STORE_CONNECT_KEY_ID }}
+      ASC_ISSUER_ID: ${{ secrets.APP_STORE_CONNECT_ISSUER_ID }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: ${{ env.FLUTTER_VERSION }}
+          channel: stable
+          cache: true
+      - run: flutter pub get
+      # Ký tự động qua App Store Connect API: Xcode tự tạo hoặc tải chứng chỉ phân phối và
+      # provisioning profile, không cần xuất file .p12 hay .mobileprovision bằng tay.
+      - name: Chuẩn bị khóa App Store Connect API
+        env:
+          ASC_KEY_P8_BASE64: ${{ secrets.APP_STORE_CONNECT_KEY_P8_BASE64 }}
+        run: |
+          for name in TEAM_ID ASC_KEY_ID ASC_ISSUER_ID ASC_KEY_P8_BASE64; do
+            if [ -z "${!name}" ]; then
+              echo "::error::Thiếu secret cho $name, xem docs/phat-hanh.md"
+              exit 1
+            fi
+          done
+          echo "$ASC_KEY_P8_BASE64" | base64 -d > "$RUNNER_TEMP/AuthKey.p8"
+          echo "ASC_KEY_PATH=$RUNNER_TEMP/AuthKey.p8" >> "$GITHUB_ENV"
+      - name: Tạo cấu hình Xcode cho bản phát hành
+        run: |
+          flutter build ios --release --config-only --build-number=$((BUILD_NUMBER + 100))
+      - name: Archive
+        run: |
+          xcodebuild archive \
+            -workspace ios/Runner.xcworkspace \
+            -scheme Runner \
+            -configuration Release \
+            -destination 'generic/platform=iOS' \
+            -archivePath "$RUNNER_TEMP/Runner.xcarchive" \
+            -allowProvisioningUpdates \
+            -authenticationKeyPath "$ASC_KEY_PATH" \
+            -authenticationKeyID "$ASC_KEY_ID" \
+            -authenticationKeyIssuerID "$ASC_ISSUER_ID" \
+            DEVELOPMENT_TEAM="$TEAM_ID" \
+            CODE_SIGN_STYLE=Automatic
+      - name: Xuất IPA
+        run: |
+          /usr/libexec/PlistBuddy -c "Add :method string app-store-connect" \
+            -c "Add :teamID string $TEAM_ID" \
+            -c "Add :signingStyle string automatic" \
+            -c "Add :destination string export" \
+            -c "Add :uploadSymbols bool true" \
+            -c "Add :manageAppVersionAndBuildNumber bool false" \
+            "$RUNNER_TEMP/ExportOptions.plist"
+          xcodebuild -exportArchive \
+            -archivePath "$RUNNER_TEMP/Runner.xcarchive" \
+            -exportPath build/ios/ipa \
+            -exportOptionsPlist "$RUNNER_TEMP/ExportOptions.plist" \
+            -allowProvisioningUpdates \
+            -authenticationKeyPath "$ASC_KEY_PATH" \
+            -authenticationKeyID "$ASC_KEY_ID" \
+            -authenticationKeyIssuerID "$ASC_ISSUER_ID"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: on-thi-gplx-release-ipa
+          path: build/ios/ipa/*.ipa
+          retention-days: 30
+      - name: Tải lên App Store Connect (TestFlight)
+        if: inputs.upload
+        run: |
+          mkdir -p ~/.appstoreconnect/private_keys
+          cp "$ASC_KEY_PATH" ~/.appstoreconnect/private_keys/AuthKey_$ASC_KEY_ID.p8
+          xcrun altool --upload-app --type ios \
+            --file build/ios/ipa/*.ipa \
+            --apiKey "$ASC_KEY_ID" \
+            --apiIssuer "$ASC_ISSUER_ID"
