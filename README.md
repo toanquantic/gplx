@@ -62,6 +62,10 @@ Mã ứng dụng là `vn.gplx.on_thi_gplx` (không đổi được sau lần ph�
 
 3. Build trên GitHub Actions: vào Settings > Secrets and variables > Actions của repo, thêm `ANDROID_KEYSTORE_BASE64` (kết quả của `base64 -w0 upload.jks`), `ANDROID_KEYSTORE_PASSWORD`, `ANDROID_KEY_ALIAS`, `ANDROID_KEY_PASSWORD`. Từ lần chạy sau, APK được ký bằng khóa này và có thêm file AAB (`on-thi-gplx-android-aab`) để tải lên Google Play Console.
 
+### Phát hành lên Google Play và App Store
+
+Workflow `Release` (`.github/workflows/release.yml`) chỉ chạy khi bấm tay ở tab Actions: build AAB và IPA đã ký, tùy chọn tải lên Google Play (bản nháp) và TestFlight. Các tài khoản, khóa và secrets cần chuẩn bị, cùng checklist trang store, xem [`docs/phat-hanh.md`](docs/phat-hanh.md). Chính sách quyền riêng tư soạn sẵn ở [`docs/privacy-policy.md`](docs/privacy-policy.md).
+
 ## Cấu trúc
 
 | Thư mục | Nội dung |
