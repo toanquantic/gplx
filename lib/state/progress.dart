@@ -75,6 +75,18 @@ class ExamRecord {
 /// Tiến độ học lưu trên máy (không cần mạng, không cần tài khoản).
 ///
 /// Kết quả từng câu dùng chung cho mọi hạng, vì cùng một câu hỏi có cùng đáp án.
+/// Giao diện sáng/tối người dùng chọn; mặc định luôn sáng.
+enum Appearance {
+  light('sang'),
+  dark('toi'),
+  system('he_thong');
+
+  const Appearance(this.key);
+
+  /// Giá trị lưu trong dữ liệu tiến độ.
+  final String key;
+}
+
 class Progress extends ChangeNotifier {
   Progress._(this._prefs, this.clock);
 
@@ -111,6 +123,9 @@ class Progress extends ChangeNotifier {
 
   /// Giờ nhắc học mỗi ngày, tính bằng phút từ nửa đêm; null là tắt.
   int? reminderMinutes;
+
+  /// Giao diện sáng, tối hay theo cài đặt của máy.
+  Appearance appearance = Appearance.light;
 
   bool isPlanStepDone(int step) => planDone.contains('$classCode:$step');
 
@@ -149,6 +164,8 @@ class Progress extends ChangeNotifier {
     if (start != null) planStart = DateTime.parse(start);
     planDone.addAll((j['buoc_xong'] as List? ?? []).cast<String>());
     reminderMinutes = j['nhac'] as int?;
+    final look = j['giao_dien'] as String?;
+    appearance = Appearance.values.firstWhere((a) => a.key == look, orElse: () => Appearance.light);
   }
 
   Future<void> _save() => _prefs.setString(
@@ -164,6 +181,7 @@ class Progress extends ChangeNotifier {
       if (planStart != null) 'bat_dau_on': planStart!.toIso8601String(),
       'buoc_xong': planDone.toList(),
       if (reminderMinutes != null) 'nhac': reminderMinutes,
+      if (appearance != Appearance.light) 'giao_dien': appearance.key,
     }),
   );
 
@@ -211,6 +229,13 @@ class Progress extends ChangeNotifier {
 
   void setReminder(int? minutes) {
     reminderMinutes = minutes;
+    notifyListeners();
+    _save();
+  }
+
+  void setAppearance(Appearance value) {
+    if (appearance == value) return;
+    appearance = value;
     notifyListeners();
     _save();
   }
