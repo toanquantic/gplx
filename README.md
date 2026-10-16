@@ -41,7 +41,7 @@ GitHub Actions (`.github/workflows/build.yml`) chạy trên mỗi PR và mỗi l
 
 ### Ký bản Android để đưa lên Google Play
 
-Mã ứng dụng là `io.github.toanquantic.onthigplx` (không đổi được sau lần phát hành đầu). Chưa có khóa thì bản release ký bằng khóa debug, chỉ để cài thử.
+Mã ứng dụng là `com.toanquantic.gplx` (không đổi được sau lần phát hành đầu). Chưa có khóa thì bản release ký bằng khóa debug, chỉ để cài thử.
 
 1. Tạo khóa tải lên (một lần, giữ file và mật khẩu cẩn thận, mất là không cập nhật app được nữa nếu chưa bật Play App Signing):
 

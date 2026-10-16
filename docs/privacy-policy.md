@@ -2,7 +2,7 @@
 
 Cập nhật: 15/10/2026
 
-Ứng dụng "Ôn thi GPLX" (mã ứng dụng `io.github.toanquantic.onthigplx` trên Android và iOS) là ứng dụng ôn thi lý thuyết giấy phép lái xe, chạy hoàn toàn offline.
+Ứng dụng "Ôn thi GPLX" (mã ứng dụng `com.toanquantic.gplx` trên Android và iOS) là ứng dụng ôn thi lý thuyết giấy phép lái xe, chạy hoàn toàn offline.
 
 ## Dữ liệu ứng dụng thu thập
 
