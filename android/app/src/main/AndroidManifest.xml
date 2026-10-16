@@ -1,6 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <!-- Nhắc học mỗi ngày: đặt lại lịch nhắc sau khi máy khởi động lại. -->
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <!-- Phát video thực hành từ YouTube và tải ảnh xem trước của video. -->
+    <uses-permission android:name="android.permission.INTERNET"/>
     <application
         android:label="Ôn thi GPLX"
         android:name="${applicationName}"
@@ -52,6 +54,15 @@
         <intent>
             <action android:name="android.intent.action.PROCESS_TEXT"/>
             <data android:mimeType="text/plain"/>
+        </intent>
+        <!-- Mở website, bản đồ, YouTube và gọi điện cho trung tâm dạy lái (url_launcher). -->
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="https"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.DIAL"/>
+            <data android:scheme="tel"/>
         </intent>
     </queries>
 </manifest>

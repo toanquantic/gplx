@@ -1,6 +1,6 @@
 # Ôn thi GPLX
 
-App Flutter ôn thi lý thuyết giấy phép lái xe Việt Nam, chạy hoàn toàn offline. Dữ liệu là bộ 600 câu của Cục CSGT (áp dụng từ 01/6/2025), lấy từ thư mục `data/` của dự án.
+App Flutter ôn thi lý thuyết giấy phép lái xe Việt Nam, phần ôn thi chạy hoàn toàn offline (chỉ mục video thực hành cần mạng để phát YouTube). Dữ liệu là bộ 600 câu của Cục CSGT (áp dụng từ 01/6/2025), lấy từ thư mục `data/` của dự án.
 
 App mở đủ 15 hạng: mô tô **A1, A, B1**; ô tô **B, C1, C**; xe khách **D1, D2, D**; kéo rơ moóc **BE, C1E, CE, D1E, D2E, DE**. Trang chủ hiện nổi bật hạng đang ôn, bấm "Đổi hạng" để chọn hạng khác. Danh sách nằm ở `classGroups` trong `lib/data/question_bank.dart`. Hạng B1 chưa xác minh được điểm đạt nên đề thi thử B1 chỉ chấm số câu đúng, không báo đạt hay trượt.
 
@@ -65,6 +65,15 @@ Mã ứng dụng là `com.toanquantic.gplx` (không đổi được sau lần ph
 ### Phát hành lên Google Play và App Store
 
 Workflow `Release` (`.github/workflows/release.yml`) chỉ chạy khi bấm tay ở tab Actions: build AAB và IPA đã ký, tùy chọn tải lên Google Play (bản nháp) và TestFlight. Các tài khoản, khóa và secrets cần chuẩn bị, cùng checklist trang store, xem [`docs/phat-hanh.md`](docs/phat-hanh.md). Chính sách quyền riêng tư soạn sẵn ở [`docs/privacy-policy.md`](docs/privacy-policy.md).
+
+## Thêm video, trung tâm dạy lái không cần build lại
+
+Danh sách video thực hành (`assets/data/video_thuc_hanh.json`) và trung tâm dạy lái (`assets/data/trung_tam_dao_tao.json`) vừa được đóng gói trong app, vừa được app tải lại từ nhánh `main` trên GitHub mỗi lần mở mục đó (`raw.githubusercontent.com/toanquantic/gplx/main/assets/data/...`). Sửa và commit một trong hai file lên `main` (sửa thẳng trên github.com cũng được) là app đã cài thấy bản mới ở lần mở sau, thường chậm vài phút do bộ nhớ đệm của GitHub. App lưu bản tải được để dùng khi không có mạng.
+
+- Video: thêm `{"id": "<mã video>", "tieu_de": "<tiêu đề>"}` vào nhóm phù hợp. Mã video là 11 ký tự sau `watch?v=` (hoặc sau `youtu.be/`), không dán cả đường link. `hang` của nhóm là các hạng được xem nhóm đó.
+- Trung tâm: thêm `{"ten", "tinh", "dia_chi", "dien_thoai", "website"}`; số điện thoại viết liền (ví dụ `02436282808`), `website` để `null` nếu không có. Trung tâm có `tinh` mới thì app tự thêm nút lọc tỉnh đó.
+- Chạy `flutter test test/practical_content_test.dart` trước khi commit nếu được. File sai cấu trúc (thiếu trường, mã video sai, danh sách rỗng) thì app bỏ qua bản tải về và giữ bản đang có, nhưng người dùng sẽ không thấy thay đổi.
+- Đổi tên trường hay cấu trúc file thì các bản app đã cài sẽ không đọc được nữa; chỉ thêm, sửa, xóa mục trong danh sách.
 
 ## Cấu trúc
 

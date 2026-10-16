@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
 import 'data/question_bank.dart';
+import 'data/remote_content.dart';
 import 'monetization/entitlement.dart';
 import 'monetization/store_entitlement.dart';
 import 'notifications/reminder_sync.dart';
@@ -25,7 +26,13 @@ Future<AppData> loadAppData() =>
         .then((r) => (r[0] as QuestionBank, r[1] as Progress));
 
 class OnThiApp extends StatefulWidget {
-  const OnThiApp({super.key, this.loader = loadAppData, this.entitlement, this.reminders});
+  const OnThiApp({
+    super.key,
+    this.loader = loadAppData,
+    this.entitlement,
+    this.reminders,
+    this.content,
+  });
 
   final Future<AppData> Function() loader;
 
@@ -35,6 +42,9 @@ class OnThiApp extends StatefulWidget {
   /// Mặc định chọn theo nền tảng (chỉ Android, iOS có thông báo).
   final ReminderScheduler? reminders;
 
+  /// Mặc định tải danh sách video, trung tâm mới nhất từ GitHub.
+  final ContentSource? content;
+
   @override
   State<OnThiApp> createState() => _OnThiAppState();
 }
@@ -43,6 +53,7 @@ class _OnThiAppState extends State<OnThiApp> {
   late final Future<AppData> _loading = widget.loader();
   late final EntitlementService _entitlement = widget.entitlement ?? createEntitlementService();
   late final ReminderScheduler _reminders = widget.reminders ?? createReminderScheduler();
+  late final ContentSource _content = widget.content ?? GithubContentSource();
   ReminderSync? _sync;
 
   @override
@@ -93,6 +104,7 @@ class _OnThiAppState extends State<OnThiApp> {
           progress: progress,
           entitlement: _entitlement,
           reminders: _reminders,
+          content: _content,
           child: ListenableBuilder(
             listenable: progress,
             builder: (_, _) => app(const HomeScreen(), progress.appearance),
