@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:on_thi_gplx/data/remote_content.dart';
 import 'package:on_thi_gplx/main.dart';
 import 'package:on_thi_gplx/notifications/reminders.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -20,7 +21,11 @@ void main() {
     // Nạp asset là I/O thật, phải chạy ngoài fake async của widget test.
     final data = (await tester.runAsync(loadAppData))!;
     await tester.pumpWidget(
-      OnThiApp(loader: () => Future.value(data), reminders: const NoReminderScheduler()),
+      OnThiApp(
+        loader: () => Future.value(data),
+        reminders: const NoReminderScheduler(),
+        content: const NoRemoteContent(),
+      ),
     );
     await tester.pumpAndSettle();
   }

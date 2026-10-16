@@ -1,6 +1,7 @@
 import 'package:flutter/widgets.dart';
 
 import '../data/question_bank.dart';
+import '../data/remote_content.dart';
 import '../monetization/entitlement.dart';
 import '../notifications/reminders.dart';
 import '../state/progress.dart';
@@ -13,12 +14,16 @@ class AppScope extends InheritedNotifier<Progress> {
     required Progress progress,
     this.entitlement = const FreeEntitlementService(),
     this.reminders = const NoReminderScheduler(),
+    this.content = const NoRemoteContent(),
     required super.child,
   }) : super(notifier: progress);
 
   final QuestionBank bank;
   final EntitlementService entitlement;
   final ReminderScheduler reminders;
+
+  /// Nơi tải bản mới của danh sách video và trung tâm dạy lái.
+  final ContentSource content;
 
   static AppScope of(BuildContext context) =>
       context.dependOnInheritedWidgetOfExactType<AppScope>()!;

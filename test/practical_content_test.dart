@@ -1,10 +1,17 @@
+import 'dart:convert';
 import 'dart:io';
+
+import 'package:flutter/services.dart';
 
 import 'package:flutter_test/flutter_test.dart';
 import 'package:on_thi_gplx/data/practical_content.dart';
 import 'package:on_thi_gplx/data/question_bank.dart';
+import 'package:on_thi_gplx/data/remote_content.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 void main() {
+  group('tải bản mới từ GitHub', _remoteContentTests);
+
   test('danh sách trung tâm dạy lái đủ thông tin liên hệ', () {
     final list = DrivingSchoolList.parse(
       File('assets/data/trung_tam_dao_tao.json').readAsStringSync(),
@@ -40,5 +47,70 @@ void main() {
     }
     expect(list.forClass('A1').map((g) => g.title), ['Xe máy (A1, A)']);
     expect(list.forClass('B1'), isEmpty);
+  });
+}
+
+class _FakeSource implements ContentSource {
+  _FakeSource(this.body);
+
+  final String? body;
+
+  @override
+  Future<String?> fetch(String file) async => body;
+}
+
+class _FakeBundle extends CachingAssetBundle {
+  @override
+  Future<ByteData> load(String key) async =>
+      ByteData.sublistView(utf8.encode(File(key).readAsStringSync()));
+}
+
+Future<List<String>> _notes(ContentSource source) async => [
+  await for (final list in DrivingSchoolList.load(_FakeBundle(), source)) list.note,
+];
+
+String _schools(String note) => jsonEncode({
+  'ghi_chu': note,
+  'trung_tam': [
+    {'ten': 'A', 'tinh': 'Hà Nội', 'dia_chi': 'x', 'dien_thoai': '0912345678'},
+  ],
+});
+
+void _remoteContentTests() {
+  setUp(() => SharedPreferences.setMockInitialValues({}));
+
+  test('không tải được thì dùng bản đóng gói sẵn', () async {
+    final notes = await _notes(_FakeSource(null));
+    expect(notes, hasLength(1));
+    expect(notes.single, startsWith('Danh sách khởi đầu'));
+  });
+
+  test('tải được bản mới thì hiện ngay và lần sau dùng bản đã lưu', () async {
+    expect((await _notes(_FakeSource(_schools('mới')))).last, 'mới');
+    // Lần mở sau không có mạng: hiện bản đã tải lần trước.
+    expect(await _notes(_FakeSource(null)), ['mới']);
+  });
+
+  test('bản tải về sai cấu trúc hoặc rỗng thì bỏ qua', () async {
+    expect(await _notes(_FakeSource('{"ghi_chu": 1}')), hasLength(1));
+    final empty = jsonEncode({'ghi_chu': 'rỗng', 'trung_tam': []});
+    expect(await _notes(_FakeSource(empty)), hasLength(1));
+    expect(
+      () => PracticeVideoList.parse(
+        jsonEncode({
+          'ghi_chu': '',
+          'nhom': [
+            {
+              'ten': 'x',
+              'hang': ['B'],
+              'video': [
+                {'id': 'https://youtu.be/abc', 'tieu_de': 't'},
+              ],
+            },
+          ],
+        }),
+      ),
+      throwsFormatException,
+    );
   });
 }

@@ -26,12 +26,15 @@ class VideosScreen extends StatefulWidget {
 }
 
 class _VideosScreenState extends State<VideosScreen> {
-  Future<PracticeVideoList>? _data;
+  Stream<PracticeVideoList>? _data;
 
   @override
   void didChangeDependencies() {
     super.didChangeDependencies();
-    _data ??= PracticeVideoList.load(DefaultAssetBundle.of(context));
+    _data ??= PracticeVideoList.load(
+      DefaultAssetBundle.of(context),
+      AppScope.read(context).content,
+    );
   }
 
   @override
@@ -52,8 +55,8 @@ class _VideosScreenState extends State<VideosScreen> {
           ],
         ),
       ),
-      body: FutureBuilder<PracticeVideoList>(
-        future: _data,
+      body: StreamBuilder<PracticeVideoList>(
+        stream: _data,
         builder: (context, snap) {
           final data = snap.data;
           if (data == null) {

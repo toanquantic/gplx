@@ -2,6 +2,8 @@ import 'dart:convert';
 
 import 'package:flutter/services.dart' show AssetBundle;
 
+import 'remote_content.dart';
+
 /// Một trung tâm dạy lái xe trong danh sách giới thiệu.
 class DrivingSchool {
   const DrivingSchool({
@@ -38,16 +40,22 @@ class DrivingSchoolList {
 
   factory DrivingSchoolList.parse(String json) {
     final j = jsonDecode(json) as Map<String, dynamic>;
-    return DrivingSchoolList(
+    final list = DrivingSchoolList(
       note: j['ghi_chu'] as String,
       schools: [
         for (final s in j['trung_tam'] as List) DrivingSchool.fromJson(s as Map<String, dynamic>),
       ],
     );
+    // File sửa nhầm thành rỗng thì coi như lỗi, app giữ danh sách đang có.
+    if (list.schools.isEmpty) throw const FormatException('Danh sách trung tâm rỗng');
+    return list;
   }
 
-  static Future<DrivingSchoolList> load(AssetBundle bundle) async =>
-      DrivingSchoolList.parse(await bundle.loadString('assets/data/trung_tam_dao_tao.json'));
+  static const file = 'trung_tam_dao_tao.json';
+
+  /// Bản đóng gói sẵn hoặc đã tải trước đó, rồi bản mới nhất trên GitHub.
+  static Stream<DrivingSchoolList> load(AssetBundle bundle, ContentSource source) =>
+      loadContent(bundle: bundle, source: source, file: file, parse: DrivingSchoolList.parse);
 }
 
 /// Một video YouTube hướng dẫn thực hành.
@@ -83,7 +91,7 @@ class PracticeVideoList {
 
   factory PracticeVideoList.parse(String json) {
     final j = jsonDecode(json) as Map<String, dynamic>;
-    return PracticeVideoList(
+    final list = PracticeVideoList(
       note: j['ghi_chu'] as String,
       groups: [
         for (final g in (j['nhom'] as List).cast<Map<String, dynamic>>())
@@ -97,8 +105,21 @@ class PracticeVideoList {
           ),
       ],
     );
+    final ids = [
+      for (final g in list.groups)
+        for (final v in g.videos) v.id,
+    ];
+    if (ids.isEmpty) throw const FormatException('Danh sách video rỗng');
+    final bad = ids.where((id) => !_videoId.hasMatch(id));
+    if (bad.isNotEmpty) throw FormatException('Mã video YouTube sai: ${bad.join(', ')}');
+    return list;
   }
 
-  static Future<PracticeVideoList> load(AssetBundle bundle) async =>
-      PracticeVideoList.parse(await bundle.loadString('assets/data/video_thuc_hanh.json'));
+  static final _videoId = RegExp(r'^[A-Za-z0-9_-]{11}$');
+
+  static const file = 'video_thuc_hanh.json';
+
+  /// Bản đóng gói sẵn hoặc đã tải trước đó, rồi bản mới nhất trên GitHub.
+  static Stream<PracticeVideoList> load(AssetBundle bundle, ContentSource source) =>
+      loadContent(bundle: bundle, source: source, file: file, parse: PracticeVideoList.parse);
 }

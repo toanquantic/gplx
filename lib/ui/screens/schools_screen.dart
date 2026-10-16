@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../../data/practical_content.dart';
+import '../app_scope.dart';
 import '../theme.dart';
 
 /// Mở [url] bằng app ngoài (trình duyệt, gọi điện, bản đồ, YouTube); không mở
@@ -26,13 +27,16 @@ class SchoolsScreen extends StatefulWidget {
 }
 
 class _SchoolsScreenState extends State<SchoolsScreen> {
-  Future<DrivingSchoolList>? _data;
+  Stream<DrivingSchoolList>? _data;
   String? _province;
 
   @override
   void didChangeDependencies() {
     super.didChangeDependencies();
-    _data ??= DrivingSchoolList.load(DefaultAssetBundle.of(context));
+    _data ??= DrivingSchoolList.load(
+      DefaultAssetBundle.of(context),
+      AppScope.read(context).content,
+    );
   }
 
   @override
@@ -40,8 +44,8 @@ class _SchoolsScreenState extends State<SchoolsScreen> {
     final c = context.colors;
     return Scaffold(
       appBar: AppBar(titleSpacing: 0, title: const Text('Trung tâm dạy lái xe')),
-      body: FutureBuilder<DrivingSchoolList>(
-        future: _data,
+      body: StreamBuilder<DrivingSchoolList>(
+        stream: _data,
         builder: (context, snap) {
           final data = snap.data;
           if (data == null) {

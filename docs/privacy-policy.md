@@ -20,6 +20,8 @@ Nếu bạn bật nhắc học, ứng dụng đặt lịch thông báo ngay trê
 
 Mục "Video thực hành" hiện ảnh xem trước tải từ máy chủ của YouTube (`i.ytimg.com`) và phát video bằng trình phát nhúng của YouTube ở chế độ bảo mật nâng cao (`youtube-nocookie.com`). Khi bạn mở mục này hoặc xem video, thiết bị kết nối trực tiếp tới YouTube (Google), nên YouTube có thể nhận địa chỉ IP, thông tin thiết bị và hoạt động xem video theo [chính sách quyền riêng tư của Google](https://policies.google.com/privacy). Ứng dụng không gửi kèm dữ liệu ôn tập hay thông tin nào khác của bạn.
 
+Khi mở mục "Video thực hành" hoặc "Trung tâm dạy lái", ứng dụng tải bản mới nhất của danh sách video và trung tâm từ GitHub (`raw.githubusercontent.com`) để cập nhật nội dung mà không cần cài bản mới. Yêu cầu này không kèm dữ liệu nào của bạn; GitHub có thể ghi nhận địa chỉ IP theo [chính sách quyền riêng tư của GitHub](https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement).
+
 Ở mục "Trung tâm dạy lái", các nút Gọi, Website, Bản đồ và "Mở trên YouTube" mở ứng dụng gọi điện, trình duyệt, Google Maps hoặc YouTube trên máy bạn; những ứng dụng và trang đó xử lý dữ liệu theo chính sách riêng của chúng.
 
 ## Mua bản Pro
