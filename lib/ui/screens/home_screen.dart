@@ -12,9 +12,11 @@ import 'before_exam_screen.dart';
 import 'exam_screen.dart';
 import 'practice_screen.dart';
 import 'review_screen.dart';
+import 'schools_screen.dart';
 import 'signs_screen.dart';
 import 'stats_screen.dart';
 import 'tips_screen.dart';
+import 'videos_screen.dart';
 
 void _open(BuildContext context, Widget screen) =>
     Navigator.push(context, MaterialPageRoute<void>(builder: (_) => screen));
@@ -350,6 +352,29 @@ class _HomeScreenState extends State<HomeScreen> {
                   Icon(Icons.chevron_right, color: c.muted),
                 ],
               ),
+            ),
+            const SizedBox(height: 10),
+            GridView.count(
+              crossAxisCount: 2,
+              shrinkWrap: true,
+              physics: const NeverScrollableScrollPhysics(),
+              mainAxisSpacing: 10,
+              crossAxisSpacing: 10,
+              childAspectRatio: 1.55,
+              children: [
+                _GridTile(
+                  icon: Icons.ondemand_video_outlined,
+                  title: 'Video thực hành',
+                  subtitle: 'Sa hình, đường trường',
+                  onTap: () => _open(context, const VideosScreen()),
+                ),
+                _GridTile(
+                  icon: Icons.school_outlined,
+                  title: 'Trung tâm dạy lái',
+                  subtitle: 'Địa chỉ, số điện thoại',
+                  onTap: () => _open(context, const SchoolsScreen()),
+                ),
+              ],
             ),
             const SizedBox(height: 10),
             const ReminderTile(),

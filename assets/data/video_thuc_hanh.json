@@ -1,0 +1,51 @@
+{
+  "ghi_chu": "Video công khai trên YouTube do các thầy dạy lái và trung tâm đăng. App chỉ nhúng trình phát chính thức của YouTube, không tải hay sửa video. Mỗi sân sát hạch có điểm căn khác nhau, nên xem video của đúng sân mình thi và hỏi lại thầy dạy.",
+  "nhom": [
+    {
+      "ten": "Xe máy (A1, A)",
+      "hang": ["A1", "A", "B1"],
+      "video": [
+        {"id": "cRQmhgdFw8g", "tieu_de": "Hướng dẫn cách chạy vòng số 8 thi A1 cho người mới"},
+        {"id": "PXwVbtxh8P4", "tieu_de": "Hướng dẫn thi bằng lái xe máy A1: đi vòng số 8"},
+        {"id": "yBYWqL8vM9U", "tieu_de": "Thầy Trường (Dạy lái xe Tân Sơn) hướng dẫn chạy vòng số 8, thực hành thi A1"},
+        {"id": "k4ShqP6HI3k", "tieu_de": "Thi bằng lái xe máy A1 bằng xe có thiết bị cảm biến tự chấm điểm"}
+      ]
+    },
+    {
+      "ten": "Ô tô: làm quen xe",
+      "hang": ["B", "C1", "C", "D1", "D2", "D", "BE", "C1E", "CE", "D1E", "D2E", "DE"],
+      "video": [
+        {"id": "dumS1htOkF0", "tieu_de": "Những chức năng cơ bản trên xe ô tô"},
+        {"id": "P5V6351XAfA", "tieu_de": "Dạy lái xe ô tô số sàn: buổi 01"},
+        {"id": "bMq50tom1QQ", "tieu_de": "Dạy lái xe số tự động: hướng dẫn chi tiết cho người mới bắt đầu"}
+      ]
+    },
+    {
+      "ten": "Ô tô: 11 bài thi sa hình",
+      "hang": ["B", "C1", "C", "D1", "D2", "D", "BE", "C1E", "CE", "D1E", "D2E", "DE"],
+      "video": [
+        {"id": "9kFINMCJ58w", "tieu_de": "Học thực hành hạng B (số sàn): thực hiện 11 bài thi sa hình, Thầy Tâm"},
+        {"id": "TiDOLKeOU5w", "tieu_de": "Hướng dẫn chi tiết thi sa hình hạng B số sàn 2025"},
+        {"id": "koPYGFOVGnY", "tieu_de": "Chi tiết 11 bài thi sa hình sát hạch lái xe ô tô"},
+        {"id": "_NJIgb4hG3o", "tieu_de": "Bài thi sa hình hạng B sân Thành Công: các lỗi sai cần tránh"},
+        {"id": "yBmoMUibiho", "tieu_de": "Bài thi sa hình mẫu hạng C: mẹo lấy trọn điểm"}
+      ]
+    },
+    {
+      "ten": "Ô tô: thi đường trường",
+      "hang": ["B", "C1", "C", "D1", "D2", "D", "BE", "C1E", "CE", "D1E", "D2E", "DE"],
+      "video": [
+        {"id": "BiESujQ25FA", "tieu_de": "Học thực hành hạng B (số sàn): cách thực hiện bài thi 2 km đường trường, Thầy Tâm"},
+        {"id": "snW5DJZyVC0", "tieu_de": "Hướng dẫn thi sát hạch lái xe phần thi đường trường"}
+      ]
+    },
+    {
+      "ten": "Ô tô: mô phỏng tình huống giao thông",
+      "hang": ["B", "C1", "C", "D1", "D2", "D", "BE", "C1E", "CE", "D1E", "D2E", "DE"],
+      "video": [
+        {"id": "GgkqQ7GosxY", "tieu_de": "Học nhanh toàn bộ 120 tình huống mô phỏng (bản 2.0.0) trong một video, Thầy Chiến"},
+        {"id": "SMdO88mvTuY", "tieu_de": "Mẹo căn mô phỏng 120 tình huống trong một video, Thầy Tâm"}
+      ]
+    }
+  ]
+}

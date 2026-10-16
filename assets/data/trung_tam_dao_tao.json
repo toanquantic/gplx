@@ -1,0 +1,75 @@
+{
+  "ghi_chu": "Danh sách khởi đầu, tổng hợp từ thông tin các trung tâm tự công bố trên mạng (tháng 10/2026). Địa chỉ có thể còn ghi theo địa giới cũ (quận, huyện) trước khi sắp xếp đơn vị hành chính năm 2025. Cần xác minh lại số điện thoại, địa chỉ và hạng đào tạo trước khi phát hành. App chỉ giới thiệu, không xếp hạng và không nhận tiền quảng cáo từ trung tâm nào.",
+  "trung_tam": [
+    {
+      "ten": "Trung tâm đào tạo lái xe Lạc Hồng",
+      "tinh": "Hà Nội",
+      "dia_chi": "Số 34 đường Xuân La, Tây Hồ, Hà Nội",
+      "dien_thoai": "0966355626",
+      "website": "https://daotaolaixelachong.vn"
+    },
+    {
+      "ten": "Trung tâm đào tạo lái xe ô tô Công Binh",
+      "tinh": "Hà Nội",
+      "dia_chi": "393 Giải Phóng, Phương Liệt, Thanh Xuân, Hà Nội",
+      "dien_thoai": "02436282808",
+      "website": "https://hoclaioto.com.vn"
+    },
+    {
+      "ten": "Trung tâm dạy nghề Ngọc Hà",
+      "tinh": "Hà Nội",
+      "dia_chi": "Tổ dân phố Hoàng Liên 1, phường Liên Mạc, Bắc Từ Liêm, Hà Nội",
+      "dien_thoai": "02466810037",
+      "website": "https://hoclaixengocha.com"
+    },
+    {
+      "ten": "Trung tâm đào tạo lái xe Sao Bắc Việt",
+      "tinh": "Hà Nội",
+      "dia_chi": "Tầng 2, 54 Vũ Trọng Phụng, Thanh Xuân, Hà Nội",
+      "dien_thoai": "02435552222",
+      "website": "https://saobacviet.vn"
+    },
+    {
+      "ten": "Trung tâm đào tạo lái xe An Khang",
+      "tinh": "Hà Nội",
+      "dia_chi": "Số 1 ngõ 59 Huỳnh Thúc Kháng, Láng Hạ, Đống Đa, Hà Nội",
+      "dien_thoai": "0975354370",
+      "website": "https://hoclaixeankhang.com"
+    },
+    {
+      "ten": "Trung tâm đào tạo và sát hạch lái xe Hiệp Phát",
+      "tinh": "TP. Hồ Chí Minh",
+      "dia_chi": "176 Thế Lữ, Tân Nhựt, Bình Chánh, TP. Hồ Chí Minh",
+      "dien_thoai": "02836362362",
+      "website": "https://hiepphat.edu.vn"
+    },
+    {
+      "ten": "Trường Trung cấp nghề Quang Trung",
+      "tinh": "TP. Hồ Chí Minh",
+      "dia_chi": "689 Quang Trung, phường 8, Gò Vấp, TP. Hồ Chí Minh",
+      "dien_thoai": "02838946097",
+      "website": null
+    },
+    {
+      "ten": "Trường Trung cấp nghề Nhân Đạo",
+      "tinh": "TP. Hồ Chí Minh",
+      "dia_chi": "648/28 Cách Mạng Tháng 8, phường 11, quận 3, TP. Hồ Chí Minh",
+      "dien_thoai": "02839931791",
+      "website": null
+    },
+    {
+      "ten": "Trường Đại học Giao thông vận tải TP. Hồ Chí Minh",
+      "tinh": "TP. Hồ Chí Minh",
+      "dia_chi": "02 Võ Oanh, phường 25, Bình Thạnh, TP. Hồ Chí Minh",
+      "dien_thoai": "02862587592",
+      "website": null
+    },
+    {
+      "ten": "Trường Trung cấp Bách Nghệ TP. Hồ Chí Minh",
+      "tinh": "TP. Hồ Chí Minh",
+      "dia_chi": "146 Đỗ Văn Dậy, xã Tân Hiệp, Hóc Môn, TP. Hồ Chí Minh",
+      "dien_thoai": "02837105908",
+      "website": null
+    }
+  ]
+}

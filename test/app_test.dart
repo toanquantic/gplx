@@ -227,4 +227,21 @@ void main() {
     await tester.pumpAndSettle();
     expect(find.text('Không tìm thấy biển nào.'), findsOneWidget);
   });
+
+  testWidgets('trang chủ mở được danh sách trung tâm dạy lái', (tester) async {
+    await pumpApp(tester);
+    final tile = find.text('Trung tâm dạy lái');
+    await tester.scrollUntilVisible(tile, 200, scrollable: find.byType(Scrollable).first);
+    expect(find.text('Video thực hành'), findsOneWidget);
+    await tester.tap(tile);
+    // Đọc file JSON là I/O thật, chạy ngoài fake async rồi mới dựng lại khung hình.
+    await tester.runAsync(() => Future<void>.delayed(const Duration(milliseconds: 200)));
+    await tester.pumpAndSettle();
+    expect(find.text('Trung tâm dạy lái xe'), findsOneWidget);
+    expect(find.text('Hà Nội'), findsOneWidget);
+    await tester.tap(find.text('TP. Hồ Chí Minh'));
+    await tester.pumpAndSettle();
+    expect(find.textContaining('Hiệp Phát'), findsOneWidget);
+    expect(find.textContaining('Lạc Hồng'), findsNothing);
+  });
 }
