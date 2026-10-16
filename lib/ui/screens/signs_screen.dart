@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../../models/models.dart';
 import '../app_scope.dart';
 import '../theme.dart';
+import '../widgets/image_viewer.dart';
 
 const _signGroups = {
   'bien_cam': 'Biển cấm',
@@ -153,7 +154,7 @@ class _SignsScreenState extends State<SignsScreen> {
   }
 }
 
-/// Một biển: hình, mã, tên và ý nghĩa (rút gọn 2 dòng, chạm để xem đủ và phóng to hình).
+/// Một biển: hình, mã, tên và ý nghĩa (rút gọn 2 dòng, chạm để xem đủ; chạm hình để xem phóng to).
 class _SignTile extends StatefulWidget {
   const _SignTile({required this.sign});
 
@@ -180,7 +181,17 @@ class _SignTileState extends State<_SignTile> {
           AnimatedSize(
             duration: const Duration(milliseconds: 150),
             alignment: Alignment.topLeft,
-            child: SignImage(sign: sign, size: _expanded ? 120 : 56),
+            child: GestureDetector(
+              // Chạm vào hình biển để xem phóng to; chạm phần chữ để mở rộng ý nghĩa.
+              onTap: sign.image == null
+                  ? null
+                  : () => ImageViewerScreen.open(
+                      context,
+                      sign.image!,
+                      title: '${sign.code} ${sign.name}',
+                    ),
+              child: SignImage(sign: sign, size: _expanded ? 120 : 56),
+            ),
           ),
           const SizedBox(width: 14),
           Expanded(

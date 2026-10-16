@@ -5,6 +5,7 @@ import '../../monetization/entitlement.dart';
 import '../../monetization/paywall.dart';
 import '../app_scope.dart';
 import '../theme.dart';
+import 'image_viewer.dart';
 
 const _letters = ['A', 'B', 'C', 'D', 'E'];
 
@@ -303,18 +304,43 @@ class CriticalChip extends StatelessWidget {
 }
 
 /// Hình của câu hỏi, nền trắng để hình sa hình dễ nhìn cả khi dùng giao diện tối.
+/// Chạm vào hình để mở màn xem phóng to.
 class QuestionImage extends StatelessWidget {
   const QuestionImage({super.key, required this.path});
 
   final String path;
 
   @override
-  Widget build(BuildContext context) => ClipRRect(
-    borderRadius: BorderRadius.circular(14),
-    child: ColoredBox(
-      color: Colors.white,
-      child: Image.asset(path, fit: BoxFit.contain, width: double.infinity),
+  Widget build(BuildContext context) => Semantics(
+    button: true,
+    label: 'Phóng to hình',
+    child: GestureDetector(
+      onTap: () => ImageViewerScreen.open(context, path),
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(14),
+        child: Stack(
+          children: [
+            ColoredBox(
+              color: Colors.white,
+              child: Image.asset(path, fit: BoxFit.contain, width: double.infinity),
+            ),
+            const Positioned(right: 8, bottom: 8, child: _ZoomHint()),
+          ],
+        ),
+      ),
     ),
+  );
+}
+
+/// Biểu tượng kính lúp nhỏ ở góc hình, gợi ý có thể chạm để phóng to.
+class _ZoomHint extends StatelessWidget {
+  const _ZoomHint();
+
+  @override
+  Widget build(BuildContext context) => Container(
+    padding: const EdgeInsets.all(4),
+    decoration: BoxDecoration(color: Colors.black45, borderRadius: BorderRadius.circular(8)),
+    child: const Icon(Icons.zoom_in, size: 18, color: Colors.white),
   );
 }
 
