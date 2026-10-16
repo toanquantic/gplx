@@ -223,6 +223,14 @@ void main() {
     final image = tester.widget<Image>(find.byType(Image));
     expect((image.image as AssetImage).assetName, 'assets/data/signs/p_102.webp');
 
+    // Chạm vào hình biển mở màn xem phóng to được.
+    await tester.tap(find.byType(Image));
+    await tester.pumpAndSettle();
+    expect(find.byType(InteractiveViewer), findsOneWidget);
+    await tester.tap(find.byTooltip('Đóng'));
+    await tester.pumpAndSettle();
+    expect(find.byType(InteractiveViewer), findsNothing);
+
     await tester.tap(find.text('Nguy hiểm'));
     await tester.pumpAndSettle();
     expect(find.text('Không tìm thấy biển nào.'), findsOneWidget);

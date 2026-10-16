@@ -65,6 +65,8 @@ class _OnThiAppState extends State<OnThiApp> {
       title: 'Ôn thi GPLX',
       debugShowCheckedModeBanner: false,
       theme: buildTheme(Brightness.light),
+      // Luôn dùng giao diện sáng để iOS (hay bật chế độ tối) trông giống Android.
+      themeMode: ThemeMode.light,
       darkTheme: buildTheme(Brightness.dark),
       locale: const Locale('vi'),
       supportedLocales: const [Locale('vi')],
