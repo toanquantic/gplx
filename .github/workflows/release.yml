@@ -126,9 +126,11 @@ jobs:
           done
           echo "$ASC_KEY_P8_BASE64" | base64 -d > "$RUNNER_TEMP/AuthKey.p8"
           echo "ASC_KEY_PATH=$RUNNER_TEMP/AuthKey.p8" >> "$GITHUB_ENV"
+      # --no-codesign: Flutter chỉ sinh cấu hình, không tự tìm chứng chỉ trên máy (máy CI không có).
+      # Việc ký do xcodebuild archive bên dưới làm, bằng khóa App Store Connect API.
       - name: Tạo cấu hình Xcode cho bản phát hành
         run: |
-          flutter build ios --release --config-only --build-number=$((BUILD_NUMBER + 100))
+          flutter build ios --release --config-only --no-codesign --build-number=$((BUILD_NUMBER + 100))
       - name: Archive
         run: |
           xcodebuild archive \
