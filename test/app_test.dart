@@ -219,6 +219,9 @@ void main() {
     await tester.enterText(find.byType(TextField), 'P.102');
     await tester.pumpAndSettle();
     expect(find.text('Cấm đi ngược chiều'), findsOneWidget);
+    // Mỗi biển hiện hình riêng cắt từ QCVN 41:2024, không phải hình chung của nhóm.
+    final image = tester.widget<Image>(find.byType(Image));
+    expect((image.image as AssetImage).assetName, 'assets/data/signs/p_102.webp');
 
     await tester.tap(find.text('Nguy hiểm'));
     await tester.pumpAndSettle();

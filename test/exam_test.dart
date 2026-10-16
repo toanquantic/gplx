@@ -43,7 +43,15 @@ void main() {
     expect(bank.signs.length, 419);
     for (final s in bank.signs) {
       expect(s.meaning?.trim(), isNotEmpty, reason: s.code);
+      if (s.image != null) {
+        expect(File(s.image!).existsSync(), isTrue, reason: s.image);
+      }
     }
+    // Chỉ vạch 3.2–3.4 không có hình minh họa riêng trong QCVN 41:2024.
+    expect(
+      bank.signs.where((s) => s.image == null).map((s) => s.code),
+      ['Vạch 3.2', 'Vạch 3.3', 'Vạch 3.4'],
+    );
   });
 
   test('bộ câu và câu điểm liệt theo hạng', () {

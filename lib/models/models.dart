@@ -128,16 +128,22 @@ class ExamConfig {
 }
 
 class TrafficSign {
-  const TrafficSign(this.code, this.name, this.group, this.meaning);
+  const TrafficSign(this.code, this.name, this.group, this.meaning, [this.image]);
 
   final String code;
   final String name;
   final String group;
   final String? meaning;
 
-  factory TrafficSign.fromJson(Map<String, dynamic> j) => TrafficSign(
-      j['ma'] as String, j['ten'] as String, j['nhom'] as String,
-      j['y_nghia'] as String?);
+  /// Hình biển cắt từ Phụ lục QCVN 41:2024, ví dụ `assets/data/signs/p_101.webp`.
+  /// Null với vài vạch kẻ mà quy chuẩn không có hình minh họa riêng.
+  final String? image;
+
+  factory TrafficSign.fromJson(Map<String, dynamic> j) {
+    final hinh = j['hinh'] as String?;
+    return TrafficSign(j['ma'] as String, j['ten'] as String, j['nhom'] as String,
+        j['y_nghia'] as String?, hinh == null ? null : 'assets/data/$hinh');
+  }
 }
 
 /// Một nhóm mẹo nhớ nhanh (bản Pro), tự biên soạn trong `meo_nho.json`.
