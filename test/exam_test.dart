@@ -1,3 +1,4 @@
+import 'dart:convert';
 import 'dart:io';
 import 'dart:math';
 
@@ -46,6 +47,13 @@ void main() {
       if (s.image != null) {
         expect(File(s.image!).existsSync(), isTrue, reason: s.image);
       }
+    }
+    // Mỗi biển một hình riêng: hai biển trùng nội dung hình là đã cắt nhầm.
+    final seen = <String, String>{};
+    for (final s in bank.signs.where((s) => s.image != null)) {
+      final key = base64.encode(File(s.image!).readAsBytesSync());
+      expect(seen[key], isNull, reason: '${s.code} trùng hình với ${seen[key]}');
+      seen[key] = s.code;
     }
     // Chỉ vạch 3.2–3.4 không có hình minh họa riêng trong QCVN 41:2024.
     expect(
