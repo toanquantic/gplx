@@ -6,6 +6,7 @@ import '../../models/models.dart';
 import '../../monetization/paywall.dart';
 import '../app_scope.dart';
 import '../theme.dart';
+import '../widgets/appearance_tile.dart';
 import '../widgets/reminder_tile.dart';
 import 'about_screen.dart';
 import 'before_exam_screen.dart';
@@ -353,6 +354,8 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             const SizedBox(height: 10),
             const ReminderTile(),
+            const SizedBox(height: 10),
+            const AppearanceTile(),
           ],
         ),
       ),

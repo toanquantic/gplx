@@ -61,12 +61,16 @@ class _OnThiAppState extends State<OnThiApp> {
 
   @override
   Widget build(BuildContext context) {
-    Widget app(Widget home) => MaterialApp(
+    Widget app(Widget home, [Appearance appearance = Appearance.light]) => MaterialApp(
       title: 'Ôn thi GPLX',
       debugShowCheckedModeBanner: false,
       theme: buildTheme(Brightness.light),
-      // Luôn dùng giao diện sáng để iOS (hay bật chế độ tối) trông giống Android.
-      themeMode: ThemeMode.light,
+      // Mặc định luôn sáng (kể cả khi máy bật chế độ tối), người dùng đổi được trong app.
+      themeMode: switch (appearance) {
+        Appearance.light => ThemeMode.light,
+        Appearance.dark => ThemeMode.dark,
+        Appearance.system => ThemeMode.system,
+      },
       darkTheme: buildTheme(Brightness.dark),
       locale: const Locale('vi'),
       supportedLocales: const [Locale('vi')],
@@ -89,7 +93,10 @@ class _OnThiAppState extends State<OnThiApp> {
           progress: progress,
           entitlement: _entitlement,
           reminders: _reminders,
-          child: app(const HomeScreen()),
+          child: ListenableBuilder(
+            listenable: progress,
+            builder: (_, _) => app(const HomeScreen(), progress.appearance),
+          ),
         );
       },
     );

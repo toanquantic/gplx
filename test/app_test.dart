@@ -235,4 +235,25 @@ void main() {
     await tester.pumpAndSettle();
     expect(find.text('Không tìm thấy biển nào.'), findsOneWidget);
   });
+
+  testWidgets('mặc định giao diện sáng, đổi sang tối và giữ khi mở lại', (tester) async {
+    // Máy bật chế độ tối nhưng app vẫn sáng cho tới khi người dùng chọn khác.
+    tester.platformDispatcher.platformBrightnessTestValue = Brightness.dark;
+    addTearDown(tester.platformDispatcher.clearPlatformBrightnessTestValue);
+    await pumpApp(tester);
+    Brightness brightness() => Theme.of(tester.element(find.byType(Scaffold).first)).brightness;
+    expect(brightness(), Brightness.light);
+
+    await tester.scrollUntilVisible(
+      find.text('Theo máy'),
+      200,
+      scrollable: find.byType(Scrollable).first,
+    );
+    await tester.tap(find.text('Tối'));
+    await tester.pumpAndSettle();
+    expect(brightness(), Brightness.dark);
+
+    await pumpApp(tester, fresh: true);
+    expect(brightness(), Brightness.dark);
+  });
 }
