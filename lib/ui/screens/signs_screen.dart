@@ -22,7 +22,7 @@ const _signGroupTitles = {
   'vach_ke': 'Vạch kẻ đường',
 };
 
-/// Danh mục biển báo theo QCVN 41:2024: mã, tên và ý nghĩa (chưa có hình riêng từng biển).
+/// Danh mục biển báo theo QCVN 41:2024: hình, mã, tên và ý nghĩa từng biển.
 class SignsScreen extends StatefulWidget {
   const SignsScreen({super.key});
 
@@ -153,7 +153,7 @@ class _SignsScreenState extends State<SignsScreen> {
   }
 }
 
-/// Một biển: mã, tên và ý nghĩa (rút gọn 2 dòng, chạm để xem đủ).
+/// Một biển: hình, mã, tên và ý nghĩa (rút gọn 2 dòng, chạm để xem đủ và phóng to hình).
 class _SignTile extends StatefulWidget {
   const _SignTile({required this.sign});
 
@@ -177,7 +177,11 @@ class _SignTileState extends State<_SignTile> {
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          SignGroupGlyph(group: sign.group),
+          AnimatedSize(
+            duration: const Duration(milliseconds: 150),
+            alignment: Alignment.topLeft,
+            child: SignImage(sign: sign, size: _expanded ? 120 : 56),
+          ),
           const SizedBox(width: 14),
           Expanded(
             child: Column(
@@ -209,8 +213,36 @@ class _SignTileState extends State<_SignTile> {
   }
 }
 
-/// Hình dáng chung của nhóm biển (tròn viền đỏ, tam giác vàng...), chưa phải hình
-/// từng biển.
+/// Hình của một biển. Biển nào chưa có hình (vài vạch kẻ quy chuẩn không minh họa
+/// riêng) thì dùng hình dáng chung của nhóm.
+class SignImage extends StatelessWidget {
+  const SignImage({super.key, required this.sign, this.size = 56});
+
+  final TrafficSign sign;
+  final double size;
+
+  @override
+  Widget build(BuildContext context) {
+    final image = sign.image;
+    final fallback = SignGroupGlyph(group: sign.group, size: size);
+    if (image == null) return fallback;
+    return Semantics(
+      image: true,
+      label: 'Biển ${sign.code}',
+      child: Image.asset(
+        image,
+        width: size,
+        height: size,
+        fit: BoxFit.contain,
+        excludeFromSemantics: true,
+        errorBuilder: (_, _, _) => fallback,
+      ),
+    );
+  }
+}
+
+/// Hình dáng chung của nhóm biển (tròn viền đỏ, tam giác vàng...), dùng khi biển
+/// chưa có hình riêng.
 class SignGroupGlyph extends StatelessWidget {
   const SignGroupGlyph({super.key, required this.group, this.size = 44});
 

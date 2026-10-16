@@ -62,6 +62,7 @@ flutter:
   assets:
     - assets/data/
     - assets/data/images/
+    - assets/data/signs/
     - assets/fonts/OFL-BeVietnamPro.txt
 
   fonts:
