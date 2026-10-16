@@ -131,6 +131,8 @@ jobs:
       - name: Tạo cấu hình Xcode cho bản phát hành
         run: |
           flutter build ios --release --config-only --no-codesign --build-number=$((BUILD_NUMBER + 100))
+      # Archive chưa ký: ký tự động khi archive sẽ đòi profile Development, mà profile đó cần
+      # ít nhất một iPhone đã đăng ký. Bước xuất IPA bên dưới ký bằng chứng chỉ phân phối.
       - name: Archive
         run: |
           xcodebuild archive \
@@ -139,12 +141,9 @@ jobs:
             -configuration Release \
             -destination 'generic/platform=iOS' \
             -archivePath "$RUNNER_TEMP/Runner.xcarchive" \
-            -allowProvisioningUpdates \
-            -authenticationKeyPath "$ASC_KEY_PATH" \
-            -authenticationKeyID "$ASC_KEY_ID" \
-            -authenticationKeyIssuerID "$ASC_ISSUER_ID" \
             DEVELOPMENT_TEAM="$TEAM_ID" \
-            CODE_SIGN_STYLE=Automatic
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGNING_REQUIRED=NO
       - name: Xuất IPA
         run: |
           /usr/libexec/PlistBuddy -c "Add :method string app-store-connect" \
