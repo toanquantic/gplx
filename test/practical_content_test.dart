@@ -18,16 +18,20 @@ void main() {
     }
   });
 
-  test('video thực hành có mã YouTube hợp lệ, không trùng, mọi hạng đều có video', () {
+  test('video thực hành có mã YouTube hợp lệ, không trùng, hạng ô tô và xe máy đều có video', () {
     final list = PracticeVideoList.parse(
       File('assets/data/video_thuc_hanh.json').readAsStringSync(),
     );
-    final ids = [for (final g in list.groups) for (final v in g.videos) v.id];
+    final ids = [
+      for (final g in list.groups)
+        for (final v in g.videos) v.id,
+    ];
     expect(ids.toSet().length, ids.length);
     for (final id in ids) {
       expect(id, matches(RegExp(r'^[A-Za-z0-9_-]{11}$')));
     }
-    for (final code in enabledClasses) {
+    // B1 là mô tô ba bánh, thi khác vòng số 8 của A1 nên chưa có video.
+    for (final code in enabledClasses.where((c) => c != 'B1')) {
       expect(
         list.groups.where((g) => g.classes.contains(code)),
         isNotEmpty,
@@ -35,5 +39,6 @@ void main() {
       );
     }
     expect(list.forClass('A1').map((g) => g.title), ['Xe máy (A1, A)']);
+    expect(list.forClass('B1'), isEmpty);
   });
 }

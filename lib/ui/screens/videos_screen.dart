@@ -61,10 +61,20 @@ class _VideosScreenState extends State<VideosScreen> {
                 ? const Center(child: Text('Không đọc được danh sách video.'))
                 : const Center(child: CircularProgressIndicator());
           }
+          final groups = data.forClass(code);
           return ListView(
             padding: const EdgeInsets.fromLTRB(20, 4, 20, 24),
             children: [
-              for (final group in data.forClass(code)) ...[
+              if (groups.isEmpty)
+                Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 24),
+                  child: Text(
+                    'Chưa có video thực hành cho hạng $code.',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(fontSize: 14, color: c.muted),
+                  ),
+                ),
+              for (final group in groups) ...[
                 Padding(
                   padding: const EdgeInsets.only(top: 8, bottom: 8),
                   child: Text(

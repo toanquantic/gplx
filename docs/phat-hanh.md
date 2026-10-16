@@ -91,7 +91,7 @@ Số build tự tăng theo số lần chạy workflow (cộng 100). Đổi số 
 - [ ] Biểu tượng 512×512 PNG (xuất từ `branding/launcher_icon.svg`).
 - [ ] Ảnh nổi bật (feature graphic) 1024×500.
 - [ ] Ít nhất 2 ảnh chụp màn hình điện thoại (đã có vài ảnh trong `docs/screenshots/`, cần đủ tỉ lệ 16:9 hoặc 9:16, cạnh từ 320 đến 3840 px).
-- [ ] **Data safety**: chọn "Không thu thập dữ liệu" và "Không chia sẻ dữ liệu" (app offline, mua hàng do Google xử lý).
+- [ ] **Data safety**: nhà phát triển không thu thập và không chia sẻ dữ liệu (mua hàng do Google xử lý). Mục video thực hành tải ảnh và phát video trực tiếp từ YouTube trong WebView; đọc lại hướng dẫn Data safety về nội dung bên thứ ba trong WebView trước khi chọn "Không thu thập dữ liệu", và giữ phần mô tả YouTube trong chính sách quyền riêng tư.
 - [ ] **Content rating** (bảng hỏi IARC): không bạo lực, không nội dung người lớn, không tương tác người dùng; kết quả thường là mọi lứa tuổi (3+).
 - [ ] **Target audience**: 18+ (người thi bằng lái), không nhắm tới trẻ em.
 - [ ] Ads: Không có quảng cáo. Government apps: Không. Financial features: Không. Health: Không.
@@ -102,8 +102,8 @@ Số build tự tăng theo số lần chạy workflow (cộng 100). Đổi số 
 - [ ] Ảnh chụp màn hình iPhone 6,9 inch (1320×2868 hoặc 1290×2796), 1 đến 10 ảnh.
 - [ ] Ảnh chụp iPad 13 inch (2064×2752), vì app đang hỗ trợ cả iPad (`TARGETED_DEVICE_FAMILY = "1,2"`). Nếu không muốn làm ảnh iPad thì đổi thành chỉ iPhone trước lần gửi duyệt đầu.
 - [ ] Phụ đề (subtitle) tối đa 30 ký tự, từ khóa tối đa 100 ký tự.
-- [ ] **App Privacy**: chọn "Data Not Collected".
+- [ ] **App Privacy**: nhà phát triển không thu thập dữ liệu. Mục video thực hành nhúng trình phát YouTube, nên đọc lại hướng dẫn App Privacy về dữ liệu bên thứ ba trước khi chọn "Data Not Collected", và giữ phần mô tả YouTube trong chính sách quyền riêng tư.
 - [ ] **Age rating**: trả lời "Không" cho mọi mục, kết quả 4+.
 - [ ] Export compliance: đã khai báo sẵn trong `Info.plist` (`ITSAppUsesNonExemptEncryption = false`), không phải trả lời mỗi lần tải bản lên.
-- [ ] Ghi chú cho người duyệt: app offline, không cần tài khoản; bản Pro mua bằng In-App Purchase, có nút "Khôi phục giao dịch".
+- [ ] Ghi chú cho người duyệt: phần ôn thi chạy offline, mục video thực hành cần mạng để phát video YouTube; không cần tài khoản; bản Pro mua bằng In-App Purchase, có nút "Khôi phục giao dịch".
 - [ ] Bản quyền (Copyright): ví dụ "2026 Tên của bạn".

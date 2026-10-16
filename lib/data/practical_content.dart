@@ -78,11 +78,8 @@ class PracticeVideoList {
   final String note;
   final List<VideoGroup> groups;
 
-  /// Nhóm video hợp với hạng đang học; hạng không có nhóm nào thì trả về tất cả.
-  List<VideoGroup> forClass(String code) {
-    final matched = groups.where((g) => g.classes.contains(code)).toList();
-    return matched.isEmpty ? groups : matched;
-  }
+  /// Nhóm video hợp với hạng đang học; có thể rỗng nếu hạng đó chưa có video.
+  List<VideoGroup> forClass(String code) => groups.where((g) => g.classes.contains(code)).toList();
 
   factory PracticeVideoList.parse(String json) {
     final j = jsonDecode(json) as Map<String, dynamic>;

@@ -1,12 +1,12 @@
 # Chính sách quyền riêng tư – Ôn thi GPLX
 
-Cập nhật: 15/10/2026
+Cập nhật: 16/10/2026
 
-Ứng dụng "Ôn thi GPLX" (mã ứng dụng `com.toanquantic.gplx` trên Android và iOS) là ứng dụng ôn thi lý thuyết giấy phép lái xe, chạy hoàn toàn offline.
+Ứng dụng "Ôn thi GPLX" (mã ứng dụng `com.toanquantic.gplx` trên Android và iOS) là ứng dụng ôn thi lý thuyết giấy phép lái xe. Phần ôn thi chạy hoàn toàn offline; chỉ mục video thực hành và các liên kết ngoài cần mạng (xem bên dưới).
 
 ## Dữ liệu ứng dụng thu thập
 
-Ứng dụng **không thu thập, không gửi đi và không chia sẻ** bất kỳ dữ liệu cá nhân nào. Ứng dụng không có tài khoản, không có quảng cáo, không dùng công cụ phân tích hay theo dõi.
+Nhà phát triển ứng dụng **không thu thập, không nhận và không chia sẻ** bất kỳ dữ liệu cá nhân nào. Ứng dụng không có tài khoản, không có quảng cáo, không dùng công cụ phân tích hay theo dõi.
 
 ## Dữ liệu lưu trên máy của bạn
 
@@ -15,6 +15,12 @@ Tiến độ ôn tập (câu đã làm, câu sai, câu đánh dấu, lịch sử
 ## Thông báo nhắc học
 
 Nếu bạn bật nhắc học, ứng dụng đặt lịch thông báo ngay trên thiết bị. Không có máy chủ nào gửi thông báo và không có dữ liệu nào rời khỏi máy. Bạn có thể tắt trong ứng dụng hoặc trong cài đặt của hệ điều hành.
+
+## Video thực hành và liên kết ngoài
+
+Mục "Video thực hành" hiện ảnh xem trước tải từ máy chủ của YouTube (`i.ytimg.com`) và phát video bằng trình phát nhúng của YouTube ở chế độ bảo mật nâng cao (`youtube-nocookie.com`). Khi bạn mở mục này hoặc xem video, thiết bị kết nối trực tiếp tới YouTube (Google), nên YouTube có thể nhận địa chỉ IP, thông tin thiết bị và hoạt động xem video theo [chính sách quyền riêng tư của Google](https://policies.google.com/privacy). Ứng dụng không gửi kèm dữ liệu ôn tập hay thông tin nào khác của bạn.
+
+Ở mục "Trung tâm dạy lái", các nút Gọi, Website, Bản đồ và "Mở trên YouTube" mở ứng dụng gọi điện, trình duyệt, Google Maps hoặc YouTube trên máy bạn; những ứng dụng và trang đó xử lý dữ liệu theo chính sách riêng của chúng.
 
 ## Mua bản Pro
 
