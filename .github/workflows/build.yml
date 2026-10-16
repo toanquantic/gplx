@@ -5,6 +5,11 @@ on:
     branches: [main]
   pull_request:
   workflow_dispatch:
+    inputs:
+      force_pro:
+        description: Mở sẵn Pro trong APK để test màn hình (không dùng để phát hành)
+        type: boolean
+        default: false
 
 concurrency:
   group: build-${{ github.ref }}
@@ -54,23 +59,25 @@ jobs:
             echo "$ANDROID_KEYSTORE_BASE64" | base64 -d > "$RUNNER_TEMP/upload.jks"
             echo "ANDROID_KEYSTORE_PATH=$RUNNER_TEMP/upload.jks" >> "$GITHUB_ENV"
           fi
-      - run: flutter build apk --release
+      # Chạy tay với force_pro: APK mở sẵn Pro, không qua cửa hàng, và không build AAB để
+      # bản này không lọt lên Google Play.
+      - run: flutter build apk --release ${{ inputs.force_pro && '--dart-define=FORCE_PRO=true' || '' }}
         env:
           ANDROID_KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
           ANDROID_KEY_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
           ANDROID_KEY_PASSWORD: ${{ secrets.ANDROID_KEY_PASSWORD }}
       - uses: actions/upload-artifact@v4
         with:
-          name: on-thi-gplx-android-apk
+          name: ${{ inputs.force_pro && 'on-thi-gplx-android-apk-pro-test' || 'on-thi-gplx-android-apk' }}
           path: build/app/outputs/flutter-apk/app-release.apk
           retention-days: 14
-      - if: env.ANDROID_KEYSTORE_PATH != ''
+      - if: env.ANDROID_KEYSTORE_PATH != '' && !inputs.force_pro
         run: flutter build appbundle --release
         env:
           ANDROID_KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
           ANDROID_KEY_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
           ANDROID_KEY_PASSWORD: ${{ secrets.ANDROID_KEY_PASSWORD }}
-      - if: env.ANDROID_KEYSTORE_PATH != ''
+      - if: env.ANDROID_KEYSTORE_PATH != '' && !inputs.force_pro
         uses: actions/upload-artifact@v4
         with:
           name: on-thi-gplx-android-aab
