@@ -19,6 +19,9 @@ void main() {
   runApp(const OnThiApp());
 }
 
+/// Bề rộng tối đa của nội dung app trên màn hình rộng (máy tính bảng).
+const double maxContentWidth = 640;
+
 typedef AppData = (QuestionBank, Progress);
 
 Future<AppData> loadAppData() =>
@@ -86,6 +89,17 @@ class _OnThiAppState extends State<OnThiApp> {
       locale: const Locale('vi'),
       supportedLocales: const [Locale('vi')],
       localizationsDelegates: GlobalMaterialLocalizations.delegates,
+      // Máy tính bảng: giữ nội dung trong cột rộng tối đa 640 ở giữa màn hình,
+      // tránh thẻ trang chủ và nút đáp án bị kéo giãn, để trống.
+      builder: (context, child) => ColoredBox(
+        color: Theme.of(context).scaffoldBackgroundColor,
+        child: Center(
+          child: ConstrainedBox(
+            constraints: const BoxConstraints(maxWidth: maxContentWidth),
+            child: child,
+          ),
+        ),
+      ),
       home: home,
     );
     return FutureBuilder(
