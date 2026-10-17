@@ -2,7 +2,9 @@ name: Store listing
 
 # Chỉ chạy khi bấm "Run workflow". Đưa nội dung trang store (mô tả, ảnh chụp màn hình,
 # icon, ảnh nổi bật) trong fastlane/metadata và store/ lên Google Play và App Store Connect.
-# Chỉ lưu nháp trang store, không tải bản build, không gửi duyệt.
+# Không tải bản build và không gửi bản nào đi duyệt. Khi app chưa phát hành, nội dung chỉ
+# nằm ở trang store chưa công khai. Khi app đã lên store, Google và Apple duyệt nội dung
+# mới như khi sửa tay trong Console.
 on:
   workflow_dispatch:
     inputs:
@@ -66,10 +68,12 @@ jobs:
         run: brew install fastlane
       - name: Tải nội dung lên App Store Connect
         run: |
+          # Phiên bản đang soạn trên App Store Connect, lấy theo pubspec.yaml.
+          version=$(sed -n 's/^version: *\([0-9.]*\).*/\1/p' pubspec.yaml)
           fastlane run upload_to_app_store \
             api_key_path:"$RUNNER_TEMP/asc.json" \
             app_identifier:com.toanquantic.gplx \
-            app_version:1.0.0 \
+            app_version:"$version" \
             metadata_path:fastlane/metadata/ios \
             screenshots_path:fastlane/screenshots \
             overwrite_screenshots:true \
