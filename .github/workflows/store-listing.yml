@@ -27,7 +27,7 @@ jobs:
       - uses: actions/checkout@v4
       - name: Gom ảnh vào thư mục metadata
         run: |
-          d=fastlane/metadata/android/vi-VN/images
+          d=fastlane/metadata/android/vi/images
           mkdir -p $d/phoneScreenshots
           cp store/play/icon-512.png $d/icon.png
           cp store/play/feature-graphic-1024x500.png $d/featureGraphic.png
@@ -75,6 +75,7 @@ jobs:
             api_key_path:"$RUNNER_TEMP/asc.json" \
             app_identifier:com.toanquantic.gplx \
             app_version:"$version" \
+            metadata_path:fastlane/metadata/ios \
             screenshots_path:fastlane/screenshots \
             overwrite_screenshots:true \
             skip_metadata:true \
