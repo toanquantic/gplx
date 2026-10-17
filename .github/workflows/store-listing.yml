@@ -52,8 +52,14 @@ jobs:
           mkdir -p fastlane/screenshots/vi
           cp store/screenshots/iphone/*.png fastlane/screenshots/vi/
           # Số điện thoại liên hệ cho người duyệt của Apple, không để trong repo.
-          if [ -n "$APP_REVIEW_PHONE" ]; then
-            echo "$APP_REVIEW_PHONE" > fastlane/metadata/ios/review_information/phone_number.txt
+          # Apple cần dạng +84...; số Việt Nam nhập kiểu 0935... thì đổi số 0 đầu thành +84.
+          phone=$(echo "$APP_REVIEW_PHONE" | tr -d ' .-')
+          case "$phone" in
+            0*) phone="+84${phone#0}" ;;
+            84*) phone="+$phone" ;;
+          esac
+          if [ -n "$phone" ]; then
+            echo "$phone" > fastlane/metadata/ios/review_information/phone_number.txt
           fi
       - name: Chuẩn bị khóa App Store Connect API
         env:
