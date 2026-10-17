@@ -1,0 +1,25 @@
+# Dùng trong workflow Store listing (.github/workflows/store-listing.yml).
+
+default_platform(:android)
+
+platform :android do
+  # fastlane chỉ đưa nội dung trang store lên Play khi có một bản build đã nằm trong kênh,
+  # nên gắn vào bản mới nhất của kênh internal. Bản đó giữ nguyên trạng thái (nháp).
+  lane :play_listing do
+    key = ENV.fetch("PLAY_SERVICE_ACCOUNT_JSON")
+    package = "com.toanquantic.gplx"
+    code = google_play_track_version_codes(package_name: package, track: "internal", json_key_data: key).max
+    UI.user_error!("Kênh internal chưa có bản build nào, chạy workflow Release trước") unless code
+    upload_to_play_store(
+      package_name: package,
+      json_key_data: key,
+      track: "internal",
+      version_code: code,
+      metadata_path: "#{ENV.fetch('GITHUB_WORKSPACE')}/fastlane/metadata/android",
+      skip_upload_apk: true,
+      skip_upload_aab: true,
+      skip_upload_changelogs: true,
+      sync_image_upload: true
+    )
+  end
+end
