@@ -99,8 +99,8 @@ Sinh lại khi giao diện đổi: `node tool/gen_store_graphics.js` (icon, ản
 
 ### Chung
 
-- [ ] **Chính sách quyền riêng tư**: điền email liên hệ ở cuối [`privacy-policy.md`](privacy-policy.md). Địa chỉ dùng cho cả hai store: https://github.com/toanquantic/gplx/blob/main/docs/privacy-policy.md
-- [ ] Email hỗ trợ (giống email trong chính sách).
+- [x] **Chính sách quyền riêng tư** (email liên hệ đã điền). Địa chỉ dùng cho cả hai store: https://github.com/toanquantic/gplx/blob/main/docs/privacy-policy.md
+- [x] Email hỗ trợ: toanquantic@gmail.com
 - [ ] Sản phẩm `pro_lifetime` ở cả hai store đã có giá, tên, mô tả và ở trạng thái hoạt động (Play: Active; App Store: Ready to Submit).
 
 ### Google Play

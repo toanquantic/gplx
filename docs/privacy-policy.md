@@ -51,4 +51,4 @@ Nếu chính sách này thay đổi, bản mới sẽ được đăng tại cùn
 
 ## Liên hệ
 
-Email: (điền email liên hệ hỗ trợ trước khi đăng chính sách này)
+Email: toanquantic@gmail.com
