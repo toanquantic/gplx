@@ -75,6 +75,7 @@ jobs:
             api_key_path:"$RUNNER_TEMP/asc.json" \
             app_identifier:com.toanquantic.gplx \
             app_version:"$version" \
+            metadata_path:fastlane/metadata/ios \
             screenshots_path:fastlane/screenshots \
             overwrite_screenshots:true \
             skip_metadata:true \
