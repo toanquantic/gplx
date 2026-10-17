@@ -16,14 +16,15 @@ enum LinkTarget {
   external,
 }
 
-/// Mở [url]; cách mở trong app không được hỗ trợ (Windows, Linux) thì mở bằng
-/// app ngoài, vẫn không được thì báo bằng SnackBar.
+/// Mở [url]; máy không có Custom Tabs thì thử WebView của app, cách mở trong
+/// app không được hỗ trợ (Windows, Linux) thì mở bằng app ngoài, vẫn không
+/// được thì báo bằng SnackBar.
 Future<void> openLink(BuildContext context, Uri url, {LinkTarget target = LinkTarget.inApp}) async {
   final messenger = ScaffoldMessenger.of(context);
   final web = url.scheme == 'http' || url.scheme == 'https';
   final modes = [
-    if (web && target == LinkTarget.inAppWebView) LaunchMode.inAppWebView,
-    if (web && target != LinkTarget.external) LaunchMode.inAppBrowserView,
+    if (web && target == LinkTarget.inApp) LaunchMode.inAppBrowserView,
+    if (web && target != LinkTarget.external) LaunchMode.inAppWebView,
     LaunchMode.externalApplication,
   ];
   for (final mode in modes) {
