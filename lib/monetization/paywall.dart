@@ -12,7 +12,6 @@ const proBenefits = [
   ('Thống kê và dự đoán đỗ', 'Biết chương nào còn yếu, khả năng đỗ bao nhiêu.'),
   ('Chế độ ngày trước khi thi', 'Gói ôn gọn trong một buổi trước giờ thi.'),
   ('Mẹo nhớ nhanh', 'Nhớ gọn tốc độ, khoảng cách, xe ưu tiên, thứ tự qua giao lộ.'),
-  ('Không quảng cáo', 'Học liền mạch, không bị gián đoạn.'),
 ];
 
 /// Mở màn mời mua Pro.
