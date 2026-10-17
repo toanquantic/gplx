@@ -7,7 +7,7 @@ Chép từng ô vào Play Console (Grow > Store presence > Main store listing) v
 - **Danh mục**: Giáo dục (Education)
 - **Chính sách quyền riêng tư**: https://github.com/toanquantic/gplx/blob/main/docs/privacy-policy.md
 - **Email hỗ trợ**: toanquantic@gmail.com
-- **Bản quyền (App Store)**: 2026 (tên của bạn)
+- **Bản quyền (App Store)**: 2026 Nguyễn Phúc Toàn
 
 ## Google Play
 
