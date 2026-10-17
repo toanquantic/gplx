@@ -66,17 +66,32 @@ jobs:
             '{key_id: $id, issuer_id: $issuer, key: $key, in_house: false}' > "$RUNNER_TEMP/asc.json"
       - name: Cài fastlane
         run: brew install fastlane
-      - name: Tải nội dung lên App Store Connect
+      - name: Tải ảnh chụp màn hình lên App Store Connect
         run: |
           # Phiên bản đang soạn trên App Store Connect, lấy theo pubspec.yaml.
           version=$(sed -n 's/^version: *\([0-9.]*\).*/\1/p' pubspec.yaml)
+          echo "APP_VERSION=$version" >> "$GITHUB_ENV"
           fastlane run upload_to_app_store \
             api_key_path:"$RUNNER_TEMP/asc.json" \
             app_identifier:com.toanquantic.gplx \
             app_version:"$version" \
-            metadata_path:fastlane/metadata/ios \
             screenshots_path:fastlane/screenshots \
             overwrite_screenshots:true \
+            skip_metadata:true \
+            skip_binary_upload:true \
+            submit_for_review:false \
+            run_precheck_before_submit:false \
+            force:true
+      # Apple chỉ nhận mục thông tin cho người duyệt khi có số điện thoại liên hệ. Nếu mục đó
+      # chưa có trên App Store Connect thì cần secret APP_REVIEW_PHONE (dạng +84...).
+      - name: Tải nội dung lên App Store Connect
+        run: |
+          fastlane run upload_to_app_store \
+            api_key_path:"$RUNNER_TEMP/asc.json" \
+            app_identifier:com.toanquantic.gplx \
+            app_version:"$APP_VERSION" \
+            metadata_path:fastlane/metadata/ios \
+            skip_screenshots:true \
             skip_binary_upload:true \
             submit_for_review:false \
             run_precheck_before_submit:false \
