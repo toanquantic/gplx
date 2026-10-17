@@ -64,5 +64,9 @@
             <action android:name="android.intent.action.DIAL"/>
             <data android:scheme="tel"/>
         </intent>
+        <!-- Mở website trong app bằng Custom Tabs (url_launcher, LaunchMode.inAppBrowserView). -->
+        <intent>
+            <action android:name="android.support.customtabs.action.CustomTabsService"/>
+        </intent>
     </queries>
 </manifest>

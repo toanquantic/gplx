@@ -1,11 +1,12 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:webview_flutter/webview_flutter.dart' show NavigationDecision, NavigationDelegate;
 import 'package:youtube_player_iframe/youtube_player_iframe.dart';
 
 import '../../data/practical_content.dart';
 import '../app_scope.dart';
+import '../links.dart';
 import '../theme.dart';
-import 'schools_screen.dart' show openExternal;
 
 /// Trình phát YouTube nhúng chạy trên Android, iOS, macOS và web; Windows và
 /// Linux mở video bằng trình duyệt.
@@ -111,7 +112,7 @@ class _VideoTile extends StatelessWidget {
               context,
               MaterialPageRoute<void>(builder: (_) => VideoPlayerScreen(video: video)),
             )
-          : openExternal(context, video.watchUrl),
+          : openLink(context, video.watchUrl, target: LinkTarget.inAppWebView),
       child: Row(
         children: [
           ClipRRect(
@@ -147,6 +148,55 @@ class _VideoTile extends StatelessWidget {
   }
 }
 
+/// Việc cần làm khi trình phát nhúng muốn chuyển trang.
+sealed class PlayerNavigation {
+  const PlayerNavigation();
+}
+
+/// Cho trình phát tải trang này (trang nhúng, iframe bên trong).
+class AllowNavigation extends PlayerNavigation {
+  const AllowNavigation();
+}
+
+/// Phát video khác ngay trong trình phát (video liên quan, "Xem trên YouTube").
+class PlayInPlayer extends PlayerNavigation {
+  const PlayInPlayer(this.videoId);
+  final String videoId;
+}
+
+/// Mở trang bằng WebView riêng của app, có nút quay lại.
+class OpenInApp extends PlayerNavigation {
+  const OpenInApp(this.url);
+  final Uri url;
+}
+
+/// Quyết định cho mỗi lần trình phát YouTube nhúng muốn chuyển trang. Mặc
+/// định của youtube_player_iframe là mở logo, tiêu đề, kênh bằng app YouTube
+/// hoặc Safari (rời khỏi app, khó quay lại) và trên iOS còn để trình phát tự
+/// chuyển thành trang YouTube; ở đây thì mọi trang ngoài trình phát đều mở
+/// bằng WebView của app.
+PlayerNavigation decidePlayerNavigation(Uri uri, {required bool isMainFrame}) {
+  if (!isMainFrame) return const AllowNavigation();
+  if (uri.scheme == 'about' || uri.scheme == 'data' || uri.scheme == 'blob') {
+    return const AllowNavigation();
+  }
+  final embedHost = uri.host == 'www.youtube-nocookie.com' || uri.host == 'www.youtube.com';
+  // Trang HTML của trình phát nạp với gốc youtube-nocookie.com.
+  if (embedHost && (uri.path.isEmpty || uri.path == '/' || uri.path.startsWith('/embed/'))) {
+    return const AllowNavigation();
+  }
+  final videoId = uri.queryParameters['v'];
+  final feature = uri.queryParameters['feature'];
+  // Video liên quan hiện cuối video: phát tiếp trong trình phát. Bấm tiêu đề,
+  // logo (feature=emb_title, emb_logo...) thì mở trang YouTube trong app.
+  if (uri.path == '/watch' &&
+      videoId != null &&
+      (feature == null || feature.startsWith('emb_rel') || feature == 'emb_info')) {
+    return PlayInPlayer(videoId);
+  }
+  return OpenInApp(uri);
+}
+
 /// Xem một video bằng trình phát YouTube nhúng, kèm nút mở trong app YouTube
 /// (khi chủ kênh tắt nhúng thì chỉ xem được bằng cách này).
 class VideoPlayerScreen extends StatefulWidget {
@@ -163,6 +213,30 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
     videoId: widget.video.id,
     params: const YoutubePlayerParams(showFullscreenButton: true, strictRelatedVideos: true),
   );
+
+  @override
+  void initState() {
+    super.initState();
+    // Trên web trình phát là iframe của trình duyệt, không có WebView để chặn.
+    if (kIsWeb) return;
+    _controller.webViewController.setNavigationDelegate(
+      NavigationDelegate(
+        onNavigationRequest: (request) {
+          final uri = Uri.tryParse(request.url);
+          if (uri == null) return NavigationDecision.prevent;
+          switch (decidePlayerNavigation(uri, isMainFrame: request.isMainFrame)) {
+            case AllowNavigation():
+              return NavigationDecision.navigate;
+            case PlayInPlayer(:final videoId):
+              _controller.loadVideoById(videoId: videoId);
+            case OpenInApp(:final url):
+              if (mounted) openLink(context, url, target: LinkTarget.inAppWebView);
+          }
+          return NavigationDecision.prevent;
+        },
+      ),
+    );
+  }
 
   @override
   void dispose() {
@@ -191,7 +265,8 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
                 OutlinedButton.icon(
                   icon: const Icon(Icons.open_in_new, size: 18),
                   label: const Text('Mở trên YouTube'),
-                  onPressed: () => openExternal(context, widget.video.watchUrl),
+                  onPressed: () =>
+                      openLink(context, widget.video.watchUrl, target: LinkTarget.inAppWebView),
                 ),
                 const SizedBox(height: 8),
                 Text(
