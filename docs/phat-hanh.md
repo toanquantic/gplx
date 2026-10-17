@@ -86,32 +86,51 @@ Số build tự tăng theo số lần chạy workflow (cộng 100). Đổi số 
 
 ## 8. Checklist trang store
 
+Nội dung chữ (tên, mô tả, từ khóa, ghi chú cho người duyệt) soạn sẵn ở [`store-listing.md`](store-listing.md). Hình ảnh ở thư mục `store/`:
+
+| File | Dùng cho |
+|---|---|
+| `store/play/icon-512.png` | Play: biểu tượng ứng dụng 512×512 |
+| `store/play/feature-graphic-1024x500.png` | Play: ảnh nổi bật |
+| `store/screenshots/android/*.png` (1080×2160) | Play: ảnh chụp màn hình điện thoại |
+| `store/screenshots/iphone/*.png` (1320×2868) | App Store: iPhone 6,9 inch |
+
+Sinh lại khi giao diện đổi: `node tool/gen_store_graphics.js` (icon, ảnh nổi bật) và `flutter test --update-goldens test_screenshots/store_screenshots_test.dart` (ảnh màn hình). Bản iOS chỉ chạy trên iPhone (`TARGETED_DEVICE_FAMILY = 1`) vì bố cục máy tính bảng còn nhiều khoảng trống, nên không cần ảnh iPad; thêm iPad sau vẫn được.
+
 ### Chung
 
-- [ ] **Chính sách quyền riêng tư** ở một địa chỉ công khai: nội dung đã soạn ở [`docs/privacy-policy.md`](privacy-policy.md), điền email liên hệ rồi đăng (GitHub Pages, Google Sites, Notion công khai...). Cả hai store bắt buộc.
-- [ ] Email hỗ trợ (và trang web hỗ trợ cho Apple, có thể dùng chính trang chính sách).
-- [ ] Tên app, mô tả ngắn, mô tả đầy đủ bằng tiếng Việt.
-- [ ] **Ghi rõ không phải app của cơ quan nhà nước** ngay trong mô tả, kèm nguồn câu hỏi. Google Play có chính sách riêng về app liên quan đến thông tin chính phủ và sẽ từ chối nếu thiếu. Gợi ý: "Ứng dụng ôn tập độc lập, không phải sản phẩm của Cục Cảnh sát giao thông hay cơ quan nhà nước nào. Câu hỏi lấy từ bộ 600 câu sát hạch lý thuyết do Cục CSGT công bố, áp dụng từ 01/6/2025." Trong app đã có câu này ở trang Giới thiệu.
-- [ ] Danh mục: Giáo dục (Education).
+- [ ] **Chính sách quyền riêng tư**: điền email liên hệ ở cuối [`privacy-policy.md`](privacy-policy.md). Địa chỉ dùng cho cả hai store: https://github.com/toanquantic/gplx/blob/main/docs/privacy-policy.md
+- [ ] Email hỗ trợ (giống email trong chính sách).
+- [ ] Sản phẩm `pro_lifetime` ở cả hai store đã có giá, tên, mô tả và ở trạng thái hoạt động (Play: Active; App Store: Ready to Submit).
 
 ### Google Play
 
-- [ ] Biểu tượng 512×512 PNG (xuất từ `branding/launcher_icon.svg`).
-- [ ] Ảnh nổi bật (feature graphic) 1024×500.
-- [ ] Ít nhất 2 ảnh chụp màn hình điện thoại (đã có vài ảnh trong `docs/screenshots/`, cần đủ tỉ lệ 16:9 hoặc 9:16, cạnh từ 320 đến 3840 px).
-- [ ] **Data safety**: nhà phát triển không thu thập và không chia sẻ dữ liệu (mua hàng do Google xử lý). Mục video thực hành tải ảnh và phát video trực tiếp từ YouTube trong WebView; đọc lại hướng dẫn Data safety về nội dung bên thứ ba trong WebView trước khi chọn "Không thu thập dữ liệu", và giữ phần mô tả YouTube trong chính sách quyền riêng tư.
+- [ ] Main store listing: tên, mô tả ngắn, mô tả đầy đủ, icon, ảnh nổi bật, ảnh chụp.
+- [ ] **Data safety**: chọn "Không thu thập dữ liệu" và "Không chia sẻ dữ liệu" (mua hàng do Google xử lý; video phát qua trình phát nhúng của YouTube).
 - [ ] **Content rating** (bảng hỏi IARC): không bạo lực, không nội dung người lớn, không tương tác người dùng; kết quả thường là mọi lứa tuổi (3+).
 - [ ] **Target audience**: 18+ (người thi bằng lái), không nhắm tới trẻ em.
 - [ ] Ads: Không có quảng cáo. Government apps: Không. Financial features: Không. Health: Không.
-- [ ] Thử nghiệm kín 12 người trong 14 ngày (tài khoản cá nhân mới), rồi xin quyền phát hành production.
+- [ ] Danh mục: Giáo dục.
 
 ### App Store
 
-- [ ] Ảnh chụp màn hình iPhone 6,9 inch (1320×2868 hoặc 1290×2796), 1 đến 10 ảnh.
-- [ ] Ảnh chụp iPad 13 inch (2064×2752), vì app đang hỗ trợ cả iPad (`TARGETED_DEVICE_FAMILY = "1,2"`). Nếu không muốn làm ảnh iPad thì đổi thành chỉ iPhone trước lần gửi duyệt đầu.
-- [ ] Phụ đề (subtitle) tối đa 30 ký tự, từ khóa tối đa 100 ký tự.
-- [ ] **App Privacy**: nhà phát triển không thu thập dữ liệu. Mục video thực hành nhúng trình phát YouTube, nên đọc lại hướng dẫn App Privacy về dữ liệu bên thứ ba trước khi chọn "Data Not Collected", và giữ phần mô tả YouTube trong chính sách quyền riêng tư.
+- [ ] Trang phiên bản 1.0: ảnh chụp iPhone, văn bản quảng cáo, mô tả, từ khóa, URL hỗ trợ, bản quyền.
+- [ ] **App Privacy**: chọn "Data Not Collected".
 - [ ] **Age rating**: trả lời "Không" cho mọi mục, kết quả 4+.
-- [ ] Export compliance: đã khai báo sẵn trong `Info.plist` (`ITSAppUsesNonExemptEncryption = false`), không phải trả lời mỗi lần tải bản lên.
-- [ ] Ghi chú cho người duyệt: phần ôn thi chạy offline, mục video thực hành cần mạng để phát video YouTube; không cần tài khoản; bản Pro mua bằng In-App Purchase, có nút "Khôi phục giao dịch".
-- [ ] Bản quyền (Copyright): ví dụ "2026 Tên của bạn".
+- [ ] Export compliance: đã khai báo sẵn trong `Info.plist` (`ITSAppUsesNonExemptEncryption = false`).
+- [ ] App Review Information: dán ghi chú cho người duyệt trong `store-listing.md`, bỏ trống tài khoản đăng nhập (app không có đăng nhập).
+- [ ] Gắn `pro_lifetime` vào phiên bản (mục In-App Purchases trên trang phiên bản), kèm ảnh màn mời mua Pro.
+
+## 9. Phát hành chính thức
+
+**Google Play**
+
+1. Tài khoản cá nhân tạo sau 13/11/2023 phải chạy **Closed testing** với ít nhất 12 người tham gia liên tục 14 ngày, rồi mới bấm được **Apply for production** ở Dashboard. Testing > Closed testing > tạo track, thêm danh sách email người thử, đưa bản build vào và gửi link mời. (Workflow Release chọn `track: alpha` để tải bản lên đúng track này.)
+2. Hết 14 ngày, trả lời bảng hỏi xin quyền production. Google duyệt thường vài ngày.
+3. Có quyền thì chạy Release với `track: production` (cần thêm quyền "Release to production" cho service account) hoặc promote bản đang ở closed testing lên Production trong Play Console, rồi bấm gửi duyệt.
+
+**App Store**
+
+1. Chọn build đã lên TestFlight ở trang phiên bản 1.0, điền đủ mục ở checklist trên.
+2. Bấm **Add for Review**, rồi **Submit for Review**. Apple duyệt thường 1 đến 2 ngày.
+3. Chọn phát hành tự động sau khi duyệt hoặc tự bấm phát hành.

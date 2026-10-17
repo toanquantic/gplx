@@ -12,6 +12,15 @@ Nhà phát triển ứng dụng **không thu thập, không nhận và không ch
 
 Tiến độ ôn tập (câu đã làm, câu sai, câu đánh dấu, lịch sử thi thử, hạng đang ôn, giờ nhắc học, ngày thi) chỉ được lưu trong bộ nhớ của ứng dụng trên thiết bị. Gỡ ứng dụng hoặc xóa dữ liệu ứng dụng sẽ xóa toàn bộ phần này.
 
+## Kết nối mạng
+
+Chỉ hai mục cần mạng, và chỉ khi bạn mở chúng:
+
+- **Video thực hành**: video phát bằng trình phát nhúng của YouTube (youtube-nocookie.com). Khi xem, YouTube và Google xử lý dữ liệu theo [chính sách quyền riêng tư của Google](https://policies.google.com/privacy).
+- **Video thực hành và Trung tâm dạy lái**: app tải danh sách video và trung tâm mới nhất từ GitHub (raw.githubusercontent.com). Yêu cầu này không gửi thông tin nào về bạn ngoài những gì mọi trình duyệt gửi khi tải một trang (như địa chỉ IP), và được GitHub xử lý theo [chính sách của GitHub](https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement).
+
+Bấm gọi điện, mở website hay bản đồ của một trung tâm sẽ mở ứng dụng tương ứng trên máy bạn.
+
 ## Thông báo nhắc học
 
 Nếu bạn bật nhắc học, ứng dụng đặt lịch thông báo ngay trên thiết bị. Không có máy chủ nào gửi thông báo và không có dữ liệu nào rời khỏi máy. Bạn có thể tắt trong ứng dụng hoặc trong cài đặt của hệ điều hành.
