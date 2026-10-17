@@ -85,6 +85,15 @@ jobs:
           name: on-thi-gplx-release-aab
           path: build/app/outputs/bundle/release/app-release.aab
           retention-days: 30
+      - name: Kiểm tra tài khoản dịch vụ Google Play
+        if: inputs.upload
+        env:
+          PLAY_SERVICE_ACCOUNT_JSON: ${{ secrets.PLAY_SERVICE_ACCOUNT_JSON }}
+        run: |
+          if [ -z "$PLAY_SERVICE_ACCOUNT_JSON" ]; then
+            echo "::error::Chưa có secret PLAY_SERVICE_ACCOUNT_JSON nên không tự tải lên Google Play được. AAB đã ký nằm ở mục Artifacts, xem mục 4 trong docs/phat-hanh.md"
+            exit 1
+          fi
       - name: Tải lên Google Play (nháp)
         if: inputs.upload
         uses: r0adkll/upload-google-play@v1

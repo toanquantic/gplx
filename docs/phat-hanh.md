@@ -36,8 +36,16 @@ Không cần tự tạo chứng chỉ `.p12` hay provisioning profile: workflow 
 
 ## 4. Tài khoản dịch vụ Google Play (để workflow tự tải bản lên)
 
-1. Play Console > Setup > API access (hoặc theo hướng dẫn ở đó): liên kết một dự án Google Cloud, tạo **service account**, tạo khóa JSON và tải về.
-2. Play Console > Users and permissions > mời email của service account, cấp quyền cho app này: **Release to testing tracks** (và **Release to production** nếu muốn workflow đưa lên kênh production).
+Làm một lần, sau đó workflow Release bật `upload` sẽ tự đưa AAB lên Play.
+
+1. Vào https://console.cloud.google.com, tạo dự án mới (ví dụ `gplx-release`).
+2. Trong dự án đó, mở **APIs & Services > Library**, tìm **Google Play Android Developer API** và bấm **Enable**.
+3. Mở **IAM & Admin > Service Accounts > Create service account**, đặt tên (ví dụ `play-upload`), bỏ qua phần cấp quyền, bấm Done. Chép địa chỉ email của nó (dạng `play-upload@gplx-release.iam.gserviceaccount.com`).
+4. Bấm vào service account vừa tạo > tab **Keys** > **Add key > Create new key > JSON**. File JSON tải về chính là khóa, giữ kín như mật khẩu.
+5. Vào Play Console > **Users and permissions** > **Invite new users**, dán email ở bước 3. Ở tab **App permissions** thêm app Ôn thi GPLX, tích **Release apps to testing tracks** (thêm **Release to production...** nếu muốn workflow đưa lên kênh production). Bấm Invite user.
+6. GitHub repo > Settings > Secrets and variables > Actions > New repository secret: tên `PLAY_SERVICE_ACCOUNT_JSON`, giá trị là toàn bộ nội dung file JSON (mở bằng trình soạn thảo, chép hết).
+
+Quyền mới cấp trên Play Console đôi khi cần chờ một lúc mới có hiệu lực; nếu lần chạy đầu báo lỗi quyền thì chạy lại sau.
 
 ## 5. Secrets cần thêm vào GitHub
 
