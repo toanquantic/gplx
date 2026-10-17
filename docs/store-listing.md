@@ -11,7 +11,7 @@ Chép từng ô vào Play Console (Grow > Store presence > Main store listing) v
 
 ## Google Play
 
-**Tên ứng dụng** (30): giữ tên đang đặt trên Play Console.
+**Tên ứng dụng** (30): Ôn thi GPLX 2027
 
 **Mô tả ngắn** (80):
 
