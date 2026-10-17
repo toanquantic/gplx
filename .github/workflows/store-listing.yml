@@ -37,13 +37,7 @@ jobs:
       - name: Tải nội dung lên Google Play
         env:
           PLAY_SERVICE_ACCOUNT_JSON: ${{ secrets.PLAY_SERVICE_ACCOUNT_JSON }}
-        run: |
-          fastlane run upload_to_play_store \
-            package_name:com.toanquantic.gplx \
-            json_key_data:"$PLAY_SERVICE_ACCOUNT_JSON" \
-            metadata_path:fastlane/metadata/android \
-            skip_upload_apk:true skip_upload_aab:true skip_upload_changelogs:true \
-            sync_image_upload:true
+        run: fastlane android play_listing
 
   ios:
     name: App Store
@@ -52,9 +46,15 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Gom ảnh vào thư mục screenshots
+        env:
+          APP_REVIEW_PHONE: ${{ secrets.APP_REVIEW_PHONE }}
         run: |
           mkdir -p fastlane/screenshots/vi
           cp store/screenshots/iphone/*.png fastlane/screenshots/vi/
+          # Số điện thoại liên hệ cho người duyệt của Apple, không để trong repo.
+          if [ -n "$APP_REVIEW_PHONE" ]; then
+            echo "$APP_REVIEW_PHONE" > fastlane/metadata/ios/review_information/phone_number.txt
+          fi
       - name: Chuẩn bị khóa App Store Connect API
         env:
           ASC_KEY_ID: ${{ secrets.APP_STORE_CONNECT_KEY_ID }}
