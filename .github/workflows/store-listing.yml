@@ -1,0 +1,79 @@
+name: Store listing
+
+# Chỉ chạy khi bấm "Run workflow". Đưa nội dung trang store (mô tả, ảnh chụp màn hình,
+# icon, ảnh nổi bật) trong fastlane/metadata và store/ lên Google Play và App Store Connect.
+# Chỉ lưu nháp trang store, không tải bản build, không gửi duyệt.
+on:
+  workflow_dispatch:
+    inputs:
+      platform:
+        description: Nền tảng
+        type: choice
+        options: [both, android, ios]
+        default: both
+
+concurrency:
+  group: store-listing
+  cancel-in-progress: false
+
+jobs:
+  android:
+    name: Google Play
+    if: inputs.platform != 'ios'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Gom ảnh vào thư mục metadata
+        run: |
+          d=fastlane/metadata/android/vi-VN/images
+          mkdir -p $d/phoneScreenshots
+          cp store/play/icon-512.png $d/icon.png
+          cp store/play/feature-graphic-1024x500.png $d/featureGraphic.png
+          cp store/screenshots/android/*.png $d/phoneScreenshots/
+      - name: Cài fastlane
+        run: sudo gem install fastlane --no-document
+      - name: Tải nội dung lên Google Play
+        env:
+          PLAY_SERVICE_ACCOUNT_JSON: ${{ secrets.PLAY_SERVICE_ACCOUNT_JSON }}
+        run: |
+          fastlane run upload_to_play_store \
+            package_name:com.toanquantic.gplx \
+            json_key_data:"$PLAY_SERVICE_ACCOUNT_JSON" \
+            metadata_path:fastlane/metadata/android \
+            skip_upload_apk:true skip_upload_aab:true skip_upload_changelogs:true \
+            sync_image_upload:true
+
+  ios:
+    name: App Store
+    if: inputs.platform != 'android'
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Gom ảnh vào thư mục screenshots
+        run: |
+          mkdir -p fastlane/screenshots/vi
+          cp store/screenshots/iphone/*.png fastlane/screenshots/vi/
+      - name: Chuẩn bị khóa App Store Connect API
+        env:
+          ASC_KEY_ID: ${{ secrets.APP_STORE_CONNECT_KEY_ID }}
+          ASC_ISSUER_ID: ${{ secrets.APP_STORE_CONNECT_ISSUER_ID }}
+          ASC_KEY_P8_BASE64: ${{ secrets.APP_STORE_CONNECT_KEY_P8_BASE64 }}
+        run: |
+          echo "$ASC_KEY_P8_BASE64" | base64 -d > "$RUNNER_TEMP/AuthKey.p8"
+          jq -n --arg id "$ASC_KEY_ID" --arg issuer "$ASC_ISSUER_ID" --rawfile key "$RUNNER_TEMP/AuthKey.p8" \
+            '{key_id: $id, issuer_id: $issuer, key: $key, in_house: false}' > "$RUNNER_TEMP/asc.json"
+      - name: Cài fastlane
+        run: brew install fastlane
+      - name: Tải nội dung lên App Store Connect
+        run: |
+          fastlane run upload_to_app_store \
+            api_key_path:"$RUNNER_TEMP/asc.json" \
+            app_identifier:com.toanquantic.gplx \
+            app_version:1.0.0 \
+            metadata_path:fastlane/metadata/ios \
+            screenshots_path:fastlane/screenshots \
+            overwrite_screenshots:true \
+            skip_binary_upload:true \
+            submit_for_review:false \
+            run_precheck_before_submit:false \
+            force:true
