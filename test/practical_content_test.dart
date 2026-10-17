@@ -7,10 +7,12 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:on_thi_gplx/data/practical_content.dart';
 import 'package:on_thi_gplx/data/question_bank.dart';
 import 'package:on_thi_gplx/data/remote_content.dart';
+import 'package:on_thi_gplx/ui/screens/videos_screen.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 void main() {
   group('tải bản mới từ GitHub', _remoteContentTests);
+  group('trình phát YouTube chuyển trang', _playerNavigationTests);
 
   test('danh sách trung tâm dạy lái đủ thông tin liên hệ', () {
     final list = DrivingSchoolList.parse(
@@ -112,5 +114,37 @@ void _remoteContentTests() {
       ),
       throwsFormatException,
     );
+  });
+}
+
+void _playerNavigationTests() {
+  Uri u(String s) => Uri.parse(s);
+  PlayerNavigation main(String s) => decidePlayerNavigation(u(s), isMainFrame: true);
+
+  test('trang của trình phát và iframe bên trong được tải bình thường', () {
+    expect(main('https://www.youtube-nocookie.com'), isA<AllowNavigation>());
+    expect(main('https://www.youtube-nocookie.com/embed/9kFINMCJ58w'), isA<AllowNavigation>());
+    expect(main('about:blank'), isA<AllowNavigation>());
+    expect(
+      decidePlayerNavigation(u('https://googleads.g.doubleclick.net/x'), isMainFrame: false),
+      isA<AllowNavigation>(),
+    );
+  });
+
+  test('video liên quan phát tiếp ngay trong trình phát', () {
+    final nav = main('https://www.youtube.com/watch?v=koPYGFOVGnY&feature=emb_rel_end');
+    expect(nav, isA<PlayInPlayer>().having((n) => n.videoId, 'videoId', 'koPYGFOVGnY'));
+  });
+
+  test('logo, tiêu đề, kênh mở trong WebView của app chứ không rời app', () {
+    for (final link in [
+      'https://www.youtube.com/watch?v=koPYGFOVGnY&feature=emb_title',
+      'https://www.youtube.com/watch?v=koPYGFOVGnY&feature=emb_logo',
+      'https://www.youtube.com/@ThayTam',
+      'https://m.youtube.com/',
+      'https://accounts.google.com/ServiceLogin',
+    ]) {
+      expect(main(link), isA<OpenInApp>(), reason: link);
+    }
   });
 }

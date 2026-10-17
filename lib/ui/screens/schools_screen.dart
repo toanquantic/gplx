@@ -1,22 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 import '../../data/practical_content.dart';
 import '../app_scope.dart';
+import '../links.dart';
 import '../theme.dart';
-
-/// Mở [url] bằng app ngoài (trình duyệt, gọi điện, bản đồ, YouTube); không mở
-/// được thì báo bằng SnackBar.
-Future<void> openExternal(BuildContext context, Uri url) async {
-  final messenger = ScaffoldMessenger.of(context);
-  var ok = false;
-  try {
-    ok = await launchUrl(url, mode: LaunchMode.externalApplication);
-  } catch (_) {}
-  if (!ok) {
-    messenger.showSnackBar(const SnackBar(content: Text('Không mở được liên kết trên máy này.')));
-  }
-}
 
 /// Giới thiệu các trung tâm dạy lái xe: tên, địa chỉ, nút gọi, website và bản đồ.
 class SchoolsScreen extends StatefulWidget {
@@ -143,18 +130,22 @@ class _SchoolCard extends StatelessWidget {
                 OutlinedButton.icon(
                   icon: const Icon(Icons.call_outlined, size: 18),
                   label: const Text('Gọi'),
-                  onPressed: () => openExternal(context, Uri(scheme: 'tel', path: s.phone)),
+                  onPressed: () => openLink(
+                    context,
+                    Uri(scheme: 'tel', path: s.phone),
+                    target: LinkTarget.external,
+                  ),
                 ),
               if (s.website != null)
                 OutlinedButton.icon(
                   icon: const Icon(Icons.language, size: 18),
                   label: const Text('Website'),
-                  onPressed: () => openExternal(context, Uri.parse(s.website!)),
+                  onPressed: () => openLink(context, Uri.parse(s.website!)),
                 ),
               OutlinedButton.icon(
                 icon: const Icon(Icons.map_outlined, size: 18),
                 label: const Text('Bản đồ'),
-                onPressed: () => openExternal(context, mapUrl),
+                onPressed: () => openLink(context, mapUrl, target: LinkTarget.external),
               ),
             ],
           ),
